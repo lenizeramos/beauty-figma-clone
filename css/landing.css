@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "Avenir";
+  src: url(/fonts/Avenir/Avenir\ Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "WhiteFlower";
+  src: url(/fonts/WhiteFlower/WhiteFlower.otf) format("opentype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0px;
+  background-color: #F8F6F4;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  height: 140px;
+  transition: padding 1.5s ease;
+  transition: height 1.5s ease;
+}
+header nav .left, header nav .right {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+}
+header nav .left a, header nav .right a {
+  text-decoration: none;
+  padding: 0 2.4rem;
+}
+header nav .left a p, header nav .right a p {
+  font-family: "Baskervville SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+header nav .left a p, header nav .left a i, header nav .right a p, header nav .right a i {
+  font-size: 20px;
+  color: #725A58;
+}
+header nav .left a:not(#igIcon, #classesNavLink), header nav .right a:not(#igIcon, #classesNavLink) {
+  border-right: 1px #725A58 solid;
+}
+
+.smallNavBar {
+  padding: 0.5rem 1rem;
+  height: 80px;
+  transition: padding 1.5s ease;
+  transition: height 1.5s ease;
+}
+.smallNavBar .logo img {
+  width: 100%;
+}
+
+.dummyContainer {
+  min-height: 200vh;
+}
+.dummyContainer p {
+  font-family: "WhiteFlower", sans-serif;
+}
+
+.baskervville-sc-regular {
+  font-family: "Baskervville SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}/*# sourceMappingURL=landing.css.map */
