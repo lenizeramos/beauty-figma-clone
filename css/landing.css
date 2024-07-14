@@ -18,46 +18,83 @@ header {
   top: 0px;
   background-color: #F8F6F4;
 }
-header nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+header nav .navbar {
   padding: 1rem;
-  height: 140px;
   transition: padding 1.5s ease;
-  transition: height 1.5s ease;
-}
-header nav .left, header nav .right {
+  list-style: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  width: 80%;
 }
-header nav .left a, header nav .right a {
+header nav .navbar li {
+  width: 100%;
+  text-align: center;
+}
+header nav .navbar li a {
   text-decoration: none;
-  padding: 0 2.4rem;
+  padding: 0 1rem;
 }
-header nav .left a p, header nav .right a p {
+header nav .navbar li a p {
   font-family: "Baskervville SC", serif;
   font-weight: 400;
   font-style: normal;
 }
-header nav .left a p, header nav .left a i, header nav .right a p, header nav .right a i {
+header nav .navbar li a p:not(.classes) {
+  border-right: 1px #725A58 solid;
+}
+header nav .navbar li a p, header nav .navbar li a i {
   font-size: 20px;
   color: #725A58;
 }
-header nav .left a:not(#igIcon, #classesNavLink), header nav .right a:not(#igIcon, #classesNavLink) {
-  border-right: 1px #725A58 solid;
+header nav .logo img {
+  width: 100%;
+  transition: width 1.5s ease;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: #F8F6F4;
+  display: none;
+  transition: display 2s ease-in-out;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  list-style: none;
+}
+.sidebar li {
+  width: 100%;
+}
+.sidebar li:hover {
+  background-color: #E3B6B1;
+  transition: background-color 0.5s ease;
+}
+.sidebar li a {
+  text-decoration: none;
+  padding: 0 1rem;
+  width: 100%;
+}
+.sidebar li a p {
+  font-family: "Baskervville SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.sidebar li a p, .sidebar li a i {
+  font-size: 20px;
+  color: #725A58;
 }
 
 .smallNavBar {
   padding: 0.5rem 1rem;
-  height: 80px;
   transition: padding 1.5s ease;
-  transition: height 1.5s ease;
 }
 .smallNavBar .logo img {
-  width: 100%;
+  width: 40%;
+  transition: width 1.5s ease;
 }
 
 .dummyContainer {
@@ -67,6 +104,23 @@ header nav .left a:not(#igIcon, #classesNavLink), header nav .right a:not(#igIco
   font-family: "WhiteFlower", sans-serif;
 }
 
+.showonMobile, .opentagSB {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .showonMobile, .opentagSB {
+    display: block;
+  }
+  .hideonMobile {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    width: 100%;
+  }
+}
 .baskervville-sc-regular {
   font-family: "Baskervville SC", serif;
   font-weight: 400;
