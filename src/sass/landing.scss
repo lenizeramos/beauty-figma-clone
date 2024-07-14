@@ -1,12 +1,150 @@
-*, *::before , *::before {
+@font-face {
+    font-family: "Avenir";
+    src: url(/fonts/Avenir/Avenir\ Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family: "WhiteFlower";
+    src: url(/fonts/WhiteFlower/WhiteFlower.otf) format("opentype");
+}
+
+//*****************************colors**********************************//
+//MAIN
+$brand:#191919;
+$boldmain:#725A58;
+$accent:#E3B6B1;
+//LIGHT NEUTRAL
+$lightpink:#FAE9E7;
+$palewhite :#F8F6F4;
+$paperwhite:#FBFAFA;
+//DARK NEUTRAL
+$midgrey:#A3A3A3;
+$darkgrey:#535353;
+$black:#191919;
+//COMPLEMENTARY
+$darkpink:#B99692;
+$brown:#A06D67;
+
+//***************************font-sizes********************************//
+$h1:80px;
+$h2:68px;
+$h3:48px;
+$h4:36px;
+$h5:32px;
+$h6:24px;
+$button:20px;
+$button_sm:18px;
+$body:18px;
+$body_sm:16px;
+$caption:14px;
+$signature:54px;
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+header{
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0px;
+        background-color: $palewhite;
+    nav{
+        .navbar{
+            padding: 1rem;
+            transition: padding 1.5s ease;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            li{
+                width: 100%;
+                text-align: center;
+                a{
+                    text-decoration: none;
+                    padding: 0 1rem;
+                    p{
+                        font-family: "Baskervville SC", serif;
+                        font-weight: 400;
+                        font-style: normal;
+                        &:not(.classes){
+                            border-right: 1px $boldmain solid;
+                        }
+                    }
+                    p,i{
+                        font-size: $button;
+                        color: $boldmain;
+                    }
+                }
+            }
+        }
+        .logo{
+            img{
+                width: 100%;
+                transition: width 1.5s ease;
+            }
+        }
+    }
+}
 
-//@mixin A()
-//@include A()
+.sidebar{
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 250px;
+        z-index: 999;
+        background-color: $palewhite;
+        display: none;
+        transition: display 2s ease-in-out;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        list-style: none;
+        li{
+            width: 100%;
+            &:hover{
+                background-color: $accent;
+                transition: background-color 0.5s ease;
+            }
+            a{
+                text-decoration: none;
+                padding: 0 1rem;
+                width: 100%;
+                p{
+                    font-family: "Baskervville SC", serif;
+                    font-weight: 400;
+                    font-style: normal;
+                }
+                p,i{
+                    font-size: $button;
+                    color: $boldmain;
+                }
+            }
+        }
+    }
 
+.smallNavBar{
+    padding: 0.5rem 1rem;
+    transition: padding 1.5s ease;
+    .logo{
+        img{
+            width: 40%;
+            transition: width 1.5s ease;
+        }
+    }
+}
+.dummyContainer{
+    min-height: 200vh;
+    p{
+        font-family: "WhiteFlower", sans-serif;
+    }
+}
+
+.showonMobile,.opentagSB{
+    display: none;
+}
+
+//FOOTER
 .IconsContainer{
     text-align: center;   
     width: 250px;
@@ -73,3 +211,27 @@
     text-align: center;
     margin-top: 25px;
 }
+
+//Tablet
+@media only screen and (max-width: 800px){
+    .showonMobile,.opentagSB{
+        display: block;
+    }
+    .hideonMobile{
+        display: none;
+    }
+}
+
+//Mobile
+@media only screen and (max-width: 600px){
+    .sidebar{
+        width: 100%;
+    }
+}
+
+//GOOGLE FONTS -BASKERVVILE-
+.baskervville-sc-regular {
+    font-family: "Baskervville SC", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
