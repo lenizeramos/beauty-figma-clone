@@ -108,6 +108,69 @@ header nav .logo img {
   display: none;
 }
 
+.IconsContainer {
+  text-align: center;
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  padding-top: 15px;
+}
+.IconsContainer .footerParagraph {
+  font-size: 14px;
+  margin: 3px 0;
+}
+.IconsContainer .ContactIcons {
+  margin-top: 8px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.FooterNavContainer {
+  margin: auto;
+}
+@media only screen and (max-width: 600px) {
+  .FooterNavContainer {
+    width: 95%;
+  }
+  .FooterNavContainer .FooterNavList {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (min-width: 601px) {
+  .FooterNavContainer {
+    width: 80%;
+  }
+  .FooterNavContainer .FooterNavList {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+.FooterNavContainer .FooterNav {
+  border-top: 1px black solid;
+  border-bottom: 1px black solid;
+}
+.FooterNavContainer .FooterNav .FooterNavList {
+  list-style: none;
+  font-size: 20px;
+  padding: 15px 0;
+}
+.FooterNavContainer .FooterNav .FooterNavList .FooterNavListStyle1 {
+  text-decoration: none;
+  color: black;
+}
+.FooterNavContainer .FooterNav .FooterNavList .FooterNavListStyle2 {
+  color: black;
+}
+
+.Copyright {
+  text-align: center;
+  margin-top: 25px;
+}
+
 @media only screen and (max-width: 800px) {
   .showonMobile, .opentagSB {
     display: block;
