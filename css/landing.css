@@ -159,6 +159,10 @@
 }
 .form-services .form-services-container .form-option-container .contact-form .contact-form-name {
   margin-bottom: 1rem;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 28px;
 }
 .form-services .form-services-container .form-option-container .contact-form .input-name {
   padding: 8px;
