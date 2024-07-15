@@ -125,8 +125,9 @@
                         padding: 8px;
                         cursor: pointer;
 
-                        .select {
-                            visibility: visible;
+                        img {
+                            width: 20px;
+                            height: 20px;
                         }
 
                         .hide {
@@ -244,6 +245,32 @@
                     }
                 }
 
+                .time-call-header {
+                    margin-bottom: 1rem;
+                }
+
+                .form-time-call {
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 2rem;
+
+                    .time-opt {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+
+                        .label-time-opt {
+                            margin: 0.5rem 0;
+                        }
+
+                        .input-color {
+                            accent-color: #B99692;
+                        }
+
+                    }
+
+                }
+
             }
 
             .button-next {
@@ -252,6 +279,12 @@
                 background-color: transparent;
                 border: 0.5px solid #5E4A49;
                 cursor: pointer;
+
+                &:hover {
+                    background-color: #B99692;
+                    border: 1px solid #B99692;
+                    color: white;
+                }
             }
     
         }
@@ -260,9 +293,18 @@
     }
 
     
-
-
-
-
-
 }
+
+
+// @media only screen and (max-width: 600px) {
+
+//     .form-services-container {
+//         width: 100%;
+//         padding: 1rem;
+//     }
+
+//     .event-opts {
+//         display: flex;
+//         flex-direction: column;
+//     }
+// }

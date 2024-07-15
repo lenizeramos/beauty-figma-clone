@@ -50,19 +50,19 @@
             </div>
 
             <div class="event-opts">
-              <div class="eve-options">
+              <div class="eve-options" id="wedd-opt">
                 <p class="button hbutton">Wedding</p>
-                <img class="checked select" src="../../resources/landing/checked-option-form.png">
+                <img class="checked hide" id="wedd-check" src="../../resources/landing/checked-option-form.png">
               </div>
 
-              <div class="eve-options">
+              <div class="eve-options" id="party-opt">
                 <p class="button hbutton">Party</p>
-                <img class="checked hide" src="../../resources/landing/checked-option-form.png">
+                <img class="checked hide" id="party-check" src="../../resources/landing/checked-option-form.png">
               </div>
 
-              <div class="eve-options">
+              <div class="eve-options" id="photo-opt">
                 <p class="button hbutton">Photoshoot</p>
-                <img class="checked hide" src="../../resources/landing/checked-option-form.png">
+                <img class="checked hide" id="photo-check" src="../../resources/landing/checked-option-form.png">
               </div>
             </div>
 
@@ -146,7 +146,7 @@
                   <label for="call" class="text-body">Call</label>
                 </div>
 
-                <div class="number-form">
+                <div class="number-form hide" id="call-check">
                   <input
                     type="tel"
                     class="number text-body inpt"
@@ -168,7 +168,7 @@
                   <label for="whatsapp" class="text-body">Whatsapp</label>
                 </div>
 
-                <div class="number-form hide">
+                <div class="number-form hide" id="whats-check">
                   <input
                     type="tel"
                     class="whats text-body inpt"
@@ -190,7 +190,7 @@
                   <label for="sms" class="text-body">SMS</label>
                 </div>
 
-                <div class="number-form hide">
+                <div class="number-form hide" id="sms-check">
                   <input
                     type="tel"
                     class="sms text-body inpt"
@@ -211,7 +211,7 @@
                   <label for="email" class="text-body">Email</label>
                 </div>
 
-                <div class="number-form hide">
+                <div class="number-form hide" id="email-check">
                   <input
                     type="email"
                     class="email text-body inpt"
@@ -225,6 +225,43 @@
               </div>
 
             </div> 
+
+            <div class="time-call-header">
+              <h5 class="h5">When do you want us to call?</h5>
+            </div>
+
+            <div class="form-time-call">
+
+              <div class="time-opt">
+                <div class="label-time-opt">
+                  <input type="radio" class="input-color" name="mind-option" value="mind" id="mind"/>
+                  <label for="mind" class="text-body">I don't mind</label>
+                </div>
+              </div>
+
+              <div class="time-opt">
+                <div class="label-time-opt">
+                  <input type="radio" class="input-color" name="morning-option" value="morning" id="morning"/>
+                  <label for="morning" class="text-body">Morning</label>
+                </div>
+              </div>
+
+              <div class="time-opt">
+                <div class="label-time-opt">
+                  <input type="radio" class="input-color" name="afternoon-option" value="afternoon" id="afternoon"/>
+                  <label for="afternoon" class="text-body">Afternoon</label>
+                </div>
+              </div>
+
+              <div class="time-opt">
+                <div class="label-time-opt">
+                  <input type="radio" class="input-color" name="evening-option" value="evening" id="evening"/>
+                  <label for="evening" class="text-body">Evening</label>
+                </div>
+              </div>
+
+            </div>
+
           </form>
 
           <div class="button">
@@ -240,5 +277,6 @@
     </div>
 
   </body>
-  <script src="/final-project-figma-beauty-clone-teamb/src/scriptFiles/script.js"></script>
+  <!-- <script src="/final-project-figma-beauty-clone-teamb/src/scriptFiles/script.js"></script> -->
+   <script src="../scriptFiles/script.js"></script>
 </html>

@@ -108,8 +108,9 @@
   padding: 8px;
   cursor: pointer;
 }
-.form-services .form-services-container .form-option-container .form-event-options .event-opts .eve-options .select {
-  visibility: visible;
+.form-services .form-services-container .form-option-container .form-event-options .event-opts .eve-options img {
+  width: 20px;
+  height: 20px;
 }
 .form-services .form-services-container .form-option-container .form-event-options .event-opts .eve-options .hide {
   visibility: hidden;
@@ -199,10 +200,34 @@
 .form-services .form-services-container .form-option-container .contact-form .contact-form-phone .inpt:focus {
   outline: none;
 }
+.form-services .form-services-container .form-option-container .contact-form .time-call-header {
+  margin-bottom: 1rem;
+}
+.form-services .form-services-container .form-option-container .contact-form .form-time-call {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+.form-services .form-services-container .form-option-container .contact-form .form-time-call .time-opt {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.form-services .form-services-container .form-option-container .contact-form .form-time-call .time-opt .label-time-opt {
+  margin: 0.5rem 0;
+}
+.form-services .form-services-container .form-option-container .contact-form .form-time-call .time-opt .input-color {
+  accent-color: #B99692;
+}
 .form-services .form-services-container .form-option-container .button-next {
   padding: 20px 40px;
   width: 160px;
   background-color: transparent;
   border: 0.5px solid #5E4A49;
   cursor: pointer;
+}
+.form-services .form-services-container .form-option-container .button-next:hover {
+  background-color: #B99692;
+  border: 1px solid #B99692;
+  color: white;
 }/*# sourceMappingURL=landing.css.map */
