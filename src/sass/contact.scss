@@ -1,4 +1,44 @@
-body{
+@font-face {
+  font-family: "Avenir";
+  src: url(/fonts/Avenir/Avenir\ Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "WhiteFlower";
+  src: url(/fonts/WhiteFlower/WhiteFlower.otf) format("opentype");
+}
+
+//*****************************colors**********************************//
+//MAIN
+$brand:#191919;
+$boldmain:#725A58;
+$accent:#E3B6B1;
+//LIGHT NEUTRAL
+$lightpink:#FAE9E7;
+$palewhite :#F8F6F4;
+$paperwhite:#FBFAFA;
+//DARK NEUTRAL
+$midgrey:#A3A3A3;
+$darkgrey:#535353;
+$black:#191919;
+//COMPLEMENTARY
+$darkpink:#B99692;
+$brown:#A06D67;
+
+//***************************font-sizes********************************//
+$h1:80px;
+$h2:68px;
+$h3:48px;
+$h4:36px;
+$h5:32px;
+$h6:24px;
+$button:20px;
+$button_sm:18px;
+$body:18px;
+$body_sm:16px;
+$caption:14px;
+$signature:54px;
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,7 +48,7 @@ body{
   width: 54%;
   margin: auto;
   padding: 2rem 0;
-  background-color: pink;
+  background-color: $accent;
   .PartyFormContainer{
     width: 80%;
     margin: auto;
@@ -89,7 +129,6 @@ body{
     .Submit{
       display: block;
       margin: auto;
-
     }
   }
 }
