@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   window.addEventListener("scroll", () => {
     const scroll = window.scrollY;
-    if (scroll >= 200) {
+    if (scroll >= 50) {
       navbar.classList.add("smallNavBar");
     } else {
       navbar.classList.remove("smallNavBar");

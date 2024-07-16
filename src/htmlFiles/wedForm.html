@@ -131,7 +131,7 @@
                 </div>
                 <div class="btnService">
                   <label for="hairstyle">Hairstyle</label>
-                  <input type="checkbox" name="hairstyle" id="hairstyle">
+                  <input type="checkbox" name="hairstyle" id="hairstyle" class="checkboxService">
                 </div>
               </div>
             </div>
@@ -139,7 +139,7 @@
               <label for="searchBar" class="sectionTitle">Event Location</label>
               <input type="text" name="searchBar" id="searchBar" placeholder="Search address">
               <div class="checkbtn">
-                <input type="checkbox" name="notdecided">
+                <input type="checkbox" name="notdecided" class="checkboxService">
                 <label for="notdecided">Not decided</label>
               </div>
             </div>
@@ -147,38 +147,106 @@
               <label for="premiumService" class="sectionTitle">Premium Service</label>
               <ul>
                 <li>
-                  <input type="checkbox" name="deepskin" id="deepskin">
+                  <input type="checkbox" name="deepskin" id="deepskin" class="checkboxService">
                   <label for="deepskin">Deep skin cleansing</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="hydromass" id="hydromass">
+                  <input type="checkbox" name="hydromass" id="hydromass" class="checkboxService">
                   <label for="hydromass">Hydromassage</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="wax" id="wax">
+                  <input type="checkbox" name="wax" id="wax" class="checkboxService">
                   <label for="wax">Waxing</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="relaxmass" id="relaxmass">
+                  <input type="checkbox" name="relaxmass" id="relaxmass" class="checkboxService">
                   <label for="relaxmass">Relaxing massage</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="bleach" id="bleach">
+                  <input type="checkbox" name="bleach" id="bleach" class="checkboxService">
                   <label for="bleach">Bleach body hair</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="hair_moist" id="hair_moist">
+                  <input type="checkbox" name="hair_moist" id="hair_moist" class="checkboxService">
                   <label for="hair_moist">Hair Moisture</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="fh_Spa" id="fh_Spa">
+                  <input type="checkbox" name="fh_Spa" id="fh_Spa" class="checkboxService">
                   <label for="fh_Spa">Foot and hand SPA</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="gomm" id="gomm">
+                  <input type="checkbox" name="gomm" id="gomm" class="checkboxService">
                   <label for="gomm">Gommage (body exfoliation and hydration)</label>
                 </li>
               </ul>
+            </div>
+            <div class="row extraService">
+              <label for="extraService" class="sectionTitle">Anyone else need service?</label>
+              <div class="rowExtra">
+                <div class="client">
+                  <p>Groom</p>
+                  <div class="counter">
+                    <input type="button" id="minus_btn" value=" - ">
+                    <input type="text" id="counterRes" value="0">
+                    <input type="button" id="add_btn" value=" + ">
+                  </div>
+                </div>
+                <div class="service">
+                  <div class="makeup">
+                    <input type="checkbox" name="makeupGroom" id="makeupGroom" class="checkboxService">
+                  <label for="makeupGroom">Makeup</label>
+                  </div>
+                </div>
+              </div>
+              <div class="rowExtra">
+                <div class="client">
+                  <p>Braidesmaid</p>
+                  <div class="counter">
+                    <input type="button" id="minus_btn" value=" - ">
+                    <input type="text" id="counterRes" value="0">
+                    <input type="button" id="add_btn" value=" + ">
+                  </div>
+                </div>
+                <div class="service">
+                  <div class="makeup">
+                    <input type="checkbox" name="makeupBM" id="makeupBM" class="checkboxService">
+                  <label for="makeupBM">Makeup</label>
+                  </div>
+                  <div class="hairstyle">
+                    <input type="checkbox" name="hairstyleBM" id="hairstyleBM" class="checkboxService">
+                  <label for="hairstyleBM">Hairstyle</label>
+                  </div>
+                </div>
+              </div>
+              <div class="rowExtra">
+                <div class="client">
+                  <p>Flower Girl</p>
+                  <div class="counter">
+                    <input type="button" id="minus_btn" value=" - ">
+                    <input type="text" id="counterRes" value="0">
+                    <input type="button" id="add_btn" value=" + ">
+                  </div>
+                </div>
+                <div class="service">
+                  <div class="makeup">
+                    <input type="checkbox" name="makeupFG" id="makeupFG" class="checkboxService">
+                  <label for="makeupFG">Makeup</label>
+                  </div>
+                  <div class="hairstyle">
+                    <input type="checkbox" name="hairstyleFG" id="hairstyleFG" class="checkboxService">
+                  <label for="hairstyleFG">Hairstyle</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row finalMessage">
+              <label for="finalMessage" class="sectionTitle">Anything you want us to know?</label>
+              <div class="message">
+                <textarea name="finalMessage" id="finalMessage" placeholder="Your message"></textarea>
+              </div>
+            </div>
+            <div class="submitButton">
+              <input type="submit" name="submitBtn" value="Submit">
             </div>
           </div>
         </div>
