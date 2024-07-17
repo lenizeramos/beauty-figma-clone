@@ -105,19 +105,31 @@ document.addEventListener("DOMContentLoaded", () => {
   const email = document.getElementById("email-check");
 
   callOpt.addEventListener("click", () => {
-    call.classList.toggle("hide");
+    call.classList.remove("hide");
+    whats.classList.add("hide");
+    sms.classList.add("hide");
+    email.classList.add("hide");
   });
 
   whatsaapOpt.addEventListener("click", () => {
-    whats.classList.toggle("hide");
+    call.classList.add("hide");
+    whats.classList.remove("hide");
+    sms.classList.add("hide");
+    email.classList.add("hide");
   });
 
   smsOpt.addEventListener("click", () => {
-    sms.classList.toggle("hide");
+    call.classList.add("hide");
+    whats.classList.add("hide");
+    sms.classList.remove("hide");
+    email.classList.add("hide");
   });
 
   emailOpt.addEventListener("click", () => {
-    email.classList.toggle("hide");
+    call.classList.add("hide");
+    whats.classList.add("hide");
+    sms.classList.add("hide");
+    email.classList.remove("hide");
   });
 
   //*** END SERVICES FORM ***
@@ -140,6 +152,43 @@ document.addEventListener("DOMContentLoaded", () => {
 
   self_makeup_check.addEventListener("click", () => {
     self_makeup.classList.toggle("hide");
+  });
+
+  const callOpt_classes = document.getElementById("call_classes");
+  const whatsaapOpt_classes = document.getElementById("whatsapp_classes");
+  const smsOpt_classes = document.getElementById("sms_classes");
+  const emailOpt_classes = document.getElementById("email_classes");
+  const call_classes = document.getElementById("call-check_classes");
+  const whats_classes = document.getElementById("whats-check_classes");
+  const sms_classes = document.getElementById("sms-check_classes");
+  const email_classes = document.getElementById("email-check_classes");
+
+  callOpt_classes.addEventListener("click", () => {
+    call_classes.classList.remove("hide");
+    whats_classes.classList.add("hide");
+    sms_classes.classList.add("hide");
+    email_classes.classList.add("hide");
+  });
+
+  whatsaapOpt_classes.addEventListener("click", () => {
+    call_classes.classList.add("hide");
+    whats_classes.classList.remove("hide");
+    sms_classes.classList.add("hide");
+    email_classes.classList.add("hide");
+  });
+
+  smsOpt_classes.addEventListener("click", () => {
+    call_classes.classList.add("hide");
+    whats_classes.classList.add("hide");
+    sms_classes.classList.remove("hide");
+    email_classes.classList.add("hide");
+  });
+
+  emailOpt_classes.addEventListener("click", () => {
+    call_classes.classList.add("hide");
+    whats_classes.classList.add("hide");
+    sms_classes.classList.add("hide");
+    email_classes.classList.remove("hide");
   });
   //*** END CLASSES FORM ***
   // END LETS TALK
