@@ -1,10 +1,10 @@
 @font-face {
   font-family: "Avenir";
-  src: url(fonts/Avenir/Avenir\ Regular.ttf) format("truetype");
+  src: url(../fonts/Avenir/AvenirRegular.ttf) format("truetype");
 }
 @font-face {
-  font-family: "WhiteFlower";
-  src: url(fonts/WhiteFlower/WhiteFlower.otf) format("opentype");
+  font-family: "Whiteflower";
+  src: url(../fonts/WhiteFlower/WhiteFlower.otf) format("opentype");
 }
 * {
   margin: 0;
@@ -178,10 +178,6 @@ header nav .logo img {
 .starSection .photoSec .photo {
   border: 1px red solid;
   width: 25%;
-}
-.starSection .photoSec .photo.firstpic {
-  background-image: url(resources/landing/1.png);
-  background-size: cover;
 }
 .starSection .hbutton {
   color: #5e4a49;
@@ -539,4 +535,6 @@ header nav .logo img {
   font-family: "Baskervville", serif;
   font-weight: 400;
   font-style: italic;
-}/*# sourceMappingURL=landing.css.map */
+}
+
+/*# sourceMappingURL=landing.css.map */

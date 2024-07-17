@@ -1,12 +1,11 @@
 @font-face {
   font-family: "Avenir";
-  src: url(fonts/Avenir/Avenir\ Regular.ttf) format("truetype");
+  src: url(../fonts/Avenir/AvenirRegular.ttf) format('truetype');
 }
 @font-face {
-  font-family: "WhiteFlower";
-  src: url(fonts/WhiteFlower/WhiteFlower.otf) format("opentype");
+  font-family: "Whiteflower";
+  src: url(../fonts/WhiteFlower/WhiteFlower.otf) format('opentype');
 }
-
 //*****************************colors**********************************//
 //MAIN
 $brand: #191919;
@@ -227,10 +226,6 @@ header {
     .photo{
       border: 1px red solid;
       width: 25%;
-      &.firstpic{
-        background-image: url(resources/landing/1.png);
-        background-size: cover;
-      }
     }
   }
 
