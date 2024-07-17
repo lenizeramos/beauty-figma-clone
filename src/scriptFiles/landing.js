@@ -43,12 +43,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const weddCheck = document.getElementById("wedd-opt");
   const partyCheck = document.getElementById("party-opt");
   const photoCheck = document.getElementById("photo-opt");
-  const wedding = document.getElementById("wedd-check")
-  const party = document.getElementById("party-check")
-  const photo = document.getElementById("photo-check")
+  const wedding = document.getElementById("wedd-check");
+  const party = document.getElementById("party-check");
+  const photo = document.getElementById("photo-check");
 
   weddCheck.addEventListener("click", () => {
-      wedding.classList.toggle("hide");
+    wedding.classList.toggle("hide");
   });
 
   partyCheck.addEventListener("click", () => {
@@ -83,21 +83,40 @@ document.addEventListener("DOMContentLoaded", () => {
   emailOpt.addEventListener("click", () => {
     email.classList.toggle("hide");
   });
-
 });
 
-
 // BEGIN MESSAGE BUTTON
-const message_button = document.getElementById("message_button")
-const button_container = document.getElementById("button_container")
+const message_button = document.getElementById("message_button");
+const button_container = document.getElementById("button_container");
 
 message_button.addEventListener("click", () => {
   message_button.classList.add("display_none");
-  button_container.classList.remove("display_none")
-})
+  button_container.classList.remove("display_none");
+});
 
 button_container.addEventListener("click", () => {
   button_container.classList.add("display_none");
-  message_button.classList.remove("display_none")
-})
+  message_button.classList.remove("display_none");
+});
 // END MESSAGE BUTTON
+
+// BEGIN LETS TALK
+const services_label = document.getElementById("services_label");
+const classes_label = document.getElementById("classes_label");
+const services_form = document.getElementById("services_form");
+const classes_form = document.getElementById("classes_form");
+
+services_label.addEventListener("click", () => {
+  services_label.classList.remove("blur");
+  classes_label.classList.add("blur");
+  classes_form.classList.add("display_none");
+  services_form.classList.remove("display_none");
+});
+
+classes_label.addEventListener("click", () => {
+  classes_label.classList.remove("blur");
+  services_label.classList.add("blur");
+  services_form.classList.add("display_none");
+  classes_form.classList.remove("display_none");
+});
+// END LETS TALK
