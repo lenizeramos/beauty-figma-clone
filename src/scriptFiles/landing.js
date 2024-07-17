@@ -40,6 +40,42 @@ document.addEventListener("DOMContentLoaded", () => {
   //   }
   // });
 
+  // BEGIN MESSAGE BUTTON
+  const message_button = document.getElementById("message_button");
+  const button_container = document.getElementById("button_container");
+
+  message_button.addEventListener("click", () => {
+    message_button.classList.add("display_none");
+    button_container.classList.remove("display_none");
+  });
+
+  button_container.addEventListener("click", () => {
+    button_container.classList.add("display_none");
+    message_button.classList.remove("display_none");
+  });
+  // END MESSAGE BUTTON
+
+  // BEGIN LETS TALK
+  const services_label = document.getElementById("services_label");
+  const classes_label = document.getElementById("classes_label");
+  const services_form = document.getElementById("services_form");
+  const classes_form = document.getElementById("classes_form");
+
+  services_label.addEventListener("click", () => {
+    services_label.classList.remove("blur");
+    classes_label.classList.add("blur");
+    classes_form.classList.add("display_none");
+    services_form.classList.remove("display_none");
+  });
+
+  classes_label.addEventListener("click", () => {
+    classes_label.classList.remove("blur");
+    services_label.classList.add("blur");
+    services_form.classList.add("display_none");
+    classes_form.classList.remove("display_none");
+  });
+
+  //*** BEGIN SERVICES FORM ***
   const weddCheck = document.getElementById("wedd-opt");
   const partyCheck = document.getElementById("party-opt");
   const photoCheck = document.getElementById("photo-opt");
@@ -83,40 +119,28 @@ document.addEventListener("DOMContentLoaded", () => {
   emailOpt.addEventListener("click", () => {
     email.classList.toggle("hide");
   });
+
+  //*** END SERVICES FORM ***
+
+  //*** BEGIN CLASSES FORM ***
+  const master_subscription_check = document.getElementById("master_subscription_check");
+  const makeup_workshop_check = document.getElementById("makeup_workshop_check");
+  const self_makeup_check = document.getElementById("self_makeup_check");
+  const master_subscription = document.getElementById("master_subscription");
+  const makeup_workshop = document.getElementById("makeup_workshop");
+  const self_makeup = document.getElementById("self_makeup");
+
+  master_subscription_check.addEventListener("click", () => {
+    master_subscription.classList.toggle("hide");
+  });
+
+  makeup_workshop_check.addEventListener("click", () => {
+    makeup_workshop.classList.toggle("hide");
+  });
+
+  self_makeup_check.addEventListener("click", () => {
+    self_makeup.classList.toggle("hide");
+  });
+  //*** END CLASSES FORM ***
+  // END LETS TALK
 });
-
-// BEGIN MESSAGE BUTTON
-const message_button = document.getElementById("message_button");
-const button_container = document.getElementById("button_container");
-
-message_button.addEventListener("click", () => {
-  message_button.classList.add("display_none");
-  button_container.classList.remove("display_none");
-});
-
-button_container.addEventListener("click", () => {
-  button_container.classList.add("display_none");
-  message_button.classList.remove("display_none");
-});
-// END MESSAGE BUTTON
-
-// BEGIN LETS TALK
-const services_label = document.getElementById("services_label");
-const classes_label = document.getElementById("classes_label");
-const services_form = document.getElementById("services_form");
-const classes_form = document.getElementById("classes_form");
-
-services_label.addEventListener("click", () => {
-  services_label.classList.remove("blur");
-  classes_label.classList.add("blur");
-  classes_form.classList.add("display_none");
-  services_form.classList.remove("display_none");
-});
-
-classes_label.addEventListener("click", () => {
-  classes_label.classList.remove("blur");
-  services_label.classList.add("blur");
-  services_form.classList.add("display_none");
-  classes_form.classList.remove("display_none");
-});
-// END LETS TALK

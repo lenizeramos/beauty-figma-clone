@@ -360,6 +360,11 @@ header nav .logo img {
   background-color: #fae9e7;
   width: 50%;
 }
+@media only screen and (max-width: 600px) {
+  .formMainContainer .form-services .form-services-container {
+    width: 90%;
+  }
+}
 .formMainContainer .form-services .form-services-container .form-header {
   display: flex;
   justify-content: center;
@@ -397,6 +402,11 @@ header nav .logo img {
   display: flex;
   justify-content: space-between;
 }
+@media only screen and (max-width: 600px) {
+  .formMainContainer .form-services .form-services-container .form-option-container .form-event-options .event-opts {
+    flex-direction: column;
+  }
+}
 .formMainContainer .form-services .form-services-container .form-option-container .form-event-options .event-opts .eve-options {
   width: 32%;
   display: flex;
@@ -405,6 +415,12 @@ header nav .logo img {
   background-color: white;
   padding: 8px;
   cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+  .formMainContainer .form-services .form-services-container .form-option-container .form-event-options .event-opts .eve-options {
+    width: 100%;
+    margin: 0.5rem;
+  }
 }
 .formMainContainer .form-services .form-services-container .form-option-container .form-event-options .event-opts .eve-options img {
   width: 20px;
@@ -420,6 +436,12 @@ header nav .logo img {
   flex-direction: row;
   justify-content: space-between;
 }
+@media only screen and (max-width: 600px) {
+  .formMainContainer .form-services .form-services-container .form-option-container .form-date-time-options {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
 .formMainContainer .form-services .form-services-container .form-option-container .form-date-time-options .fr100 {
   width: 100% !important;
 }
@@ -427,6 +449,11 @@ header nav .logo img {
   width: 46%;
   display: flex;
   flex-direction: column;
+}
+@media only screen and (max-width: 600px) {
+  .formMainContainer .form-services .form-services-container .form-option-container .form-date-time-options .fr {
+    width: 100%;
+  }
 }
 .formMainContainer .form-services .form-services-container .form-option-container .form-date-time-options .fr .input-event {
   padding: 8px;
@@ -603,7 +630,7 @@ header nav .logo img {
   border: none;
 }
 #side_bar_message_container .button_container .whatsapp_button {
-  background-color: #25D366;
+  background-color: #25d366;
   padding: 0.5rem;
   border: none;
 }
@@ -691,4 +718,6 @@ header nav .logo img {
   font-family: "Baskervville", serif;
   font-weight: 400;
   font-style: italic;
-}/*# sourceMappingURL=landing.css.map */
+}
+
+/*# sourceMappingURL=landing.css.map */
