@@ -1,0 +1,100 @@
+@font-face {
+  font-family: "Avenir";
+  src: url(/fonts/Avenir/Avenir\ Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "WhiteFlower";
+  src: url(/fonts/WhiteFlower/WhiteFlower.otf) format("opentype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.PartyFormOuter {
+  width: 54%;
+  margin: auto;
+  padding: 2rem 0;
+  background-color: #E3B6B1;
+}
+.PartyFormOuter .PartyFormContainer {
+  width: 80%;
+  margin: auto;
+}
+.PartyFormOuter .PartyFormContainer .PartyServiceContents {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.PartyFormOuter .PartyFormContainer .PartyServiceContents p {
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid black;
+}
+.PartyFormOuter .PartyFormContainer #PartyFormBack {
+  text-decoration: none;
+}
+.PartyFormOuter .PartyFormContainer .PartyForm .PartyFormTitle {
+  color: green;
+}
+.PartyFormOuter .PartyFormContainer .PartyForm .PartyCheckbox {
+  display: flex;
+  justify-content: space-between;
+}
+.PartyFormOuter .PartyFormContainer .PartyForm .PartyCheckbox .PartyCheckboxContainer {
+  display: flex;
+  width: 49%;
+  height: auto;
+  align-items: center;
+}
+.PartyFormOuter .PartyFormContainer .PartyForm .PartyCheckbox .SpaceBetween {
+  justify-content: space-between;
+}
+.PartyFormOuter .PartyFormContainer .PartyForm .PartyCheckbox .column {
+  flex-direction: column;
+}
+.PartyFormOuter .PartyFormContainer .PartyForm .PartyCheckbox .backColorWhite {
+  background-color: white;
+}
+.PartyFormOuter .PartyFormContainer .PartyForm input {
+  margin-right: 0.5rem;
+}
+.PartyFormOuter .PartyFormContainer #PartySearch {
+  width: 100%;
+  height: 30px;
+}
+.PartyFormOuter .PartyFormContainer .row {
+  display: flex;
+  width: 100%;
+}
+.PartyFormOuter .PartyFormContainer .PartyQuestion {
+  width: 100%;
+}
+.PartyFormOuter .PartyFormContainer .OtherPeople {
+  background-color: white;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 1fr;
+  margin-bottom: 0.5rem;
+  align-items: center;
+  padding: 1rem 0 1rem 1rem;
+}
+.PartyFormOuter .PartyFormContainer .OtherPeople input {
+  height: 50px;
+  text-align: center;
+}
+.PartyFormOuter .PartyFormContainer .OtherPeople .center {
+  display: flex;
+  align-items: center;
+}
+.PartyFormOuter .PartyFormContainer .OtherPeople .right {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 1rem;
+}
+.PartyFormOuter .PartyFormContainer .Submit {
+  display: block;
+  margin: auto;
+}/*# sourceMappingURL=contact.css.map */
