@@ -6,6 +6,10 @@
   font-family: "Whiteflower";
   src: url(../fonts/WhiteFlower/WhiteFlower.otf) format("opentype");
 }
+@font-face {
+  font-family: "Magenta";
+  src: url(../fonts/magenta-2/MagentaDemo.ttf) format("truetype");
+}
 * {
   margin: 0;
   padding: 0;
@@ -158,11 +162,16 @@ header nav .logo img {
   margin: 1rem 0;
 }
 .starSection .headerSec .starsecBtn .btnStar {
-  padding: 20px 40px;
-  width: 160px;
+  padding: 1rem 2rem;
   background-color: transparent;
   border: 0.5px solid #5e4a49;
   cursor: pointer;
+}
+.starSection .headerSec .starsecBtn .btnStar p {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
 }
 .starSection .headerSec .starsecBtn .btnStar:hover {
   background-color: #b99692;
@@ -170,14 +179,66 @@ header nav .logo img {
   color: white;
 }
 .starSection .photoSec {
-  border: 1px green solid;
   display: flex;
   width: 100%;
   gap: 10px;
+  height: 400px;
+  margin: 4rem 0;
 }
 .starSection .photoSec .photo {
-  border: 1px red solid;
   width: 25%;
+  height: 100%;
+}
+.starSection .photoSec .photo.firstpic {
+  background-image: url(../resources/landing/1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.starSection .photoSec .photo.secondpic {
+  background-image: url(../resources/landing/2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.starSection .photoSec .photo.thirdpic {
+  background-image: url(../resources/landing/3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.starSection .photoSec .photo.fourthpic {
+  background-image: url(../resources/landing/4.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.starSection .testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0;
+}
+.starSection .testimonials .icon {
+  padding: 1rem;
+}
+.starSection .testimonials .singleTest {
+  width: 57%;
+  text-align: center;
+  padding: 1rem 0;
+}
+.starSection .testimonials .singleTest p {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+}
+.starSection .testimonials .testName {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  width: 350px;
+}
+.starSection .testimonials .testName .name p {
+  font-family: "Magenta";
+  font-size: 54px;
 }
 .starSection .hbutton {
   color: #5e4a49;

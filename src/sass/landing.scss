@@ -6,6 +6,10 @@
   font-family: "Whiteflower";
   src: url(../fonts/WhiteFlower/WhiteFlower.otf) format('opentype');
 }
+@font-face {
+  font-family: "Magenta";
+  src: url(../fonts/magenta-2/MagentaDemo.ttf) format('truetype');
+}
 //*****************************colors**********************************//
 //MAIN
 $brand: #191919;
@@ -202,11 +206,16 @@ header {
     .starsecBtn{
       margin: 1rem 0;
       .btnStar {
-        padding: 20px 40px;
-        width: 160px;
+        padding: 1rem 2rem;
         background-color: transparent;
         border: 0.5px solid #5e4a49;
         cursor: pointer;
+        p{
+          font-family: "Baskervville", serif;
+          font-weight: 400;
+          font-style: normal;
+          font-size: $button
+        }
   
         &:hover {
           background-color: $darkpink;
@@ -219,14 +228,80 @@ header {
   }
 
   .photoSec{
-  border: 1px green solid;
   display: flex;
   width: 100%;
   gap: 10px;
+  height: 400px;
+  margin: 4rem 0;
+
     .photo{
-      border: 1px red solid;
       width: 25%;
+      height: 100%;
+      // img{
+      //   width: 100%;
+      //   min-height: 100%;
+      // }
+      &.firstpic{
+        background-image: url(../resources/landing/1.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      &.secondpic{
+        background-image: url(../resources/landing/2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      &.thirdpic{
+        background-image: url(../resources/landing/3.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      &.fourthpic{
+        background-image: url(../resources/landing/4.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
     }
+  }
+  
+  .testimonials{
+    // border: 1px green solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+    .icon{
+      // border: 1px red solid;
+      padding: 1rem;
+    }
+    .singleTest{
+      // border: 1px red solid;
+      width: 57%;
+      text-align: center;
+      padding: 1rem 0;
+      p{
+        font-family: "Baskervville", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: $h5;
+      }
+    }
+    .testName{
+      // border: 1px red solid;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+      width: 350px;
+
+      .name{
+        p{
+          font-family: "Magenta";
+          font-size: $signature;
+        }
+      }
+    }
+
   }
 
   .hbutton {
