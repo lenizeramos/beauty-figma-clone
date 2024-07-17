@@ -1,441 +1,428 @@
 @font-face {
-    font-family: "Avenir";
-    src: url(/fonts/Avenir/Avenir\ Regular.ttf) format("truetype");
+  font-family: "Avenir";
+  src: url(/fonts/Avenir/Avenir\ Regular.ttf) format("truetype");
 }
 @font-face {
-    font-family: "WhiteFlower";
-    src: url(/fonts/WhiteFlower/WhiteFlower.otf) format("opentype");
+  font-family: "WhiteFlower";
+  src: url(/fonts/WhiteFlower/WhiteFlower.otf) format("opentype");
 }
 
 //*****************************colors**********************************//
 //MAIN
-$brand:#191919;
-$boldmain:#725A58;
-$accent:#E3B6B1;
+$brand: #191919;
+$boldmain: #725a58;
+$accent: #e3b6b1;
 //LIGHT NEUTRAL
-$lightpink:#FAE9E7;
-$palewhite :#F8F6F4;
-$paperwhite:#FBFAFA;
+$lightpink: #fae9e7;
+$palewhite: #f8f6f4;
+$paperwhite: #fbfafa;
 //DARK NEUTRAL
-$midgrey:#A3A3A3;
-$darkgrey:#535353;
-$black:#191919;
+$midgrey: #a3a3a3;
+$darkgrey: #535353;
+$black: #191919;
 //COMPLEMENTARY
-$darkpink:#B99692;
-$brown:#A06D67;
+$darkpink: #b99692;
+$brown: #a06d67;
 
 //***************************font-sizes********************************//
-$h1:80px;
-$h2:68px;
-$h3:48px;
-$h4:36px;
-$h5:32px;
-$h6:24px;
-$button:20px;
-$button_sm:18px;
-$body:18px;
-$body_sm:16px;
-$caption:14px;
-$signature:54px;
+$h1: 80px;
+$h2: 68px;
+$h3: 48px;
+$h4: 36px;
+$h5: 32px;
+$h6: 24px;
+$button: 20px;
+$button_sm: 18px;
+$body: 18px;
+$body_sm: 16px;
+$caption: 14px;
+$signature: 54px;
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-header{
-        position: sticky;
-        position: -webkit-sticky;
-        top: 0px;
-        background-color: $palewhite;
-    nav{
-        .navbar{
-            padding: 1rem;
-            transition: padding 1.5s ease;
-            list-style: none;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            li{
-                width: 100%;
-                text-align: center;
-                a{
-                    text-decoration: none;
-                    padding: 0 1rem;
-                    p{
-                        font-family: "Baskervville SC", serif;
-                        font-weight: 400;
-                        font-style: normal;
-                        &:not(.classes){
-                            border-right: 1px $boldmain solid;
-                        }
-                    }
-                    p,i{
-                        font-size: $button;
-                        color: $boldmain;
-                    }
-                }
+header {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0px;
+  background-color: $palewhite;
+  nav {
+    .navbar {
+      padding: 1rem;
+      transition: padding 1.5s ease;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      li {
+        width: 100%;
+        text-align: center;
+        a {
+          text-decoration: none;
+          padding: 0 1rem;
+          p {
+            font-family: "Baskervville SC", serif;
+            font-weight: 400;
+            font-style: normal;
+            &:not(.classes) {
+              border-right: 1px $boldmain solid;
             }
+          }
+          p,
+          i {
+            font-size: $button;
+            color: $boldmain;
+          }
         }
-        .logo{
-            img{
-                width: 100%;
-                transition: width 1.5s ease;
-            }
-        }
+      }
     }
+    .logo {
+      img {
+        width: 100%;
+        transition: width 1.5s ease;
+      }
+    }
+  }
 }
 
-.sidebar{
-        position: fixed;
-        top: 0;
-        right: 0;
-        height: 100vh;
-        width: 250px;
-        z-index: 999;
-        background-color: $palewhite;
-        display: none;
-        transition: display 2s ease-in-out;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        list-style: none;
-        li{
-            width: 100%;
-            &:hover{
-                background-color: $accent;
-                transition: background-color 0.5s ease;
-            }
-            a{
-                text-decoration: none;
-                padding: 0 1rem;
-                width: 100%;
-                p{
-                    font-family: "Baskervville SC", serif;
-                    font-weight: 400;
-                    font-style: normal;
-                }
-                p,i{
-                    font-size: $button;
-                    color: $boldmain;
-                }
-            }
-        }
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: $palewhite;
+  display: none;
+  transition: display 2s ease-in-out;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  list-style: none;
+  li {
+    width: 100%;
+    &:hover {
+      background-color: $accent;
+      transition: background-color 0.5s ease;
     }
-
-.smallNavBar{
-    padding: 0.5rem 1rem;
-    transition: padding 1.5s ease;
-    .logo{
-        img{
-            width: 40%;
-            transition: width 1.5s ease;
-        }
+    a {
+      text-decoration: none;
+      padding: 0 1rem;
+      width: 100%;
+      p {
+        font-family: "Baskervville SC", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      p,
+      i {
+        font-size: $button;
+        color: $boldmain;
+      }
     }
+  }
 }
 
+.smallNavBar {
+  padding: 0.5rem 1rem;
+  transition: padding 1.5s ease;
+  .logo {
+    img {
+      width: 40%;
+      transition: width 1.5s ease;
+    }
+  }
+}
 
-.showonMobile,.opentagSB{
-    display: none;
+.showonMobile,
+.opentagSB {
+  display: none;
 }
 
 // START FORM SERVICES
 
 .form-services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  margin-bottom: 4rem;
+
+  // font family, size and color for h1
+  h1 {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 80px;
+    letter-spacing: 5px;
+    color: #5e4a49;
+  }
+
+  // font family, size and color for h5
+  h5 {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 28px;
+  }
+
+  // font family, size and color for button text
+  .hbutton {
+    color: #5e4a49;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 14px;
+  }
+
+  .text-body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+  }
+
+  .contact-us {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100vw;
-    margin-bottom: 4rem;
+    margin: 4rem auto;
+    width: 40%;
 
-    // font family, size and color for h1
     h1 {
-        font-family: "Libre Baskerville", serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 80px;
-        letter-spacing: 5px;
-        color: #5E4A49;
+      margin-bottom: 1rem;
+      text-align: center;
     }
 
-    // font family, size and color for h5
-    h5 {
-        font-family: "Libre Baskerville", serif;
-        font-weight: 100;
-        font-style: normal;
-        font-size: 28px;
+    p {
+      text-align: center;
+      padding: 0 3rem;
     }
+  }
 
-    // font family, size and color for button text
-    .hbutton {
-        color: #5E4A49;
-        font-family: "Libre Baskerville", serif;
-        font-weight: 100;
-        font-style: normal;
-        font-size: 14px;
-    }
+  .form-services-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    background-color: #fae9e7;
+    width: 50%;
 
-    .text-body {
-        font-family: "Montserrat", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 14px;
-    }
+    .form-header {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-bottom: 2rem;
+      cursor: pointer;
 
-    .contact-us {
+      .header-opt {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 4rem auto;
-        width: 40%;
+        justify-content: center;
+        width: 100%;
+        padding: 0.5rem 2rem;
+        border-bottom: 1px solid black;
+      }
 
-        h1 {
-            margin-bottom: 1rem;
-            text-align: center;
-        } 
+      .blur {
+        color: gray;
+        border-bottom: 0.5px solid gray;
+      }
+    }
 
-        p {
-            text-align: center;
-            padding: 0 3rem;
+    .form-option-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+
+      .form-event-options {
+        width: 100%;
+        margin-bottom: 2rem;
+
+        .header-type {
+          margin-bottom: 1rem;
         }
-        
-    }
 
-    .form-services-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 3rem;
-        background-color: #FAE9E7;
-        width: 50%;
+        .event-opts {
+          max-width: 100%;
+          min-width: 70%;
+          display: flex;
+          justify-content: space-between;
 
-        .form-header {
+          .eve-options {
+            width: 32%;
             display: flex;
-            justify-content: center;
-            width: 100%;
-            margin-bottom: 2rem;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 8px;
             cursor: pointer;
 
-            .header-opt {
-                display: flex;
-                justify-content: center;
-                width: 100%;
-                padding: 0.5rem 2rem;
-                border-bottom: 1px solid black;
+            img {
+              width: 20px;
+              height: 20px;
             }
 
-            .blur {
-                color: gray;
-                border-bottom: 0.5px solid gray;
+            .hide {
+              visibility: hidden;
             }
+          }
         }
+      }
 
-        .form-option-container {
+      .form-date-time-options {
+        width: 100%;
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .fr {
+          width: 46%;
+          display: flex;
+          flex-direction: column;
+
+          .input-event {
+            padding: 8px;
+            cursor: pointer;
+            margin-bottom: 0.5rem;
+          }
+
+          .input-event:focus {
+            outline: none;
+          }
+
+          .checked {
             display: flex;
-            flex-direction: column;
-            width: 100%;
             align-items: center;
-            
-            .form-event-options{
-                width: 100%;
-                margin-bottom: 2rem;
 
-                .header-type {
-                    margin-bottom: 1rem;
-                }
-                
-                .event-opts {
-                    max-width: 100%;
-                    min-width: 70%;
-                    display: flex;
-                    justify-content: space-between;
-
-                    .eve-options {
-                        width: 32%;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        background-color: white; 
-                        padding: 8px;
-                        cursor: pointer;
-
-                        img {
-                            width: 20px;
-                            height: 20px;
-                        }
-
-                        .hide {
-                            visibility: hidden;
-                        }
-                    }
-                }
-
+            .check-event {
+              cursor: pointer;
+              width: 20px;
+              height: 20px;
+              padding: 5px;
+              accent-color: #b99692;
             }
 
-            .form-date-time-options {
-                width: 100%;
-                margin-bottom: 2rem;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-
-                .fr {
-                    width: 46%;
-                    display: flex;
-                    flex-direction: column;
-                    
-                    .input-event {
-                        padding: 8px;
-                        cursor: pointer;
-                        margin-bottom: 0.5rem;
-                    }
-
-                    .input-event:focus {
-                        outline: none;
-                    }
-
-                    .checked {
-                        display: flex;
-                        align-items: center;
-
-
-                        .check-event {
-                            cursor: pointer;
-                            width: 20px;
-                            height: 20px; 
-                            padding: 5px;
-                            accent-color: #B99692;
-                        }
-
-                        label {
-                            padding-left: 5px;
-                        }
-                    }
-                }
-                
-                .hdr {
-                    margin-bottom: 1rem;
-                }
-
+            label {
+              padding-left: 5px;
             }
-
-            .contact-form {
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-
-                .contact-form-name {
-                    margin-bottom: 1rem;
-                    font-family: "Libre Baskerville", serif;
-                    font-weight: 100;
-                    font-style: normal;
-                    font-size: 28px;
-                }
-
-                .input-name {
-                    padding: 8px;
-                    margin-bottom: 2rem;
-                    border: 1px solid #B99692;
-                }
-
-                .input-name:focus {
-                    outline: none;
-                }
-
-                .contact-header {
-                    margin-bottom: 1rem;
-                }
-
-                .phone-opt {
-                    display: block;
-                    margin: 0.5rem 0;
-
-                    .hide {
-                        display: none;
-                    }
-                }
-
-                .contact-form-phone {
-                    display: flex;
-                    flex-direction: column;
-                    margin-bottom: 2rem;
-
-                    .label-opt {
-                        display: flex;
-                        align-items: center;
-                        gap: 10px;
-
-                        .input-color {
-                            accent-color: #B99692;
-                        }
-                    }
-
-                    .inpt {
-                        width: 100%;
-                        padding: 8px;
-                        margin-top: 0.5rem;
-                        border: 1px solid #B99692;
-                        
-                    }
-
-                    .inpt:focus {
-                        outline: none;
-                    }
-                }
-
-                .time-call-header {
-                    margin-bottom: 1rem;
-                }
-
-                .form-time-call {
-                    display: flex;
-                    flex-direction: column;
-                    margin-bottom: 2rem;
-
-                    .time-opt {
-                        display: flex;
-                        align-items: center;
-                        gap: 10px;
-
-                        .label-time-opt {
-                            margin: 0.5rem 0;
-                        }
-
-                        .input-color {
-                            accent-color: #B99692;
-                        }
-
-                    }
-
-                }
-
-            }
-
-            .button-next {
-                padding: 20px 40px;
-                width: 160px;
-                background-color: transparent;
-                border: 0.5px solid #5E4A49;
-                cursor: pointer;
-
-                &:hover {
-                    background-color: #B99692;
-                    border: 1px solid #B99692;
-                    color: white;
-                }
-            }
-    
+          }
         }
 
+        .hdr {
+          margin-bottom: 1rem;
+        }
+      }
 
+      .contact-form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .contact-form-name {
+          margin-bottom: 1rem;
+          font-family: "Libre Baskerville", serif;
+          font-weight: 100;
+          font-style: normal;
+          font-size: 28px;
+        }
+
+        .input-name {
+          padding: 8px;
+          margin-bottom: 2rem;
+          border: 1px solid #b99692;
+        }
+
+        .input-name:focus {
+          outline: none;
+        }
+
+        .contact-header {
+          margin-bottom: 1rem;
+        }
+
+        .phone-opt {
+          display: block;
+          margin: 0.5rem 0;
+
+          .hide {
+            display: none;
+          }
+        }
+
+        .contact-form-phone {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 2rem;
+
+          .label-opt {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            .input-color {
+              accent-color: #b99692;
+            }
+          }
+
+          .inpt {
+            width: 100%;
+            padding: 8px;
+            margin-top: 0.5rem;
+            border: 1px solid #b99692;
+          }
+
+          .inpt:focus {
+            outline: none;
+          }
+        }
+
+        .time-call-header {
+          margin-bottom: 1rem;
+        }
+
+        .form-time-call {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 2rem;
+
+          .time-opt {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            .label-time-opt {
+              margin: 0.5rem 0;
+            }
+
+            .input-color {
+              accent-color: #b99692;
+            }
+          }
+        }
+      }
+
+      .button-next {
+        padding: 20px 40px;
+        width: 160px;
+        background-color: transparent;
+        border: 0.5px solid #5e4a49;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #b99692;
+          border: 1px solid #b99692;
+          color: white;
+        }
+      }
     }
-
-    
+  }
 }
-
 
 // @media only screen and (max-width: 600px) {
 
@@ -452,96 +439,142 @@ header{
 
 // END FORM SERVICES
 
+// BEGIN MESSAGE BUTTON
 
+#side_bar_message_container {
+  position: fixed;
+  right: 0%;
+  bottom: 15%;
+
+  .message_button {
+    background-color: #b99692;
+    padding: 0.5rem;
+    border: none;
+  }
+  .button_container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 70%;
+
+    .instagram_button {
+      background-color: #c13ed4;
+      padding: 0.5rem;
+      border: none;
+    }
+    .call_button {
+      background-color: #6aa2ba;
+      padding: 0.5rem;
+      border: none;
+    }
+    .whatsapp_button {
+      background-color: #25D366;
+      padding: 0.5rem;
+      border: none;
+    }
+    .close_button {
+      background-color: #191919;
+      padding: 0.5rem;
+      border: none;
+      
+    }
+  }
+}
+
+.display_none {
+  display: none !important;
+}
+// END MESSAGE BUTTON
 
 //FOOTER
-.IconsContainer{
-    text-align: center;   
-    width: 250px;
-    height: 250px;
-    margin: auto;
-    padding-top: 15px;    
-        .footerParagraph{
-        font-size: 14px;
-        margin: 3px 0;
-    }
-    .ContactIcons{
-        margin-top: 8px;
-        margin-left: 5px;
-        margin-right: 5px;
-    }
+.IconsContainer {
+  text-align: center;
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  padding-top: 15px;
+  .footerParagraph {
+    font-size: 14px;
+    margin: 3px 0;
+  }
+  .ContactIcons {
+    margin-top: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
 }
 
-@mixin FooterNavContainer(){
-    @media only screen and (max-width: 600px){
-        width: 95%;
-        .FooterNavList{
-            height: 150px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            flex-wrap: wrap;
-        }
+@mixin FooterNavContainer() {
+  @media only screen and (max-width: 600px) {
+    width: 95%;
+    .FooterNavList {
+      height: 150px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
     }
-    @media only screen and (min-width: 601px){
-        width: 80%;
-        .FooterNavList{
-            display: flex;
-            justify-content: space-around;
-        }
+  }
+  @media only screen and (min-width: 601px) {
+    width: 80%;
+    .FooterNavList {
+      display: flex;
+      justify-content: space-around;
     }
+  }
 }
 
-
-.FooterNavContainer{
-    @include FooterNavContainer();
-    margin: auto;
-    .FooterNav{
-        border-top: 1px black solid;
-        border-bottom: 1px black solid;
-        .FooterNavList{
-            list-style: none;
-//            display: flex;
-//            justify-content: space-around;
-            font-size: 20px;
-            padding: 15px 0;
-            .FooterNavListStyle1{
-                font-family: "Baskervville SC", serif;
-                text-decoration: none;
-                color: black;
-            }
-            .FooterNavListStyle2{
-                color: black;
-            }
-        }
+.FooterNavContainer {
+  @include FooterNavContainer();
+  margin: auto;
+  .FooterNav {
+    border-top: 1px black solid;
+    border-bottom: 1px black solid;
+    .FooterNavList {
+      list-style: none;
+      //            display: flex;
+      //            justify-content: space-around;
+      font-size: 20px;
+      padding: 15px 0;
+      .FooterNavListStyle1 {
+        font-family: "Baskervville SC", serif;
+        text-decoration: none;
+        color: black;
+      }
+      .FooterNavListStyle2 {
+        color: black;
+      }
     }
+  }
 }
 
-.Copyright{
-    text-align: center;
-    margin: 25px 0 40px 0;
+.Copyright {
+  text-align: center;
+  margin: 25px 0 40px 0;
 }
 
 //Tablet
-@media only screen and (max-width: 800px){
-    .showonMobile,.opentagSB{
-        display: block;
-    }
-    .hideonMobile{
-        display: none;
-    }
+@media only screen and (max-width: 800px) {
+  .showonMobile,
+  .opentagSB {
+    display: block;
+  }
+  .hideonMobile {
+    display: none;
+  }
 }
 
 //Mobile
-@media only screen and (max-width: 600px){
-    .sidebar{
-        width: 100%;
-    }
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    width: 100%;
+  }
 }
 
 //GOOGLE FONTS -BASKERVVILE-
 .baskervville-sc-regular {
-    font-family: "Baskervville SC", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
+  font-family: "Baskervville SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}

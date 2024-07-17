@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/wedForm.css" />
+    <script
+      src="https://kit.fontawesome.com/f8be10a101.js/"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul class="sidebar" id="sidebar">
+          <li id="closetagSB"><i class="fa-solid fa-xmark"></i></li>
+          <li>
+            <a href=""><p>Home</p></a>
+          </li>
+          <li>
+            <a href=""><p>My Work</p></a>
+          </li>
+          <li>
+            <a href=""><p>Services</p></a>
+          </li>
+          <li>
+            <a href=""><p class="classes">Classes</p></a>
+          </li>
+          <li>
+            <a href=""><p>Beauty Tips</p></a>
+          </li>
+          <li>
+            <a href=""><p>About</p></a>
+          </li>
+          <li>
+            <a href=""><p>Contact</p></a>
+          </li>
+        </ul>
+
+        <ul class="navbar" id="navbar">
+          <li class="hideonMobile">
+            <a href="">
+              <p>Home</p>
+            </a>
+          </li>
+          <li class="hideonMobile">
+            <a href="">
+              <p>My Work</p>
+            </a>
+          </li>
+          <li class="hideonMobile">
+            <a href="">
+              <p>Services</p>
+            </a>
+          </li>
+          <li class="hideonMobile">
+            <a href="">
+              <p class="classes">Classes</p>
+            </a>
+          </li>
+          <li class="opentagSB" id="opentagSB">
+            <i class="fa-solid fa-bars"></i>
+          </li>
+          <li class="logo">
+            <img
+              src="/resources/landing/Frame 144.svg"
+              alt="Carla Beauty Logo"
+            />
+          </li>
+          <li class="hideonMobile">
+            <a href="">
+              <p>Beauty Tips</p>
+            </a>
+          </li>
+          <li class="hideonMobile">
+            <a href="">
+              <p>About</p>
+            </a>
+          </li>
+          <li class="hideonMobile">
+            <a href="">
+              <p>Contact</p>
+            </a>
+          </li>
+          <li>
+            <i class="fa-brands fa-instagram"></i>
+          </li>
+          <!-- <li class="showonMobile">
+            <i class="fa-brands fa-instagram"></i>
+          </li> -->
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- <div class="dummyContainer">
+        <p>This is a dummy container</p>
+      </div> -->
+      <div class="mainContainer">
+        <div class="container">
+          <div class="headContent">
+            <div class="servToClass">
+              <div class="headbtn">
+                <a href="#">Services</a>
+              </div>
+              <div class="headbtn classbtn">
+                <a href="#">Classes</a>
+              </div>
+            </div>
+            <div class="backbtn">
+              <a href="#">
+                <img src="/resources/wedForm/material-symbols-light_arrow-back-ios.svg" alt="backArrow">
+                Back
+              </a>
+            </div>
+          </div>
+          <div class="formContainer">
+            <div class="row service">
+              <label for="serviceType" class="sectionTitle">Bridal Service</label>
+              <div class="checkService">
+                <div class="btnService">
+                  <label for="makeup">Makeup</label>
+                  <input type="checkbox" name="makeup" id="makeup" class="checkboxService">
+                </div>
+                <div class="btnService">
+                  <label for="hairstyle">Hairstyle</label>
+                  <input type="checkbox" name="hairstyle" id="hairstyle" class="checkboxService">
+                </div>
+              </div>
+            </div>
+            <div class="row location">
+              <label for="searchBar" class="sectionTitle">Event Location</label>
+              <input type="text" name="searchBar" id="searchBar" placeholder="Search address">
+              <div class="checkbtn">
+                <input type="checkbox" name="notdecided" class="checkboxService">
+                <label for="notdecided">Not decided</label>
+              </div>
+            </div>
+            <div class="row premium">
+              <label for="premiumService" class="sectionTitle">Premium Service</label>
+              <ul>
+                <li>
+                  <input type="checkbox" name="deepskin" id="deepskin" class="checkboxService">
+                  <label for="deepskin">Deep skin cleansing</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="hydromass" id="hydromass" class="checkboxService">
+                  <label for="hydromass">Hydromassage</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="wax" id="wax" class="checkboxService">
+                  <label for="wax">Waxing</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="relaxmass" id="relaxmass" class="checkboxService">
+                  <label for="relaxmass">Relaxing massage</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="bleach" id="bleach" class="checkboxService">
+                  <label for="bleach">Bleach body hair</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="hair_moist" id="hair_moist" class="checkboxService">
+                  <label for="hair_moist">Hair Moisture</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="fh_Spa" id="fh_Spa" class="checkboxService">
+                  <label for="fh_Spa">Foot and hand SPA</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="gomm" id="gomm" class="checkboxService">
+                  <label for="gomm">Gommage (body exfoliation and hydration)</label>
+                </li>
+              </ul>
+            </div>
+            <div class="row extraService">
+              <label for="extraService" class="sectionTitle">Anyone else need service?</label>
+              <div class="rowExtra">
+                <div class="client">
+                  <p>Groom</p>
+                  <div class="counter">
+                    <input type="button" id="minus_btn" value=" - ">
+                    <input type="text" id="counterRes" value="0">
+                    <input type="button" id="add_btn" value=" + ">
+                  </div>
+                </div>
+                <div class="service">
+                  <div class="makeup">
+                    <input type="checkbox" name="makeupGroom" id="makeupGroom" class="checkboxService">
+                  <label for="makeupGroom">Makeup</label>
+                  </div>
+                </div>
+              </div>
+              <div class="rowExtra">
+                <div class="client">
+                  <p>Braidesmaid</p>
+                  <div class="counter">
+                    <input type="button" id="minus_btn" value=" - ">
+                    <input type="text" id="counterRes" value="0">
+                    <input type="button" id="add_btn" value=" + ">
+                  </div>
+                </div>
+                <div class="service">
+                  <div class="makeup">
+                    <input type="checkbox" name="makeupBM" id="makeupBM" class="checkboxService">
+                  <label for="makeupBM">Makeup</label>
+                  </div>
+                  <div class="hairstyle">
+                    <input type="checkbox" name="hairstyleBM" id="hairstyleBM" class="checkboxService">
+                  <label for="hairstyleBM">Hairstyle</label>
+                  </div>
+                </div>
+              </div>
+              <div class="rowExtra">
+                <div class="client">
+                  <p>Flower Girl</p>
+                  <div class="counter">
+                    <input type="button" id="minus_btn" value=" - ">
+                    <input type="text" id="counterRes" value="0">
+                    <input type="button" id="add_btn" value=" + ">
+                  </div>
+                </div>
+                <div class="service">
+                  <div class="makeup">
+                    <input type="checkbox" name="makeupFG" id="makeupFG" class="checkboxService">
+                  <label for="makeupFG">Makeup</label>
+                  </div>
+                  <div class="hairstyle">
+                    <input type="checkbox" name="hairstyleFG" id="hairstyleFG" class="checkboxService">
+                  <label for="hairstyleFG">Hairstyle</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row finalMessage">
+              <label for="finalMessage" class="sectionTitle">Anything you want us to know?</label>
+              <div class="message">
+                <textarea name="finalMessage" id="finalMessage" placeholder="Your message"></textarea>
+              </div>
+            </div>
+            <div class="submitButton">
+              <input type="submit" name="submitBtn" value="Submit">
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="FooterContainer">
+        <div class="IconsContainer">
+          <img src="../../resources/landing/CarlaBeautyLogo.svg" alt="CB Logo">
+          <p class="footerParagraph">Expert makeup and hairstyle studio</p>
+          <img src="../../resources/landing/CallLogo.svg" alt="Call" class="ContactIcons">
+          <img src="../../resources/landing/WhatsApp.svg" alt="WhatsApp" class="ContactIcons">
+          <img src="../../resources/landing/InstagramLogo.svg" alt="Instagram" class="ContactIcons">
+        </div>
+        <div class="FooterNavContainer">
+          <nav class="FooterNav">
+            <ul class="FooterNavList">
+              <a href="#" class="FooterNavListStyle1"><li>Home</li>
+              <a href="#" class="FooterNavListStyle1"><li>My Work</li></a>
+              <a href="#" class="FooterNavListStyle1"><li>Services</li></a>
+              <a href="#" class="FooterNavListStyle1"><li>Classes</li></a>
+              <a href="#" class="FooterNavListStyle1"><li>Beauty Tips</li></a>
+              <a href="#" class="FooterNavListStyle1"><li>About</li></a>
+              <a href="#" class="FooterNavListStyle2"><li>Contact</li></a>
+            </ul>
+          </nav>
+        </div>
+        <div class="Copyright">
+          <p>Copyright 2024, Carla Beauty</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="/src/scriptFiles/wedForm.js"></script>
+
+</html>
