@@ -484,11 +484,224 @@
               <div class="button">
                 <button class="button-next hbutton">Next</button>
               </div>
+
             </div>
           </div>
 
-          <div class="form-option-container" id="classes_form">
+          <div class="form-option-container display_none" id="classes_form">
+            <form class="contact-form">
+              <div class="form-event-options">
+                <div class="header-type">
+                  <h5 class="h5">Class</h5>
+                </div>
 
+                <div class="event-opts">
+                  <div class="eve-options" id="wedd-opt">
+                    <p class="button hbutton">1-on1 Master Subscription</p>
+                    <img
+                      class="checked hide"
+                      id="wedd-check"
+                      src="resources/landing/checked-option-form.png"
+                    />
+                  </div>
+
+                  <div class="eve-options" id="party-opt">
+                    <p class="button hbutton">1-day Makeup workshop</p>
+                    <img
+                      class="checked hide"
+                      id="party-check"
+                      src="resources/landing/checked-option-form.png"
+                    />
+                  </div>
+
+                  <div class="eve-options" id="photo-opt">
+                    <p class="button hbutton">Self-Makeup beginner class</p>
+                    <img
+                      class="checked hide"
+                      id="photo-check"
+                      src="resources/landing/checked-option-form.png"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Div for date and time options -->
+              <div class="form-date-time-options">
+                <div class="date-options fr fr100">
+                  <div class="header-date hdr">
+                    <h5>Class Date</h5>
+                    <p class="text-body">
+                      When you would like to take your class?
+                    </p>
+                  </div>
+                  <input
+                    type="text"
+                    class="input-event text-body date"
+                    id="event-date"
+                    name="event-date"
+                    placeholder="Select Date"
+                    onfocus="(this.type='date')"
+                    onblur="(this.type='text')"
+                    min="2024-01-01"
+                    max="2024-12-31"
+                  />
+
+                  <div class="checked">
+                    <input
+                      type="checkbox"
+                      class="check-event text-body"
+                      id="date"
+                      name="date"
+                    />
+                    <label for="date" class="text-body">Not decided</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-form-name">
+                <label for="finalMessage" class="h5"
+                  >Any questions?</label
+                >
+                <div class="message">
+                  <textarea
+                    name="finalMessage"
+                    id="finalMessage"
+                    placeholder="Your message"
+                  ></textarea>
+                </div>
+              </div>
+
+              <div class="contact-form-name">
+                <label for="contact-name" class="h5">Name</label>
+              </div>
+              <input
+                  type="text"
+                  class="input-name text-body"
+                  name="contact-name"
+                  id="contact-name"
+                  placeholder="Your name"
+                />
+
+              <div class="contact-header">
+                <h5 class="h5">Contact</h5>
+              </div>
+
+              <div class="contact-form-phone">
+                <div class="phone-opt">
+                  <div class="label-opt">
+                    <input
+                      type="radio"
+                      class="input-color"
+                      name="contact-option"
+                      value="call"
+                      id="call"
+                    />
+                    <label for="call" class="text-body">Call</label>
+                  </div>
+
+                  <div class="number-form hide" id="call-check">
+                    <input
+                      type="tel"
+                      class="number text-body inpt"
+                      id="number"
+                      name="number"
+                      placeholder="Your mobile number"
+                      pattern="[0-9]{3}"
+                      aria-label="3-digit area code"
+                      size="2"
+                      maxlength="10"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="phone-opt">
+                  <div class="label-opt">
+                    <input
+                      type="radio"
+                      class="input-color"
+                      name="contact-option"
+                      value="whatsapp"
+                      id="whatsapp"
+                    />
+                    <label for="whatsapp" class="text-body">Whatsapp</label>
+                  </div>
+
+                  <div class="number-form hide" id="whats-check">
+                    <input
+                      type="tel"
+                      class="whats text-body inpt"
+                      id="whats"
+                      name="whats"
+                      placeholder="Your Whatsaap number"
+                      pattern="[0-9]{3}"
+                      aria-label="3-digit area code"
+                      size="2"
+                      maxlength="10"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="phone-opt">
+                  <div class="label-opt">
+                    <input
+                      type="radio"
+                      class="input-color"
+                      name="contact-option"
+                      value="sms"
+                      id="sms"
+                    />
+                    <label for="sms" class="text-body">SMS</label>
+                  </div>
+
+                  <div class="number-form hide" id="sms-check">
+                    <input
+                      type="tel"
+                      class="sms text-body inpt"
+                      id="sms"
+                      name="sms"
+                      placeholder="Your mobile number"
+                      pattern="[0-9]{3}"
+                      aria-label="3-digit area code"
+                      size="2"
+                      maxlength="10"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="phone-opt">
+                  <div class="label-opt">
+                    <input
+                      type="radio"
+                      class="input-color"
+                      name="contact-option"
+                      value="email"
+                      id="email"
+                    />
+                    <label for="email" class="text-body">Email</label>
+                  </div>
+
+                  <div class="number-form hide" id="email-check">
+                    <input
+                      type="email"
+                      class="email text-body inpt"
+                      id="email"
+                      name="email"
+                      placeholder="Your email"
+                      pattern=".+@example\.com"
+                      size="30"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="submitButton">
+                <input type="submit" name="submitBtn" value="Submit" />
+              </div>
+            </form>
           </div>
         </div>
       </div>
