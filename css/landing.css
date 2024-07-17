@@ -16,7 +16,7 @@ header {
   position: sticky;
   position: -webkit-sticky;
   top: 0px;
-  background-color: #F8F6F4;
+  background-color: #f8f6f4;
 }
 header nav .navbar {
   padding: 1rem;
@@ -40,11 +40,12 @@ header nav .navbar li a p {
   font-style: normal;
 }
 header nav .navbar li a p:not(.classes) {
-  border-right: 1px #725A58 solid;
+  border-right: 1px #725a58 solid;
 }
-header nav .navbar li a p, header nav .navbar li a i {
+header nav .navbar li a p,
+header nav .navbar li a i {
   font-size: 20px;
-  color: #725A58;
+  color: #725a58;
 }
 header nav .logo img {
   width: 100%;
@@ -58,7 +59,7 @@ header nav .logo img {
   height: 100vh;
   width: 250px;
   z-index: 999;
-  background-color: #F8F6F4;
+  background-color: #f8f6f4;
   display: none;
   transition: display 2s ease-in-out;
   flex-direction: column;
@@ -70,7 +71,7 @@ header nav .logo img {
   width: 100%;
 }
 .sidebar li:hover {
-  background-color: #E3B6B1;
+  background-color: #e3b6b1;
   transition: background-color 0.5s ease;
 }
 .sidebar li a {
@@ -83,9 +84,10 @@ header nav .logo img {
   font-weight: 400;
   font-style: normal;
 }
-.sidebar li a p, .sidebar li a i {
+.sidebar li a p,
+.sidebar li a i {
   font-size: 20px;
-  color: #725A58;
+  color: #725a58;
 }
 
 .smallNavBar {
@@ -97,7 +99,8 @@ header nav .logo img {
   transition: width 1.5s ease;
 }
 
-.showonMobile, .opentagSB {
+.showonMobile,
+.opentagSB {
   display: none;
 }
 
@@ -114,7 +117,7 @@ header nav .logo img {
   font-style: normal;
   font-size: 80px;
   letter-spacing: 5px;
-  color: #5E4A49;
+  color: #5e4a49;
 }
 .form-services h5 {
   font-family: "Libre Baskerville", serif;
@@ -123,7 +126,7 @@ header nav .logo img {
   font-size: 28px;
 }
 .form-services .hbutton {
-  color: #5E4A49;
+  color: #5e4a49;
   font-family: "Libre Baskerville", serif;
   font-weight: 100;
   font-style: normal;
@@ -156,7 +159,7 @@ header nav .logo img {
   flex-direction: column;
   align-items: center;
   padding: 3rem;
-  background-color: #FAE9E7;
+  background-color: #fae9e7;
   width: 50%;
 }
 .form-services .form-services-container .form-header {
@@ -241,7 +244,7 @@ header nav .logo img {
   width: 20px;
   height: 20px;
   padding: 5px;
-  accent-color: #B99692;
+  accent-color: #b99692;
 }
 .form-services .form-services-container .form-option-container .form-date-time-options .fr .checked label {
   padding-left: 5px;
@@ -264,7 +267,7 @@ header nav .logo img {
 .form-services .form-services-container .form-option-container .contact-form .input-name {
   padding: 8px;
   margin-bottom: 2rem;
-  border: 1px solid #B99692;
+  border: 1px solid #b99692;
 }
 .form-services .form-services-container .form-option-container .contact-form .input-name:focus {
   outline: none;
@@ -290,13 +293,13 @@ header nav .logo img {
   gap: 10px;
 }
 .form-services .form-services-container .form-option-container .contact-form .contact-form-phone .label-opt .input-color {
-  accent-color: #B99692;
+  accent-color: #b99692;
 }
 .form-services .form-services-container .form-option-container .contact-form .contact-form-phone .inpt {
   width: 100%;
   padding: 8px;
   margin-top: 0.5rem;
-  border: 1px solid #B99692;
+  border: 1px solid #b99692;
 }
 .form-services .form-services-container .form-option-container .contact-form .contact-form-phone .inpt:focus {
   outline: none;
@@ -318,19 +321,61 @@ header nav .logo img {
   margin: 0.5rem 0;
 }
 .form-services .form-services-container .form-option-container .contact-form .form-time-call .time-opt .input-color {
-  accent-color: #B99692;
+  accent-color: #b99692;
 }
 .form-services .form-services-container .form-option-container .button-next {
   padding: 20px 40px;
   width: 160px;
   background-color: transparent;
-  border: 0.5px solid #5E4A49;
+  border: 0.5px solid #5e4a49;
   cursor: pointer;
 }
 .form-services .form-services-container .form-option-container .button-next:hover {
-  background-color: #B99692;
-  border: 1px solid #B99692;
+  background-color: #b99692;
+  border: 1px solid #b99692;
   color: white;
+}
+
+#side_bar_message_container {
+  position: fixed;
+  right: 0%;
+  bottom: 15%;
+}
+#side_bar_message_container .message_button {
+  background-color: #b99692;
+  padding: 0.5rem;
+  border: none;
+}
+#side_bar_message_container .button_container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 70%;
+}
+#side_bar_message_container .button_container .instagram_button {
+  background-color: #c13ed4;
+  padding: 0.5rem;
+  border: none;
+}
+#side_bar_message_container .button_container .call_button {
+  background-color: #6aa2ba;
+  padding: 0.5rem;
+  border: none;
+}
+#side_bar_message_container .button_container .whatsapp_button {
+  background-color: #25D366;
+  padding: 0.5rem;
+  border: none;
+}
+#side_bar_message_container .button_container .close_button {
+  background-color: #191919;
+  padding: 0.5rem;
+  border: none;
+}
+
+.display_none {
+  display: none !important;
 }
 
 .IconsContainer {
@@ -398,7 +443,8 @@ header nav .logo img {
 }
 
 @media only screen and (max-width: 800px) {
-  .showonMobile, .opentagSB {
+  .showonMobile,
+  .opentagSB {
     display: block;
   }
   .hideonMobile {
