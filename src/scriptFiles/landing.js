@@ -85,3 +85,19 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 });
+
+
+// BEGIN MESSAGE BUTTON
+const message_button = document.getElementById("message_button")
+const button_container = document.getElementById("button_container")
+
+message_button.addEventListener("click", () => {
+  message_button.classList.add("display_none");
+  button_container.classList.remove("display_none")
+})
+
+button_container.addEventListener("click", () => {
+  button_container.classList.add("display_none");
+  message_button.classList.remove("display_none")
+})
+// END MESSAGE BUTTON
