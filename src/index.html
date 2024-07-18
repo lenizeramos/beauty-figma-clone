@@ -119,13 +119,19 @@
     </header>
 
     <main>
-        <!-- MainPicPage -->
+      <!-- MainPicPage -->
       <section class="mainPicSection">
         <div class="mainPicContainer">
-          <img src="resources/landing/2b23ea8143d3474490c0cd6c508cadb5 3.png" alt="MainPic" id="MainPic">
+          <img
+            src="resources/landing/2b23ea8143d3474490c0cd6c508cadb5 3.png"
+            alt="MainPic"
+            id="MainPic"
+          />
           <div id="mainSentenceContainer">
             <h1>Carla Beauty</h1>
-            <p>Vancouver's go-to makeup and hairstyle, with a Brazilian twist</p>
+            <p>
+              Vancouver's go-to makeup and hairstyle, with a Brazilian twist
+            </p>
             <button>Free Consultation</button>
           </div>
         </div>
@@ -191,107 +197,107 @@
           <div class="form-services-container">
             <!-- div for the headers -->
             <div class="form-header">
-              <div class="header-opt">
+              <div class="header-opt" id="services_label">
                 <h5 class="h5">Services</h5>
               </div>
-              <div class="header-opt blur">
+              <div class="header-opt blur" id="classes_label">
                 <h5 class="h5">Classes</h5>
               </div>
             </div>
 
             <!-- container for the form options -->
-            <div class="form-option-container">
-              <div class="form-event-options">
-                <div class="header-type">
-                  <h5 class="h5">Event Type</h5>
-                </div>
-
-                <div class="event-opts">
-                  <div class="eve-options" id="wedd-opt">
-                    <p class="button hbutton">Wedding</p>
-                    <img
-                      class="checked hide"
-                      id="wedd-check"
-                      src="resources/landing/checked-option-form.png"
-                    />
-                  </div>
-
-                  <div class="eve-options" id="party-opt">
-                    <p class="button hbutton">Party</p>
-                    <img
-                      class="checked hide"
-                      id="party-check"
-                      src="resources/landing/checked-option-form.png"
-                    />
-                  </div>
-
-                  <div class="eve-options" id="photo-opt">
-                    <p class="button hbutton">Photoshoot</p>
-                    <img
-                      class="checked hide"
-                      id="photo-check"
-                      src="resources/landing/checked-option-form.png"
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <!-- Div for date and time options -->
-              <div class="form-date-time-options">
-                <div class="date-options fr">
-                  <div class="header-date hdr">
-                    <h5>Event Date</h5>
-                  </div>
-                  <input
-                    type="text"
-                    class="input-event text-body date"
-                    id="event-date"
-                    name="event-date"
-                    placeholder="Select Date"
-                    onfocus="(this.type='date')"
-                    onblur="(this.type='text')"
-                    min="2024-01-01"
-                    max="2024-12-31"
-                  />
-
-                  <div class="checked">
-                    <input
-                      type="checkbox"
-                      class="check-event text-body"
-                      id="date"
-                      name="date"
-                    />
-                    <label for="date" class="text-body">Not decided</label>
-                  </div>
-                </div>
-
-                <div class="time-options fr">
-                  <div class="header-time hdr">
-                    <h5>Event Time</h5>
-                  </div>
-                  <input
-                    type="time"
-                    class="input-event text-body"
-                    id="event-time"
-                    name="event-time"
-                    placeholder="Select time"
-                    min="8:00"
-                    max="6:00"
-                  />
-
-                  <div class="checked">
-                    <input
-                      type="checkbox"
-                      class="check-event text-body"
-                      id="time"
-                      name="time"
-                    />
-                    <label for="time" class="text-body">Not decided</label>
-                  </div>
-                </div>
-              </div>
-
+            <div class="form-option-container" id="services_form">
               <form class="contact-form">
+                <div class="form-event-options">
+                  <div class="header-type">
+                    <h5 class="h5">Event Type</h5>
+                  </div>
+
+                  <div class="event-opts">
+                    <div class="eve-options" id="wedd-opt">
+                      <p class="button hbutton">Wedding</p>
+                      <img
+                        class="checked hide"
+                        id="wedd-check"
+                        src="resources/landing/checked-option-form.png"
+                      />
+                    </div>
+
+                    <div class="eve-options" id="party-opt">
+                      <p class="button hbutton">Party</p>
+                      <img
+                        class="checked hide"
+                        id="party-check"
+                        src="resources/landing/checked-option-form.png"
+                      />
+                    </div>
+
+                    <div class="eve-options" id="photo-opt">
+                      <p class="button hbutton">Photoshoot</p>
+                      <img
+                        class="checked hide"
+                        id="photo-check"
+                        src="resources/landing/checked-option-form.png"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Div for date and time options -->
+                <div class="form-date-time-options">
+                  <div class="date-options fr">
+                    <div class="header-date hdr">
+                      <h5>Event Date</h5>
+                    </div>
+                    <input
+                      type="text"
+                      class="input-event text-body date"
+                      id="event-date"
+                      name="event-date"
+                      placeholder="Select Date"
+                      onfocus="(this.type='date')"
+                      onblur="(this.type='text')"
+                      min="2024-01-01"
+                      max="2024-12-31"
+                    />
+
+                    <div class="checked">
+                      <input
+                        type="checkbox"
+                        class="check-event text-body"
+                        id="date"
+                        name="date"
+                      />
+                      <label for="date" class="text-body">Not decided</label>
+                    </div>
+                  </div>
+
+                  <div class="time-options fr">
+                    <div class="header-time hdr">
+                      <h5>Event Time</h5>
+                    </div>
+                    <input
+                      type="time"
+                      class="input-event text-body"
+                      id="event-time"
+                      name="event-time"
+                      placeholder="Select time"
+                      min="8:00"
+                      max="6:00"
+                    />
+
+                    <div class="checked">
+                      <input
+                        type="checkbox"
+                        class="check-event text-body"
+                        id="time"
+                        name="time"
+                      />
+                      <label for="time" class="text-body">Not decided</label>
+                    </div>
+                  </div>
+                </div>
+
                 <div class="contact-form-name">
                   <label for="contact-name" class="h5">Name</label>
                 </div>
@@ -483,7 +489,222 @@
                 <button class="button-next hbutton">Next</button>
               </div>
             </div>
+          
+
+          <div class="form-option-container display_none" id="classes_form">
+            <form class="contact-form">
+              <div class="form-event-options">
+                <div class="header-type">
+                  <h5 class="h5">Class</h5>
+                </div>
+
+                <div class="event-opts">
+                  <div class="eve-options" id="master_subscription_check">
+                    <p class="button hbutton">1-on1 Master Subscription</p>
+                    <img
+                      class="checked hide"
+                      id="master_subscription"
+                      src="resources/landing/checked-option-form.png"
+                    />
+                  </div>
+
+                  <div class="eve-options" id="makeup_workshop_check">
+                    <p class="button hbutton">1-day Makeup workshop</p>
+                    <img
+                      class="checked hide"
+                      id="makeup_workshop"
+                      src="resources/landing/checked-option-form.png"
+                    />
+                  </div>
+
+                  <div class="eve-options" id="self_makeup_check">
+                    <p class="button hbutton">Self-Makeup beginner class</p>
+                    <img
+                      class="checked hide"
+                      id="self_makeup"
+                      src="resources/landing/checked-option-form.png"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Div for date and time options -->
+              <div class="form-date-time-options">
+                <div class="date-options fr fr100">
+                  <div class="header-date hdr">
+                    <h5>Class Date</h5>
+                    <p class="text-body">
+                      When you would like to take your class?
+                    </p>
+                  </div>
+                  <input
+                    type="text"
+                    class="input-event text-body date"
+                    id="event-date"
+                    name="event-date"
+                    placeholder="Select Date"
+                    onfocus="(this.type='date')"
+                    onblur="(this.type='text')"
+                    min="2024-01-01"
+                    max="2024-12-31"
+                  />
+
+                  <div class="checked">
+                    <input
+                      type="checkbox"
+                      class="check-event text-body"
+                      id="date"
+                      name="date"
+                    />
+                    <label for="date" class="text-body">Not decided</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-form-name">
+                <label for="finalMessage" class="h5">Any questions?</label>
+                <div class="message">
+                  <textarea
+                    name="finalMessage"
+                    id="finalMessage"
+                    placeholder="Your message"
+                  ></textarea>
+                </div>
+              </div>
+
+              <div class="contact-form-name">
+                <label for="contact-name" class="h5">Name</label>
+              </div>
+              <input
+                type="text"
+                class="input-name text-body"
+                name="contact-name"
+                id="contact-name"
+                placeholder="Your name"
+              />
+
+              <div class="contact-header">
+                <h5 class="h5">Contact</h5>
+              </div>
+
+              <div class="contact-form-phone">
+                <div class="phone-opt">
+                  <div class="label-opt">
+                    <input
+                      type="radio"
+                      class="input-color"
+                      name="contact-option"
+                      value="call"
+                      id="call_classes"
+                    />
+                    <label for="call" class="text-body">Call</label>
+                  </div>
+
+                  <div class="number-form hide" id="call-check_classes">
+                    <input
+                      type="tel"
+                      class="number text-body inpt"
+                      id="number"
+                      name="number"
+                      placeholder="Your mobile number"
+                      pattern="[0-9]{3}"
+                      aria-label="3-digit area code"
+                      size="2"
+                      maxlength="10"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="phone-opt">
+                  <div class="label-opt">
+                    <input
+                      type="radio"
+                      class="input-color"
+                      name="contact-option"
+                      value="whatsapp"
+                      id="whatsapp_classes"
+                    />
+                    <label for="whatsapp" class="text-body">Whatsapp</label>
+                  </div>
+
+                  <div class="number-form hide" id="whats-check_classes">
+                    <input
+                      type="tel"
+                      class="whats text-body inpt"
+                      id="whats"
+                      name="whats"
+                      placeholder="Your Whatsaap number"
+                      pattern="[0-9]{3}"
+                      aria-label="3-digit area code"
+                      size="2"
+                      maxlength="10"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="phone-opt">
+                  <div class="label-opt">
+                    <input
+                      type="radio"
+                      class="input-color"
+                      name="contact-option"
+                      value="sms"
+                      id="sms_classes"
+                    />
+                    <label for="sms" class="text-body">SMS</label>
+                  </div>
+
+                  <div class="number-form hide" id="sms-check_classes">
+                    <input
+                      type="tel"
+                      class="sms text-body inpt"
+                      id="sms"
+                      name="sms"
+                      placeholder="Your mobile number"
+                      pattern="[0-9]{3}"
+                      aria-label="3-digit area code"
+                      size="2"
+                      maxlength="10"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="phone-opt">
+                  <div class="label-opt">
+                    <input
+                      type="radio"
+                      class="input-color"
+                      name="contact-option"
+                      value="email"
+                      id="email_classes"
+                    />
+                    <label for="email" class="text-body">Email</label>
+                  </div>
+
+                  <div class="number-form hide" id="email-check_classes">
+                    <input
+                      type="email"
+                      class="email text-body inpt"
+                      id="email"
+                      name="email"
+                      placeholder="Your email"
+                      pattern=".+@example\.com"
+                      size="30"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="submitButton">
+                <input type="submit" name="submitBtn" value="Submit" />
+              </div>
+            </form>
           </div>
+        </div>
         </div>
       </div>
 

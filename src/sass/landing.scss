@@ -226,17 +226,17 @@ header {
   }
 }
 
-.starSection{
+.starSection {
   // display: flex;
   padding: 2rem 0;
   background-color: $lightpink;
-  .headerSec{
+  .headerSec {
     display: flex;
     flex-direction: column;
     align-items: center;
-    .titleStar{
+    .titleStar {
       padding: 1rem;
-      h1{
+      h1 {
         font-family: "Baskervville", serif;
         font-weight: 400;
         font-style: normal;
@@ -244,17 +244,17 @@ header {
         color: #5e4a49;
       }
     }
-    span{
+    span {
       border: 1px $accent solid;
       width: 200px;
       margin-bottom: 1.5rem;
     }
-    .messageStar{
+    .messageStar {
       // border: 1px red solid;
       width: 40%;
       text-align: center;
       margin: 1rem 0;
-      p{
+      p {
         font-family: "Avenir", serif;
         font-weight: 300;
         font-style: normal;
@@ -262,7 +262,7 @@ header {
         color: $brand;
       }
     }
-    .starsecBtn{
+    .starsecBtn {
       margin: 1rem 0;
       .btnStar {
         padding: 1rem 2rem;
@@ -283,7 +283,6 @@ header {
         }
       }
     }
-    
   }
 
   .photoSec{
@@ -373,18 +372,15 @@ header {
 }
 //************************************************END 3RD SECTION*********************************************************************//
 
-
-
-
 // START FORM SERVICES
-.formMainContainer{
+.formMainContainer {
   .form-services {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100vw;
     margin-bottom: 4rem;
-  
+
     // font family, size and color for h1
     h1 {
       font-family: "Baskerville", serif;
@@ -394,7 +390,7 @@ header {
       letter-spacing: 5px;
       color: #5e4a49;
     }
-  
+
     // font family, size and color for h5
     h5 {
       font-family: "Baskerville", serif;
@@ -402,7 +398,7 @@ header {
       font-style: normal;
       font-size: 28px;
     }
-  
+
     // font family, size and color for button text
     .hbutton {
       color: #5e4a49;
@@ -411,7 +407,7 @@ header {
       font-style: normal;
       font-size: 14px;
     }
-  
+
     .text-body {
       font-family: "Montserrat", sans-serif;
       font-optical-sizing: auto;
@@ -419,25 +415,25 @@ header {
       font-style: normal;
       font-size: 14px;
     }
-  
+
     .contact-us {
       display: flex;
       flex-direction: column;
       align-items: center;
       margin: 4rem auto;
       width: 40%;
-  
+
       h1 {
         margin-bottom: 1rem;
         text-align: center;
       }
-  
+
       p {
         text-align: center;
         padding: 0 3rem;
       }
     }
-  
+
     .form-services-container {
       display: flex;
       flex-direction: column;
@@ -445,14 +441,18 @@ header {
       padding: 3rem;
       background-color: #fae9e7;
       width: 50%;
-  
+
+      @media only screen and (max-width: 600px) {
+        width: 90%;
+      }
+
       .form-header {
         display: flex;
         justify-content: center;
         width: 100%;
         margin-bottom: 2rem;
         cursor: pointer;
-  
+
         .header-opt {
           display: flex;
           justify-content: center;
@@ -460,33 +460,37 @@ header {
           padding: 0.5rem 2rem;
           border-bottom: 1px solid black;
         }
-  
+
         .blur {
           color: gray;
           border-bottom: 0.5px solid gray;
         }
       }
-  
+
       .form-option-container {
         display: flex;
         flex-direction: column;
         width: 100%;
         align-items: center;
-  
+
         .form-event-options {
           width: 100%;
           margin-bottom: 2rem;
-  
+
           .header-type {
             margin-bottom: 1rem;
           }
-  
+
           .event-opts {
             max-width: 100%;
             min-width: 70%;
             display: flex;
             justify-content: space-between;
-  
+
+            @media only screen and (max-width: 600px) {
+              flex-direction: column;
+            }
+
             .eve-options {
               width: 32%;
               display: flex;
@@ -495,45 +499,63 @@ header {
               background-color: white;
               padding: 8px;
               cursor: pointer;
-  
+
+              @media only screen and (max-width: 600px) {
+                width: 100%;
+                margin: 0.5rem;
+              }
+
               img {
                 width: 20px;
                 height: 20px;
               }
-  
+
               .hide {
                 visibility: hidden;
               }
             }
           }
         }
-  
+
         .form-date-time-options {
           width: 100%;
           margin-bottom: 2rem;
           display: flex;
           flex-direction: row;
           justify-content: space-between;
-  
+
+          @media only screen and (max-width: 600px) {
+            flex-direction: column;
+            gap: 1rem;
+          }
+
+          .fr100 {
+            width: 100% !important;
+          }
+
           .fr {
             width: 46%;
             display: flex;
             flex-direction: column;
-  
+
+            @media only screen and (max-width: 600px) {
+              width: 100%;
+            }
+
             .input-event {
               padding: 8px;
               cursor: pointer;
               margin-bottom: 0.5rem;
             }
-  
+
             .input-event:focus {
               outline: none;
             }
-  
+
             .checked {
               display: flex;
               align-items: center;
-  
+
               .check-event {
                 cursor: pointer;
                 width: 20px;
@@ -541,23 +563,23 @@ header {
                 padding: 5px;
                 accent-color: #b99692;
               }
-  
+
               label {
                 padding-left: 5px;
               }
             }
           }
-  
+
           .hdr {
             margin-bottom: 1rem;
           }
         }
-  
+
         .contact-form {
           width: 100%;
           display: flex;
           flex-direction: column;
-  
+
           .contact-form-name {
             margin-bottom: 1rem;
             font-family: "Baskerville", serif;
@@ -565,89 +587,89 @@ header {
             font-style: normal;
             font-size: 28px;
           }
-  
+
           .input-name {
             padding: 8px;
             margin-bottom: 2rem;
             border: 1px solid #b99692;
           }
-  
+
           .input-name:focus {
             outline: none;
           }
-  
+
           .contact-header {
             margin-bottom: 1rem;
           }
-  
+
           .phone-opt {
             display: block;
             margin: 0.5rem 0;
-  
+
             .hide {
               display: none;
             }
           }
-  
+
           .contact-form-phone {
             display: flex;
             flex-direction: column;
             margin-bottom: 2rem;
-  
+
             .label-opt {
               display: flex;
               align-items: center;
               gap: 10px;
-  
+
               .input-color {
                 accent-color: #b99692;
               }
             }
-  
+
             .inpt {
               width: 100%;
               padding: 8px;
               margin-top: 0.5rem;
               border: 1px solid #b99692;
             }
-  
+
             .inpt:focus {
               outline: none;
             }
           }
-  
+
           .time-call-header {
             margin-bottom: 1rem;
           }
-  
+
           .form-time-call {
             display: flex;
             flex-direction: column;
             margin-bottom: 2rem;
-  
+
             .time-opt {
               display: flex;
               align-items: center;
               gap: 10px;
-  
+
               .label-time-opt {
                 margin: 0.5rem 0;
               }
-  
+
               .input-color {
                 accent-color: #b99692;
               }
             }
           }
         }
-  
+
         .button-next {
           padding: 20px 40px;
           width: 160px;
           background-color: transparent;
           border: 0.5px solid #5e4a49;
           cursor: pointer;
-  
+
           &:hover {
             background-color: #b99692;
             border: 1px solid #b99692;
@@ -666,13 +688,52 @@ header {
 //         padding: 1rem;
 //     }
 
-//     .event-opts {
-//         display: flex;
-//         flex-direction: column;
-//     }
 // }
 
 // END FORM SERVICES
+
+// BEGIN FORM CLASSES
+
+.message {
+  margin-top: 1rem;
+  width: 100%;
+
+  #finalMessage {
+    width: 100%;
+    height: 200px;
+    resize: none;
+    padding: 0.5rem;
+    &::placeholder {
+      font-family: "Avenir", serif;
+      font-weight: 300;
+      font-style: normal;
+      font-size: $body;
+      color: $midgrey;
+    }
+  }
+}
+
+.submitButton {
+  // border: 1px red solid;
+  display: flex;
+  justify-content: center;
+  input {
+    border: 1px $boldmain solid;
+    width: 100px;
+    height: 50px;
+    background-color: $lightpink;
+    font-family: "Baskervville", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: $button;
+    color: $brand;
+    cursor: pointer;
+    &:hover {
+      background-color: $darkpink;
+    }
+  }
+}
+// END FORM CLASSES
 
 // BEGIN MESSAGE BUTTON
 
@@ -704,7 +765,7 @@ header {
       border: none;
     }
     .whatsapp_button {
-      background-color: #25D366;
+      background-color: #25d366;
       padding: 0.5rem;
       border: none;
     }
@@ -712,7 +773,6 @@ header {
       background-color: #191919;
       padding: 0.5rem;
       border: none;
-      
     }
   }
 }
