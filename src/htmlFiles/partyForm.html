@@ -2,8 +2,8 @@
 
 <html>
   <head>
-    <title>Home</title>
-    <link rel="stylesheet" href="../css/wedForm.css" />
+    <title>Party Service</title>
+    <link rel="stylesheet" href="../css/partyForm.css" />
     <script
       src="https://kit.fontawesome.com/f8be10a101.js/"
       crossorigin="anonymous"
@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -126,9 +126,7 @@
           </div>
           <div class="formContainer">
             <div class="row service">
-              <label for="serviceType" class="sectionTitle"
-                >Bridal Service</label
-              >
+              <label for="serviceType" class="sectionTitle">Service</label>
               <div class="checkService">
                 <div class="btnService">
                   <label for="makeup">Makeup</label>
@@ -254,28 +252,7 @@
               >
               <div class="rowExtra">
                 <div class="client">
-                  <p>Groom</p>
-                  <div class="counter">
-                    <input type="button" id="minus_btn" value=" - " />
-                    <input type="text" id="counterRes" value="0" />
-                    <input type="button" id="add_btn" value=" + " />
-                  </div>
-                </div>
-                <div class="service">
-                  <div class="makeup">
-                    <input
-                      type="checkbox"
-                      name="makeupGroom"
-                      id="makeupGroom"
-                      class="checkboxService"
-                    />
-                    <label for="makeupGroom">Makeup</label>
-                  </div>
-                </div>
-              </div>
-              <div class="rowExtra">
-                <div class="client">
-                  <p>Braidesmaid</p>
+                  <p>Woman</p>
                   <div class="counter">
                     <input type="button" id="minus_btn" value=" - " />
                     <input type="text" id="counterRes" value="0" />
@@ -305,7 +282,7 @@
               </div>
               <div class="rowExtra">
                 <div class="client">
-                  <p>Flower Girl</p>
+                  <p>Man</p>
                   <div class="counter">
                     <input type="button" id="minus_btn" value=" - " />
                     <input type="text" id="counterRes" value="0" />
@@ -316,20 +293,11 @@
                   <div class="makeup">
                     <input
                       type="checkbox"
-                      name="makeupFG"
-                      id="makeupFG"
+                      name="makeupGroom"
+                      id="makeupGroom"
                       class="checkboxService"
                     />
-                    <label for="makeupFG">Makeup</label>
-                  </div>
-                  <div class="hairstyle">
-                    <input
-                      type="checkbox"
-                      name="hairstyleFG"
-                      id="hairstyleFG"
-                      class="checkboxService"
-                    />
-                    <label for="hairstyleFG">Hairstyle</label>
+                    <label for="makeupGroom">Makeup</label>
                   </div>
                 </div>
               </div>
@@ -394,5 +362,5 @@
       </div>
     </footer>
   </body>
-  <script src="../scriptFiles/wedForm.js"></script>
+  <script src="../scriptFiles/partyForm.js"></script>
 </html>

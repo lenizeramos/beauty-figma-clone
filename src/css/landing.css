@@ -1,10 +1,22 @@
 @font-face {
   font-family: "Avenir";
+<<<<<<< HEAD
   src: url(/fonts/Avenir/Avenir\ Regular.ttf) format("truetype");
 }
 @font-face {
   font-family: "WhiteFlower";
   src: url(/fonts/WhiteFlower/WhiteFlower.otf) format("opentype");
+=======
+  src: url(../fonts/Avenir/AvenirRegular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Whiteflower";
+  src: url(../fonts/WhiteFlower/WhiteFlower.otf) format("opentype");
+}
+@font-face {
+  font-family: "Magenta";
+  src: url(../fonts/magenta-2/MagentaDemo.ttf) format("truetype");
+>>>>>>> dev
 }
 * {
   margin: 0;
@@ -35,7 +47,11 @@ header nav .navbar li a {
   padding: 0 1rem;
 }
 header nav .navbar li a p {
+<<<<<<< HEAD
   font-family: "Baskervville SC", serif;
+=======
+  font-family: "Baskervville", serif;
+>>>>>>> dev
   font-weight: 400;
   font-style: normal;
 }
@@ -80,7 +96,11 @@ header nav .logo img {
   width: 100%;
 }
 .sidebar li a p {
+<<<<<<< HEAD
   font-family: "Baskervville SC", serif;
+=======
+  font-family: "Baskervville", serif;
+>>>>>>> dev
   font-weight: 400;
   font-style: normal;
 }
@@ -104,48 +124,258 @@ header nav .logo img {
   display: none;
 }
 
+<<<<<<< HEAD
 .form-services {
+=======
+.mainPicSection .mainPicContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f8f6f4;
+  position: relative;
+  z-index: -1;
+}
+.mainPicSection .mainPicContainer #MainPic {
+  position: absolute;
+  height: 100%;
+}
+.mainPicSection .mainPicContainer #mainSentenceContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  bottom: 10%;
+}
+.mainPicSection .mainPicContainer #mainSentenceContainer h1 {
+  font-family: "Magenta";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 80px;
+  color: #f8f6f4;
+}
+.mainPicSection .mainPicContainer #mainSentenceContainer p {
+  font-family: "Avenir", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
+  color: #f8f6f4;
+  margin-top: 1rem;
+}
+.mainPicSection .mainPicContainer #mainSentenceContainer button {
+  padding: 20px 20px;
+  width: 230px;
+  background-color: transparent;
+  border: 0.5px solid rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  color: #f8f6f4;
+  font-family: "Baskervville", serif;
+  font-size: 20px;
+  margin-top: 1.5rem;
+}
+.mainPicSection .mainPicContainer #mainSentenceContainer button:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: #191919;
+  transition: 1s;
+}
+
+.starSection {
+  padding: 2rem 0;
+  background-color: #fae9e7;
+}
+.starSection .headerSec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.starSection .headerSec .titleStar {
+  padding: 1rem;
+}
+.starSection .headerSec .titleStar h1 {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 80px;
+  color: #5e4a49;
+}
+.starSection .headerSec span {
+  border: 1px #e3b6b1 solid;
+  width: 200px;
+  margin-bottom: 1.5rem;
+}
+.starSection .headerSec .messageStar {
+  width: 40%;
+  text-align: center;
+  margin: 1rem 0;
+}
+.starSection .headerSec .messageStar p {
+  font-family: "Avenir", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
+  color: #191919;
+}
+.starSection .headerSec .starsecBtn {
+  margin: 1rem 0;
+}
+.starSection .headerSec .starsecBtn .btnStar {
+  padding: 1rem 2rem;
+  background-color: transparent;
+  border: 0.5px solid #5e4a49;
+  cursor: pointer;
+}
+.starSection .headerSec .starsecBtn .btnStar p {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+.starSection .headerSec .starsecBtn .btnStar:hover {
+  background-color: #b99692;
+  border: 1px solid #b99692;
+  color: white;
+}
+.starSection .photoSec {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  height: 400px;
+  margin: 4rem 0;
+}
+.starSection .photoSec .photo {
+  width: 25%;
+  height: 100%;
+}
+.starSection .photoSec .photo.firstpic {
+  background-image: url(../resources/landing/1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.starSection .photoSec .photo.secondpic {
+  background-image: url(../resources/landing/2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.starSection .photoSec .photo.thirdpic {
+  background-image: url(../resources/landing/3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.starSection .photoSec .photo.fourthpic {
+  background-image: url(../resources/landing/4.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.starSection .testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0;
+}
+.starSection .testimonials .icon {
+  padding: 1rem;
+}
+.starSection .testimonials .singleTest {
+  width: 57%;
+  text-align: center;
+  padding: 1rem 0;
+}
+.starSection .testimonials .singleTest p {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+}
+.starSection .testimonials .testName {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  width: 350px;
+}
+.starSection .testimonials .testName .name p {
+  font-family: "Magenta";
+  font-size: 54px;
+}
+.starSection .hbutton {
+  color: #5e4a49;
+  font-family: "Baskerville", serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.formMainContainer .form-services {
+>>>>>>> dev
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100vw;
   margin-bottom: 4rem;
 }
+<<<<<<< HEAD
 .form-services h1 {
   font-family: "Libre Baskerville", serif;
+=======
+.formMainContainer .form-services h1 {
+  font-family: "Baskerville", serif;
+>>>>>>> dev
   font-weight: 400;
   font-style: normal;
   font-size: 80px;
   letter-spacing: 5px;
   color: #5e4a49;
 }
+<<<<<<< HEAD
 .form-services h5 {
   font-family: "Libre Baskerville", serif;
+=======
+.formMainContainer .form-services h5 {
+  font-family: "Baskerville", serif;
+>>>>>>> dev
   font-weight: 100;
   font-style: normal;
   font-size: 28px;
 }
+<<<<<<< HEAD
 .form-services .hbutton {
   color: #5e4a49;
   font-family: "Libre Baskerville", serif;
+=======
+.formMainContainer .form-services .hbutton {
+  color: #5e4a49;
+  font-family: "Baskerville", serif;
+>>>>>>> dev
   font-weight: 100;
   font-style: normal;
   font-size: 14px;
 }
+<<<<<<< HEAD
 .form-services .text-body {
+=======
+.formMainContainer .form-services .text-body {
+>>>>>>> dev
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-size: 14px;
 }
+<<<<<<< HEAD
 .form-services .contact-us {
+=======
+.formMainContainer .form-services .contact-us {
+>>>>>>> dev
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 4rem auto;
   width: 40%;
 }
+<<<<<<< HEAD
 .form-services .contact-us h1 {
   margin-bottom: 1rem;
   text-align: center;
@@ -155,6 +385,17 @@ header nav .logo img {
   padding: 0 3rem;
 }
 .form-services .form-services-container {
+=======
+.formMainContainer .form-services .contact-us h1 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.formMainContainer .form-services .contact-us p {
+  text-align: center;
+  padding: 0 3rem;
+}
+.formMainContainer .form-services .form-services-container {
+>>>>>>> dev
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -162,30 +403,52 @@ header nav .logo img {
   background-color: #fae9e7;
   width: 50%;
 }
+<<<<<<< HEAD
 .form-services .form-services-container .form-header {
+=======
+@media only screen and (max-width: 600px) {
+  .formMainContainer .form-services .form-services-container {
+    width: 90%;
+  }
+}
+.formMainContainer .form-services .form-services-container .form-header {
+>>>>>>> dev
   display: flex;
   justify-content: center;
   width: 100%;
   margin-bottom: 2rem;
   cursor: pointer;
 }
+<<<<<<< HEAD
 .form-services .form-services-container .form-header .header-opt {
+=======
+.formMainContainer .form-services .form-services-container .form-header .header-opt {
+>>>>>>> dev
   display: flex;
   justify-content: center;
   width: 100%;
   padding: 0.5rem 2rem;
   border-bottom: 1px solid black;
 }
+<<<<<<< HEAD
 .form-services .form-services-container .form-header .blur {
   color: gray;
   border-bottom: 0.5px solid gray;
 }
 .form-services .form-services-container .form-option-container {
+=======
+.formMainContainer .form-services .form-services-container .form-header .blur {
+  color: gray;
+  border-bottom: 0.5px solid gray;
+}
+.formMainContainer .form-services .form-services-container .form-option-container {
+>>>>>>> dev
   display: flex;
   flex-direction: column;
   width: 100%;
   align-items: center;
 }
+<<<<<<< HEAD
 .form-services .form-services-container .form-option-container .form-event-options {
   width: 100%;
   margin-bottom: 2rem;
@@ -194,12 +457,31 @@ header nav .logo img {
   margin-bottom: 1rem;
 }
 .form-services .form-services-container .form-option-container .form-event-options .event-opts {
+=======
+.formMainContainer .form-services .form-services-container .form-option-container .form-event-options {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.formMainContainer .form-services .form-services-container .form-option-container .form-event-options .header-type {
+  margin-bottom: 1rem;
+}
+.formMainContainer .form-services .form-services-container .form-option-container .form-event-options .event-opts {
+>>>>>>> dev
   max-width: 100%;
   min-width: 70%;
   display: flex;
   justify-content: space-between;
 }
+<<<<<<< HEAD
 .form-services .form-services-container .form-option-container .form-event-options .event-opts .eve-options {
+=======
+@media only screen and (max-width: 600px) {
+  .formMainContainer .form-services .form-services-container .form-option-container .form-event-options .event-opts {
+    flex-direction: column;
+  }
+}
+.formMainContainer .form-services .form-services-container .form-option-container .form-event-options .event-opts .eve-options {
+>>>>>>> dev
   width: 32%;
   display: flex;
   justify-content: space-between;
@@ -208,6 +490,7 @@ header nav .logo img {
   padding: 8px;
   cursor: pointer;
 }
+<<<<<<< HEAD
 .form-services .form-services-container .form-option-container .form-event-options .event-opts .eve-options img {
   width: 20px;
   height: 20px;
@@ -216,22 +499,61 @@ header nav .logo img {
   visibility: hidden;
 }
 .form-services .form-services-container .form-option-container .form-date-time-options {
+=======
+@media only screen and (max-width: 600px) {
+  .formMainContainer .form-services .form-services-container .form-option-container .form-event-options .event-opts .eve-options {
+    width: 100%;
+    margin: 0.5rem;
+  }
+}
+.formMainContainer .form-services .form-services-container .form-option-container .form-event-options .event-opts .eve-options img {
+  width: 20px;
+  height: 20px;
+}
+.formMainContainer .form-services .form-services-container .form-option-container .form-event-options .event-opts .eve-options .hide {
+  visibility: hidden;
+}
+.formMainContainer .form-services .form-services-container .form-option-container .form-date-time-options {
+>>>>>>> dev
   width: 100%;
   margin-bottom: 2rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+<<<<<<< HEAD
 .form-services .form-services-container .form-option-container .form-date-time-options .fr {
+=======
+@media only screen and (max-width: 600px) {
+  .formMainContainer .form-services .form-services-container .form-option-container .form-date-time-options {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+.formMainContainer .form-services .form-services-container .form-option-container .form-date-time-options .fr100 {
+  width: 100% !important;
+}
+.formMainContainer .form-services .form-services-container .form-option-container .form-date-time-options .fr {
+>>>>>>> dev
   width: 46%;
   display: flex;
   flex-direction: column;
 }
+<<<<<<< HEAD
 .form-services .form-services-container .form-option-container .form-date-time-options .fr .input-event {
+=======
+@media only screen and (max-width: 600px) {
+  .formMainContainer .form-services .form-services-container .form-option-container .form-date-time-options .fr {
+    width: 100%;
+  }
+}
+.formMainContainer .form-services .form-services-container .form-option-container .form-date-time-options .fr .input-event {
+>>>>>>> dev
   padding: 8px;
   cursor: pointer;
   margin-bottom: 0.5rem;
 }
+<<<<<<< HEAD
 .form-services .form-services-container .form-option-container .form-date-time-options .fr .input-event:focus {
   outline: none;
 }
@@ -240,12 +562,23 @@ header nav .logo img {
   align-items: center;
 }
 .form-services .form-services-container .form-option-container .form-date-time-options .fr .checked .check-event {
+=======
+.formMainContainer .form-services .form-services-container .form-option-container .form-date-time-options .fr .input-event:focus {
+  outline: none;
+}
+.formMainContainer .form-services .form-services-container .form-option-container .form-date-time-options .fr .checked {
+  display: flex;
+  align-items: center;
+}
+.formMainContainer .form-services .form-services-container .form-option-container .form-date-time-options .fr .checked .check-event {
+>>>>>>> dev
   cursor: pointer;
   width: 20px;
   height: 20px;
   padding: 5px;
   accent-color: #b99692;
 }
+<<<<<<< HEAD
 .form-services .form-services-container .form-option-container .form-date-time-options .fr .checked label {
   padding-left: 5px;
 }
@@ -253,22 +586,42 @@ header nav .logo img {
   margin-bottom: 1rem;
 }
 .form-services .form-services-container .form-option-container .contact-form {
+=======
+.formMainContainer .form-services .form-services-container .form-option-container .form-date-time-options .fr .checked label {
+  padding-left: 5px;
+}
+.formMainContainer .form-services .form-services-container .form-option-container .form-date-time-options .hdr {
+  margin-bottom: 1rem;
+}
+.formMainContainer .form-services .form-services-container .form-option-container .contact-form {
+>>>>>>> dev
   width: 100%;
   display: flex;
   flex-direction: column;
 }
+<<<<<<< HEAD
 .form-services .form-services-container .form-option-container .contact-form .contact-form-name {
   margin-bottom: 1rem;
   font-family: "Libre Baskerville", serif;
+=======
+.formMainContainer .form-services .form-services-container .form-option-container .contact-form .contact-form-name {
+  margin-bottom: 1rem;
+  font-family: "Baskerville", serif;
+>>>>>>> dev
   font-weight: 100;
   font-style: normal;
   font-size: 28px;
 }
+<<<<<<< HEAD
 .form-services .form-services-container .form-option-container .contact-form .input-name {
+=======
+.formMainContainer .form-services .form-services-container .form-option-container .contact-form .input-name {
+>>>>>>> dev
   padding: 8px;
   margin-bottom: 2rem;
   border: 1px solid #b99692;
 }
+<<<<<<< HEAD
 .form-services .form-services-container .form-option-container .contact-form .input-name:focus {
   outline: none;
 }
@@ -283,24 +636,52 @@ header nav .logo img {
   display: none;
 }
 .form-services .form-services-container .form-option-container .contact-form .contact-form-phone {
+=======
+.formMainContainer .form-services .form-services-container .form-option-container .contact-form .input-name:focus {
+  outline: none;
+}
+.formMainContainer .form-services .form-services-container .form-option-container .contact-form .contact-header {
+  margin-bottom: 1rem;
+}
+.formMainContainer .form-services .form-services-container .form-option-container .contact-form .phone-opt {
+  display: block;
+  margin: 0.5rem 0;
+}
+.formMainContainer .form-services .form-services-container .form-option-container .contact-form .phone-opt .hide {
+  display: none;
+}
+.formMainContainer .form-services .form-services-container .form-option-container .contact-form .contact-form-phone {
+>>>>>>> dev
   display: flex;
   flex-direction: column;
   margin-bottom: 2rem;
 }
+<<<<<<< HEAD
 .form-services .form-services-container .form-option-container .contact-form .contact-form-phone .label-opt {
+=======
+.formMainContainer .form-services .form-services-container .form-option-container .contact-form .contact-form-phone .label-opt {
+>>>>>>> dev
   display: flex;
   align-items: center;
   gap: 10px;
 }
+<<<<<<< HEAD
 .form-services .form-services-container .form-option-container .contact-form .contact-form-phone .label-opt .input-color {
   accent-color: #b99692;
 }
 .form-services .form-services-container .form-option-container .contact-form .contact-form-phone .inpt {
+=======
+.formMainContainer .form-services .form-services-container .form-option-container .contact-form .contact-form-phone .label-opt .input-color {
+  accent-color: #b99692;
+}
+.formMainContainer .form-services .form-services-container .form-option-container .contact-form .contact-form-phone .inpt {
+>>>>>>> dev
   width: 100%;
   padding: 8px;
   margin-top: 0.5rem;
   border: 1px solid #b99692;
 }
+<<<<<<< HEAD
 .form-services .form-services-container .form-option-container .contact-form .contact-form-phone .inpt:focus {
   outline: none;
 }
@@ -308,15 +689,29 @@ header nav .logo img {
   margin-bottom: 1rem;
 }
 .form-services .form-services-container .form-option-container .contact-form .form-time-call {
+=======
+.formMainContainer .form-services .form-services-container .form-option-container .contact-form .contact-form-phone .inpt:focus {
+  outline: none;
+}
+.formMainContainer .form-services .form-services-container .form-option-container .contact-form .time-call-header {
+  margin-bottom: 1rem;
+}
+.formMainContainer .form-services .form-services-container .form-option-container .contact-form .form-time-call {
+>>>>>>> dev
   display: flex;
   flex-direction: column;
   margin-bottom: 2rem;
 }
+<<<<<<< HEAD
 .form-services .form-services-container .form-option-container .contact-form .form-time-call .time-opt {
+=======
+.formMainContainer .form-services .form-services-container .form-option-container .contact-form .form-time-call .time-opt {
+>>>>>>> dev
   display: flex;
   align-items: center;
   gap: 10px;
 }
+<<<<<<< HEAD
 .form-services .form-services-container .form-option-container .contact-form .form-time-call .time-opt .label-time-opt {
   margin: 0.5rem 0;
 }
@@ -324,18 +719,72 @@ header nav .logo img {
   accent-color: #b99692;
 }
 .form-services .form-services-container .form-option-container .button-next {
+=======
+.formMainContainer .form-services .form-services-container .form-option-container .contact-form .form-time-call .time-opt .label-time-opt {
+  margin: 0.5rem 0;
+}
+.formMainContainer .form-services .form-services-container .form-option-container .contact-form .form-time-call .time-opt .input-color {
+  accent-color: #b99692;
+}
+.formMainContainer .form-services .form-services-container .form-option-container .button-next {
+>>>>>>> dev
   padding: 20px 40px;
   width: 160px;
   background-color: transparent;
   border: 0.5px solid #5e4a49;
   cursor: pointer;
 }
+<<<<<<< HEAD
 .form-services .form-services-container .form-option-container .button-next:hover {
+=======
+.formMainContainer .form-services .form-services-container .form-option-container .button-next:hover {
+>>>>>>> dev
   background-color: #b99692;
   border: 1px solid #b99692;
   color: white;
 }
 
+<<<<<<< HEAD
+=======
+.message {
+  margin-top: 1rem;
+  width: 100%;
+}
+.message #finalMessage {
+  width: 100%;
+  height: 200px;
+  resize: none;
+  padding: 0.5rem;
+}
+.message #finalMessage::placeholder {
+  font-family: "Avenir", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
+  color: #a3a3a3;
+}
+
+.submitButton {
+  display: flex;
+  justify-content: center;
+}
+.submitButton input {
+  border: 1px #725a58 solid;
+  width: 100px;
+  height: 50px;
+  background-color: #fae9e7;
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  color: #191919;
+  cursor: pointer;
+}
+.submitButton input:hover {
+  background-color: #b99692;
+}
+
+>>>>>>> dev
 #side_bar_message_container {
   position: fixed;
   right: 0%;
@@ -364,7 +813,11 @@ header nav .logo img {
   border: none;
 }
 #side_bar_message_container .button_container .whatsapp_button {
+<<<<<<< HEAD
   background-color: #25D366;
+=======
+  background-color: #25d366;
+>>>>>>> dev
   padding: 0.5rem;
   border: none;
 }
@@ -429,7 +882,11 @@ header nav .logo img {
   padding: 15px 0;
 }
 .FooterNavContainer .FooterNav .FooterNavList .FooterNavListStyle1 {
+<<<<<<< HEAD
   font-family: "Baskervville SC", serif;
+=======
+  font-family: "Baskervville", serif;
+>>>>>>> dev
   text-decoration: none;
   color: black;
 }
@@ -456,10 +913,24 @@ header nav .logo img {
     width: 100%;
   }
 }
+<<<<<<< HEAD
 .baskervville-sc-regular {
   font-family: "Baskervville SC", serif;
+=======
+.baskervville-regular {
+  font-family: "Baskervville", serif;
+>>>>>>> dev
   font-weight: 400;
   font-style: normal;
 }
 
+<<<<<<< HEAD
+=======
+.baskervville-regular-italic {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+>>>>>>> dev
 /*# sourceMappingURL=landing.css.map */
