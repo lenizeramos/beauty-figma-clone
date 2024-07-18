@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   window.addEventListener("scroll", () => {
     const scroll = window.scrollY;
-    if (scroll >= 50) {
+    if (scroll >= 10) {
       navbar.classList.add("smallNavBar");
     } else {
       navbar.classList.remove("smallNavBar");
@@ -135,8 +135,12 @@ document.addEventListener("DOMContentLoaded", () => {
   //*** END SERVICES FORM ***
 
   //*** BEGIN CLASSES FORM ***
-  const master_subscription_check = document.getElementById("master_subscription_check");
-  const makeup_workshop_check = document.getElementById("makeup_workshop_check");
+  const master_subscription_check = document.getElementById(
+    "master_subscription_check"
+  );
+  const makeup_workshop_check = document.getElementById(
+    "makeup_workshop_check"
+  );
   const self_makeup_check = document.getElementById("self_makeup_check");
   const master_subscription = document.getElementById("master_subscription");
   const makeup_workshop = document.getElementById("makeup_workshop");

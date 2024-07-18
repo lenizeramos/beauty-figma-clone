@@ -133,3 +133,5 @@ dist
 
 .sass-cache
 .sass-cache/*
+
+*.map
