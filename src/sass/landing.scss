@@ -84,10 +84,12 @@ header {
       }
     }
     .logo {
-      img {
-        width: 100%;
-        transition: width 1.5s ease;
-      }
+      background-image: url(../resources/landing/CarlaBeautyLogo.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 150px;
+      transition: height .5s ease;
     }
   }
 }
@@ -134,10 +136,12 @@ header {
   padding: 0.5rem 1rem;
   transition: padding 1.5s ease;
   .logo {
-    img {
-      width: 40%;
-      transition: width 1.5s ease;
-    }
+    background-image: url(../resources/landing/ShrinkedLogo_Navbar.svg);
+    height: 80px;
+    transition: height 1.5s ease;
+    background-size: contain;
+    background-position: center;
+
   }
 }
 
