@@ -101,6 +101,10 @@ header nav .logo img {
   display: none;
 }
 
+.classes-info-container {
+  background-color: #FAE9E7;
+}
+
 .IconsContainer {
   text-align: center;
   width: 250px;
