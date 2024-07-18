@@ -145,29 +145,10 @@ header {
 .opentagSB {
   display: none;
 }
-//***************MEDIA QUERIES***************************//
 
-//Tablet
-@media only screen and (max-width: 800px) {
-  .showonMobile,
-  .opentagSB {
-    display: block;
-  }
-  .hideonMobile {
-    display: none;
-  }
-}
-
-//Mobile
-@media only screen and (max-width: 600px) {
-  .sidebar {
-    width: 100%;
-  }
-}
 //**********************************************END NAVBAR**************************************************************************//
 
-//***********************************************START 3RD SECTION********************************************************************//
-
+//************************START FIRST SECTION***********************//
 //MainPicSection
 .mainPicSection{
   .mainPicContainer{
@@ -225,7 +206,9 @@ header {
     }
   }
 }
+//************************** END FIRST SECTION********************//
 
+//***********************************************START 3RD SECTION********************************************************************//
 .starSection {
   // display: flex;
   padding: 2rem 0;
@@ -801,6 +784,7 @@ header {
 }
 
 @mixin FooterNavContainer() {
+  //MOBILE
   @media only screen and (max-width: 600px) {
     width: 95%;
     .FooterNavList {
@@ -811,6 +795,7 @@ header {
       flex-wrap: wrap;
     }
   }
+  //OTHER DEVICES
   @media only screen and (min-width: 601px) {
     width: 80%;
     .FooterNavList {
@@ -849,6 +834,25 @@ header {
   margin: 25px 0 40px 0;
 }
 //**********************************************END FOOTER**************************************************************************//
+
+//***************MEDIA QUERIES***************************//
+//Tablet
+@media only screen and (max-width: 800px) {
+  .showonMobile,
+  .opentagSB {
+    display: block;
+  }
+  .hideonMobile {
+    display: none;
+  }
+}
+
+//Mobile
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    width: 100%;
+  }
+}
 
 //GOOGLE FONTS -BASKERVVILE-
 .baskervville-regular {

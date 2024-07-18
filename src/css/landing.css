@@ -108,20 +108,6 @@ header nav .logo img {
   display: none;
 }
 
-@media only screen and (max-width: 800px) {
-  .showonMobile,
-  .opentagSB {
-    display: block;
-  }
-  .hideonMobile {
-    display: none;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .sidebar {
-    width: 100%;
-  }
-}
 .mainPicSection .mainPicContainer {
   display: flex;
   justify-content: center;
@@ -708,6 +694,20 @@ header nav .logo img {
   margin: 25px 0 40px 0;
 }
 
+@media only screen and (max-width: 800px) {
+  .showonMobile,
+  .opentagSB {
+    display: block;
+  }
+  .hideonMobile {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    width: 100%;
+  }
+}
 .baskervville-regular {
   font-family: "Baskervville", serif;
   font-weight: 400;
