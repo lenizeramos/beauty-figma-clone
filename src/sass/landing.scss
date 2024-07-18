@@ -159,12 +159,13 @@ header {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 70vh;
+    min-height: 100vh;
     background-color: $palewhite;
     position: relative;
+    z-index: -1;
     #MainPic{
       position: absolute;
-      max-height: 100%;
+      height: 100%;
     }
     #mainSentenceContainer{
       position: absolute;
@@ -173,7 +174,7 @@ header {
       flex-wrap: wrap;
       text-align: center;
       align-items: center;
-      top: 50%;
+      bottom: 10%;
 //      @include mainPicSec();
       h1{
         font-family: "Magenta";

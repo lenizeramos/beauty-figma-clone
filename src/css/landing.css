@@ -119,13 +119,14 @@ header nav .logo {
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 70vh;
+  min-height: 100vh;
   background-color: #f8f6f4;
   position: relative;
+  z-index: -1;
 }
 .mainPicSection .mainPicContainer #MainPic {
   position: absolute;
-  max-height: 100%;
+  height: 100%;
 }
 .mainPicSection .mainPicContainer #mainSentenceContainer {
   position: absolute;
@@ -134,7 +135,7 @@ header nav .logo {
   flex-wrap: wrap;
   text-align: center;
   align-items: center;
-  top: 50%;
+  bottom: 10%;
 }
 .mainPicSection .mainPicContainer #mainSentenceContainer h1 {
   font-family: "Magenta";
