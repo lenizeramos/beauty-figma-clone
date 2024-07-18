@@ -838,6 +838,7 @@ header {
 //***************MEDIA QUERIES***************************//
 //Tablet
 @media only screen and (max-width: 800px) {
+  //NAVABAR
   .showonMobile,
   .opentagSB {
     display: block;
@@ -845,13 +846,20 @@ header {
   .hideonMobile {
     display: none;
   }
+
+  //STAR SECTION
+
+
 }
 
 //Mobile
 @media only screen and (max-width: 600px) {
+  //NAVBAR
   .sidebar {
     width: 100%;
   }
+
+  //STAR SECTION
 }
 
 //GOOGLE FONTS -BASKERVVILE-
