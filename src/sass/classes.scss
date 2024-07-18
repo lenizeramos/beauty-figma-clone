@@ -144,7 +144,66 @@ header{
 // START CLASSES BODY
 
 .classes-info-container {
-    background-color: #FAE9E7;
+    background-color: $lightpink;
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+
+    .classes-info {
+        margin: 3rem 0;
+        width: 60%;
+        border: 1px dotted black;
+
+        .detail {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-areas: 
+                "img info";
+            margin-bottom: 10rem;
+
+            .img1, .img2, .img3 {
+                grid-area: img;
+            }
+
+            .information {
+                grid-area: info;
+                padding-left: 2rem;
+
+                .body {
+                    font-family: "Montserrat", sans-serif;
+                    font-optical-sizing: auto;
+                    font-weight: 400;
+                    font-style: normal;
+                    font-size: 12px;
+                }
+
+                .info-header {
+                    font-size: 28px;
+                    color: $brown;
+                    margin-bottom: 1rem;
+
+                }
+
+                .price-time-target {
+                    display: flex;
+                    margin-bottom: 1rem;
+                    
+                    .icon {
+                        display: flex;
+                        
+                        img {
+                            width: 15px;
+                            margin-right: 0.5rem;
+                        }
+
+                        .body {
+                            margin-right: 0.8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 // END CLASSES BODY

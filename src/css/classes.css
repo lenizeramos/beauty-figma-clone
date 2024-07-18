@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @font-face {
   font-family: "Avenir";
   src: url(/fonts/Avenir/Avenir\ Regular.ttf) format("truetype");
@@ -104,6 +103,53 @@ header nav .logo img {
 
 .classes-info-container {
   background-color: #FAE9E7;
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+}
+.classes-info-container .classes-info {
+  margin: 3rem 0;
+  width: 60%;
+  border: 1px dotted black;
+}
+.classes-info-container .classes-info .detail {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: "img info";
+  margin-bottom: 10rem;
+}
+.classes-info-container .classes-info .detail .img1, .classes-info-container .classes-info .detail .img2, .classes-info-container .classes-info .detail .img3 {
+  grid-area: img;
+}
+.classes-info-container .classes-info .detail .information {
+  grid-area: info;
+  padding-left: 2rem;
+}
+.classes-info-container .classes-info .detail .information .body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+}
+.classes-info-container .classes-info .detail .information .info-header {
+  font-size: 28px;
+  color: #A06D67;
+  margin-bottom: 1rem;
+}
+.classes-info-container .classes-info .detail .information .price-time-target {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.classes-info-container .classes-info .detail .information .price-time-target .icon {
+  display: flex;
+}
+.classes-info-container .classes-info .detail .information .price-time-target .icon img {
+  width: 15px;
+  margin-right: 0.5rem;
+}
+.classes-info-container .classes-info .detail .information .price-time-target .icon .body {
+  margin-right: 0.8rem;
 }
 
 .IconsContainer {
@@ -190,6 +236,3 @@ header nav .logo img {
 }
 
 /*# sourceMappingURL=classes.css.map */
-=======
-/*# sourceMappingURL=classes.css.map */
->>>>>>> dev
