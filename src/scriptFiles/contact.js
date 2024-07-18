@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
   const navbar = document.getElementById("navbar");
-  const logo = document.getElementById("mainLogo");
   const openTag = document.getElementById("opentagSB");
   const closeTag = document.getElementById("closetagSB");
   const sidebar = document.getElementById("sidebar");
@@ -9,10 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const scroll = window.scrollY;
     if (scroll >= 10) {
       navbar.classList.add("smallNavBar");
-      logo.src = "resources/landing/ShrinkedLogo_Navbar.svg";
     } else {
       navbar.classList.remove("smallNavBar");
-      logo.src = "resources/landing/CarlaBeautyLogo.svg";
     }
   });
 
@@ -24,24 +21,6 @@ document.addEventListener("DOMContentLoaded", () => {
     // console.log("clicked");
     sidebar.style.display = "none";
   });
-
-  // const openSidebarButton = document.getElementById("openSidebar");
-  // const sidebar = document.getElementById("sidebar");
-
-  // openSidebar.addEventListener("click", (event) => {
-  //   // console.log('clicked')
-  //   sidebar.classList.add("open");
-  // });
-
-  // document.addEventListener("click", (event) => {
-  //   if (
-  //     !sidebar.contains(event.target) &&
-  //     !openSidebarButton.contains(event.target)
-  //   ) {
-  //     // console.log('OUTSIDE click')
-  //     sidebar.classList.remove("open");
-  //   }
-  // });
 
   // BEGIN MESSAGE BUTTON
   const message_button = document.getElementById("message_button");
@@ -93,27 +72,27 @@ document.addEventListener("DOMContentLoaded", () => {
     wedding.classList.remove("hide");
     party.classList.add("hide");
     photo.classList.add("hide");
-    wedding_next.classList.remove("display_none")
-    party_next.classList.add("display_none")
-    photoshoot_submit.classList.add("display_none")
+    wedding_next.classList.remove("display_none");
+    party_next.classList.add("display_none");
+    photoshoot_submit.classList.add("display_none");
   });
 
   partyCheck.addEventListener("click", () => {
     wedding.classList.add("hide");
     party.classList.remove("hide");
     photo.classList.add("hide");
-    wedding_next.classList.add("display_none")
-    party_next.classList.remove("display_none")
-    photoshoot_submit.classList.add("display_none")
+    wedding_next.classList.add("display_none");
+    party_next.classList.remove("display_none");
+    photoshoot_submit.classList.add("display_none");
   });
 
   photoCheck.addEventListener("click", () => {
     wedding.classList.add("hide");
     party.classList.add("hide");
     photo.classList.remove("hide");
-    wedding_next.classList.add("display_none")
-    party_next.classList.add("display_none")
-    photoshoot_submit.classList.remove("display_none")
+    wedding_next.classList.add("display_none");
+    party_next.classList.add("display_none");
+    photoshoot_submit.classList.remove("display_none");
   });
 
   const callOpt = document.getElementById("call");

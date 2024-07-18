@@ -448,131 +448,12 @@ header nav .logo {
   font-family: "Magenta";
   font-size: 54px;
 }
-
-.makeup_hairstyle {
-  padding: 2rem 0;
-  background-color: #f8f6f4;
-}
-.makeup_hairstyle .headerSec {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.makeup_hairstyle .headerSec .titleMH {
-  padding: 1rem;
-  width: 50%;
-  text-align: center;
-}
-.makeup_hairstyle .headerSec .titleMH h1 {
-  font-family: "Baskervville", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 80px;
+.starSection .hbutton {
   color: #5e4a49;
-}
-.makeup_hairstyle .headerSec span {
-  border: 1px #e3b6b1 solid;
-  width: 200px;
-  margin-bottom: 1.5rem;
-}
-.makeup_hairstyle .headerSec .messageMH {
-  width: 40%;
-  text-align: center;
-  margin: 1rem 0;
-}
-.makeup_hairstyle .headerSec .messageMH p {
-  font-family: "Avenir", serif;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 18px;
-  color: #191919;
-}
-.makeup_hairstyle .headerSec .MHsecBtn {
-  margin: 1rem 0;
-  border: 1px #5e4a49 solid;
-  height: 60px;
-  width: 160px;
-  padding: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-.makeup_hairstyle .headerSec .MHsecBtn a {
-  text-decoration: none;
-}
-.makeup_hairstyle .headerSec .MHsecBtn a p {
-  font-family: "Baskervville", serif;
+  font-family: "Baskerville", serif;
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
-  color: #725a58;
-}
-.makeup_hairstyle .headerSec .MHsecBtn:hover {
-  background-color: #b99692;
-  border: 1px #b99692 solid;
-}
-.makeup_hairstyle .headerSec .MHsecBtn:hover p {
-  color: white;
-}
-.makeup_hairstyle .photoSec_MH {
-  margin: 2rem 0;
-  padding: 0 2rem;
-  display: flex;
-  justify-content: center;
-  gap: 80px;
-  align-items: center;
-  height: 400px;
-}
-.makeup_hairstyle .photoSec_MH .photo {
-  display: flex;
-  align-items: flex-end;
-  height: 100%;
-  width: 25%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  max-inline-size: 100%;
-}
-.makeup_hairstyle .photoSec_MH .photo .innerText p {
-  font-family: "Baskervville", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 48px;
-  color: #fae9e7;
-  transform: translateX(-25%);
-}
-.makeup_hairstyle .photoSec_MH .photo .innerText p span {
-  font-family: "Baskervville", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 48px;
-  color: #b99692;
-}
-.makeup_hairstyle .photoSec_MH .photo.left {
-  background-image: url(../resources/landing/Frame157_Service.png);
-}
-.makeup_hairstyle .photoSec_MH .photo.mid {
-  background-image: url(../resources/landing/Frame157_Wed.png);
-}
-.makeup_hairstyle .photoSec_MH .photo.right {
-  background-image: url(../resources/landing/Frame157_PS.png);
-}
-.makeup_hairstyle .photoSec_MH .photo.sidePic {
-  height: 75%;
-  width: 20%;
-  transition: all 0.5s ease-in-out;
-}
-.makeup_hairstyle .photoSec_MH .photo.sidePic:hover {
-  height: 100%;
-  width: 25%;
-  transition: all 0.5s ease-in-out;
-}
-.makeup_hairstyle .hbutton {
-  color: #5e4a49;
-  font-family: "Baskerville", serif;
-  font-weight: 100;
-  font-style: normal;
-  font-size: 14px;
 }
 
 .formMainContainer .form-services {
@@ -613,12 +494,11 @@ header nav .logo {
   font-family: "Libre Baskerville", serif;
 =======
 .formMainContainer .form-services .hbutton {
-  color: #5e4a49;
+  color: #725a58;
   font-family: "Baskerville", serif;
->>>>>>> dev
   font-weight: 100;
   font-style: normal;
-  font-size: 14px;
+  font-size: 20px;
 }
 <<<<<<< HEAD
 .form-services .text-body {
@@ -642,17 +522,6 @@ header nav .logo {
   margin: 4rem auto;
   width: 40%;
 }
-<<<<<<< HEAD
-.form-services .contact-us h1 {
-  margin-bottom: 1rem;
-  text-align: center;
-}
-.form-services .contact-us p {
-  text-align: center;
-  padding: 0 3rem;
-}
-.form-services .form-services-container {
-=======
 .formMainContainer .form-services .contact-us h1 {
   margin-bottom: 1rem;
   text-align: center;
@@ -668,14 +537,11 @@ header nav .logo {
   align-items: center;
   padding: 3rem;
   background-color: #fae9e7;
-  width: 50%;
+  width: 40%;
 }
-<<<<<<< HEAD
-.form-services .form-services-container .form-header {
-=======
 @media only screen and (max-width: 600px) {
   .formMainContainer .form-services .form-services-container {
-    width: 90%;
+    width: 80%;
   }
 }
 .formMainContainer .form-services .form-services-container .form-header {
@@ -739,9 +605,6 @@ header nav .logo {
   display: flex;
   justify-content: space-between;
 }
-<<<<<<< HEAD
-.form-services .form-services-container .form-option-container .form-event-options .event-opts .eve-options {
-=======
 @media only screen and (max-width: 600px) {
   .formMainContainer .form-services .form-services-container .form-option-container .form-event-options .event-opts {
     flex-direction: column;
@@ -757,16 +620,6 @@ header nav .logo {
   padding: 8px;
   cursor: pointer;
 }
-<<<<<<< HEAD
-.form-services .form-services-container .form-option-container .form-event-options .event-opts .eve-options img {
-  width: 20px;
-  height: 20px;
-}
-.form-services .form-services-container .form-option-container .form-event-options .event-opts .eve-options .hide {
-  visibility: hidden;
-}
-.form-services .form-services-container .form-option-container .form-date-time-options {
-=======
 @media only screen and (max-width: 600px) {
   .formMainContainer .form-services .form-services-container .form-option-container .form-event-options .event-opts .eve-options {
     width: 100%;
@@ -788,9 +641,6 @@ header nav .logo {
   flex-direction: row;
   justify-content: space-between;
 }
-<<<<<<< HEAD
-.form-services .form-services-container .form-option-container .form-date-time-options .fr {
-=======
 @media only screen and (max-width: 600px) {
   .formMainContainer .form-services .form-services-container .form-option-container .form-date-time-options {
     flex-direction: column;
@@ -806,9 +656,6 @@ header nav .logo {
   display: flex;
   flex-direction: column;
 }
-<<<<<<< HEAD
-.form-services .form-services-container .form-option-container .form-date-time-options .fr .input-event {
-=======
 @media only screen and (max-width: 600px) {
   .formMainContainer .form-services .form-services-container .form-option-container .form-date-time-options .fr {
     width: 100%;
@@ -1036,19 +883,21 @@ header nav .logo {
   justify-content: center;
 }
 .submitButton input {
-  border: 1px #725a58 solid;
-  width: 100px;
-  height: 50px;
-  background-color: #fae9e7;
+  border: 0.5px #725a58 solid;
+  padding: 20px 40px;
+  width: 160px;
   font-family: "Baskervville", serif;
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
   color: #191919;
+  background-color: transparent;
   cursor: pointer;
 }
 .submitButton input:hover {
   background-color: #b99692;
+  border: 1px solid #b99692;
+  color: white;
 }
 
 >>>>>>> dev
@@ -1299,5 +1148,4 @@ header nav .logo {
   font-style: italic;
 }
 
->>>>>>> dev
 /*# sourceMappingURL=landing.css.map */
