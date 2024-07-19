@@ -101,55 +101,138 @@ header nav .logo img {
   display: none;
 }
 
-.classes-info-container {
+.body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+
+h1 {
+  color: #A06D67;
+  font-family: "Baskerville", serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 80px;
+  letter-spacing: 8px;
+}
+
+.classes-full {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.classes-full .classes-welcome {
+  margin: 3rem 0;
+  min-width: 30%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media only screen and (max-width: 768px) {
+  .classes-full .classes-welcome {
+    width: 80%;
+  }
+}
+.classes-full .classes-welcome hr {
+  height: 1px;
+  border: 1px solid #E3B6B1;
+  width: 20%;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+@media only screen and (max-width: 768px) {
+  .classes-full .classes-welcome hr {
+    width: 100%;
+  }
+}
+.classes-full .classes-info-container {
   background-color: #FAE9E7;
   margin: 2rem 0;
   display: flex;
   justify-content: center;
+  width: 100%;
 }
-.classes-info-container .classes-info {
+.classes-full .classes-info-container .classes-info {
   margin: 3rem 0;
   width: 60%;
-  border: 1px dotted black;
 }
-.classes-info-container .classes-info .detail {
+.classes-full .classes-info-container .classes-info .detail {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-areas: "img info";
   margin-bottom: 10rem;
 }
-.classes-info-container .classes-info .detail .img1, .classes-info-container .classes-info .detail .img2, .classes-info-container .classes-info .detail .img3 {
+.classes-full .classes-info-container .classes-info .detail .img1, .classes-full .classes-info-container .classes-info .detail .img2, .classes-full .classes-info-container .classes-info .detail .img3 {
   grid-area: img;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.classes-info-container .classes-info .detail .information {
+.classes-full .classes-info-container .classes-info .detail .information {
   grid-area: info;
   padding-left: 2rem;
 }
-.classes-info-container .classes-info .detail .information .body {
+.classes-full .classes-info-container .classes-info .detail .information .body {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-size: 12px;
+  font-size: 14px;
 }
-.classes-info-container .classes-info .detail .information .info-header {
+.classes-full .classes-info-container .classes-info .detail .information .info-header {
   font-size: 28px;
   color: #A06D67;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
-.classes-info-container .classes-info .detail .information .price-time-target {
+.classes-full .classes-info-container .classes-info .detail .information .price-time-target {
   display: flex;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
-.classes-info-container .classes-info .detail .information .price-time-target .icon {
+.classes-full .classes-info-container .classes-info .detail .information .price-time-target .icon {
   display: flex;
 }
-.classes-info-container .classes-info .detail .information .price-time-target .icon img {
+.classes-full .classes-info-container .classes-info .detail .information .price-time-target .icon img {
   width: 15px;
   margin-right: 0.5rem;
 }
-.classes-info-container .classes-info .detail .information .price-time-target .icon .body {
+.classes-full .classes-info-container .classes-info .detail .information .price-time-target .icon .body {
   margin-right: 0.8rem;
+}
+.classes-full .classes-info-container .classes-info .detail .information .who {
+  margin-bottom: 2rem;
+}
+.classes-full .classes-info-container .classes-info .detail .information .who .who-header {
+  margin-bottom: 0.8rem;
+  font-size: 20px !important;
+}
+.classes-full .classes-info-container .classes-info .detail .information .curriculum {
+  margin-bottom: 1rem;
+}
+.classes-full .classes-info-container .classes-info .detail .information .curriculum .curri-header {
+  margin-bottom: 0.8rem;
+  font-size: 20px !important;
+}
+.classes-full .classes-info-container .classes-info .detail .information .curriculum li {
+  margin: 0.5rem 0;
+  margin-left: 2rem;
+}
+.classes-full .classes-info-container .classes-info .detail .information .button {
+  margin-top: 4rem;
+}
+.classes-full .classes-info-container .classes-info .detail .information .button a {
+  font-size: 18px;
+  color: #5E4A49;
+  padding: 1.5rem 2.5rem;
+  border: 1px solid #5E4A49;
+}
+.classes-full .classes-info-container .classes-info .detail .information .button a:hover {
+  background-color: #B99692;
+  border: 1px solid #B99692;
+  color: white;
+  cursor: pointer;
 }
 
 .IconsContainer {
