@@ -181,18 +181,19 @@ header nav .logo {
   display: grid;
   grid-template-columns: 250px 450px;
   grid-template-rows: 400px;
+  grid-template-areas: "PicArea TextArea";
   gap: 5rem;
   margin-top: 3rem;
   place-content: center;
 }
 .AboutMeSection .AboutMeContainer .AboutPic {
+  grid-area: PicArea;
   display: block;
   border: 1px solid #e3b6b1;
   height: 370px;
   width: 266px;
   margin-left: 20px;
   position: relative;
-  z-index: -1;
 }
 .AboutMeSection .AboutMeContainer .AboutPic .backgroudLine {
   text-align: center;
@@ -223,6 +224,7 @@ header nav .logo {
   padding: 20px 0;
 }
 .AboutMeSection .AboutMeContainer .AboutText {
+  grid-area: TextArea;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "Logo Logo" "h3Text h3Text" "pText pText" "A-button signature";
@@ -245,7 +247,7 @@ header nav .logo {
   font-weight: 300;
   font-style: normal;
   font-size: 18px;
-  color: #191919;
+  color: #a3a3a3;
 }
 .AboutMeSection .AboutMeContainer .AboutText button {
   grid-area: A-button;
@@ -291,11 +293,9 @@ header nav .logo {
   width: 150px;
   transform: translateY(12px);
   background-color: white;
-  z-index: -1;
 }
 .AboutMeSection .OurBrands .BrandsPics {
   border-top: 1px solid #a3a3a3;
-  z-index: -2;
 }
 .AboutMeSection .OurBrands .BrandsPics img {
   margin: 1.5rem;
@@ -841,6 +841,33 @@ header nav .logo {
   .hideonMobile {
     display: none;
   }
+  .AboutMeContainer {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+    width: 80% !important;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .AboutMeContainer .AboutText {
+    grid-template-columns: 1fr !important;
+    grid-template-areas: "Logo" "h3Text" "pText" " signature" "A-button" !important;
+  }
+  .AboutMeContainer .AboutText img {
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+  .AboutMeContainer .AboutText .h3Title {
+    margin-bottom: 1rem;
+  }
+  .AboutMeContainer .AboutText p {
+    margin-bottom: 2rem;
+  }
+  .AboutMeContainer .AboutText .h3Signature {
+    margin-bottom: 2rem;
+    transform: rotate(0deg) !important;
+  }
   .starSection .headerSec .titleStar h1 {
     font-size: 48px;
   }
@@ -870,6 +897,39 @@ header nav .logo {
 @media only screen and (max-width: 600px) {
   .sidebar {
     width: 100%;
+  }
+  .AboutMeContainer {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+    width: 100% !important;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .AboutMeContainer .AboutText {
+    grid-template-columns: 1fr !important;
+    grid-template-areas: "Logo" "h3Text" "pText" " signature" "A-button" !important;
+  }
+  .AboutMeContainer .AboutText img {
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+  .AboutMeContainer .AboutText .h3Title {
+    font-size: 36px !important;
+    margin-bottom: 1rem;
+  }
+  .AboutMeContainer .AboutText p {
+    max-width: 80%;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+  .AboutMeContainer .AboutText .h3Signature {
+    margin-bottom: 2rem;
+    transform: rotate(0deg) !important;
+  }
+  .OurBrands {
+    width: 400px !important;
   }
   .starSection .headerSec .titleStar {
     text-align: center;

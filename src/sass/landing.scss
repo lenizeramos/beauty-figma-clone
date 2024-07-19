@@ -233,17 +233,19 @@ header {
     display: grid;
     grid-template-columns: 250px 450px;
     grid-template-rows: 400px;
+    grid-template-areas: 
+    "PicArea TextArea";
     gap: 5rem;
     margin-top: 3rem;
     place-content: center;
     .AboutPic{
+      grid-area: PicArea;
       display: block;
       border: 1px solid $accent;
       height: 370px;
       width: 266px;
       margin-left: 20px;
       position: relative;
-      z-index: -1;
       .backgroudLine{
         text-align: center;
         position: absolute;
@@ -275,6 +277,7 @@ header {
       }
     }
     .AboutText{
+      grid-area: TextArea;
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-areas: 
@@ -300,7 +303,7 @@ header {
         font-weight: 300;
         font-style: normal;
         font-size: $body;
-        color: $black;
+        color: $midgrey;
       }
       button{
         grid-area: A-button;
@@ -347,11 +350,9 @@ header {
       width: 150px;
       transform: translateY(12px);
       background-color: white;
-      z-index: -1;
     }
     .BrandsPics{
       border-top: 1px solid $midgrey;
-      z-index: -2;
       img{
         margin: 1.5rem;
         padding-top: 2rem;
@@ -1001,6 +1002,39 @@ header {
   .hideonMobile {
     display: none;
   }
+  //About Section
+  .AboutMeContainer{
+    display: flex !important;
+    flex-direction: column-reverse !important;
+    width: 80% !important;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    .AboutText{
+      grid-template-columns: 1fr !important;
+      grid-template-areas: 
+      "Logo"
+      "h3Text"
+      "pText"
+      " signature"
+      "A-button" !important;
+      img{
+        margin: auto;        
+        margin-bottom: 1rem;
+      }
+      .h3Title{
+        margin-bottom: 1rem;
+      }
+      p{
+        margin-bottom: 2rem;
+      }
+      .h3Signature{
+        margin-bottom: 2rem;
+        transform: rotate(0deg) !important;
+      }
+    }
+  } 
 
   //STAR SECTION
   .starSection{
@@ -1046,6 +1080,46 @@ header {
   //NAVBAR
   .sidebar {
     width: 100%;
+  }
+
+  //About Section
+  .AboutMeContainer{
+    display: flex !important;
+    flex-direction: column-reverse !important;
+    width: 100% !important;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    .AboutText{
+      grid-template-columns: 1fr !important;
+      grid-template-areas: 
+      "Logo"
+      "h3Text"
+      "pText"
+      " signature"
+      "A-button" !important;
+      img{
+        margin: auto;        
+        margin-bottom: 1rem;
+      }
+      .h3Title{
+        font-size: $h4 !important;
+        margin-bottom: 1rem;
+      }
+      p{
+        max-width: 80%;
+        margin: auto;
+        margin-bottom: 2rem;
+      }
+      .h3Signature{
+        margin-bottom: 2rem;
+        transform: rotate(0deg) !important;
+      }
+    }
+  } 
+  .OurBrands{
+    width: 400px !important;
   }
 
   //STAR SECTION
