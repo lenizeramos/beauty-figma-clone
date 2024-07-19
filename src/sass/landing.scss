@@ -403,22 +403,29 @@ header {
     }
     .starsecBtn {
       margin: 1rem 0;
-      .btnStar {
-        padding: 1rem 2rem;
-        background-color: transparent;
-        border: 0.5px solid #5e4a49;
-        cursor: pointer;
+      border: 1px #5e4a49 solid;
+      height: 60px;
+      width: 160px;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      a{
+        text-decoration: none;
         p{
           font-family: "Baskervville", serif;
           font-weight: 400;
           font-style: normal;
-          font-size: $button
+          font-size: $button;
+          color: $boldmain;
         }
-  
-        &:hover {
-          background-color: $darkpink;
-          border: 1px solid $darkpink;
-          color: white;
+      }
+      &:hover{
+        background-color: $darkpink;
+        border: 1px $darkpink solid;
+        p{
+        color: white;
         }
       }
     }
@@ -501,6 +508,137 @@ header {
 
   }
 
+}
+//************************************************END 3RD SECTION*********************************************************************//
+
+//******************************START 4TH SECTION********************************************//
+.makeup_hairstyle {
+  // display: flex;
+  padding: 2rem 0;
+  background-color: $palewhite;
+  .headerSec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .titleMH {
+      padding: 1rem;
+      width: 50%;
+      text-align: center;
+      // border: 1px red solid;
+      h1 {
+        // border: 1px red solid;
+        font-family: "Baskervville", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: $h1;
+        color: #5e4a49;
+      }
+    }
+    span {
+      border: 1px $accent solid;
+      width: 200px;
+      margin-bottom: 1.5rem;
+    }
+    .messageMH {
+      // border: 1px red solid;
+      width: 40%;
+      text-align: center;
+      margin: 1rem 0;
+      p {
+        font-family: "Avenir", serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: $body;
+        color: $brand;
+      }
+    }
+    .MHsecBtn {
+      margin: 1rem 0;
+      border: 1px #5e4a49 solid;
+      height: 60px;
+      width: 160px;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      a{
+        text-decoration: none;
+        p{
+          font-family: "Baskervville", serif;
+          font-weight: 400;
+          font-style: normal;
+          font-size: $button;
+          color: $boldmain;
+        }
+      }
+      &:hover{
+        background-color: $darkpink;
+        border: 1px $darkpink solid;
+        p{
+        color: white;
+        }
+      }
+    }
+  }
+
+  .photoSec_MH{
+    // border: 1px green solid;
+    margin: 2rem 0;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    align-items: center;
+    height: 400px;
+    .photo{
+      display: flex;
+      align-items: flex-end;
+      height: 100%;
+      width: 25%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      max-inline-size: 100%;
+      .innerText{
+        p{
+          font-family: "Baskervville", serif;
+          font-weight: 400;
+          font-style: normal;
+          font-size: $h3;
+          color: $lightpink;
+          transform: translateX(-25%);
+          // transform: translateY(-20%);
+          span{
+          font-family: "Baskervville", serif;
+          font-weight: 400;
+          font-style: normal;
+          font-size: $h3;
+          color: $darkpink;
+          }
+        }
+      }
+    &.left{
+        background-image: url(../resources/landing/Frame157_Service.png);
+      }
+    &.mid{
+        background-image: url(../resources/landing/Frame157_Wed.png);
+      }
+    &.right{
+        background-image: url(../resources/landing/Frame157_PS.png);
+      }
+    &.sidePic{
+        height: 75%;
+        width: 20%;
+        transition: all 0.5s ease-in-out;
+        &:hover{
+          height: 100%;
+          width: 25%;
+          transition: all 0.5s ease-in-out;
+        }
+      }
+    }
+  }
+
   .hbutton {
     color: #5e4a49;
     font-family: "Baskerville", serif;
@@ -509,7 +647,9 @@ header {
     font-size: 14px;
   }
 }
-//************************************************END 3RD SECTION*********************************************************************//
+
+//******************************END 4TH SECTION********************************************//
+
 
 // START FORM SERVICES
 .formMainContainer {
