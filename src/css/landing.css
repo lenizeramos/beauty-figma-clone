@@ -52,10 +52,9 @@ header nav .navbar li a i {
   color: #725a58;
 }
 header nav .logo {
-  background-image: url(../resources/landing/CarlaBeautyLogo.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
+  max-inline-size: 100%;
+  block-size: auto;
+  background-position: center;
   height: 150px;
   transition: height 0.5s ease;
 }
@@ -103,11 +102,12 @@ header nav .logo {
   transition: padding 1.5s ease;
 }
 .smallNavBar .logo {
-  background-image: url(../resources/landing/ShrinkedLogo_Navbar.svg);
   height: 80px;
   transition: height 1.5s ease;
   background-size: contain;
-  background-position: center;
+}
+.smallNavBar .logo img {
+  height: 80px;
 }
 
 .showonMobile,
@@ -358,34 +358,33 @@ header nav .logo {
 }
 .starSection .photoSec {
   display: flex;
+  justify-content: center;
   width: 100%;
   gap: 10px;
   height: 400px;
   margin: 4rem 0;
 }
 .starSection .photoSec .photo {
+  flex: 1;
   width: 25%;
-  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  max-inline-size: 100%;
+  block-size: auto;
+  background-position: center;
 }
 .starSection .photoSec .photo.firstpic {
   background-image: url(../resources/landing/1.png);
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 .starSection .photoSec .photo.secondpic {
   background-image: url(../resources/landing/2.png);
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 .starSection .photoSec .photo.thirdpic {
   background-image: url(../resources/landing/3.png);
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 .starSection .photoSec .photo.fourthpic {
   background-image: url(../resources/landing/4.png);
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 .starSection .testimonials {
   display: flex;
@@ -840,10 +839,50 @@ header nav .logo {
   .hideonMobile {
     display: none;
   }
+  .starSection .headerSec .titleStar h1 {
+    font-size: 48px;
+  }
+  .starSection .headerSec .messageStar {
+    width: 50%;
+  }
+  .starSection .headerSec .messageStar p {
+    font-size: 16px;
+  }
+  .starSection .photoSec {
+    flex-wrap: wrap;
+    height: 620px;
+    margin: 2rem 0;
+  }
+  .starSection .photoSec .photo {
+    width: 49%;
+    height: 300px;
+    flex: none;
+  }
+  .starSection .testimonials .singleTest {
+    width: 90%;
+  }
+  .starSection .testimonials .singleTest p {
+    font-size: 24px;
+  }
 }
 @media only screen and (max-width: 600px) {
   .sidebar {
     width: 100%;
+  }
+  .starSection .headerSec .titleStar {
+    text-align: center;
+  }
+  .starSection .headerSec .titleStar h1 {
+    font-size: 36px;
+  }
+  .starSection .headerSec .messageStar {
+    width: 90%;
+  }
+  .starSection .photoSec .photo {
+    width: 45%;
+  }
+  .starSection .testimonials .singleTest p {
+    font-size: 18px;
   }
 }
 .baskervville-regular {

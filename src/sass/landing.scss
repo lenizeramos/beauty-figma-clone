@@ -45,6 +45,7 @@ $signature: 54px;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  // overflow-x: hidden;
 }
 
 //**********************************************BEGIN NAVBAR**************************************************************************//
@@ -84,10 +85,15 @@ header {
       }
     }
     .logo {
-      background-image: url(../resources/landing/CarlaBeautyLogo.svg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      width: 100%;
+      // border: 1px red solid;
+      // background-image: url(../resources/landing/CarlaBeautyLogo.svg);
+      // background-size: cover;
+      // background-repeat: no-repeat;
+      // width: 100%;
+      // max-width: 100%;
+      max-inline-size: 100%;
+      block-size: auto;
+      background-position: center;
       height: 150px;
       transition: height .5s ease;
     }
@@ -136,11 +142,13 @@ header {
   padding: 0.5rem 1rem;
   transition: padding 1.5s ease;
   .logo {
-    background-image: url(../resources/landing/ShrinkedLogo_Navbar.svg);
+    // background-image: url(../resources/landing/ShrinkedLogo_Navbar.svg);
     height: 80px;
     transition: height 1.5s ease;
     background-size: contain;
-    background-position: center;
+    img{
+      height: 80px;
+    }
 
   }
 }
@@ -415,37 +423,37 @@ header {
 
   .photoSec{
   display: flex;
+  justify-content: center;
   width: 100%;
   gap: 10px;
   height: 400px;
   margin: 4rem 0;
 
     .photo{
+      flex: 1;
       width: 25%;
-      height: 100%;
+      // height: 400px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      max-width: 100%;
+      max-inline-size: 100%;
+      block-size: auto;
+      background-position: center;
       // img{
       //   width: 100%;
       //   min-height: 100%;
       // }
       &.firstpic{
         background-image: url(../resources/landing/1.png);
-        background-size: cover;
-        background-repeat: no-repeat;
       }
       &.secondpic{
         background-image: url(../resources/landing/2.png);
-        background-size: cover;
-        background-repeat: no-repeat;
       }
       &.thirdpic{
         background-image: url(../resources/landing/3.png);
-        background-size: cover;
-        background-repeat: no-repeat;
       }
       &.fourthpic{
         background-image: url(../resources/landing/4.png);
-        background-size: cover;
-        background-repeat: no-repeat;
       }
     }
   }
@@ -983,7 +991,7 @@ header {
 //***************MEDIA QUERIES***************************//
 //Tablet
 @media only screen and (max-width: 800px) {
-  //NAVABAR
+  //NAVBAR
   .showonMobile,
   .opentagSB {
     display: block;
@@ -993,6 +1001,40 @@ header {
   }
 
   //STAR SECTION
+  .starSection{
+    .headerSec{
+      .titleStar{
+        h1{
+          font-size: $h3;
+        }
+      }
+      .messageStar{
+        width: 50%;
+        p{
+          font-size: $body_sm;
+        }
+      }
+    }
+    .photoSec{
+      flex-wrap: wrap;
+      height: 620px ;
+      margin: 2rem 0;
+      // gap: none;
+      .photo{
+        width: 49%;
+        height: 300px;
+        flex: none;
+      }
+    }
+    .testimonials{
+      .singleTest{
+        width: 90%;
+        p{
+          font-size: $h6;
+        }
+      }
+    }
+  }
 
 
 }
@@ -1005,6 +1047,40 @@ header {
   }
 
   //STAR SECTION
+  .starSection{
+    .headerSec{
+      .titleStar{
+        text-align: center;
+        h1{
+          font-size: $h4;
+        }
+      }
+      .messageStar{
+        width: 90%;
+        // p{
+        //   font-size: $body_sm;
+        // }
+      }
+    }
+    .photoSec{
+      // flex-wrap: wrap;
+      // height: 620px ;
+      // // gap: none;
+      .photo{
+        width: 45%;
+        // height: 300px;
+        // flex: none;
+      }
+    }
+    .testimonials{
+      .singleTest{
+        // width: 90%;
+        p{
+          font-size: $button_sm;
+        }
+      }
+    }
+  }
 }
 
 //GOOGLE FONTS -BASKERVVILE-
