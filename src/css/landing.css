@@ -556,6 +556,22 @@ header nav .logo {
   font-size: 14px;
 }
 
+.makeup101 {
+  padding: 0 1rem;
+  background-color: #fae9e7;
+}
+.makeup101 .title {
+  padding: 1rem;
+  text-align: center;
+}
+.makeup101 .title h1 {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 80px;
+  color: #5e4a49;
+}
+
 .formMainContainer .form-services {
   display: flex;
   flex-direction: column;
