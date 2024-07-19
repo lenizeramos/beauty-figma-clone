@@ -557,7 +557,7 @@ header nav .logo {
 }
 
 .makeup101 {
-  padding: 0 1rem;
+  padding: 0 2rem;
   background-color: #fae9e7;
 }
 .makeup101 .title {
@@ -570,6 +570,108 @@ header nav .logo {
   font-style: normal;
   font-size: 80px;
   color: #5e4a49;
+}
+.makeup101 .mainContent {
+  display: flex;
+  align-items: center;
+  height: 600px;
+}
+.makeup101 .mainContent .classes {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.makeup101 .mainContent .classes .row {
+  display: flex;
+}
+.makeup101 .mainContent .classes .row .content {
+  width: 90%;
+}
+.makeup101 .mainContent .classes .row .content .classTitle {
+  display: flex;
+  gap: 10px;
+}
+.makeup101 .mainContent .classes .row .content .classTitle p {
+  font-family: "Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 48px;
+  color: #725a58;
+}
+.makeup101 .mainContent .classes .row .content .classInfo {
+  width: 80%;
+}
+.makeup101 .mainContent .classes .row .content .classInfo p {
+  font-family: "Avenir", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
+  color: #191919;
+}
+.makeup101 .mainContent .classes .row .arrow {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.makeup101 .mainContent .classes .row .arrow a {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.makeup101 .mainContent .classes .M101secBtn {
+  margin: 1rem 0;
+  border: 1px #5e4a49 solid;
+  height: 60px;
+  width: 160px;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.makeup101 .mainContent .classes .M101secBtn a {
+  text-decoration: none;
+}
+.makeup101 .mainContent .classes .M101secBtn a p {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  color: #725a58;
+}
+.makeup101 .mainContent .classes .M101secBtn:hover {
+  background-color: #b99692;
+  border: 1px #b99692 solid;
+}
+.makeup101 .mainContent .classes .M101secBtn:hover p {
+  color: white;
+}
+.makeup101 .mainContent .picContainer {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.makeup101 .mainContent .picContainer .ladypicContainer {
+  width: 80%;
+  height: 90%;
+  background-image: url(../resources/landing/image122.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-inline-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.makeup101 .mainContent .picContainer .ladypicContainer .backLine {
+  border: 1px rgba(255, 255, 255, 0.452) solid;
+  width: 80%;
+  height: 90%;
+  z-index: 1;
 }
 
 .formMainContainer .form-services {
