@@ -21,6 +21,7 @@ header {
   position: -webkit-sticky;
   top: 0px;
   background-color: #f8f6f4;
+  z-index: 990;
 }
 header nav .navbar {
   padding: 1rem;
@@ -122,7 +123,7 @@ header nav .logo {
   min-height: 100vh;
   background-color: #f8f6f4;
   position: relative;
-  z-index: -1;
+  overflow-x: hidden;
 }
 .mainPicSection .mainPicContainer #MainPic {
   position: absolute;
@@ -172,7 +173,7 @@ header nav .logo {
 
 .AboutMeSection {
   min-height: 80vh;
-  width: 90%;
+  width: 100%;
   margin: auto;
   overflow-x: hidden;
 }
@@ -180,7 +181,7 @@ header nav .logo {
   display: grid;
   grid-template-columns: 250px 450px;
   grid-template-rows: 400px;
-  gap: 3rem;
+  gap: 5rem;
   margin-top: 3rem;
   place-content: center;
 }
@@ -283,6 +284,7 @@ header nav .logo {
   margin-top: 5rem;
   margin-bottom: 5rem;
   min-width: 400px;
+  max-width: 90%;
 }
 .AboutMeSection .OurBrands p {
   align-self: center;
