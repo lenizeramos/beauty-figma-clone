@@ -220,12 +220,12 @@ header {
       align-items: center;
       padding: 3rem;
       background-color: #fae9e7;
-      width: 40%;
+      width: 60%;
 
       @media only screen and (max-width: 768px) {
         width: 100%;
       }
-      @media only screen and (min-width: 769px) and (max-width: 1024px)  {
+      @media only screen and (min-width: 769px) and (max-width: 1024px) {
         width: 80%;
       }
 
@@ -254,7 +254,7 @@ header {
         display: flex;
         flex-direction: column;
         width: 100%;
-        
+
         .image_thanks {
           background-image: url(../resources/contact/Frame\ 437.png);
           background-repeat: no-repeat;
@@ -282,7 +282,7 @@ header {
           color: $boldmain;
           margin: 0.5rem 0 0.5rem;
         }
-  
+
         h5 {
           color: $boldmain;
         }
