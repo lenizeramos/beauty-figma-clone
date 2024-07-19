@@ -135,3 +135,18 @@ dist
 .sass-cache/*
 
 *.map
+
+# Vim swap files
+*.swp
+*.swo
+*.swn
+
+# Vim backup files
+*.bak
+*.tmp
+
+# Vim undo files
+*.un~
+
+# Vim views
+*.vimview
