@@ -197,11 +197,16 @@ h1 {
   flex-direction: column;
   align-items: center;
   padding: 0 !important;
+  margin-right: 1rem;
+  border: 1px solid black;
+  height: fit-content;
 }
 @media only screen and (max-width: 768px) {
   .classes-full .classes-info-container .classes-info .detail .container_image_info {
     flex-direction: column-reverse;
     padding-bottom: 2rem;
+    width: 100%;
+    border: none;
   }
 }
 .classes-full .classes-info-container .classes-info .detail .container_image_info .master_class_price {
@@ -221,6 +226,17 @@ h1 {
   flex-direction: column;
   align-items: start;
 }
+.classes-full .classes-info-container .classes-info .detail .container_image_info .master_class_price .price-time-target .icon {
+  display: flex;
+  padding: 0.5rem;
+}
+.classes-full .classes-info-container .classes-info .detail .container_image_info .master_class_price .price-time-target .icon img {
+  width: 15px;
+  margin-right: 0.5rem;
+}
+.classes-full .classes-info-container .classes-info .detail .container_image_info .master_class_price .price-time-target .icon .body {
+  margin-right: 0.8rem;
+}
 .classes-full .classes-info-container .classes-info .detail .information {
   padding-left: 2rem;
 }
@@ -235,19 +251,6 @@ h1 {
   font-size: 28px;
   color: #725a58;
   margin-bottom: 2rem;
-}
-.classes-full .classes-info-container .classes-info .detail .information .price-time-target {
-  display: flex;
-}
-.classes-full .classes-info-container .classes-info .detail .information .price-time-target .icon {
-  display: flex;
-}
-.classes-full .classes-info-container .classes-info .detail .information .price-time-target .icon img {
-  width: 15px;
-  margin-right: 0.5rem;
-}
-.classes-full .classes-info-container .classes-info .detail .information .price-time-target .icon .body {
-  margin-right: 0.8rem;
 }
 .classes-full .classes-info-container .classes-info .detail .information .overview {
   margin-bottom: 2rem;
