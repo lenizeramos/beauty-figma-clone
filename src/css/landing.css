@@ -29,6 +29,7 @@ header {
   position: -webkit-sticky;
   top: 0px;
   background-color: #f8f6f4;
+  z-index: 990;
 }
 header nav .navbar {
   padding: 1rem;
@@ -64,10 +65,9 @@ header nav .navbar li a i {
   color: #725a58;
 }
 header nav .logo {
-  background-image: url(../resources/landing/CarlaBeautyLogo.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
+  max-inline-size: 100%;
+  block-size: auto;
+  background-position: center;
   height: 150px;
   transition: height 0.5s ease;
 }
@@ -119,11 +119,12 @@ header nav .logo {
   transition: padding 1.5s ease;
 }
 .smallNavBar .logo {
-  background-image: url(../resources/landing/ShrinkedLogo_Navbar.svg);
   height: 80px;
   transition: height 1.5s ease;
   background-size: contain;
-  background-position: center;
+}
+.smallNavBar .logo img {
+  height: 80px;
 }
 
 .showonMobile,
@@ -141,7 +142,7 @@ header nav .logo {
   min-height: 100vh;
   background-color: #f8f6f4;
   position: relative;
-  z-index: -1;
+  overflow-x: hidden;
 }
 .mainPicSection .mainPicContainer #MainPic {
   position: absolute;
@@ -187,6 +188,137 @@ header nav .logo {
   border: 1px solid rgba(255, 255, 255, 0.5);
   color: #191919;
   transition: 1s;
+}
+
+.AboutMeSection {
+  min-height: 80vh;
+  width: 100%;
+  margin: auto;
+  overflow-x: hidden;
+}
+.AboutMeSection .AboutMeContainer {
+  display: grid;
+  grid-template-columns: 250px 450px;
+  grid-template-rows: 400px;
+  grid-template-areas: "PicArea TextArea";
+  gap: 5rem;
+  margin-top: 3rem;
+  place-content: center;
+}
+.AboutMeSection .AboutMeContainer .AboutPic {
+  grid-area: PicArea;
+  display: block;
+  border: 1px solid #e3b6b1;
+  height: 370px;
+  width: 266px;
+  margin-left: 20px;
+  position: relative;
+}
+.AboutMeSection .AboutMeContainer .AboutPic .backgroudLine {
+  text-align: center;
+  position: absolute;
+  transform: translate(-20px);
+  height: 300px;
+  top: 10px;
+}
+.AboutMeSection .AboutMeContainer .AboutPic .backgroudLine #Lady18Pic {
+  height: 300px;
+  transform: translate(0, 10px);
+  background-color: #e3b6b1;
+}
+.AboutMeSection .AboutMeContainer .AboutPic .backgroudLine .Logo_Text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  background-color: white;
+  border: 1px solid #a3a3a3;
+  margin: 0;
+  width: 266px;
+}
+.AboutMeSection .AboutMeContainer .AboutPic .backgroudLine .Logo_Text img {
+  margin: auto;
+}
+.AboutMeSection .AboutMeContainer .AboutPic .backgroudLine .Logo_Text p {
+  text-align: left;
+  padding: 20px 0;
+}
+.AboutMeSection .AboutMeContainer .AboutText {
+  grid-area: TextArea;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "Logo Logo" "h3Text h3Text" "pText pText" "A-button signature";
+}
+.AboutMeSection .AboutMeContainer .AboutText img {
+  grid-area: Logo;
+  align-self: center;
+}
+.AboutMeSection .AboutMeContainer .AboutText .h3Title {
+  grid-area: h3Text;
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 48px;
+  color: #191919;
+}
+.AboutMeSection .AboutMeContainer .AboutText p {
+  grid-area: pText;
+  font-family: "Avenir", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
+  color: #a3a3a3;
+}
+.AboutMeSection .AboutMeContainer .AboutText button {
+  grid-area: A-button;
+  padding: 20px 0px;
+  width: 170px;
+  height: 70px;
+  background-color: transparent;
+  border: 0.5px solid #a3a3a3;
+  cursor: pointer;
+  color: #535353;
+  font-family: "Baskervville", serif;
+  font-size: 20px;
+  align-self: center;
+}
+.AboutMeSection .AboutMeContainer .AboutText button:hover {
+  background-color: #b99692;
+  border: 1px solid #b99692;
+  color: #f8f6f4;
+}
+.AboutMeSection .AboutMeContainer .AboutText .h3Signature {
+  grid-area: signature;
+  font-family: "Magenta";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 48px;
+  transform: rotate(-10deg);
+  z-index: -1;
+}
+.AboutMeSection .OurBrands {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  min-width: 400px;
+  max-width: 90%;
+}
+.AboutMeSection .OurBrands p {
+  align-self: center;
+  width: 150px;
+  transform: translateY(12px);
+  background-color: white;
+}
+.AboutMeSection .OurBrands .BrandsPics {
+  border-top: 1px solid #a3a3a3;
+}
+.AboutMeSection .OurBrands .BrandsPics img {
+  margin: 1.5rem;
+  padding-top: 2rem;
 }
 
 .starSection {
@@ -247,34 +379,33 @@ header nav .logo {
 }
 .starSection .photoSec {
   display: flex;
+  justify-content: center;
   width: 100%;
   gap: 10px;
   height: 400px;
   margin: 4rem 0;
 }
 .starSection .photoSec .photo {
+  flex: 1;
   width: 25%;
-  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  max-inline-size: 100%;
+  block-size: auto;
+  background-position: center;
 }
 .starSection .photoSec .photo.firstpic {
   background-image: url(../resources/landing/1.png);
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 .starSection .photoSec .photo.secondpic {
   background-image: url(../resources/landing/2.png);
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 .starSection .photoSec .photo.thirdpic {
   background-image: url(../resources/landing/3.png);
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 .starSection .photoSec .photo.fourthpic {
   background-image: url(../resources/landing/4.png);
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 .starSection .testimonials {
   display: flex;
@@ -914,10 +1045,110 @@ header nav .logo {
   .hideonMobile {
     display: none;
   }
+  .AboutMeContainer {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+    width: 80% !important;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .AboutMeContainer .AboutText {
+    grid-template-columns: 1fr !important;
+    grid-template-areas: "Logo" "h3Text" "pText" " signature" "A-button" !important;
+  }
+  .AboutMeContainer .AboutText img {
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+  .AboutMeContainer .AboutText .h3Title {
+    margin-bottom: 1rem;
+  }
+  .AboutMeContainer .AboutText p {
+    margin-bottom: 2rem;
+  }
+  .AboutMeContainer .AboutText .h3Signature {
+    margin-bottom: 2rem;
+    transform: rotate(0deg) !important;
+  }
+  .starSection .headerSec .titleStar h1 {
+    font-size: 48px;
+  }
+  .starSection .headerSec .messageStar {
+    width: 50%;
+  }
+  .starSection .headerSec .messageStar p {
+    font-size: 16px;
+  }
+  .starSection .photoSec {
+    flex-wrap: wrap;
+    height: 620px;
+    margin: 2rem 0;
+  }
+  .starSection .photoSec .photo {
+    width: 49%;
+    height: 300px;
+    flex: none;
+  }
+  .starSection .testimonials .singleTest {
+    width: 90%;
+  }
+  .starSection .testimonials .singleTest p {
+    font-size: 24px;
+  }
 }
 @media only screen and (max-width: 600px) {
   .sidebar {
     width: 100%;
+  }
+  .AboutMeContainer {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+    width: 100% !important;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .AboutMeContainer .AboutText {
+    grid-template-columns: 1fr !important;
+    grid-template-areas: "Logo" "h3Text" "pText" " signature" "A-button" !important;
+  }
+  .AboutMeContainer .AboutText img {
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+  .AboutMeContainer .AboutText .h3Title {
+    font-size: 36px !important;
+    margin-bottom: 1rem;
+  }
+  .AboutMeContainer .AboutText p {
+    max-width: 80%;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+  .AboutMeContainer .AboutText .h3Signature {
+    margin-bottom: 2rem;
+    transform: rotate(0deg) !important;
+  }
+  .OurBrands {
+    width: 400px !important;
+  }
+  .starSection .headerSec .titleStar {
+    text-align: center;
+  }
+  .starSection .headerSec .titleStar h1 {
+    font-size: 36px;
+  }
+  .starSection .headerSec .messageStar {
+    width: 90%;
+  }
+  .starSection .photoSec .photo {
+    width: 45%;
+  }
+  .starSection .testimonials .singleTest p {
+    font-size: 18px;
   }
 }
 <<<<<<< HEAD
