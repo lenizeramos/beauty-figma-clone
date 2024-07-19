@@ -112,7 +112,7 @@ main {
   }
 }
 main .mainContainer {
-  width: 40%;
+  width: 60%;
   background-color: #fae9e7;
   padding: 1.5rem;
 }
@@ -471,6 +471,4 @@ footer {
     grid-template-columns: 1fr !important;
     grid-auto-flow: column;
   }
-}
-
-/*# sourceMappingURL=partyForm.css.map */
+}/*# sourceMappingURL=partyForm.css.map */

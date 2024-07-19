@@ -832,15 +832,14 @@ header {
       flex-direction: column;
       align-items: center;
       margin: 4rem auto;
-      width: 40%;
+      width: 60%;
 
       @media only screen and (max-width: 768px) {
         width: 100%;
-       }
-       
-       @media only screen and (min-width: 769px) and (max-width: 1024px)  {
-         width: 80%;
-       }
+      }
+      @media only screen and (min-width: 769px) and (max-width: 1024px) {
+        width: 80%;
+      }
 
       h1 {
         margin-bottom: 1rem;
@@ -859,12 +858,12 @@ header {
       align-items: center;
       padding: 3rem;
       background-color: #fae9e7;
-      width: 40%;
+      width: 60%;
 
       @media only screen and (max-width: 768px) {
         width: 100%;
       }
-      @media only screen and (min-width: 769px) and (max-width: 1024px)  {
+      @media only screen and (min-width: 769px) and (max-width: 1024px) {
         width: 80%;
       }
 

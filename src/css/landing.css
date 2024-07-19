@@ -714,7 +714,7 @@ header nav .logo {
   flex-direction: column;
   align-items: center;
   margin: 4rem auto;
-  width: 40%;
+  width: 60%;
 }
 @media only screen and (max-width: 768px) {
   .formMainContainer .form-services .contact-us {
@@ -740,7 +740,7 @@ header nav .logo {
   align-items: center;
   padding: 3rem;
   background-color: #fae9e7;
-  width: 40%;
+  width: 60%;
 }
 @media only screen and (max-width: 768px) {
   .formMainContainer .form-services .form-services-container {
@@ -1221,6 +1221,4 @@ header nav .logo {
   font-family: "Baskervville", serif;
   font-weight: 400;
   font-style: italic;
-}
-
-/*# sourceMappingURL=landing.css.map */
+}/*# sourceMappingURL=landing.css.map */

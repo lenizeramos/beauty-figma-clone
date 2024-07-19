@@ -219,10 +219,13 @@ header {
       align-items: center;
       padding: 3rem;
       background-color: #fae9e7;
-      width: 40%;
+      width: 60%;
 
       @media only screen and (max-width: 768px) {
         width: 100%;
+      }
+      @media only screen and (min-width: 769px) and (max-width: 1024px) {
+        width: 80%;
       }
 
       .form-header {
