@@ -465,8 +465,6 @@ footer {
   font-style: italic;
 }
 
-<<<<<<< Upstream, based on origin/dev
-=======
 @media only screen and (max-width: 768px) {
   .premiumUl {
     display: grid;
@@ -475,5 +473,4 @@ footer {
   }
 }
 
->>>>>>> 32399ac add contact page and links to other pages
 /*# sourceMappingURL=partyForm.css.map */

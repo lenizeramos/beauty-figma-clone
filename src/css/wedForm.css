@@ -460,17 +460,10 @@ footer {
   font-style: normal;
 }
 
-<<<<<<< HEAD
-/*# sourceMappingURL=wedForm.css.map */
-=======
 .baskervville-regular-italic {
   font-family: "Baskervville", serif;
   font-weight: 400;
   font-style: italic;
-<<<<<<< Upstream, based on origin/dev
-}/*# sourceMappingURL=wedForm.css.map */
->>>>>>> dev
-=======
 }
 
 @media only screen and (max-width: 768px) {
@@ -479,5 +472,6 @@ footer {
     grid-template-columns: 1fr !important;
     grid-auto-flow: column;
   }
-}/*# sourceMappingURL=wedForm.css.map */
->>>>>>> 32399ac add contact page and links to other pages
+}
+
+/*# sourceMappingURL=wedForm.css.map */
