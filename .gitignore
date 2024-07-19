@@ -128,3 +128,25 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+
+
+.sass-cache
+.sass-cache/*
+
+*.map
+
+# Vim swap files
+*.swp
+*.swo
+*.swn
+
+# Vim backup files
+*.bak
+*.tmp
+
+# Vim undo files
+*.un~
+
+# Vim views
+*.vimview

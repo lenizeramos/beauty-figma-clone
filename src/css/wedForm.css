@@ -1,0 +1,477 @@
+@font-face {
+  font-family: "Avenir";
+  src: url(/fonts/Avenir/Avenir\ Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "WhiteFlower";
+  src: url(/fonts/WhiteFlower/WhiteFlower.otf) format("opentype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0px;
+  background-color: #f8f6f4;
+}
+header nav .navbar {
+  padding: 1rem;
+  transition: padding 1.5s ease;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .navbar li {
+  width: 100%;
+  text-align: center;
+}
+header nav .navbar li a {
+  text-decoration: none;
+  padding: 0 1rem;
+}
+header nav .navbar li a p {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+header nav .navbar li a p:not(.classes) {
+  border-right: 1px #725a58 solid;
+}
+header nav .navbar li a p,
+header nav .navbar li a i {
+  font-size: 20px;
+  color: #725a58;
+}
+header nav .logo img {
+  width: 100%;
+  transition: width 1.5s ease;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: #f8f6f4;
+  display: none;
+  transition: display 2s ease-in-out;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  list-style: none;
+}
+.sidebar li {
+  width: 100%;
+}
+.sidebar li:hover {
+  background-color: #e3b6b1;
+  transition: background-color 0.5s ease;
+}
+.sidebar li a {
+  text-decoration: none;
+  padding: 0 1rem;
+  width: 100%;
+}
+.sidebar li a p {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.sidebar li a p,
+.sidebar li a i {
+  font-size: 20px;
+  color: #725a58;
+}
+
+.smallNavBar {
+  padding: 0 1rem !important;
+  transition: padding 1.5s ease;
+}
+.smallNavBar .logo img {
+  width: 40%;
+  transition: width 1.5s ease;
+}
+
+main {
+  width: 100%;
+  background-color: #fbfafa;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-width: 768px) {
+  main {
+    padding: 0;
+  }
+}
+main .mainContainer {
+  width: 40%;
+  background-color: #fae9e7;
+  padding: 1.5rem;
+}
+@media only screen and (max-width: 768px) {
+  main .mainContainer {
+    width: 100%;
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  main .mainContainer {
+    width: 80%;
+  }
+}
+main .mainContainer .container {
+  padding: 3rem;
+}
+main .mainContainer .container .headContent .servToClass {
+  display: flex;
+  padding: 0.4rem;
+}
+main .mainContainer .container .headContent .servToClass .headbtn {
+  border-bottom: 1px #725a58 solid;
+  width: 50%;
+  text-align: center;
+}
+main .mainContainer .container .headContent .servToClass .headbtn a {
+  text-decoration: none;
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+  color: #725a58;
+}
+main .mainContainer .container .headContent .servToClass .headbtn.classbtn {
+  opacity: 0.5;
+}
+main .mainContainer .container .headContent .servToClass .headbtn.classbtn a {
+  opacity: 0.5;
+}
+main .mainContainer .container .headContent .backbtn a {
+  padding: 0.4rem;
+  width: 15%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  color: #725a58;
+}
+main .mainContainer .container .formContainer {
+  padding: 1rem 0;
+}
+main .mainContainer .container .formContainer .row {
+  margin-bottom: 1.5rem;
+}
+main .mainContainer .container .formContainer .row .checkboxService {
+  border: 1px #b99692 solid;
+  border-radius: 50%;
+  background-color: #725a58;
+  width: 1.3em;
+  height: 1.3em;
+  accent-color: #b99692;
+}
+main .mainContainer .container .formContainer .row .sectionTitle {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+  color: #191919;
+}
+main .mainContainer .container .formContainer .row.service .checkService {
+  display: flex;
+  gap: 10px;
+}
+@media only screen and (max-width: 768px) {
+  main .mainContainer .container .formContainer .row.service .checkService {
+    flex-direction: column;
+  }
+}
+main .mainContainer .container .formContainer .row.service .checkService .btnService {
+  width: 50%;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  border: 1px #b99692 solid;
+  background-color: #fbfafa;
+}
+@media only screen and (max-width: 768px) {
+  main .mainContainer .container .formContainer .row.service .checkService .btnService {
+    width: 100%;
+  }
+}
+main .mainContainer .container .formContainer .row.service .checkService .btnService label {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #191919;
+}
+main .mainContainer .container .formContainer .row.location {
+  display: flex;
+  flex-direction: column;
+}
+main .mainContainer .container .formContainer .row.location input {
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border: 1px #b99692 solid;
+  background-color: #fbfafa;
+}
+main .mainContainer .container .formContainer .row.location input::placeholder {
+  font-family: "Avenir", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
+}
+main .mainContainer .container .formContainer .row.location .checkbtn label {
+  font-family: "Avenir", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
+  color: #191919;
+}
+main .mainContainer .container .formContainer .row.premium .premiumUl {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-flow: row;
+  gap: 0.5rem;
+  padding-top: 0.5rem;
+}
+main .mainContainer .container .formContainer .row.premium .premiumUl li label {
+  font-family: "Avenir", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
+  color: #191919;
+}
+main .mainContainer .container .formContainer .row.extraService .rowExtra {
+  display: flex;
+  padding: 0.5rem;
+  background-color: #fbfafa;
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 768px) {
+  main .mainContainer .container .formContainer .row.extraService .rowExtra {
+    flex-direction: column;
+  }
+}
+main .mainContainer .container .formContainer .row.extraService .rowExtra .client {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+  padding: 0 1rem;
+  border-right: 1px #725a58 solid;
+}
+@media only screen and (max-width: 768px) {
+  main .mainContainer .container .formContainer .row.extraService .rowExtra .client {
+    width: 100%;
+    border-right: none;
+  }
+}
+main .mainContainer .container .formContainer .row.extraService .rowExtra .client p {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  color: #191919;
+}
+main .mainContainer .container .formContainer .row.extraService .rowExtra .client .counter {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  padding: 0.5rem;
+  background-color: #fae9e7;
+}
+main .mainContainer .container .formContainer .row.extraService .rowExtra .client .counter button {
+  background-color: #fae9e7;
+  border: none;
+}
+main .mainContainer .container .formContainer .row.extraService .rowExtra .client .counter #counterRes {
+  width: 20px;
+  text-align: center;
+  background-color: #fae9e7;
+  border: none;
+}
+main .mainContainer .container .formContainer .row.extraService .rowExtra .service {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  padding: 0.5rem;
+  width: 60%;
+}
+@media only screen and (max-width: 768px) {
+  main .mainContainer .container .formContainer .row.extraService .rowExtra .service {
+    flex-direction: row;
+  }
+}
+main .mainContainer .container .formContainer .row.extraService .rowExtra .service .makeup,
+main .mainContainer .container .formContainer .row.extraService .rowExtra .service .hairstyle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main .mainContainer .container .formContainer .row.extraService .rowExtra .service .makeup label,
+main .mainContainer .container .formContainer .row.extraService .rowExtra .service .hairstyle label {
+  font-family: "Avenir", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
+  color: #191919;
+}
+main .mainContainer .container .formContainer .row.finalMessage .message {
+  width: 100%;
+}
+main .mainContainer .container .formContainer .row.finalMessage .message #finalMessage {
+  width: 100%;
+  height: 200px;
+  resize: none;
+  padding: 0.5rem;
+}
+main .mainContainer .container .formContainer .row.finalMessage .message #finalMessage::placeholder {
+  font-family: "Avenir", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
+  color: #a3a3a3;
+}
+main .mainContainer .container .formContainer .submitButton {
+  display: flex;
+  justify-content: center;
+}
+main .mainContainer .container .formContainer .submitButton input {
+  border: 0.5px #725a58 solid;
+  padding: 20px 40px;
+  width: 160px;
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  color: #191919;
+  background-color: transparent;
+  cursor: pointer;
+}
+main .mainContainer .container .formContainer .submitButton input:hover {
+  background-color: #b99692;
+  border: 1px solid #b99692;
+  color: white;
+}
+
+.showonMobile,
+.opentagSB {
+  display: none;
+}
+
+footer {
+  background-color: #fbfafa;
+}
+
+.IconsContainer {
+  text-align: center;
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  padding-top: 15px;
+}
+.IconsContainer .footerParagraph {
+  font-size: 14px;
+  margin: 3px 0;
+}
+.IconsContainer .ContactIcons {
+  margin-top: 8px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.FooterNavContainer {
+  margin: auto;
+}
+@media only screen and (max-width: 600px) {
+  .FooterNavContainer {
+    width: 95%;
+  }
+  .FooterNavContainer .FooterNavList {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (min-width: 601px) {
+  .FooterNavContainer {
+    width: 80%;
+  }
+  .FooterNavContainer .FooterNavList {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+.FooterNavContainer .FooterNav {
+  border-top: 1px black solid;
+  border-bottom: 1px black solid;
+}
+.FooterNavContainer .FooterNav .FooterNavList {
+  list-style: none;
+  font-size: 20px;
+  padding: 15px 0;
+}
+.FooterNavContainer .FooterNav .FooterNavList .FooterNavListStyle1 {
+  text-decoration: none;
+  color: black;
+}
+.FooterNavContainer .FooterNav .FooterNavList .FooterNavListStyle2 {
+  color: black;
+}
+
+.Copyright {
+  text-align: center;
+  margin-top: 25px;
+}
+
+@media only screen and (max-width: 800px) {
+  .showonMobile,
+  .opentagSB {
+    display: block;
+  }
+  .hideonMobile {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+.baskervville-regular {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.baskervville-regular-italic {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+@media only screen and (max-width: 768px) {
+  .premiumUl {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    grid-auto-flow: column;
+  }
+}
+
+/*# sourceMappingURL=wedForm.css.map */
