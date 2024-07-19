@@ -157,7 +157,7 @@ h1 {
 }
 @media only screen and (max-width: 768px) {
   .classes-full .classes-welcome {
-    width: 80%;
+    width: 100%;
   }
 }
 .classes-full .classes-info-container {
@@ -213,7 +213,8 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3rem;
+  padding: 1.5rem;
+  padding-bottom: 3rem;
 }
 @media only screen and (max-width: 768px) {
   .classes-full .classes-info-container .classes-info .detail .container_image_info .master_class_price {
