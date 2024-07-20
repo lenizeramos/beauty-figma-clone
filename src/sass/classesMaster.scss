@@ -44,48 +44,38 @@ $signature: 54px;
   box-sizing: border-box;
 }
 
-
-header{
-        position: sticky;
-        position: -webkit-sticky;
-        top: 0px;
-        background-color: $palewhite;
-        z-index: 990;
-    nav{
-        .navbar{
-            padding: 1rem;
-            transition: padding 1.5s ease;
-            list-style: none;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            li{
-                width: 100%;
-                text-align: center;
-                a{
-                    text-decoration: none;
-                    padding: 0 1rem;
-                    p{
-                        font-family: "Baskervville SC", serif;
-                        font-weight: 400;
-                        font-style: normal;
-                        &:not(.classes){
-                            border-right: 1px $boldmain solid;
-                        }
-                    }
-                    p,i{
-                        font-size: $button;
-                        color: $boldmain;
-                    }
-                }
+header {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0px;
+  background-color: $palewhite;
+  nav {
+    .navbar {
+      padding: 1rem;
+      transition: padding 1.5s ease;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      li {
+        width: 100%;
+        text-align: center;
+        a {
+          text-decoration: none;
+          padding: 0 1rem;
+          p {
+            font-family: "Baskervville SC", serif;
+            font-weight: 400;
+            font-style: normal;
+            &:not(.classes) {
+              border-right: 1px $boldmain solid;
             }
-        }
-        .logo{
-            max-inline-size: 100%;
-            block-size: auto;
-            background-position: center;
-            height: 150px;
-            transition: height .5s ease;
+          }
+          p,
+          i {
+            font-size: $button;
+            color: $boldmain;
+          }
         }
       }
     }
@@ -95,8 +85,8 @@ header{
         transition: width 1.5s ease;
       }
     }
-  
-
+  }
+}
 
 .sidebar {
   position: fixed;
@@ -118,18 +108,20 @@ header{
       background-color: $accent;
       transition: background-color 0.5s ease;
     }
-}
-.smallNavBar{
-    padding: 0.5rem 1rem;
-    transition: padding 1.5s ease;
-    .logo{
-        height: 80px;
-        transition: height 1.5s ease;
-        background-size: contain;
-
-        img{
-            height: 80px;
-        }
+    a {
+      text-decoration: none;
+      padding: 0 1rem;
+      width: 100%;
+      p {
+        font-family: "Baskervville SC", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      p,
+      i {
+        font-size: $button;
+        color: $boldmain;
+      }
     }
   }
 }
@@ -152,6 +144,25 @@ header{
 
 // START CLASSES BODY
 
+.allClassesbtn {
+  display: flex;
+  padding: 1rem 0 1rem;
+
+  a {
+    // border: 1px green solid;
+    padding: 0.4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    font-family: "Baskervville", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: $button;
+    color: $boldmain;
+  }
+}
+
 .body {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
@@ -161,12 +172,16 @@ header{
 }
 
 h1 {
-  color: $brown;
+  color: $boldmain;
   font-family: "Baskerville", serif;
   font-weight: 100;
   font-style: normal;
   font-size: 80px;
   letter-spacing: 8px;
+}
+
+.display_none {
+  display: none !important;
 }
 
 .classes-full {
@@ -183,19 +198,7 @@ h1 {
     align-items: center;
 
     @media only screen and (max-width: 768px) {
-      width: 80%;
-    }
-
-    hr {
-      height: 1px;
-      border: 1px solid $accent;
-      width: 20%;
-      margin-top: 1rem;
-      margin-bottom: 2rem;
-
-      @media only screen and (max-width: 768px) {
-        width: 100%;
-      }
+      width: 100%;
     }
   }
 
@@ -216,33 +219,74 @@ h1 {
       width: 60%;
       // border: 1px dotted black;
 
+      @media only screen and (max-width: 768px) {
+        width: 100%;
+        margin: 0;
+      }
+      @media only screen and (min-width: 769px) and (max-width: 1024px) {
+        width: 80%;
+      }
+
       .detail {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        grid-template-areas: "img info";
-        margin-bottom: 10rem;
+        display: flex;
+        margin-bottom: 3rem;
 
-        // @media only screen and (max-width: 768px) {
-        //     display: flex;
-        //     flex-direction: column;
-        // }
-
-        .img1,
-        .img2,
-        .img3 {
-          grid-area: img;
+        @media only screen and (max-width: 768px) {
           display: flex;
-          justify-content: center;
-          align-items: center;
+          flex-direction: column;
+        }
 
-          // @media only screen and (max-width: 768px) {
-          //     width: 100vw;
-          //     margin: 0;
-          // }
+        .container_image_info {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 0 !important;
+          margin-right: 1rem;
+          border: 1px solid black;
+          height: fit-content;
+
+          @media only screen and (max-width: 768px) {
+            flex-direction: column-reverse;
+            padding-bottom: 2rem;
+            width: 100%;
+            border: none;
+          }
+
+          .master_class_price {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1.5rem;
+            padding-bottom: 3rem;
+
+            @media only screen and (max-width: 768px) {
+              width: 100%;
+              background-color: white;
+            }
+
+            .price-time-target {
+              display: flex;
+              flex-direction: column;
+              align-items: start;
+
+              .icon {
+                display: flex;
+                padding: 0.5rem;
+
+                img {
+                  width: 15px;
+                  margin-right: 0.5rem;
+                }
+
+                .body {
+                  margin-right: 0.8rem;
+                }
+              }
+            }
+          }
         }
 
         .information {
-          grid-area: info;
           padding-left: 2rem;
 
           .body {
@@ -255,29 +299,11 @@ h1 {
 
           .info-header {
             font-size: 28px;
-            color: $brown;
+            color: $boldmain;
             margin-bottom: 2rem;
           }
 
-          .price-time-target {
-            display: flex;
-            margin-bottom: 2rem;
-
-            .icon {
-              display: flex;
-
-              img {
-                width: 15px;
-                margin-right: 0.5rem;
-              }
-
-              .body {
-                margin-right: 0.8rem;
-              }
-            }
-          }
-
-          .who {
+          .overview {
             margin-bottom: 2rem;
 
             .who-header {
@@ -306,9 +332,9 @@ h1 {
             a {
               text-decoration: none;
               font-size: 18px;
-              color: #5e4a49;
+              color: $boldmain;
               padding: 1.5rem 2.5rem;
-              border: 1px solid #5e4a49;
+              border: 1px solid $boldmain;
             }
 
             a:hover {
@@ -316,6 +342,14 @@ h1 {
               border: 1px solid $darkpink;
               color: white;
               cursor: pointer;
+            }
+          }
+          #join_classes_btn {
+            display: none;
+
+            @media only screen and (max-width: 768px) {
+              display: flex;
+              justify-content: center;
             }
           }
         }

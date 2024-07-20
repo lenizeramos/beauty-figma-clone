@@ -1,12 +1,5 @@
 @font-face {
   font-family: "Avenir";
-<<<<<<< HEAD
-  src: url(/fonts/Avenir/Avenir\ Regular.ttf) format("truetype");
-}
-@font-face {
-  font-family: "WhiteFlower";
-  src: url(/fonts/WhiteFlower/WhiteFlower.otf) format("opentype");
-=======
   src: url(../fonts/Avenir/AvenirRegular.ttf) format("truetype");
 }
 @font-face {
@@ -16,7 +9,6 @@
 @font-face {
   font-family: "Magenta";
   src: url(../fonts/magenta-2/MagentaDemo.ttf) format("truetype");
->>>>>>> dev
 }
 * {
   margin: 0;
@@ -48,11 +40,7 @@ header nav .navbar li a {
   padding: 0 1rem;
 }
 header nav .navbar li a p {
-<<<<<<< HEAD
-  font-family: "Baskervville SC", serif;
-=======
   font-family: "Baskervville", serif;
->>>>>>> dev
   font-weight: 400;
   font-style: normal;
 }
@@ -100,11 +88,7 @@ header nav .logo {
   width: 100%;
 }
 .sidebar li a p {
-<<<<<<< HEAD
-  font-family: "Baskervville SC", serif;
-=======
   font-family: "Baskervville", serif;
->>>>>>> dev
   font-weight: 400;
   font-style: normal;
 }
@@ -132,9 +116,6 @@ header nav .logo {
   display: none;
 }
 
-<<<<<<< HEAD
-.form-services {
-=======
 .mainPicSection .mainPicContainer {
   display: flex;
   justify-content: center;
@@ -201,7 +182,7 @@ header nav .logo {
   grid-template-columns: 250px 450px;
   grid-template-rows: 400px;
   grid-template-areas: "PicArea TextArea";
-  gap: 5rem;
+  gap: 4rem;
   margin-top: 3rem;
   place-content: center;
 }
@@ -568,91 +549,246 @@ header nav .logo {
   transition: all 0.5s ease-in-out;
 }
 .makeup_hairstyle .hbutton {
-  color: #5e4a49;
+  color: #725a58;
   font-family: "Baskerville", serif;
-  font-weight: 100;
+  font-weight: 400;
   font-style: normal;
-  font-size: 14px;
+  font-size: 20px;
+}
+
+.makeup101 {
+  padding: 0 2rem;
+  background-color: #fae9e7;
+}
+.makeup101 .title {
+  padding: 1rem;
+  text-align: center;
+}
+.makeup101 .title h1 {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 80px;
+  color: #5e4a49;
+}
+.makeup101 .mainContent {
+  display: flex;
+  align-items: center;
+  height: 600px;
+}
+.makeup101 .mainContent .classes {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.makeup101 .mainContent .classes .row {
+  display: flex;
+}
+.makeup101 .mainContent .classes .row .content {
+  width: 90%;
+}
+.makeup101 .mainContent .classes .row .content .classTitle {
+  display: flex;
+  gap: 10px;
+}
+.makeup101 .mainContent .classes .row .content .classTitle p {
+  font-family: "Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 48px;
+  color: #725a58;
+}
+.makeup101 .mainContent .classes .row .content .classInfo {
+  width: 80%;
+}
+.makeup101 .mainContent .classes .row .content .classInfo p {
+  font-family: "Avenir", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
+  color: #191919;
+}
+.makeup101 .mainContent .classes .row .arrow {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.makeup101 .mainContent .classes .row .arrow a {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.makeup101 .mainContent .classes .M101secBtn {
+  margin: 1rem 0;
+  border: 1px #5e4a49 solid;
+  height: 60px;
+  width: 160px;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.makeup101 .mainContent .classes .M101secBtn a {
+  text-decoration: none;
+}
+.makeup101 .mainContent .classes .M101secBtn a p {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  color: #725a58;
+}
+.makeup101 .mainContent .classes .M101secBtn:hover {
+  background-color: #b99692;
+  border: 1px #b99692 solid;
+}
+.makeup101 .mainContent .classes .M101secBtn:hover p {
+  color: white;
+}
+.makeup101 .mainContent .picContainer {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.makeup101 .mainContent .picContainer .ladypicContainer {
+  width: 80%;
+  height: 90%;
+  background-image: url(../resources/landing/image122.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-inline-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.makeup101 .mainContent .picContainer .ladypicContainer .backLine {
+  border: 1px rgba(255, 255, 255, 0.452) solid;
+  width: 80%;
+  height: 90%;
+  z-index: 1;
+}
+
+.DIY {
+  min-height: 70vh;
+  max-width: 100%;
+  margin: auto;
+}
+.DIY .DIY_Title {
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.DIY .DIY_Title h3 {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 48px;
+  color: #5e4a49;
+}
+.DIY .DIY_Video {
+  width: 70%;
+  max-height: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "Pic1 Pic2 Pic3";
+  gap: 1rem;
+  margin: auto;
+  place-items: center;
+}
+.DIY .DIY_Video .DIY_img1 {
+  grid-area: Pic2;
+}
+.DIY .DIY_Video .DIY_img2 {
+  grid-area: Pic3;
+}
+.DIY .DIY_Video .DIY_img3 {
+  grid-area: Pic1;
+}
+.DIY .DIY_Video .img {
+  max-width: 100%;
+}
+.DIY .DIY_Btn {
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+.DIY .DIY_Btn button {
+  grid-area: A-button;
+  padding: 20px 0px;
+  width: 200px;
+  height: 70px;
+  background-color: transparent;
+  border: 0.5px solid #a3a3a3;
+  cursor: pointer;
+  color: #535353;
+  font-family: "Baskervville", serif;
+  font-size: 20px;
+  align-self: center;
+}
+.DIY .DIY_Btn button:hover {
+  background-color: #b99692;
+  border: 1px solid #b99692;
+  color: #f8f6f4;
 }
 
 .formMainContainer .form-services {
->>>>>>> dev
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100vw;
   margin-bottom: 4rem;
 }
-<<<<<<< HEAD
-.form-services h1 {
-  font-family: "Libre Baskerville", serif;
-=======
 .formMainContainer .form-services h1 {
   font-family: "Baskerville", serif;
->>>>>>> dev
   font-weight: 400;
   font-style: normal;
   font-size: 80px;
   letter-spacing: 5px;
   color: #5e4a49;
 }
-<<<<<<< HEAD
-.form-services h5 {
-  font-family: "Libre Baskerville", serif;
-=======
 .formMainContainer .form-services h5 {
   font-family: "Baskerville", serif;
->>>>>>> dev
   font-weight: 100;
   font-style: normal;
   font-size: 28px;
 }
-<<<<<<< HEAD
-.form-services .hbutton {
-  color: #5e4a49;
-  font-family: "Libre Baskerville", serif;
-=======
 .formMainContainer .form-services .hbutton {
-  color: #5e4a49;
+  color: #725a58;
   font-family: "Baskerville", serif;
->>>>>>> dev
-  font-weight: 100;
+  font-weight: 400;
   font-style: normal;
-  font-size: 14px;
+  font-size: 20px;
 }
-<<<<<<< HEAD
-.form-services .text-body {
-=======
 .formMainContainer .form-services .text-body {
->>>>>>> dev
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-size: 14px;
 }
-<<<<<<< HEAD
-.form-services .contact-us {
-=======
 .formMainContainer .form-services .contact-us {
->>>>>>> dev
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 4rem auto;
-  width: 40%;
+  width: 60%;
 }
-<<<<<<< HEAD
-.form-services .contact-us h1 {
-  margin-bottom: 1rem;
-  text-align: center;
+@media only screen and (max-width: 768px) {
+  .formMainContainer .form-services .contact-us {
+    width: 100%;
+  }
 }
-.form-services .contact-us p {
-  text-align: center;
-  padding: 0 3rem;
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .formMainContainer .form-services .contact-us {
+    width: 80%;
+  }
 }
-.form-services .form-services-container {
-=======
 .formMainContainer .form-services .contact-us h1 {
   margin-bottom: 1rem;
   text-align: center;
@@ -662,69 +798,47 @@ header nav .logo {
   padding: 0 3rem;
 }
 .formMainContainer .form-services .form-services-container {
->>>>>>> dev
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 3rem;
   background-color: #fae9e7;
-  width: 50%;
+  width: 60%;
 }
-<<<<<<< HEAD
-.form-services .form-services-container .form-header {
-=======
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .formMainContainer .form-services .form-services-container {
-    width: 90%;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .formMainContainer .form-services .form-services-container {
+    width: 80%;
   }
 }
 .formMainContainer .form-services .form-services-container .form-header {
->>>>>>> dev
   display: flex;
   justify-content: center;
   width: 100%;
   margin-bottom: 2rem;
   cursor: pointer;
 }
-<<<<<<< HEAD
-.form-services .form-services-container .form-header .header-opt {
-=======
 .formMainContainer .form-services .form-services-container .form-header .header-opt {
->>>>>>> dev
   display: flex;
   justify-content: center;
   width: 100%;
   padding: 0.5rem 2rem;
   border-bottom: 1px solid black;
 }
-<<<<<<< HEAD
-.form-services .form-services-container .form-header .blur {
-  color: gray;
-  border-bottom: 0.5px solid gray;
-}
-.form-services .form-services-container .form-option-container {
-=======
 .formMainContainer .form-services .form-services-container .form-header .blur {
   color: gray;
   border-bottom: 0.5px solid gray;
 }
 .formMainContainer .form-services .form-services-container .form-option-container {
->>>>>>> dev
   display: flex;
   flex-direction: column;
   width: 100%;
   align-items: center;
 }
-<<<<<<< HEAD
-.form-services .form-services-container .form-option-container .form-event-options {
-  width: 100%;
-  margin-bottom: 2rem;
-}
-.form-services .form-services-container .form-option-container .form-event-options .header-type {
-  margin-bottom: 1rem;
-}
-.form-services .form-services-container .form-option-container .form-event-options .event-opts {
-=======
 .formMainContainer .form-services .form-services-container .form-option-container .form-event-options {
   width: 100%;
   margin-bottom: 2rem;
@@ -733,22 +847,17 @@ header nav .logo {
   margin-bottom: 1rem;
 }
 .formMainContainer .form-services .form-services-container .form-option-container .form-event-options .event-opts {
->>>>>>> dev
   max-width: 100%;
   min-width: 70%;
   display: flex;
   justify-content: space-between;
 }
-<<<<<<< HEAD
-.form-services .form-services-container .form-option-container .form-event-options .event-opts .eve-options {
-=======
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .formMainContainer .form-services .form-services-container .form-option-container .form-event-options .event-opts {
     flex-direction: column;
   }
 }
 .formMainContainer .form-services .form-services-container .form-option-container .form-event-options .event-opts .eve-options {
->>>>>>> dev
   width: 32%;
   display: flex;
   justify-content: space-between;
@@ -757,17 +866,7 @@ header nav .logo {
   padding: 8px;
   cursor: pointer;
 }
-<<<<<<< HEAD
-.form-services .form-services-container .form-option-container .form-event-options .event-opts .eve-options img {
-  width: 20px;
-  height: 20px;
-}
-.form-services .form-services-container .form-option-container .form-event-options .event-opts .eve-options .hide {
-  visibility: hidden;
-}
-.form-services .form-services-container .form-option-container .form-date-time-options {
-=======
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .formMainContainer .form-services .form-services-container .form-option-container .form-event-options .event-opts .eve-options {
     width: 100%;
     margin: 0.5rem;
@@ -781,17 +880,13 @@ header nav .logo {
   visibility: hidden;
 }
 .formMainContainer .form-services .form-services-container .form-option-container .form-date-time-options {
->>>>>>> dev
   width: 100%;
   margin-bottom: 2rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-<<<<<<< HEAD
-.form-services .form-services-container .form-option-container .form-date-time-options .fr {
-=======
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .formMainContainer .form-services .form-services-container .form-option-container .form-date-time-options {
     flex-direction: column;
     gap: 1rem;
@@ -801,35 +896,20 @@ header nav .logo {
   width: 100% !important;
 }
 .formMainContainer .form-services .form-services-container .form-option-container .form-date-time-options .fr {
->>>>>>> dev
   width: 46%;
   display: flex;
   flex-direction: column;
 }
-<<<<<<< HEAD
-.form-services .form-services-container .form-option-container .form-date-time-options .fr .input-event {
-=======
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .formMainContainer .form-services .form-services-container .form-option-container .form-date-time-options .fr {
     width: 100%;
   }
 }
 .formMainContainer .form-services .form-services-container .form-option-container .form-date-time-options .fr .input-event {
->>>>>>> dev
   padding: 8px;
   cursor: pointer;
   margin-bottom: 0.5rem;
 }
-<<<<<<< HEAD
-.form-services .form-services-container .form-option-container .form-date-time-options .fr .input-event:focus {
-  outline: none;
-}
-.form-services .form-services-container .form-option-container .form-date-time-options .fr .checked {
-  display: flex;
-  align-items: center;
-}
-.form-services .form-services-container .form-option-container .form-date-time-options .fr .checked .check-event {
-=======
 .formMainContainer .form-services .form-services-container .form-option-container .form-date-time-options .fr .input-event:focus {
   outline: none;
 }
@@ -838,22 +918,12 @@ header nav .logo {
   align-items: center;
 }
 .formMainContainer .form-services .form-services-container .form-option-container .form-date-time-options .fr .checked .check-event {
->>>>>>> dev
   cursor: pointer;
   width: 20px;
   height: 20px;
   padding: 5px;
   accent-color: #b99692;
 }
-<<<<<<< HEAD
-.form-services .form-services-container .form-option-container .form-date-time-options .fr .checked label {
-  padding-left: 5px;
-}
-.form-services .form-services-container .form-option-container .form-date-time-options .hdr {
-  margin-bottom: 1rem;
-}
-.form-services .form-services-container .form-option-container .contact-form {
-=======
 .formMainContainer .form-services .form-services-container .form-option-container .form-date-time-options .fr .checked label {
   padding-left: 5px;
 }
@@ -861,49 +931,22 @@ header nav .logo {
   margin-bottom: 1rem;
 }
 .formMainContainer .form-services .form-services-container .form-option-container .contact-form {
->>>>>>> dev
   width: 100%;
   display: flex;
   flex-direction: column;
 }
-<<<<<<< HEAD
-.form-services .form-services-container .form-option-container .contact-form .contact-form-name {
-  margin-bottom: 1rem;
-  font-family: "Libre Baskerville", serif;
-=======
 .formMainContainer .form-services .form-services-container .form-option-container .contact-form .contact-form-name {
   margin-bottom: 1rem;
   font-family: "Baskerville", serif;
->>>>>>> dev
   font-weight: 100;
   font-style: normal;
   font-size: 28px;
 }
-<<<<<<< HEAD
-.form-services .form-services-container .form-option-container .contact-form .input-name {
-=======
 .formMainContainer .form-services .form-services-container .form-option-container .contact-form .input-name {
->>>>>>> dev
   padding: 8px;
   margin-bottom: 2rem;
   border: 1px solid #b99692;
 }
-<<<<<<< HEAD
-.form-services .form-services-container .form-option-container .contact-form .input-name:focus {
-  outline: none;
-}
-.form-services .form-services-container .form-option-container .contact-form .contact-header {
-  margin-bottom: 1rem;
-}
-.form-services .form-services-container .form-option-container .contact-form .phone-opt {
-  display: block;
-  margin: 0.5rem 0;
-}
-.form-services .form-services-container .form-option-container .contact-form .phone-opt .hide {
-  display: none;
-}
-.form-services .form-services-container .form-option-container .contact-form .contact-form-phone {
-=======
 .formMainContainer .form-services .form-services-container .form-option-container .contact-form .input-name:focus {
   outline: none;
 }
@@ -918,45 +961,24 @@ header nav .logo {
   display: none;
 }
 .formMainContainer .form-services .form-services-container .form-option-container .contact-form .contact-form-phone {
->>>>>>> dev
   display: flex;
   flex-direction: column;
   margin-bottom: 2rem;
 }
-<<<<<<< HEAD
-.form-services .form-services-container .form-option-container .contact-form .contact-form-phone .label-opt {
-=======
 .formMainContainer .form-services .form-services-container .form-option-container .contact-form .contact-form-phone .label-opt {
->>>>>>> dev
   display: flex;
   align-items: center;
   gap: 10px;
 }
-<<<<<<< HEAD
-.form-services .form-services-container .form-option-container .contact-form .contact-form-phone .label-opt .input-color {
-  accent-color: #b99692;
-}
-.form-services .form-services-container .form-option-container .contact-form .contact-form-phone .inpt {
-=======
 .formMainContainer .form-services .form-services-container .form-option-container .contact-form .contact-form-phone .label-opt .input-color {
   accent-color: #b99692;
 }
 .formMainContainer .form-services .form-services-container .form-option-container .contact-form .contact-form-phone .inpt {
->>>>>>> dev
   width: 100%;
   padding: 8px;
   margin-top: 0.5rem;
   border: 1px solid #b99692;
 }
-<<<<<<< HEAD
-.form-services .form-services-container .form-option-container .contact-form .contact-form-phone .inpt:focus {
-  outline: none;
-}
-.form-services .form-services-container .form-option-container .contact-form .time-call-header {
-  margin-bottom: 1rem;
-}
-.form-services .form-services-container .form-option-container .contact-form .form-time-call {
-=======
 .formMainContainer .form-services .form-services-container .form-option-container .contact-form .contact-form-phone .inpt:focus {
   outline: none;
 }
@@ -964,29 +986,15 @@ header nav .logo {
   margin-bottom: 1rem;
 }
 .formMainContainer .form-services .form-services-container .form-option-container .contact-form .form-time-call {
->>>>>>> dev
   display: flex;
   flex-direction: column;
   margin-bottom: 2rem;
 }
-<<<<<<< HEAD
-.form-services .form-services-container .form-option-container .contact-form .form-time-call .time-opt {
-=======
 .formMainContainer .form-services .form-services-container .form-option-container .contact-form .form-time-call .time-opt {
->>>>>>> dev
   display: flex;
   align-items: center;
   gap: 10px;
 }
-<<<<<<< HEAD
-.form-services .form-services-container .form-option-container .contact-form .form-time-call .time-opt .label-time-opt {
-  margin: 0.5rem 0;
-}
-.form-services .form-services-container .form-option-container .contact-form .form-time-call .time-opt .input-color {
-  accent-color: #b99692;
-}
-.form-services .form-services-container .form-option-container .button-next {
-=======
 .formMainContainer .form-services .form-services-container .form-option-container .contact-form .form-time-call .time-opt .label-time-opt {
   margin: 0.5rem 0;
 }
@@ -994,25 +1002,18 @@ header nav .logo {
   accent-color: #b99692;
 }
 .formMainContainer .form-services .form-services-container .form-option-container .button-next {
->>>>>>> dev
   padding: 20px 40px;
   width: 160px;
   background-color: transparent;
   border: 0.5px solid #5e4a49;
   cursor: pointer;
 }
-<<<<<<< HEAD
-.form-services .form-services-container .form-option-container .button-next:hover {
-=======
 .formMainContainer .form-services .form-services-container .form-option-container .button-next:hover {
->>>>>>> dev
   background-color: #b99692;
   border: 1px solid #b99692;
   color: white;
 }
 
-<<<<<<< HEAD
-=======
 .message {
   margin-top: 1rem;
   width: 100%;
@@ -1036,22 +1037,23 @@ header nav .logo {
   justify-content: center;
 }
 .submitButton input {
-  border: 1px #725a58 solid;
-  width: 100px;
-  height: 50px;
-  background-color: #fae9e7;
+  border: 0.5px #725a58 solid;
+  padding: 20px 40px;
+  width: 160px;
   font-family: "Baskervville", serif;
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
   color: #191919;
+  background-color: transparent;
   cursor: pointer;
 }
 .submitButton input:hover {
   background-color: #b99692;
+  border: 1px solid #b99692;
+  color: white;
 }
 
->>>>>>> dev
 #side_bar_message_container {
   position: fixed;
   right: 0%;
@@ -1080,11 +1082,7 @@ header nav .logo {
   border: none;
 }
 #side_bar_message_container .button_container .whatsapp_button {
-<<<<<<< HEAD
-  background-color: #25D366;
-=======
   background-color: #25d366;
->>>>>>> dev
   padding: 0.5rem;
   border: none;
 }
@@ -1116,28 +1114,8 @@ header nav .logo {
 }
 
 .FooterNavContainer {
+  width: 80%;
   margin: auto;
-}
-@media only screen and (max-width: 600px) {
-  .FooterNavContainer {
-    width: 95%;
-  }
-  .FooterNavContainer .FooterNavList {
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-}
-@media only screen and (min-width: 601px) {
-  .FooterNavContainer {
-    width: 80%;
-  }
-  .FooterNavContainer .FooterNavList {
-    display: flex;
-    justify-content: space-around;
-  }
 }
 .FooterNavContainer .FooterNav {
   border-top: 1px black solid;
@@ -1145,20 +1123,20 @@ header nav .logo {
 }
 .FooterNavContainer .FooterNav .FooterNavList {
   list-style: none;
+  display: flex;
+  justify-content: space-around;
   font-size: 20px;
   padding: 15px 0;
 }
 .FooterNavContainer .FooterNav .FooterNavList .FooterNavListStyle1 {
-<<<<<<< HEAD
-  font-family: "Baskervville SC", serif;
-=======
   font-family: "Baskervville", serif;
->>>>>>> dev
   text-decoration: none;
-  color: black;
+  color: #725a58;
 }
 .FooterNavContainer .FooterNav .FooterNavList .FooterNavListStyle2 {
-  color: black;
+  font-family: "Baskervville", serif;
+  text-decoration: none;
+  color: #725a58;
 }
 
 .Copyright {
@@ -1166,7 +1144,7 @@ header nav .logo {
   margin: 25px 0 40px 0;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) {
   .showonMobile,
   .opentagSB {
     display: block;
@@ -1226,8 +1204,21 @@ header nav .logo {
   .starSection .testimonials .singleTest p {
     font-size: 24px;
   }
+  .DIY .DIY_Video {
+    width: 90% !important;
+  }
+  .FooterNavContainer {
+    width: 80% !important;
+  }
+  .FooterNavContainer .FooterNavList {
+    height: 150px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+  }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   .sidebar {
     width: 100%;
   }
@@ -1279,25 +1270,46 @@ header nav .logo {
   .starSection .testimonials .singleTest p {
     font-size: 18px;
   }
+  .DIY .con {
+    overflow-x: scroll !important;
+  }
+  .DIY .con .DIY_Video {
+    min-width: 200% !important;
+    max-height: 300px;
+    display: flex !important;
+    justify-content: space-evenly;
+    gap: 1rem;
+  }
+  .DIY .con .DIY_Video .DIY_img1 {
+    width: 70% !important;
+  }
+  .DIY .con .DIY_Video .DIY_img2 {
+    width: 70% !important;
+  }
+  .DIY .con .DIY_Video .DIY_img3 {
+    width: 70% !important;
+  }
+  .FooterNavContainer {
+    width: 100% !important;
+  }
+  .FooterNavContainer .FooterNavList {
+    height: 150px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+  }
 }
-<<<<<<< HEAD
-.baskervville-sc-regular {
-  font-family: "Baskervville SC", serif;
-=======
 .baskervville-regular {
   font-family: "Baskervville", serif;
->>>>>>> dev
   font-weight: 400;
   font-style: normal;
 }
 
-<<<<<<< HEAD
-=======
 .baskervville-regular-italic {
   font-family: "Baskervville", serif;
   font-weight: 400;
   font-style: italic;
 }
 
->>>>>>> dev
 /*# sourceMappingURL=landing.css.map */
