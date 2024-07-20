@@ -106,7 +106,7 @@ header nav .logo img {
 
 .allClassesbtn {
   display: flex;
-  padding: 1rem 0 1rem;
+  padding-top: 1rem;
 }
 .allClassesbtn a {
   padding: 0.4rem;
@@ -126,7 +126,7 @@ header nav .logo img {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 h1 {
@@ -136,6 +136,11 @@ h1 {
   font-style: normal;
   font-size: 80px;
   letter-spacing: 8px;
+}
+@media only screen and (max-width: 768px) {
+  h1 {
+    display: none;
+  }
 }
 
 .display_none {
@@ -158,6 +163,7 @@ h1 {
 @media only screen and (max-width: 768px) {
   .classes-full .classes-welcome {
     width: 100%;
+    margin-top: 0;
   }
 }
 .classes-full .classes-info-container {
@@ -229,6 +235,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: start;
+  width: 100%;
 }
 .classes-full .classes-info-container .classes-info .detail .container_image_info .master_class_price .price-time-target .icon {
   display: flex;
@@ -244,17 +251,24 @@ h1 {
 .classes-full .classes-info-container .classes-info .detail .information {
   padding-left: 2rem;
 }
+@media only screen and (max-width: 768px) {
+  .classes-full .classes-info-container .classes-info .detail .information {
+    padding-top: 2.5rem;
+  }
+}
 .classes-full .classes-info-container .classes-info .detail .information .body {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-size: 14px;
+  font-size: 18px;
+  line-height: 1.5;
 }
 .classes-full .classes-info-container .classes-info .detail .information .info-header {
-  font-size: 28px;
+  font-size: 36px;
   color: #725a58;
   margin-bottom: 2rem;
+  font-weight: 400;
 }
 .classes-full .classes-info-container .classes-info .detail .information .overview {
   margin-bottom: 2rem;
@@ -264,11 +278,11 @@ h1 {
   font-size: 20px !important;
 }
 .classes-full .classes-info-container .classes-info .detail .information .curriculum {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 .classes-full .classes-info-container .classes-info .detail .information .curriculum .curri-header {
-  margin-bottom: 0.8rem;
-  font-size: 20px !important;
+  margin-bottom: 1rem;
+  font-size: 24px !important;
 }
 .classes-full .classes-info-container .classes-info .detail .information .curriculum li {
   margin: 0.5rem 0;
@@ -276,19 +290,27 @@ h1 {
 }
 .classes-full .classes-info-container .classes-info .detail .information .button {
   margin-top: 4rem;
+  width: 100%;
+  text-align: center;
+}
+.classes-full .classes-info-container .classes-info .detail .information .button .button_join {
+  width: 100%;
+  padding: 1.5rem 2.5rem;
+  border: 1px solid #725a58;
+  background-color: transparent;
+  color: #725a58;
+  font-size: 20px;
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+}
+.classes-full .classes-info-container .classes-info .detail .information .button .button_join:hover {
+  background-color: #b99692;
+  border: 1px solid #b99692;
+  cursor: pointer;
+  color: white;
 }
 .classes-full .classes-info-container .classes-info .detail .information .button a {
   text-decoration: none;
-  font-size: 18px;
-  color: #725a58;
-  padding: 1.5rem 2.5rem;
-  border: 1px solid #725a58;
-}
-.classes-full .classes-info-container .classes-info .detail .information .button a:hover {
-  background-color: #b99692;
-  border: 1px solid #b99692;
-  color: white;
-  cursor: pointer;
 }
 .classes-full .classes-info-container .classes-info .detail .information #join_classes_btn {
   display: none;
