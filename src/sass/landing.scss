@@ -1283,46 +1283,31 @@ header {
 }
 
 @mixin FooterNavContainer() {
-  //MOBILE
-  @media only screen and (max-width: 600px) {
-    width: 95%;
-    .FooterNavList {
-      height: 150px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-  }
-  //OTHER DEVICES
-  @media only screen and (min-width: 601px) {
-    width: 80%;
-    .FooterNavList {
-      display: flex;
-      justify-content: space-around;
-    }
-  }
+  //MOBILE 
 }
 
 .FooterNavContainer {
   @include FooterNavContainer();
-  margin: auto;
+  width: 80%;
+  margin: auto; 
   .FooterNav {
     border-top: 1px black solid;
     border-bottom: 1px black solid;
     .FooterNavList {
       list-style: none;
-      //            display: flex;
-      //            justify-content: space-around;
+      display: flex;
+      justify-content: space-around;
       font-size: 20px;
       padding: 15px 0;
       .FooterNavListStyle1 {
         font-family: "Baskervville", serif;
         text-decoration: none;
-        color: black;
+        color: $boldmain;
       }
       .FooterNavListStyle2 {
-        color: black;
+        font-family: "Baskervville", serif;
+        text-decoration: none;
+        color: $boldmain;
       }
     }
   }
@@ -1421,6 +1406,19 @@ header {
       width: 90% !important;
     }
   }
+
+  //Footer
+  .FooterNavContainer {
+    width: 80% !important;
+    .FooterNavList {
+      height: 150px !important;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      flex-wrap: wrap !important;
+    }
+  }
+
   
 }
 
@@ -1530,6 +1528,17 @@ header {
     }
   }
   
+  //Footer
+  .FooterNavContainer {
+    width: 100% !important;
+    .FooterNavList {
+      height: 150px !important;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      flex-wrap: wrap !important;
+    }
+  }
 }
 
 //GOOGLE FONTS -BASKERVVILE-
