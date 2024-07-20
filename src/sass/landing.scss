@@ -653,6 +653,73 @@ header {
 //******************************END 4TH SECTION********************************************//
 
 
+//***********************************************START 6th SECTION********************************************************************//
+.DIY{
+  min-height: 70vh;
+  max-width: 100%;
+  margin: auto;
+  .DIY_Title{
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    h3{
+      font-family: "Baskervville", serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: $h3;
+      color: #5e4a49;
+    }
+  }
+  .DIY_Video{
+    width: 70%;
+    max-height: 300px ;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "Pic1 Pic2 Pic3";
+    gap: 1rem;
+    margin: auto;
+    place-items: center;
+    .DIY_img1{
+      grid-area: Pic2;
+    } 
+    .DIY_img2{
+      grid-area: Pic3;
+    } 
+    .DIY_img3{
+      grid-area: Pic1;      
+    } 
+    .img{
+      max-width: 100%;
+    }
+  }
+  .DIY_Btn{
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    button{
+      grid-area: A-button;
+      padding: 20px 0px;
+      width: 200px;
+      height: 70px;
+      background-color: transparent;
+      border: 0.5px solid $midgrey;
+      cursor: pointer;
+      color: $darkgrey;
+      font-family: "Baskervville", serif;
+      font-size: $button;
+      align-self: center;
+      &:hover {
+        background-color: $darkpink;
+        border: 1px solid $darkpink;
+        color: $palewhite;
+      }
+    }
+  }
+}
+//************************************************END 6th SECTION*********************************************************************//
+
+
 // START FORM SERVICES
 .formMainContainer {
   .form-services {
@@ -1214,7 +1281,13 @@ header {
     }
   }
 
-
+  //DIY Section
+  .DIY{
+    .DIY_Video{
+      width: 90% !important;
+    }
+  }
+  
 }
 
 //Mobile
@@ -1299,6 +1372,31 @@ header {
       }
     }
   }
+
+  //DIY Section
+  .DIY{
+    .con{
+      overflow-x: scroll !important;
+      scroll-padding-right: 100px;
+      .DIY_Video{
+      min-width: 200% !important;
+      max-height: 300px ;
+      display: flex !important;
+      justify-content: center;
+      gap: 1rem;
+      .DIY_img1{
+        width: 70% !important;
+      } 
+      .DIY_img2{
+        width: 70% !important;      
+      } 
+      .DIY_img3{
+        width: 70% !important;
+      } 
+    }
+  }
+  }
+  
 }
 
 //GOOGLE FONTS -BASKERVVILE-
