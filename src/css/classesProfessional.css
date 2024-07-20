@@ -148,7 +148,7 @@ h1 {
   align-items: center;
 }
 .classes-full .classes-welcome {
-  margin: 3rem 0;
+  margin-top: 1.5rem;
   min-width: 30%;
   text-align: center;
   display: flex;
@@ -200,6 +200,7 @@ h1 {
   margin-right: 1rem;
   border: 1px solid black;
   height: fit-content;
+  width: 100%;
 }
 @media only screen and (max-width: 768px) {
   .classes-full .classes-info-container .classes-info .detail .container_image_info {
@@ -215,11 +216,13 @@ h1 {
   align-items: center;
   padding: 1.5rem;
   padding-bottom: 3rem;
+  width: 100%;
 }
 @media only screen and (max-width: 768px) {
   .classes-full .classes-info-container .classes-info .detail .container_image_info .master_class_price {
     width: 100%;
     background-color: white;
+    padding-top: 0;
   }
 }
 .classes-full .classes-info-container .classes-info .detail .container_image_info .master_class_price .price-time-target {
@@ -383,6 +386,4 @@ h1 {
   font-family: "Baskervville SC", serif;
   font-weight: 400;
   font-style: normal;
-}
-
-/*# sourceMappingURL=classesProfessional.css.map */
+}/*# sourceMappingURL=classesProfessional.css.map */
