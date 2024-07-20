@@ -146,7 +146,7 @@ header {
 
 .allClassesbtn {
   display: flex;
-  padding-top: 1rem;
+  padding: 1rem;
 
   a {
     // border: 1px green solid;
@@ -160,6 +160,9 @@ header {
     font-style: normal;
     font-size: $button;
     color: $boldmain;
+  }
+  .image_arrow_back {
+    margin-right: 0.8rem;
   }
 }
 
@@ -253,6 +256,14 @@ h1 {
             border: none;
           }
 
+          .image_master {
+            width: 100%;
+
+            .img1 {
+              width: 100%;
+            }
+          }
+
           .master_class_price {
             display: flex;
             flex-direction: column;
@@ -295,6 +306,7 @@ h1 {
 
           @media only screen and (max-width: 768px) {
             padding-top: 2.5rem;
+            padding: 1rem;
           }
 
           .body {
@@ -342,7 +354,7 @@ h1 {
             text-align: center;
 
             .button_join {
-              width: 100%;
+              width: 90%;
               padding: 1.5rem 2.5rem;
               border: 1px solid $boldmain;
               background-color: transparent;
@@ -363,12 +375,9 @@ h1 {
               text-decoration: none;
             }
           }
-          #join_classes_btn {
-            display: none;
-
-            @media only screen and (max-width: 768px) {
-              display: flex;
-              justify-content: center;
+          @media only screen and (min-width: 768px) {
+            #join_classes_btn {
+              display: none;
             }
           }
         }
