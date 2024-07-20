@@ -182,7 +182,7 @@ header nav .logo {
   grid-template-columns: 250px 450px;
   grid-template-rows: 400px;
   grid-template-areas: "PicArea TextArea";
-  gap: 5rem;
+  gap: 4rem;
   margin-top: 3rem;
   place-content: center;
 }
@@ -1025,7 +1025,7 @@ header nav .logo {
   margin: 25px 0 40px 0;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) {
   .showonMobile,
   .opentagSB {
     display: block;
@@ -1089,7 +1089,7 @@ header nav .logo {
     width: 90% !important;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   .sidebar {
     width: 100%;
   }

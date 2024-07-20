@@ -235,7 +235,7 @@ header {
     grid-template-rows: 400px;
     grid-template-areas: 
     "PicArea TextArea";
-    gap: 5rem;
+    gap: 4rem;
     margin-top: 3rem;
     place-content: center;
     .AboutPic{
@@ -1202,7 +1202,7 @@ header {
 
 //***************MEDIA QUERIES***************************//
 //Tablet
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) {
   //NAVBAR
   .showonMobile,
   .opentagSB {
@@ -1291,7 +1291,7 @@ header {
 }
 
 //Mobile
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   //NAVBAR
   .sidebar {
     width: 100%;
