@@ -182,7 +182,7 @@ header nav .logo {
   grid-template-columns: 250px 450px;
   grid-template-rows: 400px;
   grid-template-areas: "PicArea TextArea";
-  gap: 5rem;
+  gap: 4rem;
   margin-top: 3rem;
   place-content: center;
 }
@@ -682,6 +682,69 @@ header nav .logo {
   z-index: 1;
 }
 
+.DIY {
+  min-height: 70vh;
+  max-width: 100%;
+  margin: auto;
+}
+.DIY .DIY_Title {
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.DIY .DIY_Title h3 {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 48px;
+  color: #5e4a49;
+}
+.DIY .DIY_Video {
+  width: 70%;
+  max-height: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "Pic1 Pic2 Pic3";
+  gap: 1rem;
+  margin: auto;
+  place-items: center;
+}
+.DIY .DIY_Video .DIY_img1 {
+  grid-area: Pic2;
+}
+.DIY .DIY_Video .DIY_img2 {
+  grid-area: Pic3;
+}
+.DIY .DIY_Video .DIY_img3 {
+  grid-area: Pic1;
+}
+.DIY .DIY_Video .img {
+  max-width: 100%;
+}
+.DIY .DIY_Btn {
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+.DIY .DIY_Btn button {
+  grid-area: A-button;
+  padding: 20px 0px;
+  width: 200px;
+  height: 70px;
+  background-color: transparent;
+  border: 0.5px solid #a3a3a3;
+  cursor: pointer;
+  color: #535353;
+  font-family: "Baskervville", serif;
+  font-size: 20px;
+  align-self: center;
+}
+.DIY .DIY_Btn button:hover {
+  background-color: #b99692;
+  border: 1px solid #b99692;
+  color: #f8f6f4;
+}
+
 .formMainContainer .form-services {
   display: flex;
   flex-direction: column;
@@ -1059,28 +1122,8 @@ header nav .logo {
 }
 
 .FooterNavContainer {
+  width: 80%;
   margin: auto;
-}
-@media only screen and (max-width: 600px) {
-  .FooterNavContainer {
-    width: 95%;
-  }
-  .FooterNavContainer .FooterNavList {
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-}
-@media only screen and (min-width: 601px) {
-  .FooterNavContainer {
-    width: 80%;
-  }
-  .FooterNavContainer .FooterNavList {
-    display: flex;
-    justify-content: space-around;
-  }
 }
 .FooterNavContainer .FooterNav {
   border-top: 1px black solid;
@@ -1088,16 +1131,20 @@ header nav .logo {
 }
 .FooterNavContainer .FooterNav .FooterNavList {
   list-style: none;
+  display: flex;
+  justify-content: space-around;
   font-size: 20px;
   padding: 15px 0;
 }
 .FooterNavContainer .FooterNav .FooterNavList .FooterNavListStyle1 {
   font-family: "Baskervville", serif;
   text-decoration: none;
-  color: black;
+  color: #725a58;
 }
 .FooterNavContainer .FooterNav .FooterNavList .FooterNavListStyle2 {
-  color: black;
+  font-family: "Baskervville", serif;
+  text-decoration: none;
+  color: #725a58;
 }
 
 .Copyright {
@@ -1105,7 +1152,7 @@ header nav .logo {
   margin: 25px 0 40px 0;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) {
   .showonMobile,
   .opentagSB {
     display: block;
@@ -1224,8 +1271,21 @@ header nav .logo {
     border: 1px red solid;
     height: 400px;
   }
+  .DIY .DIY_Video {
+    width: 90% !important;
+  }
+  .FooterNavContainer {
+    width: 80% !important;
+  }
+  .FooterNavContainer .FooterNavList {
+    height: 150px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+  }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   .sidebar {
     width: 100%;
   }
@@ -1277,6 +1337,35 @@ header nav .logo {
   .starSection .testimonials .singleTest p {
     font-size: 18px;
   }
+  .DIY .con {
+    overflow-x: scroll !important;
+  }
+  .DIY .con .DIY_Video {
+    min-width: 200% !important;
+    max-height: 300px;
+    display: flex !important;
+    justify-content: space-evenly;
+    gap: 1rem;
+  }
+  .DIY .con .DIY_Video .DIY_img1 {
+    width: 70% !important;
+  }
+  .DIY .con .DIY_Video .DIY_img2 {
+    width: 70% !important;
+  }
+  .DIY .con .DIY_Video .DIY_img3 {
+    width: 70% !important;
+  }
+  .FooterNavContainer {
+    width: 100% !important;
+  }
+  .FooterNavContainer .FooterNavList {
+    height: 150px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+  }
 }
 .baskervville-regular {
   font-family: "Baskervville", serif;
@@ -1288,6 +1377,4 @@ header nav .logo {
   font-family: "Baskervville", serif;
   font-weight: 400;
   font-style: italic;
-}
-
-/*# sourceMappingURL=landing.css.map */
+}/*# sourceMappingURL=landing.css.map */
