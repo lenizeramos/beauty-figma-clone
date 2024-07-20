@@ -50,6 +50,7 @@ header{
         position: -webkit-sticky;
         top: 0px;
         background-color: $palewhite;
+        z-index: 990;
     nav{
         .navbar{
             padding: 1rem;
@@ -80,10 +81,11 @@ header{
             }
         }
         .logo{
-            img{
-                width: 100%;
-                transition: width 1.5s ease;
-            }
+            max-inline-size: 100%;
+            block-size: auto;
+            background-position: center;
+            height: 150px;
+            transition: height .5s ease;
         }
     }
 }
@@ -129,9 +131,12 @@ header{
     padding: 0.5rem 1rem;
     transition: padding 1.5s ease;
     .logo{
+        height: 80px;
+        transition: height 1.5s ease;
+        background-size: contain;
+
         img{
-            width: 40%;
-            transition: width 1.5s ease;
+            height: 80px;
         }
     }
 }
