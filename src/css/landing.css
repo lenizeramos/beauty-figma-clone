@@ -1114,28 +1114,8 @@ header nav .logo {
 }
 
 .FooterNavContainer {
+  width: 80%;
   margin: auto;
-}
-@media only screen and (max-width: 600px) {
-  .FooterNavContainer {
-    width: 95%;
-  }
-  .FooterNavContainer .FooterNavList {
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-}
-@media only screen and (min-width: 601px) {
-  .FooterNavContainer {
-    width: 80%;
-  }
-  .FooterNavContainer .FooterNavList {
-    display: flex;
-    justify-content: space-around;
-  }
 }
 .FooterNavContainer .FooterNav {
   border-top: 1px black solid;
@@ -1143,16 +1123,20 @@ header nav .logo {
 }
 .FooterNavContainer .FooterNav .FooterNavList {
   list-style: none;
+  display: flex;
+  justify-content: space-around;
   font-size: 20px;
   padding: 15px 0;
 }
 .FooterNavContainer .FooterNav .FooterNavList .FooterNavListStyle1 {
   font-family: "Baskervville", serif;
   text-decoration: none;
-  color: black;
+  color: #725a58;
 }
 .FooterNavContainer .FooterNav .FooterNavList .FooterNavListStyle2 {
-  color: black;
+  font-family: "Baskervville", serif;
+  text-decoration: none;
+  color: #725a58;
 }
 
 .Copyright {
@@ -1222,6 +1206,16 @@ header nav .logo {
   }
   .DIY .DIY_Video {
     width: 90% !important;
+  }
+  .FooterNavContainer {
+    width: 80% !important;
+  }
+  .FooterNavContainer .FooterNavList {
+    height: 150px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -1294,6 +1288,16 @@ header nav .logo {
   }
   .DIY .con .DIY_Video .DIY_img3 {
     width: 70% !important;
+  }
+  .FooterNavContainer {
+    width: 100% !important;
+  }
+  .FooterNavContainer .FooterNavList {
+    height: 150px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
   }
 }
 .baskervville-regular {
