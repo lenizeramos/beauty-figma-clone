@@ -577,7 +577,6 @@ header nav .logo {
   display: flex;
   align-items: center;
   height: 600px;
-  border: 1px black solid;
 }
 .makeup101 .mainContent .classes {
   display: flex;
@@ -661,7 +660,6 @@ header nav .logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px red solid;
 }
 .makeup101 .mainContent .picContainer .ladypicContainer {
   width: 80%;
@@ -1213,13 +1211,14 @@ header nav .logo {
     font-size: 24px;
   }
   .makeup101 {
-    height: 2000px;
+    height: auto;
   }
   .makeup101 .title h1 {
     font-size: 48px;
   }
   .makeup101 .mainContent {
     flex-direction: column;
+    height: auto;
   }
   .makeup101 .mainContent .classes {
     gap: 50px;
@@ -1239,7 +1238,7 @@ header nav .logo {
   }
   .makeup101 .mainContent .classes .row .content .classTitle img {
     width: 50px;
-    height: auto;
+    height: 50px;
   }
   .makeup101 .mainContent .classes .row .content .classTitle p {
     font-size: 36px;
@@ -1268,8 +1267,7 @@ header nav .logo {
     width: 100%;
   }
   .makeup101 .mainContent .picContainer {
-    border: 1px red solid;
-    height: 400px;
+    height: 500px;
   }
   .DIY .DIY_Video {
     width: 90% !important;
@@ -1337,6 +1335,36 @@ header nav .logo {
   .starSection .testimonials .singleTest p {
     font-size: 18px;
   }
+  .makeup101 {
+    height: auto;
+  }
+  .makeup101 .title h1 {
+    font-size: 36px;
+  }
+  .makeup101 .mainContent .classes {
+    gap: 50px;
+  }
+  .makeup101 .mainContent .classes .row {
+    gap: 10px;
+  }
+  .makeup101 .mainContent .classes .row .content .classTitle img {
+    width: 30px;
+    height: 30px;
+  }
+  .makeup101 .mainContent .classes .row .content .classTitle p {
+    font-size: 24px;
+  }
+  .makeup101 .mainContent .classes .row .content .classInfo p {
+    font-size: 18px;
+  }
+  .makeup101 .mainContent .picContainer {
+    width: 100%;
+    height: 500px;
+  }
+  .makeup101 .mainContent .picContainer .ladypicContainer {
+    width: 100%;
+    height: 100%;
+  }
   .DIY .con {
     overflow-x: scroll !important;
   }
@@ -1377,4 +1405,6 @@ header nav .logo {
   font-family: "Baskervville", serif;
   font-weight: 400;
   font-style: italic;
-}/*# sourceMappingURL=landing.css.map */
+}
+
+/*# sourceMappingURL=landing.css.map */
