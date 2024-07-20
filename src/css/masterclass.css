@@ -177,6 +177,7 @@ header nav .logo img {
 }
 .information .img-info .main-img {
   width: 100%;
+  min-width: 250px;
 }
 .information .sum-info {
   margin: 2rem;
@@ -220,7 +221,72 @@ header nav .logo img {
 .information .full-info {
   width: 40%;
 }
+.information .full-info .button {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: 1px solid #B99692;
+  margin-top: 3rem;
+}
+.information .full-info .button .join-button {
+  justify-content: center;
+  font-size: 18px;
+  margin: 1rem 0;
+}
+.information .full-info .button:hover {
+  background-color: #B99692;
+  cursor: pointer;
+}
+.information .full-info .button:hover a {
+  color: white;
+}
 
+@media only screen and (max-width: 768px) {
+  .information {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+  }
+  .information .full-info {
+    width: 100%;
+    text-align: justify;
+    padding: 2rem 1rem;
+  }
+  .information .full-info .button {
+    display: flex;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .header {
+    display: none;
+  }
+  .information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+  }
+  .information .img-info {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+  .information .full-info {
+    padding: 4rem 1rem;
+    width: 100%;
+    text-align: justify;
+    background-color: #FAE9E7;
+  }
+  .information .full-info .button {
+    display: flex;
+  }
+}
 .IconsContainer {
   text-align: center;
   width: 250px;
