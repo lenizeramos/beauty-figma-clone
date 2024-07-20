@@ -549,11 +549,129 @@ header nav .logo {
   transition: all 0.5s ease-in-out;
 }
 .makeup_hairstyle .hbutton {
-  color: #5e4a49;
+  color: #725a58;
   font-family: "Baskerville", serif;
-  font-weight: 100;
+  font-weight: 400;
   font-style: normal;
-  font-size: 14px;
+  font-size: 20px;
+}
+
+.makeup101 {
+  padding: 0 2rem;
+  background-color: #fae9e7;
+}
+.makeup101 .title {
+  padding: 1rem;
+  text-align: center;
+}
+.makeup101 .title h1 {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 80px;
+  color: #5e4a49;
+}
+.makeup101 .mainContent {
+  display: flex;
+  align-items: center;
+  height: 600px;
+}
+.makeup101 .mainContent .classes {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.makeup101 .mainContent .classes .row {
+  display: flex;
+}
+.makeup101 .mainContent .classes .row .content {
+  width: 90%;
+}
+.makeup101 .mainContent .classes .row .content .classTitle {
+  display: flex;
+  gap: 10px;
+}
+.makeup101 .mainContent .classes .row .content .classTitle p {
+  font-family: "Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 48px;
+  color: #725a58;
+}
+.makeup101 .mainContent .classes .row .content .classInfo {
+  width: 80%;
+}
+.makeup101 .mainContent .classes .row .content .classInfo p {
+  font-family: "Avenir", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
+  color: #191919;
+}
+.makeup101 .mainContent .classes .row .arrow {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.makeup101 .mainContent .classes .row .arrow a {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.makeup101 .mainContent .classes .M101secBtn {
+  margin: 1rem 0;
+  border: 1px #5e4a49 solid;
+  height: 60px;
+  width: 160px;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.makeup101 .mainContent .classes .M101secBtn a {
+  text-decoration: none;
+}
+.makeup101 .mainContent .classes .M101secBtn a p {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  color: #725a58;
+}
+.makeup101 .mainContent .classes .M101secBtn:hover {
+  background-color: #b99692;
+  border: 1px #b99692 solid;
+}
+.makeup101 .mainContent .classes .M101secBtn:hover p {
+  color: white;
+}
+.makeup101 .mainContent .picContainer {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.makeup101 .mainContent .picContainer .ladypicContainer {
+  width: 80%;
+  height: 90%;
+  background-image: url(../resources/landing/image122.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-inline-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.makeup101 .mainContent .picContainer .ladypicContainer .backLine {
+  border: 1px rgba(255, 255, 255, 0.452) solid;
+  width: 80%;
+  height: 90%;
+  z-index: 1;
 }
 
 .DIY {
@@ -641,11 +759,11 @@ header nav .logo {
   font-size: 28px;
 }
 .formMainContainer .form-services .hbutton {
-  color: #5e4a49;
+  color: #725a58;
   font-family: "Baskerville", serif;
-  font-weight: 100;
+  font-weight: 400;
   font-style: normal;
-  font-size: 14px;
+  font-size: 20px;
 }
 .formMainContainer .form-services .text-body {
   font-family: "Montserrat", sans-serif;
@@ -659,7 +777,17 @@ header nav .logo {
   flex-direction: column;
   align-items: center;
   margin: 4rem auto;
-  width: 40%;
+  width: 60%;
+}
+@media only screen and (max-width: 768px) {
+  .formMainContainer .form-services .contact-us {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .formMainContainer .form-services .contact-us {
+    width: 80%;
+  }
 }
 .formMainContainer .form-services .contact-us h1 {
   margin-bottom: 1rem;
@@ -675,11 +803,16 @@ header nav .logo {
   align-items: center;
   padding: 3rem;
   background-color: #fae9e7;
-  width: 50%;
+  width: 60%;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .formMainContainer .form-services .form-services-container {
-    width: 90%;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .formMainContainer .form-services .form-services-container {
+    width: 80%;
   }
 }
 .formMainContainer .form-services .form-services-container .form-header {
@@ -719,7 +852,7 @@ header nav .logo {
   display: flex;
   justify-content: space-between;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .formMainContainer .form-services .form-services-container .form-option-container .form-event-options .event-opts {
     flex-direction: column;
   }
@@ -733,7 +866,7 @@ header nav .logo {
   padding: 8px;
   cursor: pointer;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .formMainContainer .form-services .form-services-container .form-option-container .form-event-options .event-opts .eve-options {
     width: 100%;
     margin: 0.5rem;
@@ -753,7 +886,7 @@ header nav .logo {
   flex-direction: row;
   justify-content: space-between;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .formMainContainer .form-services .form-services-container .form-option-container .form-date-time-options {
     flex-direction: column;
     gap: 1rem;
@@ -767,7 +900,7 @@ header nav .logo {
   display: flex;
   flex-direction: column;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .formMainContainer .form-services .form-services-container .form-option-container .form-date-time-options .fr {
     width: 100%;
   }
@@ -904,19 +1037,21 @@ header nav .logo {
   justify-content: center;
 }
 .submitButton input {
-  border: 1px #725a58 solid;
-  width: 100px;
-  height: 50px;
-  background-color: #fae9e7;
+  border: 0.5px #725a58 solid;
+  padding: 20px 40px;
+  width: 160px;
   font-family: "Baskervville", serif;
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
   color: #191919;
+  background-color: transparent;
   cursor: pointer;
 }
 .submitButton input:hover {
   background-color: #b99692;
+  border: 1px solid #b99692;
+  color: white;
 }
 
 #side_bar_message_container {
@@ -1171,6 +1306,4 @@ header nav .logo {
   font-family: "Baskervville", serif;
   font-weight: 400;
   font-style: italic;
-}
-
-/*# sourceMappingURL=landing.css.map */
+}/*# sourceMappingURL=landing.css.map */

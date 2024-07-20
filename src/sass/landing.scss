@@ -642,15 +642,145 @@ header {
   }
 
   .hbutton {
-    color: #5e4a49;
+    color: $boldmain;
     font-family: "Baskerville", serif;
-    font-weight: 100;
+    font-weight: 400;
     font-style: normal;
-    font-size: 14px;
+    font-size: 20px;
   }
 }
 
 //******************************END 4TH SECTION********************************************//
+
+//**********************START 5TH SECTION*******************//
+
+.makeup101{
+  padding: 0 2rem;
+  background-color: $lightpink;
+  .title{
+    padding: 1rem;
+      // width: 50%;
+      text-align: center;
+      // border: 1px red solid;
+      h1 {
+        // border: 1px red solid;
+        font-family: "Baskervville", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: $h1;
+        color: #5e4a49;
+      }
+  }
+  .mainContent{
+    display: flex;
+    align-items: center;
+    height: 600px;
+    // border: 1px black solid;
+
+    .classes {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      .row{
+        display: flex;
+        .content{
+          width: 90%;
+          .classTitle{
+            display: flex;
+            gap: 10px;
+            p{
+              font-family: "Baskerville", serif;
+              font-weight: 400;
+              font-style: normal;
+              font-size: $h3;
+              color: $boldmain;
+            }
+          }
+          .classInfo{
+            width: 80%;
+            p{
+              font-family: "Avenir", serif;
+              font-weight: 300;
+              font-style: normal;
+              font-size: $body;
+              color: $brand;
+            }
+          }
+
+        }
+        .arrow{
+          width: 10%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          a{
+            width: 50%;
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+      .M101secBtn {
+        margin: 1rem 0;
+        border: 1px #5e4a49 solid;
+        height: 60px;
+        width: 160px;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        a{
+          text-decoration: none;
+          p{
+            font-family: "Baskervville", serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: $button;
+            color: $boldmain;
+          }
+        }
+        &:hover{
+          background-color: $darkpink;
+          border: 1px $darkpink solid;
+          p{
+          color: white;
+          }
+        }
+      }
+    }
+    .picContainer{
+      width: 50%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .ladypicContainer{
+        // border: 1px red solid;
+        width: 80%;
+        height: 90%;
+        background-image: url(../resources/landing/image122.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        max-inline-size: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .backLine{
+          border: 1px rgba(255, 255, 255, 0.452) solid;
+          width: 80%;
+          height: 90%;
+          z-index: 1;
+        }
+      }
+    }
+  }
+}
+
+//**********************END 5TH SECTION*******************//
+
 
 
 //***********************************************START 6th SECTION********************************************************************//
@@ -749,13 +879,13 @@ header {
 
     // font family, size and color for button text
     .hbutton {
-      color: #5e4a49;
+      color: $boldmain;
       font-family: "Baskerville", serif;
-      font-weight: 100;
+      font-weight: 400;
       font-style: normal;
-      font-size: 14px;
+      font-size: 20px;
     }
-
+    
     .text-body {
       font-family: "Montserrat", sans-serif;
       font-optical-sizing: auto;
@@ -769,7 +899,14 @@ header {
       flex-direction: column;
       align-items: center;
       margin: 4rem auto;
-      width: 40%;
+      width: 60%;
+
+      @media only screen and (max-width: 768px) {
+        width: 100%;
+      }
+      @media only screen and (min-width: 769px) and (max-width: 1024px) {
+        width: 80%;
+      }
 
       h1 {
         margin-bottom: 1rem;
@@ -788,11 +925,15 @@ header {
       align-items: center;
       padding: 3rem;
       background-color: #fae9e7;
-      width: 50%;
+      width: 60%;
 
-      @media only screen and (max-width: 600px) {
-        width: 90%;
+      @media only screen and (max-width: 768px) {
+        width: 100%;
       }
+      @media only screen and (min-width: 769px) and (max-width: 1024px) {
+        width: 80%;
+      }
+
 
       .form-header {
         display: flex;
@@ -835,7 +976,7 @@ header {
             display: flex;
             justify-content: space-between;
 
-            @media only screen and (max-width: 600px) {
+            @media only screen and (max-width: 768px) {
               flex-direction: column;
             }
 
@@ -848,7 +989,7 @@ header {
               padding: 8px;
               cursor: pointer;
 
-              @media only screen and (max-width: 600px) {
+              @media only screen and (max-width: 768px) {
                 width: 100%;
                 margin: 0.5rem;
               }
@@ -872,7 +1013,7 @@ header {
           flex-direction: row;
           justify-content: space-between;
 
-          @media only screen and (max-width: 600px) {
+          @media only screen and (max-width: 768px) {
             flex-direction: column;
             gap: 1rem;
           }
@@ -886,7 +1027,7 @@ header {
             display: flex;
             flex-direction: column;
 
-            @media only screen and (max-width: 600px) {
+            @media only screen and (max-width: 768px) {
               width: 100%;
             }
 
@@ -1029,15 +1170,6 @@ header {
   }
 }
 
-// @media only screen and (max-width: 600px) {
-
-//     .form-services-container {
-//         width: 100%;
-//         padding: 1rem;
-//     }
-
-// }
-
 // END FORM SERVICES
 
 // BEGIN FORM CLASSES
@@ -1066,18 +1198,20 @@ header {
   display: flex;
   justify-content: center;
   input {
-    border: 1px $boldmain solid;
-    width: 100px;
-    height: 50px;
-    background-color: $lightpink;
+    border: 0.5px $boldmain solid;
+    padding: 20px 40px;
+    width: 160px;
     font-family: "Baskervville", serif;
     font-weight: 400;
     font-style: normal;
     font-size: $button;
     color: $brand;
+    background-color: transparent;
     cursor: pointer;
     &:hover {
       background-color: $darkpink;
+      border: 1px solid $darkpink;
+      color: white;
     }
   }
 }
