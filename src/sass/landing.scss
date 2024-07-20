@@ -660,8 +660,8 @@ header {
   margin: auto;
   .DIY_Title{
     text-align: center;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
     h3{
       font-family: "Baskervville", serif;
       font-weight: 400;
@@ -1377,24 +1377,23 @@ header {
   .DIY{
     .con{
       overflow-x: scroll !important;
-      scroll-padding-right: 100px;
       .DIY_Video{
-      min-width: 200% !important;
-      max-height: 300px ;
-      display: flex !important;
-      justify-content: center;
-      gap: 1rem;
-      .DIY_img1{
-        width: 70% !important;
-      } 
-      .DIY_img2{
-        width: 70% !important;      
-      } 
-      .DIY_img3{
-        width: 70% !important;
-      } 
+        min-width: 200% !important;
+        max-height: 300px ;
+        display: flex !important;
+        justify-content: space-evenly;
+        gap: 1rem;
+        .DIY_img1{
+          width: 70% !important;
+        } 
+        .DIY_img2{
+          width: 70% !important;      
+        } 
+        .DIY_img3{
+          width: 70% !important;
+        } 
+      }
     }
-  }
   }
   
 }
