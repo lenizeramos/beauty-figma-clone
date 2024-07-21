@@ -21,6 +21,7 @@ header {
   position: -webkit-sticky;
   top: 0px;
   background-color: #f8f6f4;
+  z-index: 990;
 }
 header nav .navbar {
   padding: 1rem;
@@ -52,10 +53,9 @@ header nav .navbar li a i {
   color: #725a58;
 }
 header nav .logo {
-  background-image: url(../resources/landing/CarlaBeautyLogo.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
+  max-inline-size: 100%;
+  block-size: auto;
+  background-position: center;
   height: 150px;
   transition: height 0.5s ease;
 }
@@ -103,11 +103,12 @@ header nav .logo {
   transition: padding 1.5s ease;
 }
 .smallNavBar .logo {
-  background-image: url(../resources/landing/ShrinkedLogo_Navbar.svg);
   height: 80px;
   transition: height 1.5s ease;
   background-size: contain;
-  background-position: center;
+}
+.smallNavBar .logo img {
+  height: 80px;
 }
 
 .showonMobile,
