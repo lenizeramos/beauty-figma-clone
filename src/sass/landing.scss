@@ -1705,30 +1705,93 @@ header {
 
     }
   }
-
+body{
+  overflow-x: hidden !important;
+}
   //DIY Section
   .DIY{
+    min-height: 70vh !important;
+    width: auto !important; 
     h3{
       font-size: $h5 !important;
     }
     .con{
-      overflow-x: scroll !important;
       .DIY_Video{
-        min-width: 200% !important;
+        width: 300% !important;
         max-height: 300px ;
         display: flex !important;
-        justify-content: space-evenly;
-        gap: 1rem;
+        grid-template-areas: none;
+        gap: 1.5rem !important;
+        position: absolute !important;
+        margin: auto;
+        place-items: center;
+        overflow-x: hidden !important;
+        .img{
+          width: 250px !important;
+        }
         .DIY_img1{
-          width: 70% !important;
+          position: relative !important;
         } 
         .DIY_img2{
-          width: 70% !important;      
+          position: relative !important;
         } 
         .DIY_img3{
-          width: 70% !important;
+          position: relative !important;
         } 
+        .center{
+          position: relative !important;
+          left: -16% !important;
+        }
+        .left{
+          position: relative !important;
+          left: 6% !important;
+        }
+        .right{
+          position: relative !important;
+          left: -38% !important;
+        }
+        .TL{
+          transition: left 0.5s ease;
+        }
       }
+    }
+
+/*     .con{
+      overflow-x: hidden !important;
+      position: absolute;
+      .DIY_Video{
+        position: relative;
+        display: flex;
+        min-width: 200% !important;
+        max-height: 300px ;
+        gap: 1rem;
+        .DIY_img1{
+          width: 100% !important;
+        } 
+        .DIY_img2{
+          width: 100% !important;
+          
+        } 
+        .DIY_img3{
+          width: 100% !important;
+        } 
+        .center{
+          transform: translateX(-80%);
+        }
+        .left{
+          transform: translateX(30%);
+        }
+        .right{
+          transform: translateX(-185%);
+        }
+        
+      }
+    }
+ */    .ShiftLeft{
+      transition: left 1s ease !important;
+    }
+    .DIY_Btn{
+      padding-top: 40vh;
     }
   }
   

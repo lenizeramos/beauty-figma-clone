@@ -1412,27 +1412,91 @@ header nav .logo {
     width: 100%;
     height: 100%;
   }
+  body {
+    overflow-x: hidden !important;
+  }
+  .DIY {
+    min-height: 70vh !important;
+    width: auto !important;
+    /*     .con{
+          overflow-x: hidden !important;
+          position: absolute;
+          .DIY_Video{
+            position: relative;
+            display: flex;
+            min-width: 200% !important;
+            max-height: 300px ;
+            gap: 1rem;
+            .DIY_img1{
+              width: 100% !important;
+            } 
+            .DIY_img2{
+              width: 100% !important;
+
+            } 
+            .DIY_img3{
+              width: 100% !important;
+            } 
+            .center{
+              transform: translateX(-80%);
+            }
+            .left{
+              transform: translateX(30%);
+            }
+            .right{
+              transform: translateX(-185%);
+            }
+
+          }
+        }
+     */
+  }
   .DIY h3 {
     font-size: 32px !important;
   }
-  .DIY .con {
-    overflow-x: scroll !important;
-  }
   .DIY .con .DIY_Video {
-    min-width: 200% !important;
+    width: 300% !important;
     max-height: 300px;
     display: flex !important;
-    justify-content: space-evenly;
-    gap: 1rem;
+    grid-template-areas: none;
+    gap: 1.5rem !important;
+    position: absolute !important;
+    margin: auto;
+    place-items: center;
+    overflow-x: hidden !important;
+  }
+  .DIY .con .DIY_Video .img {
+    width: 250px !important;
   }
   .DIY .con .DIY_Video .DIY_img1 {
-    width: 70% !important;
+    position: relative !important;
   }
   .DIY .con .DIY_Video .DIY_img2 {
-    width: 70% !important;
+    position: relative !important;
   }
   .DIY .con .DIY_Video .DIY_img3 {
-    width: 70% !important;
+    position: relative !important;
+  }
+  .DIY .con .DIY_Video .center {
+    position: relative !important;
+    left: -16% !important;
+  }
+  .DIY .con .DIY_Video .left {
+    position: relative !important;
+    left: 6% !important;
+  }
+  .DIY .con .DIY_Video .right {
+    position: relative !important;
+    left: -38% !important;
+  }
+  .DIY .con .DIY_Video .TL {
+    transition: left 0.5s ease;
+  }
+  .DIY .ShiftLeft {
+    transition: left 1s ease !important;
+  }
+  .DIY .DIY_Btn {
+    padding-top: 40vh;
   }
   .FooterNavContainer {
     width: 100% !important;
