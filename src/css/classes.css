@@ -268,6 +268,7 @@ h1 {
 }
 
 .FooterNavContainer {
+  width: 80%;
   margin: auto;
 }
 @media only screen and (max-width: 600px) {
@@ -297,16 +298,20 @@ h1 {
 }
 .FooterNavContainer .FooterNav .FooterNavList {
   list-style: none;
+  display: flex;
+  justify-content: space-around;
   font-size: 20px;
   padding: 15px 0;
 }
 .FooterNavContainer .FooterNav .FooterNavList .FooterNavListStyle1 {
-  font-family: "Baskervville SC", serif;
+  font-family: "Baskervville", serif;
   text-decoration: none;
-  color: black;
+  color: #725a58;
 }
 .FooterNavContainer .FooterNav .FooterNavList .FooterNavListStyle2 {
-  color: black;
+  font-family: "Baskervville", serif;
+  text-decoration: none;
+  color: #725a58;
 }
 
 .Copyright {
@@ -332,4 +337,6 @@ h1 {
   font-family: "Baskervville SC", serif;
   font-weight: 400;
   font-style: normal;
-}/*# sourceMappingURL=classes.css.map */
+}
+
+/*# sourceMappingURL=classes.css.map */
