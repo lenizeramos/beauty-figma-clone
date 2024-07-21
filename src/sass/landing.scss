@@ -1624,6 +1624,9 @@ header {
 
   //DIY Section
   .DIY{
+    h3{
+      font-size: $h5 !important;
+    }
     .con{
       overflow-x: scroll !important;
       .DIY_Video{
