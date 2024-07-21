@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Classes</title>
     <link rel="stylesheet" href="../css/classes.css" />
     <script
       src="https://kit.fontawesome.com/f8be10a101.js/"
@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap"
       rel="stylesheet"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -39,7 +39,7 @@
             <a href="../index.html"><p>Home</p></a>
           </li>
           <li>
-            <a href=""><p>My Work</p></a>
+            <a href="../htmlFiles/myWork.html"><p>My Work</p></a>
           </li>
           <li>
             <a href=""><p>Services</p></a>
@@ -48,94 +48,68 @@
             <a href="classes.html"><p class="classes">Classes</p></a>
           </li>
           <li>
-            <a href=""><p>Beauty Tips</p></a>
+            <a href="../htmlFiles/beautyTips.html"><p>Beauty Tips</p></a>
           </li>
           <li>
-            <a href=""><p>About</p></a>
+            <a href="../htmlFiles/aboutme.html"><p>About</p></a>
           </li>
           <li>
-            <a href="contact.html"><p>Contact</p></a>
+            <a href="../htmlFiles/contact.html"><p>Contact</p></a>
           </li>
         </ul>
 
-  <header>
-    <nav>
-      <ul class="sidebar" id="sidebar">
-        <li id="closetagSB"><i class="fa-solid fa-xmark"></i></li>
-        <li>
-          <a href=""><p>Home</p></a>
-        </li>
-        <li>
-          <a href=""><p>My Work</p></a>
-        </li>
-        <li>
-          <a href=""><p>Services</p></a>
-        </li>
-        <li>
-          <a href=""><p class="classes">Classes</p></a>
-        </li>
-        <li>
-          <a href=""><p>Beauty Tips</p></a>
-        </li>
-        <li>
-          <a href=""><p>About</p></a>
-        </li>
-        <li>
-          <a href=""><p>Contact</p></a>
-        </li>
-      </ul>
-
-      <ul class="navbar" id="navbar">
-        <li class="hideonMobile">
-          <a href="">
-            <p>Home</p>
-          </a>
-        </li>
-        <li class="hideonMobile">
-          <a href="">
-            <p>My Work</p>
-          </a>
-        </li>
-        <li class="hideonMobile">
-          <a href="">
-            <p>Services</p>
-          </a>
-        </li>
-        <li class="hideonMobile">
-          <a href="">
-            <p class="classes">Classes</p>
-          </a>
-        </li>
-        <li class="opentagSB" id="opentagSB">
-          <i class="fa-solid fa-bars"></i>
-        </li>
-        <li>
-          <div class="logo">
-            <img 
-              id="mainLogo"
-              src="../resources/landing/CarlaBeautyLogo.svg"
-              alt="Main_Logo"/>
-          </div>
-        </li>
-        <li class="hideonMobile">
-          <a href="">
-            <p>Beauty Tips</p>
-          </a>
-        </li>
-        <li class="hideonMobile">
-          <a href="">
-            <p>About</p>
-          </a>
-        </li>
-        <li class="hideonMobile">
-          <a href="">
-            <p>Contact</p>
-          </a>
-        </li>
-        <li>
-          <i class="fa-brands fa-instagram"></i>
-        </li>
-        <!-- <li class="showonMobile">
+        <ul class="navbar" id="navbar">
+          <li class="hideonMobile">
+            <a href="../index.html">
+              <p>Home</p>
+            </a>
+          </li>
+          <li class="hideonMobile">
+            <a href="../htmlFiles/myWork.html">
+              <p>My Work</p>
+            </a>
+          </li>
+          <li class="hideonMobile">
+            <a href="">
+              <p>Services</p>
+            </a>
+          </li>
+          <li class="hideonMobile">
+            <a href="classes.html">
+              <p class="classes">Classes</p>
+            </a>
+          </li>
+          <li class="opentagSB" id="opentagSB">
+            <i class="fa-solid fa-bars"></i>
+          </li>
+          <li>
+            <div class="logo">
+              <img
+                id="mainLogo"
+                src="../resources/landing/CarlaBeautyLogo.svg"
+                alt="Main_Logo"
+              />
+            </div>
+          </li>
+          <li class="hideonMobile">
+            <a href="../htmlFiles/beautyTips.html">
+              <p>Beauty Tips</p>
+            </a>
+          </li>
+          <li class="hideonMobile">
+            <a href="../htmlFiles/aboutme.html">
+              <p>About</p>
+            </a>
+          </li>
+          <li class="hideonMobile">
+            <a href="../htmlFiles/contact.html">
+              <p>Contact</p>
+            </a>
+          </li>
+          <li>
+            <i class="fa-brands fa-instagram"></i>
+          </li>
+          <!-- <li class="showonMobile">
           <i class="fa-brands fa-instagram"></i>
         </li> -->
         </ul>
@@ -326,13 +300,21 @@
         <div class="FooterNavContainer">
           <nav class="FooterNav">
             <ul class="FooterNavList">
-              <li><a href="../index.html" class="FooterNavListStyle1">Home</a></li>
+              <li>
+                <a href="../index.html" class="FooterNavListStyle1">Home</a>
+              </li>
               <li><a href="#" class="FooterNavListStyle1">My Work</a></li>
               <li><a href="#" class="FooterNavListStyle1">Services</a></li>
-              <li><a href="classes.html" class="FooterNavListStyle1">Classes</a></li>
+              <li>
+                <a href="classes.html" class="FooterNavListStyle1">Classes</a>
+              </li>
               <li><a href="#" class="FooterNavListStyle1">Beauty Tips</a></li>
-              <li><a href="aboutme.html" class="FooterNavListStyle1">About</a></li>
-              <li><a href="contact.html" class="FooterNavListStyle2">Contact</a></li>
+              <li>
+                <a href="aboutme.html" class="FooterNavListStyle1">About</a>
+              </li>
+              <li>
+                <a href="contact.html" class="FooterNavListStyle2">Contact</a>
+              </li>
             </ul>
           </nav>
         </div>
@@ -342,10 +324,6 @@
       </div>
     </footer>
 
-<script src="../scriptFiles/classes.js"></script>
-
-</body>
-
-
-
+    <script src="../scriptFiles/classes.js"></script>
+  </body>
 </html>

@@ -66,7 +66,7 @@ header{
                     text-decoration: none;
                     padding: 0 1rem;
                     p{
-                        font-family: "Baskervville SC", serif;
+                        font-family: "Baskervville", serif;
                         font-weight: 400;
                         font-style: normal;
                         &:not(.classes){
@@ -89,14 +89,6 @@ header{
         }
       }
     }
-    .logo {
-      img {
-        width: 100%;
-        transition: width 1.5s ease;
-      }
-    }
-  
-
 
 .sidebar {
   position: fixed;
@@ -138,10 +130,13 @@ header{
   padding: 0.5rem 1rem;
   transition: padding 1.5s ease;
   .logo {
-    img {
-      width: 40%;
-      transition: width 1.5s ease;
-    }
+    height: 80px;
+        transition: height 1.5s ease;
+        background-size: contain;
+
+        img {
+            height: 80px;
+        }
   }
 }
 
@@ -432,8 +427,14 @@ h1 {
 }
 
 //GOOGLE FONTS -BASKERVVILE-
-.baskervville-sc-regular {
-  font-family: "Baskervville SC", serif;
+.baskervville-regular {
+  font-family: "Baskervville", serif;
   font-weight: 400;
   font-style: normal;
+}
+
+.baskervville-regular-italic {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: italic;
 }
