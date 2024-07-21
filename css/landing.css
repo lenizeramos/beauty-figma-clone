@@ -1,0 +1,1455 @@
+@font-face {
+  font-family: "Avenir";
+  src: url(../fonts/Avenir/AvenirRegular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Whiteflower";
+  src: url(../fonts/WhiteFlower/WhiteFlower.otf) format("opentype");
+}
+@font-face {
+  font-family: "Magenta";
+  src: url(../fonts/magenta-2/MagentaDemo.ttf) format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0px;
+  background-color: #f8f6f4;
+  z-index: 990;
+}
+header nav .navbar {
+  padding: 1rem;
+  transition: padding 1.5s ease;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .navbar li {
+  width: 100%;
+  text-align: center;
+}
+header nav .navbar li a {
+  text-decoration: none;
+  padding: 0 1rem;
+}
+header nav .navbar li a p {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+header nav .navbar li a p:not(.classes) {
+  border-right: 1px #725a58 solid;
+}
+header nav .navbar li a p,
+header nav .navbar li a i {
+  font-size: 20px;
+  color: #725a58;
+}
+header nav .logo {
+  max-inline-size: 100%;
+  block-size: auto;
+  background-position: center;
+  height: 150px;
+  transition: height 0.5s ease;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: #f8f6f4;
+  display: none;
+  transition: display 2s ease-in-out;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  list-style: none;
+}
+.sidebar li {
+  width: 100%;
+}
+.sidebar li:hover {
+  background-color: #e3b6b1;
+  transition: background-color 0.5s ease;
+}
+.sidebar li a {
+  text-decoration: none;
+  padding: 0 1rem;
+  width: 100%;
+}
+.sidebar li a p {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.sidebar li a p,
+.sidebar li a i {
+  font-size: 20px;
+  color: #725a58;
+}
+
+.smallNavBar {
+  padding: 0.5rem 1rem;
+  transition: padding 1.5s ease;
+}
+.smallNavBar .logo {
+  height: 80px;
+  transition: height 1.5s ease;
+  background-size: contain;
+}
+.smallNavBar .logo img {
+  height: 80px;
+}
+
+.showonMobile,
+.opentagSB {
+  display: none;
+}
+
+.mainPicSection .mainPicContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f8f6f4;
+  position: relative;
+  overflow-x: hidden;
+}
+.mainPicSection .mainPicContainer #MainPic {
+  position: absolute;
+  height: 100%;
+}
+.mainPicSection .mainPicContainer #mainSentenceContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  bottom: 10%;
+}
+.mainPicSection .mainPicContainer #mainSentenceContainer h1 {
+  font-family: "Magenta";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 80px;
+  color: #f8f6f4;
+}
+.mainPicSection .mainPicContainer #mainSentenceContainer p {
+  font-family: "Avenir", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
+  color: #f8f6f4;
+  margin-top: 1rem;
+}
+.mainPicSection .mainPicContainer #mainSentenceContainer button {
+  padding: 20px 20px;
+  width: 230px;
+  background-color: transparent;
+  border: 0.5px solid rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  color: #f8f6f4;
+  font-family: "Baskervville", serif;
+  font-size: 20px;
+  margin-top: 1.5rem;
+}
+.mainPicSection .mainPicContainer #mainSentenceContainer button:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: #191919;
+  transition: 1s;
+}
+
+.AboutMeSection {
+  min-height: 80vh;
+  width: 100%;
+  margin: auto;
+  overflow-x: hidden;
+}
+.AboutMeSection .AboutMeContainer {
+  display: grid;
+  grid-template-columns: 250px 450px;
+  grid-template-rows: 400px;
+  grid-template-areas: "PicArea TextArea";
+  gap: 4rem;
+  margin-top: 3rem;
+  place-content: center;
+}
+.AboutMeSection .AboutMeContainer .AboutPic {
+  grid-area: PicArea;
+  display: block;
+  border: 1px solid #e3b6b1;
+  height: 370px;
+  width: 266px;
+  margin-left: 20px;
+  position: relative;
+}
+.AboutMeSection .AboutMeContainer .AboutPic .backgroudLine {
+  text-align: center;
+  position: absolute;
+  transform: translate(-20px);
+  height: 300px;
+  top: 10px;
+}
+.AboutMeSection .AboutMeContainer .AboutPic .backgroudLine #Lady18Pic {
+  height: 300px;
+  transform: translate(0, 10px);
+  background-color: #e3b6b1;
+}
+.AboutMeSection .AboutMeContainer .AboutPic .backgroudLine .Logo_Text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  background-color: white;
+  border: 1px solid #a3a3a3;
+  margin: 0;
+  width: 266px;
+}
+.AboutMeSection .AboutMeContainer .AboutPic .backgroudLine .Logo_Text img {
+  margin: auto;
+}
+.AboutMeSection .AboutMeContainer .AboutPic .backgroudLine .Logo_Text p {
+  text-align: left;
+  padding: 20px 0;
+}
+.AboutMeSection .AboutMeContainer .AboutText {
+  grid-area: TextArea;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "Logo Logo" "h3Text h3Text" "pText pText" "A-button signature";
+}
+.AboutMeSection .AboutMeContainer .AboutText img {
+  grid-area: Logo;
+  align-self: center;
+}
+.AboutMeSection .AboutMeContainer .AboutText .h3Title {
+  grid-area: h3Text;
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 48px;
+  color: #191919;
+}
+.AboutMeSection .AboutMeContainer .AboutText p {
+  grid-area: pText;
+  font-family: "Avenir", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
+  color: #a3a3a3;
+}
+.AboutMeSection .AboutMeContainer .AboutText button {
+  grid-area: A-button;
+  padding: 20px 0px;
+  width: 170px;
+  height: 70px;
+  background-color: transparent;
+  border: 0.5px solid #a3a3a3;
+  cursor: pointer;
+  color: #535353;
+  font-family: "Baskervville", serif;
+  font-size: 20px;
+  align-self: center;
+}
+.AboutMeSection .AboutMeContainer .AboutText button:hover {
+  background-color: #b99692;
+  border: 1px solid #b99692;
+  color: #f8f6f4;
+}
+.AboutMeSection .AboutMeContainer .AboutText .h3Signature {
+  grid-area: signature;
+  font-family: "Magenta";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 48px;
+  transform: rotate(-10deg);
+  z-index: -1;
+}
+.AboutMeSection .OurBrands {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  min-width: 400px;
+  max-width: 90%;
+}
+.AboutMeSection .OurBrands p {
+  align-self: center;
+  width: 150px;
+  transform: translateY(12px);
+  background-color: white;
+  font-family: "Avenir", serif;
+  font-size: 18px;
+}
+.AboutMeSection .OurBrands .BrandsPics {
+  border-top: 1px solid #a3a3a3;
+}
+.AboutMeSection .OurBrands .BrandsPics img {
+  margin: 1.5rem;
+  padding-top: 2rem;
+}
+
+.starSection {
+  padding: 2rem 0;
+  background-color: #fae9e7;
+}
+.starSection .headerSec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.starSection .headerSec .titleStar {
+  padding: 1rem;
+}
+.starSection .headerSec .titleStar h1 {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 80px;
+  color: #5e4a49;
+}
+.starSection .headerSec span {
+  border: 1px #e3b6b1 solid;
+  width: 200px;
+  margin-bottom: 1.5rem;
+}
+.starSection .headerSec .messageStar {
+  width: 40%;
+  text-align: center;
+  margin: 1rem 0;
+}
+.starSection .headerSec .messageStar p {
+  font-family: "Avenir", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
+  color: #191919;
+}
+.starSection .headerSec .starsecBtn {
+  margin: 1rem 0;
+  border: 1px #5e4a49 solid;
+  height: 60px;
+  width: 160px;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.starSection .headerSec .starsecBtn a {
+  text-decoration: none;
+}
+.starSection .headerSec .starsecBtn a p {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  color: #725a58;
+}
+.starSection .headerSec .starsecBtn:hover {
+  background-color: #b99692;
+  border: 1px #b99692 solid;
+}
+.starSection .headerSec .starsecBtn:hover p {
+  color: white;
+}
+.starSection .photoSec {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
+  height: 400px;
+  margin: 4rem 0;
+}
+.starSection .photoSec .photo {
+  flex: 1;
+  width: 25%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  max-inline-size: 100%;
+  block-size: auto;
+  background-position: center;
+}
+.starSection .photoSec .photo.firstpic {
+  background-image: url(../resources/landing/1.png);
+}
+.starSection .photoSec .photo.secondpic {
+  background-image: url(../resources/landing/2.png);
+}
+.starSection .photoSec .photo.thirdpic {
+  background-image: url(../resources/landing/3.png);
+}
+.starSection .photoSec .photo.fourthpic {
+  background-image: url(../resources/landing/4.png);
+}
+.starSection .testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0;
+}
+.starSection .testimonials .icon {
+  padding: 1rem;
+}
+.starSection .testimonials .singleTest {
+  width: 57%;
+  text-align: center;
+  padding: 1rem 0;
+}
+.starSection .testimonials .singleTest p {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+}
+.starSection .testimonials .testName {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  width: 350px;
+}
+.starSection .testimonials .testName .name p {
+  font-family: "Magenta";
+  font-size: 54px;
+}
+
+.makeup_hairstyle {
+  padding: 2rem 0;
+  background-color: #f8f6f4;
+}
+.makeup_hairstyle .headerSec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.makeup_hairstyle .headerSec .titleMH {
+  padding: 1rem;
+  width: 50%;
+  text-align: center;
+}
+.makeup_hairstyle .headerSec .titleMH h1 {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 80px;
+  color: #5e4a49;
+}
+.makeup_hairstyle .headerSec span {
+  border: 1px #e3b6b1 solid;
+  width: 200px;
+  margin-bottom: 1.5rem;
+}
+.makeup_hairstyle .headerSec .messageMH {
+  width: 40%;
+  text-align: center;
+  margin: 1rem 0;
+}
+.makeup_hairstyle .headerSec .messageMH p {
+  font-family: "Avenir", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
+  color: #191919;
+}
+.makeup_hairstyle .headerSec .MHsecBtn {
+  margin: 1rem 0;
+  border: 1px #5e4a49 solid;
+  height: 60px;
+  width: 160px;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.makeup_hairstyle .headerSec .MHsecBtn a {
+  text-decoration: none;
+}
+.makeup_hairstyle .headerSec .MHsecBtn a p {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  color: #725a58;
+}
+.makeup_hairstyle .headerSec .MHsecBtn:hover {
+  background-color: #b99692;
+  border: 1px #b99692 solid;
+}
+.makeup_hairstyle .headerSec .MHsecBtn:hover p {
+  color: white;
+}
+.makeup_hairstyle .photoSec_MH {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.makeup_hairstyle .photoSec_MH .photo {
+  display: flex;
+  align-items: flex-end;
+}
+.makeup_hairstyle .photoSec_MH .photo.left, .makeup_hairstyle .photoSec_MH .photo.right {
+  background-image: url(../resources/landing/Frame157_Service.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 380px;
+  width: 300px;
+  transition: height 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
+}
+@media only screen and (min-width: 769px) {
+  .makeup_hairstyle .photoSec_MH .photo.left:hover, .makeup_hairstyle .photoSec_MH .photo.right:hover {
+    height: 500px;
+    width: 380px;
+    transition: all 0.5s ease-in-out;
+  }
+}
+.makeup_hairstyle .photoSec_MH .photo.mid {
+  background-image: url(../resources/landing/Frame157_Wed.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
+  width: 380px;
+}
+.makeup_hairstyle .photoSec_MH .photo.right {
+  background-image: url(../resources/landing/Frame157_PS.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 380px;
+  width: 300px;
+  transition: height 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
+}
+@media only screen and (min-width: 769px) {
+  .makeup_hairstyle .photoSec_MH .photo.right:hover {
+    height: 500px;
+    width: 380px;
+    transition: all 0.5s ease-in-out;
+  }
+}
+.makeup_hairstyle .photoSec_MH .photo p {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 48px;
+  color: #fae9e7;
+  transform: translateX(-25%);
+}
+.makeup_hairstyle .photoSec_MH .photo p span {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 48px;
+  color: #b99692;
+}
+.makeup_hairstyle .hbutton {
+  color: #725a58;
+  font-family: "Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.makeup101 {
+  padding: 0 2rem;
+  background-color: #fae9e7;
+  width: 100%;
+  height: 800px;
+}
+.makeup101 .title {
+  padding: 1rem;
+  text-align: center;
+}
+.makeup101 .title h1 {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 80px;
+  color: #5e4a49;
+}
+.makeup101 .mainContent {
+  display: flex;
+  align-items: center;
+  height: 600px;
+}
+.makeup101 .mainContent .classes {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.makeup101 .mainContent .classes .row {
+  display: flex;
+}
+.makeup101 .mainContent .classes .row .content {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+.makeup101 .mainContent .classes .row .content .classTitle {
+  display: flex;
+  gap: 10px;
+}
+.makeup101 .mainContent .classes .row .content .classTitle p {
+  font-family: "Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 48px;
+  color: #725a58;
+}
+.makeup101 .mainContent .classes .row .content .classInfo {
+  width: 80%;
+}
+.makeup101 .mainContent .classes .row .content .classInfo p {
+  font-family: "Avenir", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
+  color: #191919;
+}
+.makeup101 .mainContent .classes .row .arrow {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.makeup101 .mainContent .classes .row .arrow a {
+  text-decoration: none;
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.makeup101 .mainContent .classes .M101secBtn {
+  margin: 1rem 0;
+  border: 1px #5e4a49 solid;
+  height: 60px;
+  width: 160px;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.makeup101 .mainContent .classes .M101secBtn a {
+  text-decoration: none;
+}
+.makeup101 .mainContent .classes .M101secBtn a p {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  color: #725a58;
+}
+.makeup101 .mainContent .classes .M101secBtn:hover {
+  background-color: #b99692;
+  border: 1px #b99692 solid;
+}
+.makeup101 .mainContent .classes .M101secBtn:hover p {
+  color: white;
+}
+.makeup101 .mainContent .picContainer {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.makeup101 .mainContent .picContainer .ladypicContainer {
+  width: 80%;
+  height: 90%;
+  background-image: url(../resources/landing/image122.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-inline-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.makeup101 .mainContent .picContainer .ladypicContainer .backLine {
+  border: 1px rgba(255, 255, 255, 0.452) solid;
+  width: 80%;
+  height: 90%;
+  z-index: 1;
+}
+
+.DIY {
+  min-height: 70vh;
+  max-width: 100%;
+  margin: auto;
+}
+.DIY .DIY_Title {
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.DIY .DIY_Title h3 {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 48px;
+  color: #5e4a49;
+}
+.DIY .DIY_Video {
+  width: 70%;
+  max-height: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "Pic1 Pic2 Pic3";
+  gap: 1rem;
+  margin: auto;
+  place-items: center;
+}
+.DIY .DIY_Video .DIY_img1 {
+  grid-area: Pic2;
+}
+.DIY .DIY_Video .DIY_img2 {
+  grid-area: Pic3;
+}
+.DIY .DIY_Video .DIY_img3 {
+  grid-area: Pic1;
+}
+.DIY .DIY_Video .img {
+  max-width: 100%;
+}
+.DIY .DIY_Btn {
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+.DIY .DIY_Btn button {
+  grid-area: A-button;
+  padding: 20px 0px;
+  width: 200px;
+  height: 70px;
+  background-color: transparent;
+  border: 0.5px solid #a3a3a3;
+  cursor: pointer;
+  color: #535353;
+  font-family: "Baskervville", serif;
+  font-size: 20px;
+  align-self: center;
+}
+.DIY .DIY_Btn button:hover {
+  background-color: #b99692;
+  border: 1px solid #b99692;
+  color: #f8f6f4;
+}
+
+.formMainContainer .form-services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  margin-bottom: 4rem;
+}
+.formMainContainer .form-services h1 {
+  font-family: "Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 80px;
+  letter-spacing: 5px;
+  color: #5e4a49;
+}
+.formMainContainer .form-services h5 {
+  font-family: "Baskerville", serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 28px;
+}
+.formMainContainer .form-services .hbutton {
+  color: #725a58;
+  font-family: "Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+.formMainContainer .form-services .text-body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+}
+.formMainContainer .form-services .contact-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4rem auto;
+  width: 60%;
+}
+@media only screen and (max-width: 768px) {
+  .formMainContainer .form-services .contact-us {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .formMainContainer .form-services .contact-us {
+    width: 80%;
+  }
+}
+.formMainContainer .form-services .contact-us h1 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.formMainContainer .form-services .contact-us p {
+  text-align: center;
+  padding: 0 3rem;
+}
+.formMainContainer .form-services .form-services-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+  background-color: #fae9e7;
+  width: 60%;
+}
+@media only screen and (max-width: 768px) {
+  .formMainContainer .form-services .form-services-container {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .formMainContainer .form-services .form-services-container {
+    width: 80%;
+  }
+}
+.formMainContainer .form-services .form-services-container .form-header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+.formMainContainer .form-services .form-services-container .form-header .header-opt {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0.5rem 2rem;
+  border-bottom: 1px solid black;
+}
+.formMainContainer .form-services .form-services-container .form-header .blur {
+  color: gray;
+  border-bottom: 0.5px solid gray;
+}
+.formMainContainer .form-services .form-services-container .form-option-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+.formMainContainer .form-services .form-services-container .form-option-container .form-event-options {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.formMainContainer .form-services .form-services-container .form-option-container .form-event-options .header-type {
+  margin-bottom: 1rem;
+}
+.formMainContainer .form-services .form-services-container .form-option-container .form-event-options .event-opts {
+  max-width: 100%;
+  min-width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 768px) {
+  .formMainContainer .form-services .form-services-container .form-option-container .form-event-options .event-opts {
+    flex-direction: column;
+  }
+}
+.formMainContainer .form-services .form-services-container .form-option-container .form-event-options .event-opts .eve-options {
+  width: 32%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 8px;
+  cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+  .formMainContainer .form-services .form-services-container .form-option-container .form-event-options .event-opts .eve-options {
+    width: 100%;
+    margin: 0.5rem;
+  }
+}
+.formMainContainer .form-services .form-services-container .form-option-container .form-event-options .event-opts .eve-options img {
+  width: 20px;
+  height: 20px;
+}
+.formMainContainer .form-services .form-services-container .form-option-container .form-event-options .event-opts .eve-options .hide {
+  visibility: hidden;
+}
+.formMainContainer .form-services .form-services-container .form-option-container .form-date-time-options {
+  width: 100%;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 768px) {
+  .formMainContainer .form-services .form-services-container .form-option-container .form-date-time-options {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+.formMainContainer .form-services .form-services-container .form-option-container .form-date-time-options .fr100 {
+  width: 100% !important;
+}
+.formMainContainer .form-services .form-services-container .form-option-container .form-date-time-options .fr {
+  width: 46%;
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (max-width: 768px) {
+  .formMainContainer .form-services .form-services-container .form-option-container .form-date-time-options .fr {
+    width: 100%;
+  }
+}
+.formMainContainer .form-services .form-services-container .form-option-container .form-date-time-options .fr .input-event {
+  padding: 8px;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+.formMainContainer .form-services .form-services-container .form-option-container .form-date-time-options .fr .input-event:focus {
+  outline: none;
+}
+.formMainContainer .form-services .form-services-container .form-option-container .form-date-time-options .fr .checked {
+  display: flex;
+  align-items: center;
+}
+.formMainContainer .form-services .form-services-container .form-option-container .form-date-time-options .fr .checked .check-event {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  accent-color: #b99692;
+}
+.formMainContainer .form-services .form-services-container .form-option-container .form-date-time-options .fr .checked label {
+  padding-left: 5px;
+}
+.formMainContainer .form-services .form-services-container .form-option-container .form-date-time-options .hdr {
+  margin-bottom: 1rem;
+}
+.formMainContainer .form-services .form-services-container .form-option-container .contact-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.formMainContainer .form-services .form-services-container .form-option-container .contact-form .contact-form-name {
+  margin-bottom: 1rem;
+  font-family: "Baskerville", serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 28px;
+}
+.formMainContainer .form-services .form-services-container .form-option-container .contact-form .input-name {
+  padding: 8px;
+  margin-bottom: 2rem;
+  border: 1px solid #b99692;
+}
+.formMainContainer .form-services .form-services-container .form-option-container .contact-form .input-name:focus {
+  outline: none;
+}
+.formMainContainer .form-services .form-services-container .form-option-container .contact-form .contact-header {
+  margin-bottom: 1rem;
+}
+.formMainContainer .form-services .form-services-container .form-option-container .contact-form .phone-opt {
+  display: block;
+  margin: 0.5rem 0;
+}
+.formMainContainer .form-services .form-services-container .form-option-container .contact-form .phone-opt .hide {
+  display: none;
+}
+.formMainContainer .form-services .form-services-container .form-option-container .contact-form .contact-form-phone {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+.formMainContainer .form-services .form-services-container .form-option-container .contact-form .contact-form-phone .label-opt {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.formMainContainer .form-services .form-services-container .form-option-container .contact-form .contact-form-phone .label-opt .input-color {
+  accent-color: #b99692;
+}
+.formMainContainer .form-services .form-services-container .form-option-container .contact-form .contact-form-phone .inpt {
+  width: 100%;
+  padding: 8px;
+  margin-top: 0.5rem;
+  border: 1px solid #b99692;
+}
+.formMainContainer .form-services .form-services-container .form-option-container .contact-form .contact-form-phone .inpt:focus {
+  outline: none;
+}
+.formMainContainer .form-services .form-services-container .form-option-container .contact-form .time-call-header {
+  margin-bottom: 1rem;
+}
+.formMainContainer .form-services .form-services-container .form-option-container .contact-form .form-time-call {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+.formMainContainer .form-services .form-services-container .form-option-container .contact-form .form-time-call .time-opt {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.formMainContainer .form-services .form-services-container .form-option-container .contact-form .form-time-call .time-opt .label-time-opt {
+  margin: 0.5rem 0;
+}
+.formMainContainer .form-services .form-services-container .form-option-container .contact-form .form-time-call .time-opt .input-color {
+  accent-color: #b99692;
+}
+.formMainContainer .form-services .form-services-container .form-option-container .button-next {
+  padding: 20px 40px;
+  width: 160px;
+  background-color: transparent;
+  border: 0.5px solid #5e4a49;
+  cursor: pointer;
+}
+.formMainContainer .form-services .form-services-container .form-option-container .button-next:hover {
+  background-color: #b99692;
+  border: 1px solid #b99692;
+  color: white;
+}
+
+.message {
+  margin-top: 1rem;
+  width: 100%;
+}
+.message #finalMessage {
+  width: 100%;
+  height: 200px;
+  resize: none;
+  padding: 0.5rem;
+}
+.message #finalMessage::placeholder {
+  font-family: "Avenir", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
+  color: #a3a3a3;
+}
+
+.submitButton {
+  display: flex;
+  justify-content: center;
+}
+.submitButton input {
+  border: 0.5px #725a58 solid;
+  padding: 20px 40px;
+  width: 160px;
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  color: #191919;
+  background-color: transparent;
+  cursor: pointer;
+}
+.submitButton input:hover {
+  background-color: #b99692;
+  border: 1px solid #b99692;
+  color: white;
+}
+
+#side_bar_message_container {
+  position: fixed;
+  right: 0%;
+  bottom: 15%;
+}
+#side_bar_message_container .message_button {
+  background-color: #b99692;
+  padding: 0.5rem;
+  border: none;
+}
+#side_bar_message_container .button_container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 70%;
+}
+#side_bar_message_container .button_container .instagram_button {
+  background-color: #c13ed4;
+  padding: 0.5rem;
+  border: none;
+}
+#side_bar_message_container .button_container .call_button {
+  background-color: #6aa2ba;
+  padding: 0.5rem;
+  border: none;
+}
+#side_bar_message_container .button_container .whatsapp_button {
+  background-color: #25d366;
+  padding: 0.5rem;
+  border: none;
+}
+#side_bar_message_container .button_container .close_button {
+  background-color: #191919;
+  padding: 0.5rem;
+  border: none;
+}
+
+.display_none {
+  display: none !important;
+}
+
+.IconsContainer {
+  text-align: center;
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  padding-top: 15px;
+}
+.IconsContainer .footerParagraph {
+  font-size: 14px;
+  margin: 3px 0;
+}
+.IconsContainer .ContactIcons {
+  margin-top: 8px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.FooterNavContainer {
+  width: 80%;
+  margin: auto;
+}
+.FooterNavContainer .FooterNav {
+  border-top: 1px black solid;
+  border-bottom: 1px black solid;
+}
+.FooterNavContainer .FooterNav .FooterNavList {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+  padding: 15px 0;
+}
+.FooterNavContainer .FooterNav .FooterNavList .FooterNavListStyle1 {
+  font-family: "Baskervville", serif;
+  text-decoration: none;
+  color: #725a58;
+}
+.FooterNavContainer .FooterNav .FooterNavList .FooterNavListStyle2 {
+  font-family: "Baskervville", serif;
+  text-decoration: none;
+  color: #725a58;
+}
+
+.Copyright {
+  text-align: center;
+  margin: 25px 0 40px 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .showonMobile,
+  .opentagSB {
+    display: block;
+  }
+  .hideonMobile {
+    display: none;
+  }
+  .AboutMeContainer {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+    width: 80% !important;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .AboutMeContainer .AboutText {
+    grid-template-columns: 1fr !important;
+    grid-template-areas: "Logo" "h3Text" "pText" " signature" "A-button" !important;
+  }
+  .AboutMeContainer .AboutText img {
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+  .AboutMeContainer .AboutText .h3Title {
+    margin-bottom: 1rem;
+  }
+  .AboutMeContainer .AboutText p {
+    margin-bottom: 2rem;
+  }
+  .AboutMeContainer .AboutText .h3Signature {
+    margin-bottom: 2rem;
+    transform: rotate(0deg) !important;
+  }
+  .starSection .headerSec .titleStar h1 {
+    font-size: 48px;
+  }
+  .starSection .headerSec .messageStar {
+    width: 50%;
+  }
+  .starSection .headerSec .messageStar p {
+    font-size: 16px;
+  }
+  .starSection .photoSec {
+    flex-wrap: wrap;
+    height: 620px;
+    margin: 2rem 0;
+  }
+  .starSection .photoSec .photo {
+    width: 49%;
+    height: 300px;
+    flex: none;
+  }
+  .starSection .testimonials .singleTest {
+    width: 90%;
+  }
+  .starSection .testimonials .singleTest p {
+    font-size: 24px;
+  }
+  .makeup_hairstyle {
+    width: 100vw;
+  }
+  .makeup_hairstyle .headerSec .titleMH h1 {
+    font-size: 48px;
+  }
+  .makeup_hairstyle .photoSec_MH {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .makeup_hairstyle .photoSec_MH .photo {
+    justify-content: center;
+  }
+  .makeup_hairstyle .photoSec_MH .photo.left, .makeup_hairstyle .photoSec_MH .photo.right {
+    height: 500px;
+    width: 380px;
+  }
+  .makeup_hairstyle .photoSec_MH .photo.mid {
+    order: -1;
+  }
+  .makeup_hairstyle .photoSec_MH .photo p {
+    transform: translateX(10%);
+  }
+  .makeup_hairstyle .photoSec_MH .photo p span {
+    color: #fae9e7;
+  }
+  .makeup101 {
+    height: auto;
+  }
+  .makeup101 .title h1 {
+    font-size: 48px;
+  }
+  .makeup101 .mainContent {
+    flex-direction: column;
+    height: auto;
+  }
+  .makeup101 .mainContent .classes {
+    gap: 50px;
+  }
+  .makeup101 .mainContent .classes .row {
+    flex-direction: column;
+  }
+  .makeup101 .mainContent .classes .row .content {
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+  }
+  .makeup101 .mainContent .classes .row .content .classTitle {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .makeup101 .mainContent .classes .row .content .classTitle img {
+    width: 50px;
+    height: 50px;
+  }
+  .makeup101 .mainContent .classes .row .content .classTitle p {
+    font-size: 36px;
+  }
+  .makeup101 .mainContent .classes .row .content .classInfo {
+    width: 80%;
+    text-align: center;
+  }
+  .makeup101 .mainContent .classes .row .content .classInfo p {
+    font-size: 20px;
+  }
+  .makeup101 .mainContent .classes .row .arrow {
+    width: 100%;
+  }
+  .makeup101 .mainContent .classes .row .arrow a {
+    gap: 20px;
+  }
+  .makeup101 .mainContent .classes .row .arrow a p {
+    font-family: "Baskervville", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: #5e4a49;
+  }
+  .makeup101 .mainContent .classes .M101secBtn {
+    width: 100%;
+  }
+  .makeup101 .mainContent .picContainer {
+    height: 500px;
+  }
+  .DIY .DIY_Video {
+    width: 90% !important;
+  }
+  .FooterNavContainer {
+    width: 80% !important;
+  }
+  .FooterNavContainer .FooterNavList {
+    height: 150px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .sidebar {
+    width: 100%;
+  }
+  .AboutMeContainer {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+    width: 100% !important;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .AboutMeContainer .AboutText {
+    grid-template-columns: 1fr !important;
+    grid-template-areas: "Logo" "h3Text" "pText" " signature" "A-button" !important;
+  }
+  .AboutMeContainer .AboutText img {
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+  .AboutMeContainer .AboutText .h3Title {
+    font-size: 36px !important;
+    margin-bottom: 1rem;
+  }
+  .AboutMeContainer .AboutText p {
+    max-width: 80%;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+  .AboutMeContainer .AboutText .h3Signature {
+    margin-bottom: 2rem;
+    transform: rotate(0deg) !important;
+  }
+  .OurBrands {
+    width: 400px !important;
+  }
+  .starSection .headerSec .titleStar {
+    text-align: center;
+  }
+  .starSection .headerSec .titleStar h1 {
+    font-size: 36px;
+  }
+  .starSection .headerSec .messageStar {
+    width: 90%;
+  }
+  .starSection .photoSec .photo {
+    width: 45%;
+  }
+  .starSection .testimonials .singleTest p {
+    font-size: 18px;
+  }
+  .makeup_hairstyle .headerSec .titleMH h1 {
+    font-size: 36px;
+  }
+  .makeup_hairstyle .headerSec .messageMH {
+    width: 90%;
+  }
+  .makeup101 {
+    height: auto;
+  }
+  .makeup101 .title h1 {
+    font-size: 36px;
+  }
+  .makeup101 .mainContent .classes {
+    gap: 50px;
+  }
+  .makeup101 .mainContent .classes .row {
+    gap: 10px;
+  }
+  .makeup101 .mainContent .classes .row .content .classTitle img {
+    width: 30px;
+    height: 30px;
+  }
+  .makeup101 .mainContent .classes .row .content .classTitle p {
+    font-size: 24px;
+  }
+  .makeup101 .mainContent .classes .row .content .classInfo p {
+    font-size: 18px;
+  }
+  .makeup101 .mainContent .picContainer {
+    width: 100%;
+    height: 500px;
+  }
+  .makeup101 .mainContent .picContainer .ladypicContainer {
+    width: 100%;
+    height: 100%;
+  }
+  .DIY .con {
+    overflow-x: scroll !important;
+  }
+  .DIY .con .DIY_Video {
+    min-width: 200% !important;
+    max-height: 300px;
+    display: flex !important;
+    justify-content: space-evenly;
+    gap: 1rem;
+  }
+  .DIY .con .DIY_Video .DIY_img1 {
+    width: 70% !important;
+  }
+  .DIY .con .DIY_Video .DIY_img2 {
+    width: 70% !important;
+  }
+  .DIY .con .DIY_Video .DIY_img3 {
+    width: 70% !important;
+  }
+  .FooterNavContainer {
+    width: 100% !important;
+  }
+  .FooterNavContainer .FooterNavList {
+    height: 150px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+  }
+}
+.baskervville-regular {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.baskervville-regular-italic {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: italic;
+}/*# sourceMappingURL=landing.css.map */
