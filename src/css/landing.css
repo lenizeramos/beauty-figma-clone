@@ -498,23 +498,57 @@ header nav .logo {
 }
 .makeup_hairstyle .photoSec_MH {
   margin: 2rem 0;
-  padding: 0 2rem;
   display: flex;
-  justify-content: center;
-  gap: 80px;
+  justify-content: space-around;
   align-items: center;
-  height: 400px;
 }
 .makeup_hairstyle .photoSec_MH .photo {
   display: flex;
   align-items: flex-end;
-  height: 100%;
-  width: 25%;
+}
+.makeup_hairstyle .photoSec_MH .photo.left, .makeup_hairstyle .photoSec_MH .photo.right {
+  background-image: url(../resources/landing/Frame157_Service.png);
   background-size: cover;
   background-repeat: no-repeat;
-  max-inline-size: 100%;
+  background-position: center;
+  height: 380px;
+  width: 300px;
+  transition: height 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
 }
-.makeup_hairstyle .photoSec_MH .photo .innerText p {
+@media only screen and (min-width: 769px) {
+  .makeup_hairstyle .photoSec_MH .photo.left:hover, .makeup_hairstyle .photoSec_MH .photo.right:hover {
+    height: 500px;
+    width: 380px;
+    transition: all 0.5s ease-in-out;
+  }
+}
+.makeup_hairstyle .photoSec_MH .photo.mid {
+  background-image: url(../resources/landing/Frame157_Wed.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
+  width: 380px;
+}
+.makeup_hairstyle .photoSec_MH .photo.right {
+  background-image: url(../resources/landing/Frame157_PS.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 380px;
+  width: 300px;
+  transition: height 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
+}
+@media only screen and (min-width: 769px) {
+  .makeup_hairstyle .photoSec_MH .photo.right:hover {
+    height: 500px;
+    width: 380px;
+    transition: all 0.5s ease-in-out;
+  }
+}
+.makeup_hairstyle .photoSec_MH .photo p {
   font-family: "Baskervville", serif;
   font-weight: 400;
   font-style: normal;
@@ -522,31 +556,12 @@ header nav .logo {
   color: #fae9e7;
   transform: translateX(-25%);
 }
-.makeup_hairstyle .photoSec_MH .photo .innerText p span {
+.makeup_hairstyle .photoSec_MH .photo p span {
   font-family: "Baskervville", serif;
   font-weight: 400;
   font-style: normal;
   font-size: 48px;
   color: #b99692;
-}
-.makeup_hairstyle .photoSec_MH .photo.left {
-  background-image: url(../resources/landing/Frame157_Service.png);
-}
-.makeup_hairstyle .photoSec_MH .photo.mid {
-  background-image: url(../resources/landing/Frame157_Wed.png);
-}
-.makeup_hairstyle .photoSec_MH .photo.right {
-  background-image: url(../resources/landing/Frame157_PS.png);
-}
-.makeup_hairstyle .photoSec_MH .photo.sidePic {
-  height: 75%;
-  width: 20%;
-  transition: all 0.5s ease-in-out;
-}
-.makeup_hairstyle .photoSec_MH .photo.sidePic:hover {
-  height: 100%;
-  width: 25%;
-  transition: all 0.5s ease-in-out;
 }
 .makeup_hairstyle .hbutton {
   color: #725a58;
@@ -1210,6 +1225,32 @@ header nav .logo {
   .starSection .testimonials .singleTest p {
     font-size: 24px;
   }
+  .makeup_hairstyle {
+    width: 100vw;
+  }
+  .makeup_hairstyle .headerSec .titleMH h1 {
+    font-size: 48px;
+  }
+  .makeup_hairstyle .photoSec_MH {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .makeup_hairstyle .photoSec_MH .photo {
+    justify-content: center;
+  }
+  .makeup_hairstyle .photoSec_MH .photo.left, .makeup_hairstyle .photoSec_MH .photo.right {
+    height: 500px;
+    width: 380px;
+  }
+  .makeup_hairstyle .photoSec_MH .photo.mid {
+    order: -1;
+  }
+  .makeup_hairstyle .photoSec_MH .photo p {
+    transform: translateX(10%);
+  }
+  .makeup_hairstyle .photoSec_MH .photo p span {
+    color: #fae9e7;
+  }
   .makeup101 {
     height: auto;
   }
@@ -1334,6 +1375,12 @@ header nav .logo {
   }
   .starSection .testimonials .singleTest p {
     font-size: 18px;
+  }
+  .makeup_hairstyle .headerSec .titleMH h1 {
+    font-size: 36px;
+  }
+  .makeup_hairstyle .headerSec .messageMH {
+    width: 90%;
   }
   .makeup101 {
     height: auto;

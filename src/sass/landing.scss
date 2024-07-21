@@ -518,14 +518,17 @@ header {
   // display: flex;
   padding: 2rem 0;
   background-color: $palewhite;
+
   .headerSec {
     display: flex;
     flex-direction: column;
     align-items: center;
+
     .titleMH {
       padding: 1rem;
       width: 50%;
       text-align: center;
+
       // border: 1px red solid;
       h1 {
         // border: 1px red solid;
@@ -536,16 +539,19 @@ header {
         color: #5e4a49;
       }
     }
+
     span {
       border: 1px $accent solid;
       width: 200px;
       margin-bottom: 1.5rem;
     }
+
     .messageMH {
       // border: 1px red solid;
       width: 40%;
       text-align: center;
       margin: 1rem 0;
+
       p {
         font-family: "Avenir", serif;
         font-weight: 300;
@@ -554,6 +560,7 @@ header {
         color: $brand;
       }
     }
+
     .MHsecBtn {
       margin: 1rem 0;
       border: 1px #5e4a49 solid;
@@ -564,9 +571,11 @@ header {
       justify-content: center;
       align-items: center;
       cursor: pointer;
-      a{
+
+      a {
         text-decoration: none;
-        p{
+
+        p {
           font-family: "Baskervville", serif;
           font-weight: 400;
           font-style: normal;
@@ -574,70 +583,91 @@ header {
           color: $boldmain;
         }
       }
-      &:hover{
+
+      &:hover {
         background-color: $darkpink;
         border: 1px $darkpink solid;
-        p{
-        color: white;
+
+        p {
+          color: white;
         }
       }
     }
   }
 
-  .photoSec_MH{
-    // border: 1px green solid;
+  .photoSec_MH {
     margin: 2rem 0;
-    padding: 0 2rem;
     display: flex;
-    justify-content: center;
-    gap: 80px;
+    justify-content: space-around;
     align-items: center;
-    height: 400px;
-    .photo{
+
+    .photo {
       display: flex;
       align-items: flex-end;
-      height: 100%;
-      width: 25%;
-      background-size: cover;
-      background-repeat: no-repeat;
-      max-inline-size: 100%;
-      .innerText{
-        p{
-          font-family: "Baskervville", serif;
-          font-weight: 400;
-          font-style: normal;
-          font-size: $h3;
-          color: $lightpink;
-          transform: translateX(-25%);
-          // transform: translateY(-20%);
-          span{
+      &.left, &.right {
+        background-image: url(../resources/landing/Frame157_Service.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 380px;
+        width: 300px;
+        transition: height 0.5s ease-in-out;
+        transition: width 0.5s ease-in-out;
+        @media only screen and (min-width: 769px) {
+          &:hover{
+            height: 500px;
+            width: 380px;
+            transition: all 0.5s ease-in-out;
+          }
+        }
+      }
+
+      &.mid {
+        background-image: url(../resources/landing/Frame157_Wed.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 500px;
+        width: 380px;
+      }
+
+      &.right {
+        background-image: url(../resources/landing/Frame157_PS.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 380px;
+        width: 300px;
+        transition: height 0.5s ease-in-out;
+        transition: width 0.5s ease-in-out;
+        @media only screen and (min-width: 769px) {
+          &:hover{
+            height: 500px;
+            width: 380px;
+            transition: all 0.5s ease-in-out;
+          }
+        }
+      }
+
+      p {
+        font-family: "Baskervville", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: $h3;
+        color: $lightpink;
+        transform: translateX(-25%);
+
+        // transform: translateY(-20%);
+        span {
           font-family: "Baskervville", serif;
           font-weight: 400;
           font-style: normal;
           font-size: $h3;
           color: $darkpink;
-          }
         }
       }
-    &.left{
-        background-image: url(../resources/landing/Frame157_Service.png);
-      }
-    &.mid{
-        background-image: url(../resources/landing/Frame157_Wed.png);
-      }
-    &.right{
-        background-image: url(../resources/landing/Frame157_PS.png);
-      }
-    &.sidePic{
-        height: 75%;
-        width: 20%;
-        transition: all 0.5s ease-in-out;
-        &:hover{
-          height: 100%;
-          width: 25%;
-          transition: all 0.5s ease-in-out;
-        }
-      }
+
+
     }
   }
 
@@ -1404,6 +1434,48 @@ header {
       }
     }
   }
+
+  //MAKEUP AND HAIRSTYLE
+.makeup_hairstyle {
+  width: 100vw;
+
+  .headerSec {
+    .titleMH {
+
+      // width: 100%;
+      h1 {
+        font-size: $h3;
+      }
+    }
+  }
+
+  .photoSec_MH {
+    flex-direction: column;
+    gap: 20px;
+
+    .photo {
+      justify-content: center;
+
+      &.left,
+      &.right {
+        height: 500px;
+        width: 380px;
+      }
+
+      &.mid {
+        order: -1;
+      }
+
+      p {
+        transform: translateX(10%);
+
+        span {
+          color: $lightpink;
+        }
+      }
+    }
+  }
+}
   //MAKEUP101
   .makeup101{
     height: auto;
@@ -1577,6 +1649,20 @@ header {
     }
   }
 
+//MAKEUP AND HAIRSTYLE
+.makeup_hairstyle{
+  .headerSec{
+    .titleMH{
+      h1{
+        font-size: $h4;
+      }
+    }
+    .messageMH{
+      width: 90%;
+    }
+  }
+}
+
   //MAKEUP 101
   .makeup101{
     height: auto;
@@ -1586,7 +1672,6 @@ header {
       }
     }
     .mainContent{
-      // border: 1px red solid;
       .classes{
         gap: 50px;
         .row{
@@ -1610,7 +1695,6 @@ header {
         }
       }
       .picContainer{
-        // border: 1px red solid;
         width: 100%;
         height: 500px;
         .ladypicContainer{
