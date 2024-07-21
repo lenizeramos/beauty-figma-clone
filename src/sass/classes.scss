@@ -383,23 +383,26 @@ h1 {
 
 .FooterNavContainer {
   @include FooterNavContainer();
-  margin: auto;
+  width: 80%;
+  margin: auto; 
   .FooterNav {
     border-top: 1px black solid;
     border-bottom: 1px black solid;
     .FooterNavList {
       list-style: none;
-      //            display: flex;
-      //            justify-content: space-around;
+      display: flex;
+      justify-content: space-around;
       font-size: 20px;
       padding: 15px 0;
       .FooterNavListStyle1 {
-        font-family: "Baskervville SC", serif;
+        font-family: "Baskervville", serif;
         text-decoration: none;
-        color: black;
+        color: $boldmain;
       }
       .FooterNavListStyle2 {
-        color: black;
+        font-family: "Baskervville", serif;
+        text-decoration: none;
+        color: $boldmain;
       }
     }
   }
