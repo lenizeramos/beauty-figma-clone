@@ -305,7 +305,7 @@ header nav .logo {
   align-self: center;
   width: 150px;
   transform: translateY(12px);
-  background-color: white;
+  background-color: #f8f6f4;
   font-family: "Avenir", serif;
   font-size: 18px;
 }
@@ -1515,4 +1515,6 @@ header nav .logo {
   font-family: "Baskervville", serif;
   font-weight: 400;
   font-style: italic;
-}/*# sourceMappingURL=landing.css.map */
+}
+
+/*# sourceMappingURL=landing.css.map */
