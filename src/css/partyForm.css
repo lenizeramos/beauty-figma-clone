@@ -12,6 +12,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #f8f6f4;
+}
+
 header {
   position: sticky;
   position: -webkit-sticky;
@@ -101,7 +105,7 @@ header nav .logo img {
 
 main {
   width: 100%;
-  background-color: #fbfafa;
+  background-color: #f8f6f4;
   padding: 1.5rem;
   display: flex;
   justify-content: center;
@@ -373,7 +377,7 @@ main .mainContainer .container .formContainer .submitButton input:hover {
 }
 
 footer {
-  background-color: #fbfafa;
+  background-color: #f8f6f4;
 }
 
 .IconsContainer {
@@ -471,6 +475,4 @@ footer {
     grid-template-columns: 1fr !important;
     grid-auto-flow: column;
   }
-}
-
-/*# sourceMappingURL=partyForm.css.map */
+}/*# sourceMappingURL=partyForm.css.map */

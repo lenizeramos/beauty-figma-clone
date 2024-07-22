@@ -47,6 +47,10 @@ $signature: 54px;
   box-sizing: border-box;
 }
 
+body {
+  background-color: $palewhite;
+}
+
 //**********************************************BEGIN NAVBAR**************************************************************************//
 header {
   position: sticky;
@@ -447,12 +451,26 @@ header {
           }
         }
 
+        @media only screen and (max-width: 768px) {
+          .button_div {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+
+            a {
+              width: 100%;
+            }
+          }
+        }
         .button-next {
           padding: 20px 40px;
           width: 160px;
           background-color: transparent;
           border: 0.5px solid #5e4a49;
           cursor: pointer;
+          @media only screen and (max-width: 768px) {
+            width: 90%;
+          }
 
           &:hover {
             background-color: #b99692;

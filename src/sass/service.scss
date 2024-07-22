@@ -55,7 +55,7 @@ $signature: 54px;
 
 body{
   overflow-x: hidden;
-  background-color: $paperwhite;
+  background-color: $palewhite;
 }
 
 //**********************************************BEGIN NAVBAR**************************************************************************//
@@ -173,7 +173,7 @@ header {
 
 main{
   h1 {
-    color: $brown;
+    color: $boldmain;
     font-family: "Baskerville", serif;
     font-weight: 100;
     font-style: normal;
@@ -182,7 +182,7 @@ main{
   }
   h5 {
     font-size: $h5;
-    color: $brown;
+    color: $boldmain;
     font-family: "Baskerville", serif;
     font-weight: 700;
     font-style: normal;

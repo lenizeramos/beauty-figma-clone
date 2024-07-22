@@ -44,6 +44,10 @@ $signature: 54px;
   box-sizing: border-box;
 }
 
+body {
+  background-color: $palewhite;
+}
+
 header {
   position: sticky;
   position: -webkit-sticky;
@@ -274,7 +278,7 @@ h1 {
 
             @media only screen and (max-width: 768px) {
               width: 100%;
-              background-color: white;
+              background-color: $palewhite;
               padding-top: 0;
             }
 

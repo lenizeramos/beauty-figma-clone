@@ -140,7 +140,7 @@ header {
 
 main {
   width: 100%;
-  background-color: $paperwhite;
+  background-color: $palewhite;
   padding: 1.5rem;
   display: flex;
   justify-content: center;
@@ -159,8 +159,8 @@ main {
       width: 100%;
       padding: 0;
     }
-    
-    @media only screen and (min-width: 769px) and (max-width: 1024px)  {
+
+    @media only screen and (min-width: 769px) and (max-width: 1024px) {
       width: 80%;
     }
     .container {
@@ -329,7 +329,6 @@ main {
                 flex-direction: column;
               }
 
-
               .client {
                 display: flex;
                 justify-content: space-between;
@@ -425,6 +424,7 @@ main {
           // border: 1px red solid;
           display: flex;
           justify-content: center;
+
           input {
             border: 0.5px $boldmain solid;
             padding: 20px 40px;
@@ -454,7 +454,7 @@ main {
 
 //FOOTER
 footer {
-  background-color: $paperwhite;
+  background-color: $palewhite;
   // border: 1px red solid;
 }
 .IconsContainer {

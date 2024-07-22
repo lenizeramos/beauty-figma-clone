@@ -51,6 +51,11 @@ $signature: 54px;
     // overflow-x: hidden;
 }
 
+body{
+    background-color: $palewhite;
+}
+
+
 //*****************************BEGIN NAVBAR*****************************************//
 header {
     position: sticky;

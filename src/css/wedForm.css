@@ -101,7 +101,7 @@ header nav .logo img {
 
 main {
   width: 100%;
-  background-color: #fbfafa;
+  background-color: #f8f6f4;
   padding: 1.5rem;
   display: flex;
   justify-content: center;
@@ -374,7 +374,7 @@ main .mainContainer .container .formContainer .submitButton input:hover {
 }
 
 footer {
-  background-color: #fbfafa;
+  background-color: #f8f6f4;
 }
 
 .IconsContainer {

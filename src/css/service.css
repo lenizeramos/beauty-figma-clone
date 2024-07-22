@@ -24,7 +24,7 @@ html {
 
 body {
   overflow-x: hidden;
-  background-color: #fbfafa;
+  background-color: #f8f6f4;
 }
 
 header {
@@ -128,7 +128,7 @@ header nav .logo {
 }
 
 main h1 {
-  color: #a06d67;
+  color: #725a58;
   font-family: "Baskerville", serif;
   font-weight: 100;
   font-style: normal;
@@ -137,7 +137,7 @@ main h1 {
 }
 main h5 {
   font-size: 32px;
-  color: #a06d67;
+  color: #725a58;
   font-family: "Baskerville", serif;
   font-weight: 700;
   font-style: normal;
@@ -497,6 +497,4 @@ main .S_Outer .S_Container button:hover {
   font-family: "Baskervville", serif;
   font-weight: 400;
   font-style: italic;
-}
-
-/*# sourceMappingURL=service.css.map */
+}/*# sourceMappingURL=service.css.map */

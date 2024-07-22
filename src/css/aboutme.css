@@ -16,6 +16,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #f8f6f4;
+}
+
 header {
   position: sticky;
   position: -webkit-sticky;
@@ -469,6 +473,4 @@ main .brandSec .brands .individual .kry {
   font-family: "Baskervville", serif;
   font-weight: 400;
   font-style: italic;
-}
-
-/*# sourceMappingURL=aboutme.css.map */
+}/*# sourceMappingURL=aboutme.css.map */
