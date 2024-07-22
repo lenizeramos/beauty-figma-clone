@@ -44,54 +44,55 @@ $signature: 54px;
   box-sizing: border-box;
 }
 
-body{
+body {
   background-color: $palewhite;
 }
 
-header{
-        position: sticky;
-        position: -webkit-sticky;
-        top: 0px;
-        background-color: $palewhite;
-        z-index: 990;
-    nav{
-        .navbar{
-            padding: 1rem;
-            transition: padding 1.5s ease;
-            list-style: none;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            li{
-                width: 100%;
-                text-align: center;
-                a{
-                    text-decoration: none;
-                    padding: 0 1rem;
-                    p{
-                        font-family: "Baskervville", serif;
-                        font-weight: 400;
-                        font-style: normal;
-                        &:not(.classes){
-                            border-right: 1px $boldmain solid;
-                        }
-                    }
-                    p,i{
-                        font-size: $button;
-                        color: $boldmain;
-                    }
-                }
+header {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0px;
+  background-color: $palewhite;
+  z-index: 990;
+  nav {
+    .navbar {
+      padding: 1rem;
+      transition: padding 1.5s ease;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      li {
+        width: 100%;
+        text-align: center;
+        a {
+          text-decoration: none;
+          padding: 0 1rem;
+          p {
+            font-family: "Baskervville", serif;
+            font-weight: 400;
+            font-style: normal;
+            &:not(.classes) {
+              border-right: 1px $boldmain solid;
             }
-        }
-        .logo{
-            max-inline-size: 100%;
-            block-size: auto;
-            background-position: center;
-            height: 150px;
-            transition: height .5s ease;
+          }
+          p,
+          i {
+            font-size: $button;
+            color: $boldmain;
+          }
         }
       }
     }
+    .logo {
+      max-inline-size: 100%;
+      block-size: auto;
+      background-position: center;
+      height: 150px;
+      transition: height 0.5s ease;
+    }
+  }
+}
 
 .sidebar {
   position: fixed;
@@ -113,18 +114,18 @@ header{
       background-color: $accent;
       transition: background-color 0.5s ease;
     }
-}
-.smallNavBar{
+  }
+  .smallNavBar {
     padding: 0.5rem 1rem;
     transition: padding 1.5s ease;
-    .logo{
-        height: 80px;
-        transition: height 1.5s ease;
-        background-size: contain;
+    .logo {
+      height: 80px;
+      transition: height 1.5s ease;
+      background-size: contain;
 
-        img{
-            height: 80px;
-        }
+      img {
+        height: 80px;
+      }
     }
   }
 }
@@ -134,12 +135,12 @@ header{
   transition: padding 1.5s ease;
   .logo {
     height: 80px;
-        transition: height 1.5s ease;
-        background-size: contain;
+    transition: height 1.5s ease;
+    background-size: contain;
 
-        img {
-            height: 80px;
-        }
+    img {
+      height: 80px;
+    }
   }
 }
 
@@ -204,26 +205,31 @@ h1 {
     justify-content: center;
     width: 100%;
 
-    // @media only screen and (max-width: 768px) {
-    //     margin: 0;
-    //     padding: 0;
-    // }
-
     .classes-info {
       margin: 3rem 0;
       width: 60%;
       // border: 1px dotted black;
 
+      @media only screen and (max-width: 768px) {
+        width: 100%;
+        margin: 0;
+      }
+
+      @media only screen and (min-width: 769px) and (max-width: 1024px) {
+        width: 80%;
+      }
+
       .detail {
+        width: 100%;
         display: grid;
         grid-template-columns: 1fr 2fr;
         grid-template-areas: "img info";
         margin-bottom: 10rem;
 
-        // @media only screen and (max-width: 768px) {
-        //     display: flex;
-        //     flex-direction: column;
-        // }
+        @media only screen and (max-width: 768px) {
+          display: flex;
+          flex-direction: column;
+        }
 
         .img1,
         .img2,
@@ -233,13 +239,13 @@ h1 {
           justify-content: center;
           align-items: center;
 
-          // @media only screen and (max-width: 768px) {
-          //     width: 100vw;
-          //     margin: 0;
-          // }
+          @media only screen and (max-width: 768px) {
+            margin-bottom: 1rem;
+          }
         }
 
         .information {
+          width: 100%;
           grid-area: info;
           padding-left: 2rem;
 
@@ -260,6 +266,11 @@ h1 {
           .price-time-target {
             display: flex;
             margin-bottom: 2rem;
+
+            @media only screen and (max-width: 768px) {
+              display: flex;
+              flex-direction: column;
+            }
 
             .icon {
               display: flex;
@@ -300,6 +311,11 @@ h1 {
 
           .button {
             margin-top: 4rem;
+
+            @media only screen and (max-width: 768px) {
+              display: flex;
+              justify-content: center;
+            }
 
             a {
               text-decoration: none;
@@ -382,7 +398,7 @@ h1 {
 .FooterNavContainer {
   @include FooterNavContainer();
   width: 80%;
-  margin: auto; 
+  margin: auto;
   .FooterNav {
     border-top: 1px black solid;
     border-bottom: 1px black solid;

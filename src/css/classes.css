@@ -47,7 +47,8 @@ header nav .navbar li a p {
 header nav .navbar li a p:not(.classes) {
   border-right: 1px #725a58 solid;
 }
-header nav .navbar li a p, header nav .navbar li a i {
+header nav .navbar li a p,
+header nav .navbar li a i {
   font-size: 20px;
   color: #725a58;
 }
@@ -170,11 +171,29 @@ h1 {
   margin: 3rem 0;
   width: 60%;
 }
+@media only screen and (max-width: 768px) {
+  .classes-full .classes-info-container .classes-info {
+    width: 100%;
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .classes-full .classes-info-container .classes-info {
+    width: 80%;
+  }
+}
 .classes-full .classes-info-container .classes-info .detail {
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-areas: "img info";
   margin-bottom: 10rem;
+}
+@media only screen and (max-width: 768px) {
+  .classes-full .classes-info-container .classes-info .detail {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .classes-full .classes-info-container .classes-info .detail .img1,
 .classes-full .classes-info-container .classes-info .detail .img2,
@@ -184,7 +203,15 @@ h1 {
   justify-content: center;
   align-items: center;
 }
+@media only screen and (max-width: 768px) {
+  .classes-full .classes-info-container .classes-info .detail .img1,
+  .classes-full .classes-info-container .classes-info .detail .img2,
+  .classes-full .classes-info-container .classes-info .detail .img3 {
+    margin-bottom: 1rem;
+  }
+}
 .classes-full .classes-info-container .classes-info .detail .information {
+  width: 100%;
   grid-area: info;
   padding-left: 2rem;
 }
@@ -203,6 +230,12 @@ h1 {
 .classes-full .classes-info-container .classes-info .detail .information .price-time-target {
   display: flex;
   margin-bottom: 2rem;
+}
+@media only screen and (max-width: 768px) {
+  .classes-full .classes-info-container .classes-info .detail .information .price-time-target {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .classes-full .classes-info-container .classes-info .detail .information .price-time-target .icon {
   display: flex;
@@ -234,6 +267,12 @@ h1 {
 }
 .classes-full .classes-info-container .classes-info .detail .information .button {
   margin-top: 4rem;
+}
+@media only screen and (max-width: 768px) {
+  .classes-full .classes-info-container .classes-info .detail .information .button {
+    display: flex;
+    justify-content: center;
+  }
 }
 .classes-full .classes-info-container .classes-info .detail .information .button a {
   text-decoration: none;
