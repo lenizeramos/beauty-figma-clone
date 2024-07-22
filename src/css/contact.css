@@ -16,11 +16,16 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #f8f6f4;
+}
+
 header {
   position: sticky;
   position: -webkit-sticky;
   top: 0px;
   background-color: #f8f6f4;
+  z-index: 990;
 }
 header nav .navbar {
   padding: 1rem;
@@ -52,10 +57,9 @@ header nav .navbar li a i {
   color: #725a58;
 }
 header nav .logo {
-  background-image: url(../resources/landing/CarlaBeautyLogo.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
+  max-inline-size: 100%;
+  block-size: auto;
+  background-position: center;
   height: 150px;
   transition: height 0.5s ease;
 }
@@ -103,11 +107,12 @@ header nav .logo {
   transition: padding 1.5s ease;
 }
 .smallNavBar .logo {
-  background-image: url(../resources/landing/ShrinkedLogo_Navbar.svg);
   height: 80px;
   transition: height 1.5s ease;
   background-size: contain;
-  background-position: center;
+}
+.smallNavBar .logo img {
+  height: 80px;
 }
 
 .showonMobile,
@@ -128,7 +133,7 @@ header nav .logo {
   font-style: normal;
   font-size: 80px;
   letter-spacing: 5px;
-  color: #5e4a49;
+  color: #725a58;
 }
 .formMainContainer .form-services h5 {
   font-family: "Baskerville", serif;
@@ -157,6 +162,16 @@ header nav .logo {
   margin: 4rem auto;
   width: 40%;
 }
+@media only screen and (max-width: 768px) {
+  .formMainContainer .form-services .contact-us {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .formMainContainer .form-services .contact-us {
+    width: 80%;
+  }
+}
 .formMainContainer .form-services .contact-us h1 {
   margin-bottom: 1rem;
   text-align: center;
@@ -171,11 +186,16 @@ header nav .logo {
   align-items: center;
   padding: 3rem;
   background-color: #fae9e7;
-  width: 40%;
+  width: 60%;
 }
 @media only screen and (max-width: 768px) {
   .formMainContainer .form-services .form-services-container {
     width: 100%;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .formMainContainer .form-services .form-services-container {
+    width: 80%;
   }
 }
 .formMainContainer .form-services .form-services-container .form-header {
@@ -364,12 +384,27 @@ header nav .logo {
 .formMainContainer .form-services .form-services-container .form-option-container .contact-form .form-time-call .time-opt .input-color {
   accent-color: #b99692;
 }
+@media only screen and (max-width: 768px) {
+  .formMainContainer .form-services .form-services-container .form-option-container .button_div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .formMainContainer .form-services .form-services-container .form-option-container .button_div a {
+    width: 100%;
+  }
+}
 .formMainContainer .form-services .form-services-container .form-option-container .button-next {
   padding: 20px 40px;
   width: 160px;
   background-color: transparent;
-  border: 0.5px solid #5e4a49;
+  border: 0.5px solid #725a58;
   cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+  .formMainContainer .form-services .form-services-container .form-option-container .button-next {
+    width: 90%;
+  }
 }
 .formMainContainer .form-services .form-services-container .form-option-container .button-next:hover {
   background-color: #b99692;
@@ -477,6 +512,7 @@ header nav .logo {
 }
 
 .FooterNavContainer {
+  width: 80%;
   margin: auto;
 }
 @media only screen and (max-width: 600px) {
@@ -506,16 +542,20 @@ header nav .logo {
 }
 .FooterNavContainer .FooterNav .FooterNavList {
   list-style: none;
+  display: flex;
+  justify-content: space-around;
   font-size: 20px;
   padding: 15px 0;
 }
 .FooterNavContainer .FooterNav .FooterNavList .FooterNavListStyle1 {
   font-family: "Baskervville", serif;
   text-decoration: none;
-  color: black;
+  color: #725a58;
 }
 .FooterNavContainer .FooterNav .FooterNavList .FooterNavListStyle2 {
-  color: black;
+  font-family: "Baskervville", serif;
+  text-decoration: none;
+  color: #725a58;
 }
 
 .Copyright {
@@ -547,6 +587,4 @@ header nav .logo {
   font-family: "Baskervville", serif;
   font-weight: 400;
   font-style: italic;
-}
-
-/*# sourceMappingURL=contact.css.map */
+}/*# sourceMappingURL=contact.css.map */

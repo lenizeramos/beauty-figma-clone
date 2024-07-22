@@ -4,6 +4,72 @@ document.addEventListener("DOMContentLoaded", () => {
   const openTag = document.getElementById("opentagSB");
   const closeTag = document.getElementById("closetagSB");
   const sidebar = document.getElementById("sidebar");
+  const DIYSlide = document.getElementById("DIY_Video");
+  const DIYImg = document.getElementsByClassName("DIYimg")
+//  const DIYSlideEnd = document.getElementById("DIY_Video");
+
+  let StartX = 0;
+  let EndX = 0;
+  let counter = 0;
+
+  DIYSlide.addEventListener("touchstart",(eventS)=>{
+    StartX = eventS.touches[0].pageX;
+  });
+
+  DIYSlide.addEventListener("touchmove",(eventM)=>{
+    EndX = eventM.changedTouches[0].pageX
+  });
+
+  DIYSlide.addEventListener("touchend",()=>{
+    let distanceX = StartX - EndX;
+    if (distanceX < -50){
+      if(counter > -1){
+        counter -= 1;
+      }
+    } else if(distanceX > 50 && EndX!=0){
+      if(counter < 1){
+        counter += 1;
+      }
+    }
+    
+    if(counter==0){
+      DIYImg[0].classList.add("center")
+      DIYImg[0].classList.remove("left")
+      DIYImg[0].classList.remove("right")
+
+      DIYImg[1].classList.add("center")
+      DIYImg[1].classList.remove("left")
+      DIYImg[1].classList.remove("right")
+
+      DIYImg[2].classList.add("center")
+      DIYImg[2].classList.remove("left")
+      DIYImg[2].classList.remove("right")
+    }else if(counter==-1){
+      DIYImg[0].classList.remove("center")
+      DIYImg[0].classList.add("left")
+      DIYImg[0].classList.remove("right")
+
+      DIYImg[1].classList.remove("center")
+      DIYImg[1].classList.add("left")
+      DIYImg[1].classList.remove("right")
+
+      DIYImg[2].classList.remove("center")
+      DIYImg[2].classList.add("left")
+      DIYImg[2].classList.remove("right")
+    }else if(counter==1){
+      DIYImg[0].classList.remove("center")
+      DIYImg[0].classList.remove("left")
+      DIYImg[0].classList.add("right")
+
+      DIYImg[1].classList.remove("center")
+      DIYImg[1].classList.remove("left")
+      DIYImg[1].classList.add("right")
+
+      DIYImg[2].classList.remove("center")
+      DIYImg[2].classList.remove("left")
+      DIYImg[2].classList.add("right")
+    }
+  });
 
   window.addEventListener("scroll", () => {
     const scroll = window.scrollY;

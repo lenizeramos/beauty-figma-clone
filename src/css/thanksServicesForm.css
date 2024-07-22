@@ -16,6 +16,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #f8f6f4;
+}
+
 header {
   position: sticky;
   position: -webkit-sticky;
@@ -178,7 +182,7 @@ header nav .logo {
   align-items: center;
   padding: 3rem;
   background-color: #fae9e7;
-  width: 40%;
+  width: 60%;
 }
 @media only screen and (max-width: 768px) {
   .formMainContainer .form-services .form-services-container {
@@ -316,7 +320,7 @@ header nav .logo {
   padding: 20px 40px;
   width: 160px;
   background-color: transparent;
-  border: 0.5px solid #5e4a49;
+  border: 0.5px solid #725a58;
   cursor: pointer;
 }
 .formMainContainer .form-services .form-services-container .form-option-container .icons_container_thanks_form .button-share:hover {
@@ -455,6 +459,4 @@ header nav .logo {
   font-family: "Baskervville", serif;
   font-weight: 400;
   font-style: italic;
-}
-
-/*# sourceMappingURL=thanksServicesForm.css.map */
+}/*# sourceMappingURL=thanksServicesForm.css.map */

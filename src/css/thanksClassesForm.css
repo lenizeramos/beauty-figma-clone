@@ -16,6 +16,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #f8f6f4;
+}
+
 header {
   position: sticky;
   position: -webkit-sticky;
@@ -131,7 +135,7 @@ header nav .logo {
   font-style: normal;
   font-size: 80px;
   letter-spacing: 5px;
-  color: #5e4a49;
+  color: #725a58;
 }
 .formMainContainer .form-services h5 {
   font-family: "Baskerville", serif;
@@ -174,7 +178,7 @@ header nav .logo {
   align-items: center;
   padding: 3rem;
   background-color: #fae9e7;
-  width: 40%;
+  width: 60%;
 }
 @media only screen and (max-width: 768px) {
   .formMainContainer .form-services .form-services-container {
@@ -371,6 +375,4 @@ header nav .logo {
   font-family: "Baskervville", serif;
   font-weight: 400;
   font-style: italic;
-}
-
-/*# sourceMappingURL=thanksClassesForm.css.map */
+}/*# sourceMappingURL=thanksClassesForm.css.map */

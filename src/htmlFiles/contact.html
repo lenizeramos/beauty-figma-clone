@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Page</title>
     <link rel="stylesheet" href="../css/contact.css" />
+
     <script
       src="https://kit.fontawesome.com/f8be10a101.js/"
       crossorigin="anonymous"
@@ -31,6 +32,7 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
     <header>
       <nav>
@@ -40,22 +42,24 @@
             <a href="../index.html"><p>Home</p></a>
           </li>
           <li>
-            <a href=""><p>My Work</p></a>
+            <a href="myWork.html"><p>My Work</p></a>
           </li>
           <li>
-            <a href=""><p>Services</p></a>
+            <a href="service.html"><p>Services</p></a>
           </li>
           <li>
-            <a href="../htmlFiles/classes.html"><p class="classes">Classes</p></a>
+            <a href="classes.html"
+              ><p class="classes">Classes</p></a
+            >
           </li>
           <li>
-            <a href=""><p>Beauty Tips</p></a>
+            <a href="beautyTips.html"><p>Beauty Tips</p></a>
           </li>
           <li>
-            <a href=""><p>About</p></a>
+            <a href="aboutme.html"><p>About</p></a>
           </li>
           <li>
-            <a href="../htmlFiles/contact.html"><p>Contact</p></a>
+            <a href="contact.html"><p>Contact</p></a>
           </li>
         </ul>
 
@@ -66,17 +70,17 @@
             </a>
           </li>
           <li class="hideonMobile">
-            <a href="">
+            <a href="myWork.html">
               <p>My Work</p>
             </a>
           </li>
           <li class="hideonMobile">
-            <a href="">
+            <a href="service.html">
               <p>Services</p>
             </a>
           </li>
           <li class="hideonMobile">
-            <a href="../htmlFiles/classes.html">
+            <a href="classes.html">
               <p class="classes">Classes</p>
             </a>
           </li>
@@ -84,20 +88,26 @@
             <i class="fa-solid fa-bars"></i>
           </li>
           <li>
-            <div class="logo"></div>
+            <div class="logo">
+              <img
+                id="mainLogo"
+                src="../resources/landing/CarlaBeautyLogo.svg"
+                alt="Main_Logo"
+              />
+            </div>
           </li>
           <li class="hideonMobile">
-            <a href="">
+            <a href="beautyTips.html">
               <p>Beauty Tips</p>
             </a>
           </li>
           <li class="hideonMobile">
-            <a href="">
+            <a href="aboutme.html">
               <p>About</p>
             </a>
           </li>
           <li class="hideonMobile">
-            <a href="../htmlFiles/contact.html">
+            <a href="contact.html">
               <p>Contact</p>
             </a>
           </li>
@@ -412,10 +422,28 @@
                 </div>
               </form>
 
-              <div class="button">
-                <a href="../htmlFiles/wedForm.html"><button class="button-next hbutton" id="wedding_next">Next</button></a>
-                <a href="../htmlFiles/partyForm.html"><button class="button-next hbutton display_none" id="party_next">Next</button></a>
-                <a href="../htmlFiles/thanksServicesForm.html"><button class="button-next hbutton display_none" id="photoshoot_submit">Submit</button></a>
+              <div class="button_div">
+                <a href="wedForm.html" id="wedding_next"
+                  ><button class="button-next hbutton" >
+                    Next
+                  </button></a
+                >
+                <a href="partyForm.html" id="party_next" class="display_none"
+                  ><button
+                    class="button-next hbutton"
+                    
+                  >
+                    Next
+                  </button></a
+                >
+                <a href="thanksServicesForm.html" id="photoshoot_submit" class="display_none"
+                  ><button
+                    class="button-next hbutton"
+                    
+                  >
+                    Submit
+                  </button></a
+                >
               </div>
             </div>
 
@@ -627,8 +655,10 @@
                   </div>
                 </div>
               </form>
-              <div class="button">
-                <a href="../htmlFiles/thanksClassesForm.html"><button class="button-next hbutton">Submit</button></a>
+              <div class="button_div">
+                <a href="../htmlFiles/thanksClassesForm.html"
+                  ><button class="button-next hbutton">Submit</button></a
+                >
               </div>
             </div>
           </div>
@@ -692,13 +722,21 @@
         <div class="FooterNavContainer">
           <nav class="FooterNav">
             <ul class="FooterNavList">
-              <li><a href="../index.html" class="FooterNavListStyle1">Home</a></li>
-              <li><a href="#" class="FooterNavListStyle1">My Work</a></li>
-              <li><a href="#" class="FooterNavListStyle1">Services</a></li>
-              <li><a href="classes.html" class="FooterNavListStyle1">Classes</a></li>
-              <li><a href="#" class="FooterNavListStyle1">Beauty Tips</a></li>
-              <li><a href="#" class="FooterNavListStyle1">About</a></li>
-              <li><a href="contact.html" class="FooterNavListStyle2">Contact</a></li>
+              <li>
+                <a href="../index.html" class="FooterNavListStyle1">Home</a>
+              </li>
+              <li><a href="myWork.html" class="FooterNavListStyle1">My Work</a></li>
+              <li><a href="service.html" class="FooterNavListStyle1">Services</a></li>
+              <li>
+                <a href="classes.html" class="FooterNavListStyle1">Classes</a>
+              </li>
+              <li><a href="beautyTips.html" class="FooterNavListStyle1">Beauty Tips</a></li>
+              <li>
+                <a href="aboutme.html" class="FooterNavListStyle1">About</a>
+              </li>
+              <li>
+                <a href="contact.html" class="FooterNavListStyle2">Contact</a>
+              </li>
             </ul>
           </nav>
         </div>

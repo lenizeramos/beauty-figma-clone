@@ -1,10 +1,10 @@
 @font-face {
   font-family: "Avenir";
-  src: url(/fonts/Avenir/Avenir\ Regular.ttf) format("truetype");
+  src: url(../fonts/Avenir/Avenir\ Regular.ttf) format("truetype");
 }
 @font-face {
   font-family: "WhiteFlower";
-  src: url(/fonts/WhiteFlower/WhiteFlower.otf) format("opentype");
+  src: url(../fonts/WhiteFlower/WhiteFlower.otf) format("opentype");
 }
 * {
   margin: 0;
@@ -12,11 +12,16 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #f8f6f4;
+}
+
 header {
   position: sticky;
   position: -webkit-sticky;
   top: 0px;
-  background-color: #F8F6F4;
+  background-color: #f8f6f4;
+  z-index: 990;
 }
 header nav .navbar {
   padding: 1rem;
@@ -35,20 +40,24 @@ header nav .navbar li a {
   padding: 0 1rem;
 }
 header nav .navbar li a p {
-  font-family: "Baskervville SC", serif;
+  font-family: "Baskervville", serif;
   font-weight: 400;
   font-style: normal;
 }
 header nav .navbar li a p:not(.classes) {
-  border-right: 1px #725A58 solid;
+  border-right: 1px #725a58 solid;
 }
-header nav .navbar li a p, header nav .navbar li a i {
+header nav .navbar li a p,
+header nav .navbar li a i {
   font-size: 20px;
-  color: #725A58;
+  color: #725a58;
 }
-header nav .logo img {
-  width: 100%;
-  transition: width 1.5s ease;
+header nav .logo {
+  max-inline-size: 100%;
+  block-size: auto;
+  background-position: center;
+  height: 150px;
+  transition: height 0.5s ease;
 }
 
 .sidebar {
@@ -58,7 +67,7 @@ header nav .logo img {
   height: 100vh;
   width: 250px;
   z-index: 999;
-  background-color: #F8F6F4;
+  background-color: #f8f6f4;
   display: none;
   transition: display 2s ease-in-out;
   flex-direction: column;
@@ -70,7 +79,7 @@ header nav .logo img {
   width: 100%;
 }
 .sidebar li:hover {
-  background-color: #E3B6B1;
+  background-color: #e3b6b1;
   transition: background-color 0.5s ease;
 }
 .sidebar li a {
@@ -79,25 +88,31 @@ header nav .logo img {
   width: 100%;
 }
 .sidebar li a p {
-  font-family: "Baskervville SC", serif;
+  font-family: "Baskervville", serif;
   font-weight: 400;
   font-style: normal;
 }
-.sidebar li a p, .sidebar li a i {
+.sidebar li a p,
+.sidebar li a i {
   font-size: 20px;
-  color: #725A58;
+  color: #725a58;
 }
 
 .smallNavBar {
   padding: 0.5rem 1rem;
   transition: padding 1.5s ease;
 }
+.smallNavBar .logo {
+  height: 80px;
+  transition: height 1.5s ease;
+  background-size: contain;
+}
 .smallNavBar .logo img {
-  width: 40%;
-  transition: width 1.5s ease;
+  height: 80px;
 }
 
-.showonMobile, .opentagSB {
+.showonMobile,
+.opentagSB {
   display: none;
 }
 
@@ -110,7 +125,7 @@ header nav .logo img {
 }
 
 h1 {
-  color: #A06D67;
+  color: #725a58;
   font-family: "Baskerville", serif;
   font-weight: 100;
   font-style: normal;
@@ -138,7 +153,7 @@ h1 {
 }
 .classes-full .classes-welcome hr {
   height: 1px;
-  border: 1px solid #E3B6B1;
+  border: 1px solid #e3b6b1;
   width: 20%;
   margin-top: 1rem;
   margin-bottom: 2rem;
@@ -149,7 +164,7 @@ h1 {
   }
 }
 .classes-full .classes-info-container {
-  background-color: #FAE9E7;
+  background-color: #fae9e7;
   margin: 2rem 0;
   display: flex;
   justify-content: center;
@@ -159,19 +174,47 @@ h1 {
   margin: 3rem 0;
   width: 60%;
 }
+@media only screen and (max-width: 768px) {
+  .classes-full .classes-info-container .classes-info {
+    width: 100%;
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .classes-full .classes-info-container .classes-info {
+    width: 80%;
+  }
+}
 .classes-full .classes-info-container .classes-info .detail {
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-areas: "img info";
   margin-bottom: 10rem;
 }
-.classes-full .classes-info-container .classes-info .detail .img1, .classes-full .classes-info-container .classes-info .detail .img2, .classes-full .classes-info-container .classes-info .detail .img3 {
+@media only screen and (max-width: 768px) {
+  .classes-full .classes-info-container .classes-info .detail {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.classes-full .classes-info-container .classes-info .detail .img1,
+.classes-full .classes-info-container .classes-info .detail .img2,
+.classes-full .classes-info-container .classes-info .detail .img3 {
   grid-area: img;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+@media only screen and (max-width: 768px) {
+  .classes-full .classes-info-container .classes-info .detail .img1,
+  .classes-full .classes-info-container .classes-info .detail .img2,
+  .classes-full .classes-info-container .classes-info .detail .img3 {
+    margin-bottom: 1rem;
+  }
+}
 .classes-full .classes-info-container .classes-info .detail .information {
+  width: 100%;
   grid-area: info;
   padding-left: 2rem;
 }
@@ -184,12 +227,18 @@ h1 {
 }
 .classes-full .classes-info-container .classes-info .detail .information .info-header {
   font-size: 28px;
-  color: #A06D67;
+  color: #725a58;
   margin-bottom: 2rem;
 }
 .classes-full .classes-info-container .classes-info .detail .information .price-time-target {
   display: flex;
   margin-bottom: 2rem;
+}
+@media only screen and (max-width: 768px) {
+  .classes-full .classes-info-container .classes-info .detail .information .price-time-target {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .classes-full .classes-info-container .classes-info .detail .information .price-time-target .icon {
   display: flex;
@@ -222,17 +271,28 @@ h1 {
 .classes-full .classes-info-container .classes-info .detail .information .button {
   margin-top: 4rem;
 }
+@media only screen and (max-width: 768px) {
+  .classes-full .classes-info-container .classes-info .detail .information .button {
+    display: flex;
+    justify-content: center;
+  }
+}
 .classes-full .classes-info-container .classes-info .detail .information .button a {
+  text-decoration: none;
   font-size: 18px;
-  color: #5E4A49;
+  color: #725a58;
   padding: 1.5rem 2.5rem;
-  border: 1px solid #5E4A49;
+  border: 1px solid #725a58;
 }
 .classes-full .classes-info-container .classes-info .detail .information .button a:hover {
-  background-color: #B99692;
-  border: 1px solid #B99692;
+  background-color: #b99692;
+  border: 1px solid #b99692;
   color: white;
   cursor: pointer;
+}
+
+.display_none {
+  display: none !important;
 }
 
 .IconsContainer {
@@ -253,6 +313,7 @@ h1 {
 }
 
 .FooterNavContainer {
+  width: 80%;
   margin: auto;
 }
 @media only screen and (max-width: 600px) {
@@ -282,16 +343,20 @@ h1 {
 }
 .FooterNavContainer .FooterNav .FooterNavList {
   list-style: none;
+  display: flex;
+  justify-content: space-around;
   font-size: 20px;
   padding: 15px 0;
 }
 .FooterNavContainer .FooterNav .FooterNavList .FooterNavListStyle1 {
-  font-family: "Baskervville SC", serif;
+  font-family: "Baskervville", serif;
   text-decoration: none;
-  color: black;
+  color: #725a58;
 }
 .FooterNavContainer .FooterNav .FooterNavList .FooterNavListStyle2 {
-  color: black;
+  font-family: "Baskervville", serif;
+  text-decoration: none;
+  color: #725a58;
 }
 
 .Copyright {
@@ -300,7 +365,8 @@ h1 {
 }
 
 @media only screen and (max-width: 800px) {
-  .showonMobile, .opentagSB {
+  .showonMobile,
+  .opentagSB {
     display: block;
   }
   .hideonMobile {
@@ -312,10 +378,16 @@ h1 {
     width: 100%;
   }
 }
-.baskervville-sc-regular {
-  font-family: "Baskervville SC", serif;
+.baskervville-regular {
+  font-family: "Baskervville", serif;
   font-weight: 400;
   font-style: normal;
+}
+
+.baskervville-regular-italic {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: italic;
 }
 
 /*# sourceMappingURL=classes.css.map */

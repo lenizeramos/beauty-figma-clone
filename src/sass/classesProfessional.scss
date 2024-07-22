@@ -1,0 +1,502 @@
+@font-face {
+  font-family: "Avenir";
+  src: url(../fonts/Avenir/Avenir\ Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "WhiteFlower";
+  src: url(../fonts/WhiteFlower/WhiteFlower.otf) format("opentype");
+}
+
+//*****************************colors**********************************//
+//MAIN
+$brand: #191919;
+$boldmain: #725a58;
+$accent: #e3b6b1;
+//LIGHT NEUTRAL
+$lightpink: #fae9e7;
+$palewhite: #f8f6f4;
+$paperwhite: #fbfafa;
+//DARK NEUTRAL
+$midgrey: #a3a3a3;
+$darkgrey: #535353;
+$black: #191919;
+//COMPLEMENTARY
+$darkpink: #b99692;
+$brown: #a06d67;
+
+//***************************font-sizes********************************//
+$h1: 80px;
+$h2: 68px;
+$h3: 48px;
+$h4: 36px;
+$h5: 32px;
+$h6: 24px;
+$button: 20px;
+$button_sm: 18px;
+$body: 18px;
+$body_sm: 16px;
+$caption: 14px;
+$signature: 54px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $palewhite;
+}
+
+header {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0px;
+  background-color: $palewhite;
+  nav {
+    .navbar {
+      padding: 1rem;
+      transition: padding 1.5s ease;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      li {
+        width: 100%;
+        text-align: center;
+        a {
+          text-decoration: none;
+          padding: 0 1rem;
+          p {
+            font-family: "Baskervville SC", serif;
+            font-weight: 400;
+            font-style: normal;
+            &:not(.classes) {
+              border-right: 1px $boldmain solid;
+            }
+          }
+          p,
+          i {
+            font-size: $button;
+            color: $boldmain;
+          }
+        }
+      }
+    }
+    .logo {
+      img {
+        width: 100%;
+        transition: width 1.5s ease;
+      }
+    }
+  }
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: $palewhite;
+  display: none;
+  transition: display 2s ease-in-out;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  list-style: none;
+  li {
+    width: 100%;
+    &:hover {
+      background-color: $accent;
+      transition: background-color 0.5s ease;
+    }
+    a {
+      text-decoration: none;
+      padding: 0 1rem;
+      width: 100%;
+      p {
+        font-family: "Baskervville SC", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      p,
+      i {
+        font-size: $button;
+        color: $boldmain;
+      }
+    }
+  }
+}
+
+.smallNavBar {
+  padding: 0.5rem 1rem;
+  transition: padding 1.5s ease;
+  .logo {
+    img {
+      width: 40%;
+      transition: width 1.5s ease;
+    }
+  }
+}
+
+.showonMobile,
+.opentagSB {
+  display: none;
+}
+
+// START PROFESSIONAL CLASSES BODY
+
+.allClassesbtn {
+  display: flex;
+  padding: 1rem;
+
+  a {
+    // border: 1px green solid;
+    padding: 0.4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    font-family: "Baskervville", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: $button;
+    color: $boldmain;
+  }
+  .image_arrow_back {
+    margin-right: 0.8rem;
+  }
+}
+
+.body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+}
+
+h1 {
+  color: $boldmain;
+  font-family: "Baskerville", serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 80px;
+  letter-spacing: 8px;
+
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.display_none {
+  display: none !important;
+}
+
+.classes-full {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .classes-welcome {
+    margin-top: 1.5rem;
+    min-width: 30%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+  .classes-info-container {
+    background-color: $lightpink;
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    .classes-info {
+      margin: 3rem 0;
+      width: 60%;
+      // border: 1px dotted black;
+
+      @media only screen and (max-width: 768px) {
+        width: 100%;
+        margin: 0;
+      }
+      @media only screen and (min-width: 769px) and (max-width: 1024px) {
+        width: 80%;
+      }
+
+      .detail {
+        display: flex;
+        margin-bottom: 3rem;
+
+        @media only screen and (max-width: 768px) {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .container_image_info {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 0 !important;
+          margin-right: 1rem;
+          border: 1px solid black;
+          height: fit-content;
+          width: 100%;
+
+          @media only screen and (max-width: 768px) {
+            flex-direction: column-reverse;
+            padding-bottom: 2rem;
+            width: 100%;
+            border: none;
+          }
+
+          .image_master {
+            width: 100%;
+
+            .img1 {
+              width: 100%;
+            }
+          }
+
+          .master_class_price {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1.5rem;
+            padding-bottom: 3rem;
+            width: 100%;
+
+            @media only screen and (max-width: 768px) {
+              width: 100%;
+              background-color: $palewhite;
+              padding-top: 0;
+            }
+
+            .price-time-target {
+              display: flex;
+              flex-direction: column;
+              align-items: start;
+              width: 100%;
+
+              .icon {
+                display: flex;
+                padding: 0.5rem;
+
+                img {
+                  width: 15px;
+                  margin-right: 0.5rem;
+                }
+
+                .body {
+                  margin-right: 0.8rem;
+                }
+              }
+            }
+          }
+        }
+
+        .information {
+          padding-left: 2rem;
+
+          @media only screen and (max-width: 768px) {
+            padding-top: 2.5rem;
+            padding: 1rem;
+          }
+
+          .body {
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 18px;
+            line-height: 1.5;
+          }
+
+          .info-header {
+            font-size: 36px;
+            color: $boldmain;
+            margin-bottom: 2rem;
+            font-weight: 400;
+          }
+
+          .overview {
+            margin-bottom: 2rem;
+
+            .who-header {
+              margin-bottom: 0.8rem;
+              font-size: 20px !important;
+            }
+          }
+
+          .curriculum {
+            margin-bottom: 2rem;
+
+            .curri-header {
+              margin-bottom: 1rem;
+              font-size: 24px !important;
+            }
+
+            li {
+              margin: 0.5rem 0;
+              margin-left: 2rem;
+            }
+          }
+
+          .button {
+            margin-top: 4rem;
+            width: 100%;
+            text-align: center;
+
+            .button_join {
+              width: 90%;
+              padding: 1.5rem 2.5rem;
+              border: 1px solid $boldmain;
+              background-color: transparent;
+              color: $boldmain;
+              font-size: $button;
+              font-family: "Baskervville", serif;
+              font-weight: 400;
+
+              &:hover {
+                background-color: $darkpink;
+                border: 1px solid $darkpink;
+                cursor: pointer;
+                color: white;
+              }
+            }
+
+            a {
+              text-decoration: none;
+            }
+          }
+          @media only screen and (min-width: 768px) {
+            #join_classes_btn {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// @media only screen and (max-width: 768px) {
+
+//     .classes-welcome {
+//         min-width: 70%;
+//         padding: auto 2rem;
+
+//         hr {
+//             width: 80%;
+//         }
+//     }
+
+// }
+
+// END CLASSES BODY
+
+.display_none {
+  display: none !important;
+}
+
+//FOOTER
+.IconsContainer {
+  text-align: center;
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  padding-top: 15px;
+  .footerParagraph {
+    font-size: 14px;
+    margin: 3px 0;
+  }
+  .ContactIcons {
+    margin-top: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+@mixin FooterNavContainer() {
+  @media only screen and (max-width: 600px) {
+    width: 95%;
+    .FooterNavList {
+      height: 150px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  }
+  @media only screen and (min-width: 601px) {
+    width: 80%;
+    .FooterNavList {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+}
+
+.FooterNavContainer {
+  @include FooterNavContainer();
+  margin: auto;
+  .FooterNav {
+    border-top: 1px black solid;
+    border-bottom: 1px black solid;
+    .FooterNavList {
+      list-style: none;
+      //            display: flex;
+      //            justify-content: space-around;
+      font-size: 20px;
+      padding: 15px 0;
+      .FooterNavListStyle1 {
+        font-family: "Baskervville SC", serif;
+        text-decoration: none;
+        color: black;
+      }
+      .FooterNavListStyle2 {
+        color: black;
+      }
+    }
+  }
+}
+
+.Copyright {
+  text-align: center;
+  margin: 25px 0 40px 0;
+}
+
+//Tablet
+@media only screen and (max-width: 800px) {
+  .showonMobile,
+  .opentagSB {
+    display: block;
+  }
+  .hideonMobile {
+    display: none;
+  }
+}
+
+//Mobile
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+
+//GOOGLE FONTS -BASKERVVILE-
+.baskervville-sc-regular {
+  font-family: "Baskervville SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}

@@ -101,7 +101,7 @@ header nav .logo img {
 
 main {
   width: 100%;
-  background-color: #fbfafa;
+  background-color: #f8f6f4;
   padding: 1.5rem;
   display: flex;
   justify-content: center;
@@ -112,7 +112,7 @@ main {
   }
 }
 main .mainContainer {
-  width: 40%;
+  width: 60%;
   background-color: #fae9e7;
   padding: 1.5rem;
 }
@@ -374,7 +374,7 @@ main .mainContainer .container .formContainer .submitButton input:hover {
 }
 
 footer {
-  background-color: #fbfafa;
+  background-color: #f8f6f4;
 }
 
 .IconsContainer {
@@ -472,6 +472,4 @@ footer {
     grid-template-columns: 1fr !important;
     grid-auto-flow: column;
   }
-}
-
-/*# sourceMappingURL=wedForm.css.map */
+}/*# sourceMappingURL=wedForm.css.map */

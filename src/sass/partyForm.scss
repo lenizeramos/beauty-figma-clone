@@ -43,6 +43,11 @@ $signature: 54px;
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-color: $palewhite;
+}
+
 header {
   position: sticky;
   position: -webkit-sticky;
@@ -140,7 +145,7 @@ header {
 
 main {
   width: 100%;
-  background-color: $paperwhite;
+  background-color: $palewhite;
   padding: 1.5rem;
   display: flex;
   justify-content: center;
@@ -150,7 +155,7 @@ main {
   }
 
   .mainContainer {
-    width: 40%;
+    width: 60%;
     // height: 100vh;
     background-color: $lightpink;
     padding: 1.5rem;
@@ -454,7 +459,7 @@ main {
 
 //FOOTER
 footer {
-  background-color: $paperwhite;
+  background-color: $palewhite;
   // border: 1px red solid;
 }
 .IconsContainer {

@@ -1,0 +1,503 @@
+@font-face {
+  font-family: "Avenir";
+  src: url(../fonts/Avenir/AvenirRegular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Whiteflower";
+  src: url(../fonts/WhiteFlower/WhiteFlower.otf) format("opentype");
+}
+@font-face {
+  font-family: "Magenta";
+  src: url(../fonts/magenta-2/MagentaDemo.ttf) format("truetype");
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 3rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f8f6f4;
+}
+
+header {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0px;
+  background-color: #f8f6f4;
+  z-index: 990;
+}
+header nav .navbar {
+  padding: 1rem;
+  transition: padding 1.5s ease;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .navbar li {
+  width: 100%;
+  text-align: center;
+}
+header nav .navbar li a {
+  text-decoration: none;
+  padding: 0 1rem;
+}
+header nav .navbar li a p {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+header nav .navbar li a p:not(.classes) {
+  border-right: 1px #725a58 solid;
+}
+header nav .navbar li a p,
+header nav .navbar li a i {
+  font-size: 20px;
+  color: #725a58;
+}
+header nav .logo {
+  max-inline-size: 100%;
+  block-size: auto;
+  background-position: center;
+  height: 150px;
+  transition: height 0.5s ease;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: #f8f6f4;
+  display: none;
+  transition: display 2s ease-in-out;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  list-style: none;
+}
+.sidebar li {
+  width: 100%;
+}
+.sidebar li:hover {
+  background-color: #e3b6b1;
+  transition: background-color 0.5s ease;
+}
+.sidebar li a {
+  text-decoration: none;
+  padding: 0 1rem;
+  width: 100%;
+}
+.sidebar li a p {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.sidebar li a p,
+.sidebar li a i {
+  font-size: 20px;
+  color: #725a58;
+}
+
+.smallNavBar {
+  padding: 0.5rem 1rem;
+  transition: padding 1.5s ease;
+}
+.smallNavBar .logo {
+  height: 80px;
+  transition: height 1.5s ease;
+  background-size: contain;
+}
+.smallNavBar .logo img {
+  height: 80px;
+}
+
+.showonMobile,
+.opentagSB {
+  display: none;
+}
+
+main h1 {
+  color: #725a58;
+  font-family: "Baskerville", serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 80px;
+  letter-spacing: 8px;
+}
+main h5 {
+  font-size: 32px;
+  color: #725a58;
+  font-family: "Baskerville", serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: 5px;
+}
+main .CostInfo {
+  font-family: "Avenir", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  color: #191919;
+  padding-left: 5px;
+}
+main .Subtitle {
+  font-family: "Baskerville", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18px;
+  color: #191919;
+  margin-top: 3px;
+}
+main .CommonText {
+  font-family: "Avenir", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 14px;
+  color: #191919;
+  margin-top: 3px;
+}
+main .S_title {
+  text-align: center;
+}
+main .S_title .pContainer {
+  width: 300px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+main .S_title .ForUnderbar {
+  width: 200px;
+  border-top: #e3b6b1 solid 1px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+main .S_Outer {
+  width: 100%;
+  min-height: 70vh;
+  background-color: #fae9e7;
+  margin-bottom: 1rem;
+  padding: 2rem 0;
+}
+main .S_Outer .S_Container {
+  width: 750px;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: "Pic1 Text1" "Pic2 Text2" "Pic3 Text3";
+  margin: 5rem auto;
+  column-gap: 30px;
+  row-gap: 4rem;
+}
+main .S_Outer .S_Container .Cost {
+  display: flex;
+  align-items: center;
+}
+main .S_Outer .S_Container #Lady1 {
+  grid-area: Pic1;
+  max-width: 240px;
+}
+main .S_Outer .S_Container #Lady2 {
+  grid-area: Pic2;
+  max-width: 240px;
+}
+main .S_Outer .S_Container #Lady3 {
+  grid-area: Pic3;
+  max-width: 240px;
+}
+main .S_Outer .S_Container button {
+  grid-area: A-button;
+  padding: 10px 0px;
+  width: 160px;
+  height: 50px;
+  background-color: transparent;
+  border: 0.5px solid #a3a3a3;
+  cursor: pointer;
+  color: #535353;
+  font-family: "Baskervville", serif;
+  font-size: 20px;
+  align-self: center;
+  margin-top: 10px;
+}
+main .S_Outer .S_Container button:hover {
+  background-color: #b99692;
+  border: 1px solid #b99692;
+  color: #f8f6f4;
+}
+
+.IconsContainer {
+  text-align: center;
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  padding-top: 15px;
+}
+.IconsContainer .footerParagraph {
+  font-size: 14px;
+  margin: 3px 0;
+}
+.IconsContainer .ContactIcons {
+  margin-top: 8px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.FooterNavContainer {
+  width: 80%;
+  margin: auto;
+}
+.FooterNavContainer .FooterNav {
+  border-top: 1px black solid;
+  border-bottom: 1px black solid;
+}
+.FooterNavContainer .FooterNav .FooterNavList {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+  padding: 15px 0;
+}
+.FooterNavContainer .FooterNav .FooterNavList .FooterNavListStyle1 {
+  font-family: "Baskervville", serif;
+  text-decoration: none;
+  color: #725a58;
+}
+.FooterNavContainer .FooterNav .FooterNavList .FooterNavListStyle2 {
+  font-family: "Baskervville", serif;
+  text-decoration: none;
+  color: #725a58;
+}
+
+.Copyright {
+  text-align: center;
+  margin: 25px 0 40px 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .showonMobile,
+  .opentagSB {
+    display: block;
+  }
+  .hideonMobile {
+    display: none;
+  }
+  main h1 {
+    color: #725a58;
+    font-family: "Baskerville", serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 80px;
+    letter-spacing: 8px;
+  }
+  main h5 {
+    font-size: 32px;
+    color: #725a58;
+    font-family: "Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 5px;
+  }
+  main .CostInfo {
+    font-family: "Avenir", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+    color: #191919;
+  }
+  main .Subtitle {
+    font-family: "Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    color: #191919;
+    margin-top: 3px;
+  }
+  main .CommonText {
+    font-family: "Avenir", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    color: #191919;
+    margin-top: 3px;
+  }
+  main .InlineBlock {
+    display: inline-block;
+  }
+  main .S_Outer .S_Container {
+    width: 70% !important;
+    grid-template-columns: 1fr !important;
+    grid-template-areas: "Pic1" "Text1" "Pic2" "Text2" "Pic3" "Text3" !important;
+    margin: 5rem auto;
+    gap: 30px;
+  }
+  main .S_Outer .S_Container #Lady1 {
+    justify-self: center;
+  }
+  main .S_Outer .S_Container #Lady2 {
+    justify-self: center;
+  }
+  main .S_Outer .S_Container #Lady3 {
+    justify-self: center;
+  }
+  main .S_Outer .S_Container button {
+    grid-area: A-button;
+    width: 100% !important;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+  .FooterNavContainer {
+    width: 80% !important;
+  }
+  .FooterNavContainer .FooterNavList {
+    height: 150px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .sidebar {
+    width: 100%;
+  }
+  main h1 {
+    font-size: 48px;
+  }
+  main h5 {
+    font-size: 32px;
+    color: #a06d67;
+    font-family: "Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 5px;
+    margin-left: 1rem !important;
+  }
+  main .CostInfo {
+    font-family: "Avenir", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px !important;
+    color: #191919;
+  }
+  main .Subtitle {
+    font-family: "Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    color: #191919;
+    margin: 0 1rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+  main .CommonText {
+    font-family: "Avenir", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    color: #191919;
+    margin-top: 3px;
+    margin: 0 1rem !important;
+    margin-bottom: 1rem !important;
+  }
+  main .InlineBlock {
+    display: inline-block;
+  }
+  main .S_title {
+    text-align: center;
+  }
+  main .S_title .pContainer {
+    width: 100% !important;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  main .S_title .ForUnderbar {
+    width: 200px;
+    border-top: #e3b6b1 solid 1px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  main .Cost {
+    margin-left: 1rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+  main .S_Outer {
+    width: 100%;
+    min-height: 70vh;
+    margin-bottom: 1rem;
+    padding-bottom: 2rem;
+  }
+  main .S_Outer .S_Container {
+    width: 100% !important;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr !important;
+    grid-template-areas: "Pic1" "Text1" "Pic2" "Text2" "Pic3" "Text3" !important;
+    margin: 0 !important;
+    column-gap: 0 !important;
+    row-gap: 2rem !important;
+  }
+  main .S_Outer .S_Container #Lady1 {
+    grid-area: Pic1;
+    min-width: 100% !important;
+  }
+  main .S_Outer .S_Container #Lady2 {
+    grid-area: Pic2;
+    min-width: 100% !important;
+  }
+  main .S_Outer .S_Container #Lady3 {
+    grid-area: Pic3;
+    min-width: 100% !important;
+  }
+  main .S_Outer .S_Container button {
+    grid-area: A-button;
+    display: block;
+    padding: 10px 0px;
+    width: 95% !important;
+    height: 50px;
+    background-color: transparent;
+    border: 0.5px solid #a3a3a3;
+    cursor: pointer;
+    color: #535353;
+    font-family: "Baskervville", serif;
+    font-size: 20px;
+    align-self: center;
+    margin-top: 10px !important;
+    margin: auto !important;
+  }
+  main .S_Outer .S_Container button:hover {
+    background-color: #b99692;
+    border: 1px solid #b99692;
+    color: #f8f6f4;
+  }
+  .FooterNavContainer {
+    width: 100% !important;
+  }
+  .FooterNavContainer .FooterNavList {
+    height: 150px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+  }
+}
+.baskervville-regular {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.baskervville-regular-italic {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/*# sourceMappingURL=service.css.map */

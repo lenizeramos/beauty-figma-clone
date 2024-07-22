@@ -1,0 +1,455 @@
+@font-face {
+  font-family: "Avenir";
+  src: url(../fonts/Avenir/AvenirRegular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Whiteflower";
+  src: url(../fonts/WhiteFlower/WhiteFlower.otf) format("opentype");
+}
+@font-face {
+  font-family: "Magenta";
+  src: url(../fonts/magenta-2/MagentaDemo.ttf) format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f8f6f4;
+}
+
+header {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0px;
+  background-color: #f8f6f4;
+  z-index: 990;
+}
+header nav .navbar {
+  padding: 1rem;
+  transition: padding 1.5s ease;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .navbar li {
+  width: 100%;
+  text-align: center;
+}
+header nav .navbar li a {
+  text-decoration: none;
+  padding: 0 1rem;
+}
+header nav .navbar li a p {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+header nav .navbar li a p:not(.classes) {
+  border-right: 1px #725a58 solid;
+}
+header nav .navbar li a p,
+header nav .navbar li a i {
+  font-size: 20px;
+  color: #725a58;
+}
+header nav .logo {
+  max-inline-size: 100%;
+  block-size: auto;
+  background-position: center;
+  height: 150px;
+  transition: height 0.5s ease;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: #f8f6f4;
+  display: none;
+  transition: display 2s ease-in-out;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  list-style: none;
+}
+.sidebar li {
+  width: 100%;
+}
+.sidebar li:hover {
+  background-color: #e3b6b1;
+  transition: background-color 0.5s ease;
+}
+.sidebar li a {
+  text-decoration: none;
+  padding: 0 1rem;
+  width: 100%;
+}
+.sidebar li a p {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.sidebar li a p,
+.sidebar li a i {
+  font-size: 20px;
+  color: #725a58;
+}
+
+.smallNavBar {
+  padding: 0.5rem 1rem;
+  transition: padding 1.5s ease;
+}
+.smallNavBar .logo {
+  height: 80px;
+  transition: height 1.5s ease;
+  background-size: contain;
+}
+.smallNavBar .logo img {
+  height: 80px;
+}
+
+.showonMobile,
+.opentagSB {
+  display: none;
+}
+
+.formMainContainer .form-services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 4rem;
+}
+.formMainContainer .form-services h1 {
+  font-family: "Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 80px;
+  letter-spacing: 5px;
+  color: #725a58;
+}
+.formMainContainer .form-services h5 {
+  font-family: "Baskerville", serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 28px;
+}
+.formMainContainer .form-services .hbutton {
+  color: #725a58;
+  font-family: "Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+.formMainContainer .form-services .text-body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  width: 40%;
+}
+@media only screen and (max-width: 768px) {
+  .formMainContainer .form-services .text-body {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .formMainContainer .form-services .text-body {
+    width: 80%;
+  }
+}
+.formMainContainer .form-services hr {
+  border: 0.1rem solid #e3b6b1;
+  width: 20%;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+@media only screen and (max-width: 768px) {
+  .formMainContainer .form-services hr {
+    width: 100%;
+  }
+}
+.formMainContainer .form-services .header_page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4rem auto;
+  width: 80%;
+}
+.formMainContainer .form-services .header_page h1 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.formMainContainer .form-services .header_page p {
+  text-align: center;
+  padding: 0 3rem;
+}
+.formMainContainer .form-services .my_work_content {
+  display: flex;
+  justify-content: center;
+  background-color: #fae9e7;
+  width: 100%;
+}
+.formMainContainer .form-services .form-services-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+  background-color: #fae9e7;
+  width: fit-content;
+}
+@media only screen and (max-width: 768px) {
+  .formMainContainer .form-services .form-services-container {
+    width: 100%;
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .formMainContainer .form-services .form-services-container {
+    width: 80%;
+  }
+}
+.formMainContainer .form-services .form-services-container .form-header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+.formMainContainer .form-services .form-services-container .form-header .header-opt {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0.5rem 2rem;
+  border-bottom: 1px solid black;
+}
+.formMainContainer .form-services .form-services-container .form-header .blur {
+  color: gray;
+  border-bottom: 0.5px solid gray;
+}
+@media only screen and (max-width: 768px) {
+  .formMainContainer .form-services .form-services-container .form-option-container {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+.formMainContainer .form-services .form-services-container .form-option-container .grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+@media only screen and (max-width: 768px) {
+  .formMainContainer .form-services .form-services-container .form-option-container .grid-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.formMainContainer .form-services .form-services-container .form-option-container .grid-container .grid-item {
+  text-align: center;
+}
+.formMainContainer .form-services .form-services-container .form-option-container .grid-container .grid-item img {
+  width: 100%;
+  height: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .formMainContainer .form-services .form-services-container .form-option-container .grid-container .img_display_none {
+    display: none !important;
+  }
+}
+.formMainContainer .form-services .form-services-container .button {
+  margin: 4rem 0;
+  display: flex;
+  justify-content: center;
+}
+.formMainContainer .form-services .form-services-container .button .button-next {
+  padding: 20px 40px;
+  width: 180px;
+  background-color: transparent;
+  border: 0.5px solid #725a58;
+  cursor: pointer;
+}
+.formMainContainer .form-services .form-services-container .button .button-next:hover {
+  background-color: #b99692;
+  border: 1px solid #b99692;
+  color: white;
+}
+
+.message {
+  margin-top: 1rem;
+  width: 100%;
+}
+.message #finalMessage {
+  width: 100%;
+  height: 200px;
+  resize: none;
+  padding: 0.5rem;
+}
+.message #finalMessage::placeholder {
+  font-family: "Avenir", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
+  color: #a3a3a3;
+}
+
+.submitButton {
+  display: flex;
+  justify-content: center;
+}
+.submitButton input {
+  border: 0.5px #725a58 solid;
+  padding: 20px 40px;
+  width: 160px;
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  color: #191919;
+  background-color: transparent;
+  cursor: pointer;
+}
+.submitButton input:hover {
+  background-color: #b99692;
+  border: 1px solid #b99692;
+  color: white;
+}
+
+#side_bar_message_container {
+  position: fixed;
+  right: 0%;
+  bottom: 15%;
+}
+#side_bar_message_container .message_button {
+  background-color: #b99692;
+  padding: 0.5rem;
+  border: none;
+}
+#side_bar_message_container .button_container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 70%;
+}
+#side_bar_message_container .button_container .instagram_button {
+  background-color: #c13ed4;
+  padding: 0.5rem;
+  border: none;
+}
+#side_bar_message_container .button_container .call_button {
+  background-color: #6aa2ba;
+  padding: 0.5rem;
+  border: none;
+}
+#side_bar_message_container .button_container .whatsapp_button {
+  background-color: #25d366;
+  padding: 0.5rem;
+  border: none;
+}
+#side_bar_message_container .button_container .close_button {
+  background-color: #191919;
+  padding: 0.5rem;
+  border: none;
+}
+
+.display_none {
+  display: none !important;
+}
+
+.IconsContainer {
+  text-align: center;
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  padding-top: 15px;
+}
+.IconsContainer .footerParagraph {
+  font-size: 14px;
+  margin: 3px 0;
+}
+.IconsContainer .ContactIcons {
+  margin-top: 8px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.FooterNavContainer {
+  margin: auto;
+}
+@media only screen and (max-width: 600px) {
+  .FooterNavContainer {
+    width: 95%;
+  }
+  .FooterNavContainer .FooterNavList {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (min-width: 601px) {
+  .FooterNavContainer {
+    width: 80%;
+  }
+  .FooterNavContainer .FooterNavList {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+.FooterNavContainer .FooterNav {
+  border-top: 1px black solid;
+  border-bottom: 1px black solid;
+}
+.FooterNavContainer .FooterNav .FooterNavList {
+  list-style: none;
+  font-size: 20px;
+  padding: 15px 0;
+}
+.FooterNavContainer .FooterNav .FooterNavList .FooterNavListStyle1 {
+  font-family: "Baskervville", serif;
+  text-decoration: none;
+  color: black;
+}
+.FooterNavContainer .FooterNav .FooterNavList .FooterNavListStyle2 {
+  color: black;
+}
+
+.Copyright {
+  text-align: center;
+  margin: 25px 0 40px 0;
+}
+
+@media only screen and (max-width: 800px) {
+  .showonMobile,
+  .opentagSB {
+    display: block;
+  }
+  .hideonMobile {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+.baskervville-regular {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.baskervville-regular-italic {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: italic;
+}/*# sourceMappingURL=myWork.css.map */
