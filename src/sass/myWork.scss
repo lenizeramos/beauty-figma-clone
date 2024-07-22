@@ -178,7 +178,7 @@ header {
       font-style: normal;
       font-size: 80px;
       letter-spacing: 5px;
-      color: #5e4a49;
+      color: $boldmain;
     }
 
     // font family, size and color for h5
@@ -326,7 +326,7 @@ header {
           padding: 20px 40px;
           width: 180px;
           background-color: transparent;
-          border: 0.5px solid #5e4a49;
+          border: 0.5px solid $boldmain;
           cursor: pointer;
 
           &:hover {

@@ -133,7 +133,7 @@ header nav .logo {
   font-style: normal;
   font-size: 80px;
   letter-spacing: 5px;
-  color: #5e4a49;
+  color: #725a58;
 }
 .formMainContainer .form-services h5 {
   font-family: "Baskerville", serif;
@@ -388,7 +388,7 @@ header nav .logo {
   padding: 20px 40px;
   width: 160px;
   background-color: transparent;
-  border: 0.5px solid #5e4a49;
+  border: 0.5px solid #725a58;
   cursor: pointer;
 }
 @media only screen and (max-width: 768px) {
@@ -577,6 +577,4 @@ header nav .logo {
   font-family: "Baskervville", serif;
   font-weight: 400;
   font-style: italic;
-}
-
-/*# sourceMappingURL=contact.css.map */
+}/*# sourceMappingURL=contact.css.map */

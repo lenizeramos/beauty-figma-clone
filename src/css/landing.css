@@ -334,7 +334,7 @@ header nav .logo {
   font-weight: 400;
   font-style: normal;
   font-size: 80px;
-  color: #5e4a49;
+  color: #725a58;
 }
 .starSection .headerSec span {
   border: 1px #e3b6b1 solid;
@@ -355,7 +355,7 @@ header nav .logo {
 }
 .starSection .headerSec .starsecBtn {
   margin: 1rem 0;
-  border: 1px #5e4a49 solid;
+  border: 1px #725a58 solid;
   height: 60px;
   width: 160px;
   padding: 1rem 2rem;
@@ -462,7 +462,7 @@ header nav .logo {
   font-weight: 400;
   font-style: normal;
   font-size: 80px;
-  color: #5e4a49;
+  color: #725a58;
 }
 .makeup_hairstyle .headerSec span {
   border: 1px #e3b6b1 solid;
@@ -483,7 +483,7 @@ header nav .logo {
 }
 .makeup_hairstyle .headerSec .MHsecBtn {
   margin: 1rem 0;
-  border: 1px #5e4a49 solid;
+  border: 1px #725a58 solid;
   height: 60px;
   width: 160px;
   padding: 1rem;
@@ -599,7 +599,7 @@ header nav .logo {
   font-weight: 400;
   font-style: normal;
   font-size: 80px;
-  color: #5e4a49;
+  color: #725a58;
 }
 .makeup101 .mainContent {
   display: flex;
@@ -656,7 +656,7 @@ header nav .logo {
 }
 .makeup101 .mainContent .classes .M101secBtn {
   margin: 1rem 0;
-  border: 1px #5e4a49 solid;
+  border: 1px #725a58 solid;
   height: 60px;
   width: 160px;
   padding: 1rem;
@@ -723,7 +723,7 @@ header nav .logo {
   font-weight: 400;
   font-style: normal;
   font-size: 48px;
-  color: #5e4a49;
+  color: #725a58;
 }
 .DIY .DIY_Video {
   width: 70%;
@@ -784,7 +784,7 @@ header nav .logo {
   font-style: normal;
   font-size: 80px;
   letter-spacing: 5px;
-  color: #5e4a49;
+  color: #725a58;
 }
 .formMainContainer .form-services h5 {
   font-family: "Baskerville", serif;
@@ -1049,7 +1049,7 @@ header nav .logo {
   padding: 20px 40px;
   width: 160px;
   background-color: transparent;
-  border: 0.5px solid #5e4a49;
+  border: 0.5px solid #725a58;
   cursor: pointer;
 }
 @media only screen and (max-width: 768px) {
@@ -1330,7 +1330,7 @@ header nav .logo {
     font-weight: 400;
     font-style: normal;
     font-size: 20px;
-    color: #5e4a49;
+    color: #725a58;
   }
   .makeup101 .mainContent .classes .M101secBtn {
     width: 100%;
@@ -1515,6 +1515,4 @@ header nav .logo {
   font-family: "Baskervville", serif;
   font-weight: 400;
   font-style: italic;
-}
-
-/*# sourceMappingURL=landing.css.map */
+}/*# sourceMappingURL=landing.css.map */

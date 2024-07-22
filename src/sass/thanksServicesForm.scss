@@ -373,12 +373,12 @@ header {
             padding: 20px 40px;
             width: 160px;
             background-color: transparent;
-            border: 0.5px solid #5e4a49;
+            border: 0.5px solid $boldmain;
             cursor: pointer;
 
             &:hover {
-              background-color: #b99692;
-              border: 1px solid #b99692;
+              background-color: $darkpink;
+              border: 1px solid $darkpink;
               color: white;
             }
           }
@@ -398,7 +398,7 @@ header {
   bottom: 15%;
 
   .message_button {
-    background-color: #b99692;
+    background-color: $darkpink;
     padding: 0.5rem;
     border: none;
   }

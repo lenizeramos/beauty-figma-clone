@@ -238,9 +238,9 @@ h1 {
 .classes-full .classes-info-container .classes-info .detail .information .button a {
   text-decoration: none;
   font-size: 18px;
-  color: #5e4a49;
+  color: #725a58;
   padding: 1.5rem 2.5rem;
-  border: 1px solid #5e4a49;
+  border: 1px solid #725a58;
 }
 .classes-full .classes-info-container .classes-info .detail .information .button a:hover {
   background-color: #b99692;
@@ -346,6 +346,4 @@ h1 {
   font-family: "Baskervville", serif;
   font-weight: 400;
   font-style: italic;
-}
-
-/*# sourceMappingURL=classes.css.map */
+}/*# sourceMappingURL=classes.css.map */

@@ -183,7 +183,7 @@ main .aboutSec .maincontent .content p {
   color: #191919;
 }
 main .aboutSec .maincontent .button {
-  border: 1px #5e4a49 solid;
+  border: 1px #725a58 solid;
   height: 60px;
   width: 160px;
   padding: 1rem 2rem;
@@ -473,6 +473,4 @@ main .brandSec .brands .individual .kry {
   font-family: "Baskervville", serif;
   font-weight: 400;
   font-style: italic;
-}
-
-/*# sourceMappingURL=aboutme.css.map */
+}/*# sourceMappingURL=aboutme.css.map */
