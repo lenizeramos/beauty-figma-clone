@@ -197,7 +197,8 @@ main .S_Outer .S_Container {
   grid-template-columns: 1fr 2fr;
   grid-template-areas: "Pic1 Text1" "Pic2 Text2" "Pic3 Text3";
   margin: 5rem auto;
-  gap: 30px;
+  column-gap: 30px;
+  row-gap: 4rem;
 }
 main .S_Outer .S_Container #Lady1 {
   grid-area: Pic1;
@@ -287,145 +288,69 @@ main .S_Outer .S_Container button:hover {
   .hideonMobile {
     display: none;
   }
-  .AboutMeContainer {
-    display: flex !important;
-    flex-direction: column-reverse !important;
-    width: 80% !important;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-  .AboutMeContainer .AboutText {
-    grid-template-columns: 1fr !important;
-    grid-template-areas: "Logo" "h3Text" "pText" " signature" "A-button" !important;
-  }
-  .AboutMeContainer .AboutText img {
-    margin: auto;
-    margin-bottom: 1rem;
-  }
-  .AboutMeContainer .AboutText .h3Title {
-    margin-bottom: 1rem;
-  }
-  .AboutMeContainer .AboutText p {
-    margin-bottom: 2rem;
-  }
-  .AboutMeContainer .AboutText .h3Signature {
-    margin-bottom: 2rem;
-    transform: rotate(0deg) !important;
-  }
-  .starSection .headerSec .titleStar h1 {
-    font-size: 48px;
-  }
-  .starSection .headerSec .messageStar {
-    width: 50%;
-  }
-  .starSection .headerSec .messageStar p {
-    font-size: 16px;
-  }
-  .starSection .photoSec {
-    flex-wrap: wrap;
-    height: 620px;
-    margin: 2rem 0;
-  }
-  .starSection .photoSec .photo {
-    width: 49%;
-    height: 300px;
-    flex: none;
-  }
-  .starSection .testimonials .singleTest {
-    width: 90%;
-  }
-  .starSection .testimonials .singleTest p {
-    font-size: 24px;
-  }
-  .makeup_hairstyle {
-    width: 100vw;
-  }
-  .makeup_hairstyle .headerSec .titleMH h1 {
-    font-size: 48px;
-  }
-  .makeup_hairstyle .photoSec_MH {
-    flex-direction: column;
-    gap: 20px;
-  }
-  .makeup_hairstyle .photoSec_MH .photo {
-    justify-content: center;
-  }
-  .makeup_hairstyle .photoSec_MH .photo.left, .makeup_hairstyle .photoSec_MH .photo.right {
-    height: 500px;
-    width: 380px;
-  }
-  .makeup_hairstyle .photoSec_MH .photo.mid {
-    order: -1;
-  }
-  .makeup_hairstyle .photoSec_MH .photo p {
-    transform: translateX(10%);
-  }
-  .makeup_hairstyle .photoSec_MH .photo p span {
-    color: #fae9e7;
-  }
-  .makeup101 {
-    height: auto;
-  }
-  .makeup101 .title h1 {
-    font-size: 48px;
-  }
-  .makeup101 .mainContent {
-    flex-direction: column;
-    height: auto;
-  }
-  .makeup101 .mainContent .classes {
-    gap: 50px;
-  }
-  .makeup101 .mainContent .classes .row {
-    flex-direction: column;
-  }
-  .makeup101 .mainContent .classes .row .content {
-    width: 100%;
-    align-items: center;
-    gap: 10px;
-  }
-  .makeup101 .mainContent .classes .row .content .classTitle {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-  .makeup101 .mainContent .classes .row .content .classTitle img {
-    width: 50px;
-    height: 50px;
-  }
-  .makeup101 .mainContent .classes .row .content .classTitle p {
-    font-size: 36px;
-  }
-  .makeup101 .mainContent .classes .row .content .classInfo {
-    width: 80%;
-    text-align: center;
-  }
-  .makeup101 .mainContent .classes .row .content .classInfo p {
-    font-size: 20px;
-  }
-  .makeup101 .mainContent .classes .row .arrow {
-    width: 100%;
-  }
-  .makeup101 .mainContent .classes .row .arrow a {
-    gap: 20px;
-  }
-  .makeup101 .mainContent .classes .row .arrow a p {
-    font-family: "Baskervville", serif;
-    font-weight: 400;
+  main h1 {
+    color: #a06d67;
+    font-family: "Baskerville", serif;
+    font-weight: 100;
     font-style: normal;
-    font-size: 20px;
-    color: #5e4a49;
+    font-size: 80px;
+    letter-spacing: 8px;
   }
-  .makeup101 .mainContent .classes .M101secBtn {
-    width: 100%;
+  main h5 {
+    font-size: 32px;
+    color: #a06d67;
+    font-family: "Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 5px;
   }
-  .makeup101 .mainContent .picContainer {
-    height: 500px;
+  main .CostInfo {
+    font-family: "Avenir", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+    color: #191919;
   }
-  .DIY .DIY_Video {
-    width: 90% !important;
+  main .Subtitle {
+    font-family: "Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    color: #191919;
+    margin-top: 3px;
+  }
+  main .CommonText {
+    font-family: "Avenir", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    color: #191919;
+    margin-top: 3px;
+  }
+  main .InlineBlock {
+    display: inline-block;
+  }
+  main .S_Outer .S_Container {
+    width: 70% !important;
+    grid-template-columns: 1fr !important;
+    grid-template-areas: "Pic1" "Text1" "Pic2" "Text2" "Pic3" "Text3" !important;
+    margin: 5rem auto;
+    gap: 30px;
+  }
+  main .S_Outer .S_Container #Lady1 {
+    justify-self: center;
+  }
+  main .S_Outer .S_Container #Lady2 {
+    justify-self: center;
+  }
+  main .S_Outer .S_Container #Lady3 {
+    justify-self: center;
+  }
+  main .S_Outer .S_Container button {
+    grid-area: A-button;
+    width: 100% !important;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
   }
   .FooterNavContainer {
     width: 80% !important;
@@ -442,143 +367,114 @@ main .S_Outer .S_Container button:hover {
   .sidebar {
     width: 100%;
   }
-  .AboutMeContainer {
-    display: flex !important;
-    flex-direction: column-reverse !important;
+  main h1 {
+    font-size: 48px;
+  }
+  main h5 {
+    font-size: 32px;
+    color: #a06d67;
+    font-family: "Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 5px;
+    margin-left: 1rem !important;
+  }
+  main .CostInfo {
+    font-family: "Avenir", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px !important;
+    color: #191919;
+  }
+  main .Subtitle {
+    font-family: "Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    color: #191919;
+    margin: 0 1rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+  main .CommonText {
+    font-family: "Avenir", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    color: #191919;
+    margin-top: 3px;
+    margin: 0 1rem !important;
+    margin-bottom: 1rem !important;
+  }
+  main .InlineBlock {
+    display: inline-block;
+  }
+  main .S_title {
+    text-align: center;
+  }
+  main .S_title .pContainer {
     width: 100% !important;
     margin: auto;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    margin-bottom: 30px;
   }
-  .AboutMeContainer .AboutText {
-    grid-template-columns: 1fr !important;
-    grid-template-areas: "Logo" "h3Text" "pText" " signature" "A-button" !important;
-  }
-  .AboutMeContainer .AboutText img {
+  main .S_title .ForUnderbar {
+    width: 200px;
+    border-top: #e3b6b1 solid 1px;
     margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  main .Cost {
+    margin-left: 1rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+  main .S_Outer {
+    width: 100%;
+    min-height: 70vh;
     margin-bottom: 1rem;
+    padding-bottom: 2rem;
   }
-  .AboutMeContainer .AboutText .h3Title {
-    font-size: 36px !important;
-    margin-bottom: 1rem;
-  }
-  .AboutMeContainer .AboutText p {
-    max-width: 80%;
-    margin: auto;
-    margin-bottom: 2rem;
-  }
-  .AboutMeContainer .AboutText .h3Signature {
-    margin-bottom: 2rem;
-    transform: rotate(0deg) !important;
-  }
-  .OurBrands {
-    width: 400px !important;
-  }
-  .starSection .headerSec .titleStar {
-    text-align: center;
-  }
-  .starSection .headerSec .titleStar h1 {
-    font-size: 36px;
-  }
-  .starSection .headerSec .messageStar {
-    width: 90%;
-  }
-  .starSection .photoSec .photo {
-    width: 45%;
-  }
-  .starSection .testimonials .singleTest p {
-    font-size: 18px;
-  }
-  .makeup_hairstyle .headerSec .titleMH h1 {
-    font-size: 36px;
-  }
-  .makeup_hairstyle .headerSec .messageMH {
-    width: 90%;
-  }
-  .makeup101 {
+  main .S_Outer .S_Container {
+    width: 100% !important;
     height: auto;
+    display: grid;
+    grid-template-columns: 1fr !important;
+    grid-template-areas: "Pic1" "Text1" "Pic2" "Text2" "Pic3" "Text3" !important;
+    margin: 0 !important;
+    column-gap: 0 !important;
+    row-gap: 2rem !important;
   }
-  .makeup101 .title h1 {
-    font-size: 36px;
+  main .S_Outer .S_Container #Lady1 {
+    grid-area: Pic1;
+    min-width: 100% !important;
   }
-  .makeup101 .mainContent .classes {
-    gap: 50px;
+  main .S_Outer .S_Container #Lady2 {
+    grid-area: Pic2;
+    min-width: 100% !important;
   }
-  .makeup101 .mainContent .classes .row {
-    gap: 10px;
+  main .S_Outer .S_Container #Lady3 {
+    grid-area: Pic3;
+    min-width: 100% !important;
   }
-  .makeup101 .mainContent .classes .row .content .classTitle img {
-    width: 30px;
-    height: 30px;
+  main .S_Outer .S_Container button {
+    grid-area: A-button;
+    display: block;
+    padding: 10px 0px;
+    width: 95% !important;
+    height: 50px;
+    background-color: transparent;
+    border: 0.5px solid #a3a3a3;
+    cursor: pointer;
+    color: #535353;
+    font-family: "Baskervville", serif;
+    font-size: 20px;
+    align-self: center;
+    margin-top: 10px !important;
+    margin: auto !important;
   }
-  .makeup101 .mainContent .classes .row .content .classTitle p {
-    font-size: 24px;
-  }
-  .makeup101 .mainContent .classes .row .content .classInfo p {
-    font-size: 18px;
-  }
-  .makeup101 .mainContent .picContainer {
-    width: 100%;
-    height: 500px;
-  }
-  .makeup101 .mainContent .picContainer .ladypicContainer {
-    width: 100%;
-    height: 100%;
-  }
-  body {
-    overflow-x: hidden !important;
-  }
-  .DIY {
-    min-height: 70vh !important;
-    width: auto !important;
-  }
-  .DIY h3 {
-    font-size: 32px !important;
-  }
-  .DIY .con .DIY_Video {
-    width: 300% !important;
-    max-height: 300px;
-    display: flex !important;
-    grid-template-areas: none;
-    gap: 1.5rem !important;
-    position: absolute !important;
-    margin: auto;
-    place-items: center;
-    overflow-x: hidden !important;
-  }
-  .DIY .con .DIY_Video .img {
-    width: 250px !important;
-  }
-  .DIY .con .DIY_Video .DIY_img1 {
-    position: relative !important;
-  }
-  .DIY .con .DIY_Video .DIY_img2 {
-    position: relative !important;
-  }
-  .DIY .con .DIY_Video .DIY_img3 {
-    position: relative !important;
-  }
-  .DIY .con .DIY_Video .center {
-    position: relative !important;
-    left: -16% !important;
-  }
-  .DIY .con .DIY_Video .left {
-    position: relative !important;
-    left: 6% !important;
-  }
-  .DIY .con .DIY_Video .right {
-    position: relative !important;
-    left: -38% !important;
-  }
-  .DIY .con .DIY_Video .TL {
-    transition: left 0.5s ease;
-  }
-  .DIY .ShiftLeft {
-    transition: left 1s ease !important;
-  }
-  .DIY .DIY_Btn {
-    padding-top: 40vh;
+  main .S_Outer .S_Container button:hover {
+    background-color: #b99692;
+    border: 1px solid #b99692;
+    color: #f8f6f4;
   }
   .FooterNavContainer {
     width: 100% !important;
