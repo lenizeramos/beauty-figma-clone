@@ -1,0 +1,774 @@
+@font-face {
+  font-family: "Avenir";
+  src: url(../fonts/Avenir/AvenirRegular.ttf) format('truetype');
+}
+@font-face {
+  font-family: "Whiteflower";
+  src: url(../fonts/WhiteFlower/WhiteFlower.otf) format('opentype');
+}
+@font-face {
+  font-family: "Magenta";
+  src: url(../fonts/magenta-2/MagentaDemo.ttf) format('truetype');
+}
+
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 3rem;
+}
+//*****************************colors**********************************//
+//MAIN
+$brand: #191919;
+$boldmain: #725a58;
+$accent: #e3b6b1;
+//LIGHT NEUTRAL
+$lightpink: #fae9e7;
+$palewhite: #f8f6f4;
+$paperwhite: #fbfafa;
+//DARK NEUTRAL
+$midgrey: #a3a3a3;
+$darkgrey: #535353;
+$black: #191919;
+//COMPLEMENTARY
+$darkpink: #b99692;
+$brown: #a06d67;
+
+//***************************font-sizes********************************//
+$h1: 80px;
+$h2: 68px;
+$h3: 48px;
+$h4: 36px;
+$h5: 32px;
+$h6: 24px;
+$button: 20px;
+$button_sm: 18px;
+$body: 18px;
+$body_sm: 16px;
+$caption: 14px;
+$signature: 54px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body{
+  overflow-x: hidden;
+  background-color: $paperwhite;
+}
+
+//**********************************************BEGIN NAVBAR**************************************************************************//
+header {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0px;
+  background-color: $palewhite;
+  z-index: 990;
+  nav {
+    .navbar {
+      padding: 1rem;
+      transition: padding 1.5s ease;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      li {
+        width: 100%;
+        text-align: center;
+        a {
+          text-decoration: none;
+          padding: 0 1rem;
+          p {
+            font-family: "Baskervville", serif;
+            font-weight: 400;
+            font-style: normal;
+            &:not(.classes) {
+              border-right: 1px $boldmain solid;
+            }
+          }
+          p,
+          i {
+            font-size: $button;
+            color: $boldmain;
+          }
+        }
+      }
+    }
+    .logo {
+      // border: 1px red solid;
+      // background-image: url(../resources/landing/CarlaBeautyLogo.svg);
+      // background-size: cover;
+      // background-repeat: no-repeat;
+      // width: 100%;
+      // max-width: 100%;
+      max-inline-size: 100%;
+      block-size: auto;
+      background-position: center;
+      height: 150px;
+      transition: height .5s ease;
+    }
+  }
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: $palewhite;
+  display: none;
+  transition: display 2s ease-in-out;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  list-style: none;
+  li {
+    width: 100%;
+    &:hover {
+      background-color: $accent;
+      transition: background-color 0.5s ease;
+    }
+    a {
+      text-decoration: none;
+      padding: 0 1rem;
+      width: 100%;
+      p {
+        font-family: "Baskervville", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      p,
+      i {
+        font-size: $button;
+        color: $boldmain;
+      }
+    }
+  }
+}
+
+.smallNavBar {
+  padding: 0.5rem 1rem;
+  transition: padding 1.5s ease;
+  .logo {
+    // background-image: url(../resources/landing/ShrinkedLogo_Navbar.svg);
+    height: 80px;
+    transition: height 1.5s ease;
+    background-size: contain;
+    img{
+      height: 80px;
+    }
+
+  }
+}
+
+.showonMobile,
+.opentagSB {
+  display: none;
+}
+
+//**********************************************END NAVBAR**************************************************************************//
+
+main{
+  h1 {
+    color: $brown;
+    font-family: "Baskerville", serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 80px;
+    letter-spacing: 8px;
+  }
+  h5 {
+    font-size: $h5;
+    color: $brown;
+    font-family: "Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 5px;
+  }
+  .CostInfo{
+    font-family: "Avenir", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: $body_sm;
+    color: $black;
+  }
+  .Subtitle{
+    font-family: "Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: $body;
+    color: $black;
+    margin-top: 3px;
+  }
+  .CommonText{
+    font-family: "Avenir", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: $caption;
+    color: $black;
+    margin-top: 3px;
+  }
+  .InlineBlock{
+    display: inline-block;
+  }
+  .S_title{
+    .pContainer{
+      width: 300px;
+      margin: auto;
+      margin-bottom: 30px; 
+    }
+    text-align: center;
+    .ForUnderbar{
+      width: 200px;
+      border-top: #e3b6b1 solid 1px;
+      margin: auto;
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+  }
+  .S_Outer{
+    width: 100%;
+    min-height: 70vh;
+    background-color: $lightpink;
+    margin-bottom: 1rem;
+    .S_Container{
+      width: 750px;
+      height: auto;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-areas: 
+      "Pic1 Text1"
+      "Pic2 Text2"
+      "Pic3 Text3";
+      margin: 5rem auto;
+      gap: 30px;
+      #Lady1{
+        grid-area: Pic1;
+        max-width: 240px;
+      }
+      #Lady2{
+        grid-area: Pic2;
+        max-width: 240px;
+      }
+      #Lady3{
+        grid-area: Pic3;
+        max-width: 240px;
+      }
+      button{
+        grid-area: A-button;
+        padding: 10px 0px;
+        width: 160px;
+        height: 50px;
+        background-color: transparent;
+        border: 0.5px solid $midgrey;
+        cursor: pointer;
+        color: $darkgrey;
+        font-family: "Baskervville", serif;
+        font-size: $button;
+        align-self: center;
+        margin-top: 10px;
+        &:hover {
+          background-color: $darkpink;
+          border: 1px solid $darkpink;
+          color: $palewhite;
+        }
+      }
+  
+    }
+  }
+}
+
+
+//**********************************************BEGIN FOOTER**************************************************************************//
+.IconsContainer {
+  text-align: center;
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  padding-top: 15px;
+  .footerParagraph {
+    font-size: 14px;
+    margin: 3px 0;
+  }
+  .ContactIcons {
+    margin-top: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+@mixin FooterNavContainer() {
+  //MOBILE 
+}
+
+.FooterNavContainer {
+  @include FooterNavContainer();
+  width: 80%;
+  margin: auto; 
+  .FooterNav {
+    border-top: 1px black solid;
+    border-bottom: 1px black solid;
+    .FooterNavList {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      font-size: 20px;
+      padding: 15px 0;
+      .FooterNavListStyle1 {
+        font-family: "Baskervville", serif;
+        text-decoration: none;
+        color: $boldmain;
+      }
+      .FooterNavListStyle2 {
+        font-family: "Baskervville", serif;
+        text-decoration: none;
+        color: $boldmain;
+      }
+    }
+  }
+}
+
+.Copyright {
+  text-align: center;
+  margin: 25px 0 40px 0;
+}
+//**********************************************END FOOTER**************************************************************************//
+
+//***************MEDIA QUERIES***************************//
+//Tablet
+@media only screen and (max-width: 768px) {
+  //NAVBAR
+  .showonMobile,
+  .opentagSB {
+    display: block;
+  }
+  .hideonMobile {
+    display: none;
+  }
+  //About Section
+  .AboutMeContainer{
+    display: flex !important;
+    flex-direction: column-reverse !important;
+    width: 80% !important;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    .AboutText{
+      grid-template-columns: 1fr !important;
+      grid-template-areas: 
+      "Logo"
+      "h3Text"
+      "pText"
+      " signature"
+      "A-button" !important;
+      img{
+        margin: auto;        
+        margin-bottom: 1rem;
+      }
+      .h3Title{
+        margin-bottom: 1rem;
+      }
+      p{
+        margin-bottom: 2rem;
+      }
+      .h3Signature{
+        margin-bottom: 2rem;
+        transform: rotate(0deg) !important;
+      }
+    }
+  } 
+
+  //STAR SECTION
+  .starSection{
+    .headerSec{
+      .titleStar{
+        h1{
+          font-size: $h3;
+        }
+      }
+      .messageStar{
+        width: 50%;
+        p{
+          font-size: $body_sm;
+        }
+      }
+    }
+    .photoSec{
+      flex-wrap: wrap;
+      height: 620px ;
+      margin: 2rem 0;
+      // gap: none;
+      .photo{
+        width: 49%;
+        height: 300px;
+        flex: none;
+      }
+    }
+    .testimonials{
+      .singleTest{
+        width: 90%;
+        p{
+          font-size: $h6;
+        }
+      }
+    }
+  }
+
+  //MAKEUP AND HAIRSTYLE
+.makeup_hairstyle {
+  width: 100vw;
+
+  .headerSec {
+    .titleMH {
+
+      // width: 100%;
+      h1 {
+        font-size: $h3;
+      }
+    }
+  }
+
+  .photoSec_MH {
+    flex-direction: column;
+    gap: 20px;
+
+    .photo {
+      justify-content: center;
+
+      &.left,
+      &.right {
+        height: 500px;
+        width: 380px;
+      }
+
+      &.mid {
+        order: -1;
+      }
+
+      p {
+        transform: translateX(10%);
+
+        span {
+          color: $lightpink;
+        }
+      }
+    }
+  }
+}
+  //MAKEUP101
+  .makeup101{
+    height: auto;
+    .title{
+      h1{
+        font-size: $h3;
+      }
+    }
+    .mainContent{
+      flex-direction: column;
+      // border: 1px red solid;
+      height: auto;
+      .classes{
+        gap: 50px;
+        .row{
+          flex-direction: column;
+          .content{
+            width: 100%;
+            align-items: center;
+            gap: 10px;
+            .classTitle{
+              flex-direction: column;
+              align-items: center;
+              gap: 20px;
+              img{
+                width: 50px;
+                height: 50px;
+              }
+              p{
+                font-size: $h4;
+              }
+            }
+            .classInfo{
+              // border: 1px green solid;
+              width: 80%;
+              text-align: center;
+              p{
+                font-size: $button;
+              }
+            }
+          }
+          .arrow{
+            width: 100%;
+            a{
+              gap: 20px;
+              p{
+                font-family: "Baskervville", serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: $button;
+                color: #5e4a49;
+              }
+            }
+          }
+        }
+        .M101secBtn{
+          width: 100%;
+        }
+      }
+      .picContainer{
+        // border: 1px red solid;
+        // width: 100%;
+        height: 500px;
+      }
+
+    }
+  }
+
+  //DIY Section
+  .DIY{
+    .DIY_Video{
+      width: 90% !important;
+    }
+  }
+
+  //Footer
+  .FooterNavContainer {
+    width: 80% !important;
+    .FooterNavList {
+      height: 150px !important;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      flex-wrap: wrap !important;
+    }
+  }
+
+  
+}
+
+//Mobile
+@media only screen and (max-width: 480px) {
+  //NAVBAR
+  .sidebar {
+    width: 100%;
+  }
+
+  //About Section
+  .AboutMeContainer{
+    display: flex !important;
+    flex-direction: column-reverse !important;
+    width: 100% !important;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    .AboutText{
+      grid-template-columns: 1fr !important;
+      grid-template-areas: 
+      "Logo"
+      "h3Text"
+      "pText"
+      " signature"
+      "A-button" !important;
+      img{
+        margin: auto;        
+        margin-bottom: 1rem;
+      }
+      .h3Title{
+        font-size: $h4 !important;
+        margin-bottom: 1rem;
+      }
+      p{
+        max-width: 80%;
+        margin: auto;
+        margin-bottom: 2rem;
+      }
+      .h3Signature{
+        margin-bottom: 2rem;
+        transform: rotate(0deg) !important;
+      }
+    }
+  } 
+  .OurBrands{
+    width: 400px !important;
+  }
+
+  //STAR SECTION
+  .starSection{
+    .headerSec{
+      .titleStar{
+        text-align: center;
+        h1{
+          font-size: $h4;
+        }
+      }
+      .messageStar{
+        width: 90%;
+        // p{
+        //   font-size: $body_sm;
+        // }
+      }
+    }
+    .photoSec{
+      // flex-wrap: wrap;
+      // height: 620px ;
+      // // gap: none;
+      .photo{
+        width: 45%;
+        // height: 300px;
+        // flex: none;
+      }
+    }
+    .testimonials{
+      .singleTest{
+        // width: 90%;
+        p{
+          font-size: $button_sm;
+        }
+      }
+    }
+  }
+
+//MAKEUP AND HAIRSTYLE
+.makeup_hairstyle{
+  .headerSec{
+    .titleMH{
+      h1{
+        font-size: $h4;
+      }
+    }
+    .messageMH{
+      width: 90%;
+    }
+  }
+}
+
+  //MAKEUP 101
+  .makeup101{
+    height: auto;
+    .title{
+      h1{
+        font-size: $h4;
+      }
+    }
+    .mainContent{
+      .classes{
+        gap: 50px;
+        .row{
+          gap: 10px;
+          .content{
+            .classTitle{
+              img{
+                width: 30px;
+                height: 30px;
+              }
+              p{
+                font-size: $h6;
+              }
+            }
+            .classInfo{
+              p{
+                font-size: $body;
+              }
+            }
+          }
+        }
+      }
+      .picContainer{
+        width: 100%;
+        height: 500px;
+        .ladypicContainer{
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+    }
+  }
+body{
+  overflow-x: hidden !important;
+}
+  //DIY Section
+  .DIY{
+    min-height: 70vh !important;
+    width: auto !important; 
+    h3{
+      font-size: $h5 !important;
+    }
+    .con{
+      .DIY_Video{
+        width: 300% !important;
+        max-height: 300px ;
+        display: flex !important;
+        grid-template-areas: none;
+        gap: 1.5rem !important;
+        position: absolute !important;
+        margin: auto;
+        place-items: center;
+        overflow-x: hidden !important;
+        .img{
+          width: 250px !important;
+        }
+        .DIY_img1{
+          position: relative !important;
+        } 
+        .DIY_img2{
+          position: relative !important;
+        } 
+        .DIY_img3{
+          position: relative !important;
+        } 
+        .center{
+          position: relative !important;
+          left: -16% !important;
+        }
+        .left{
+          position: relative !important;
+          left: 6% !important;
+        }
+        .right{
+          position: relative !important;
+          left: -38% !important;
+        }
+        .TL{
+          transition: left 0.5s ease;
+        }
+      }
+    }
+
+    .ShiftLeft{
+      transition: left 1s ease !important;
+    }
+    .DIY_Btn{
+      padding-top: 40vh;
+    }
+  }
+  
+  //Footer
+  .FooterNavContainer {
+    width: 100% !important;
+    .FooterNavList {
+      height: 150px !important;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      flex-wrap: wrap !important;
+    }
+  }
+}
+
+//GOOGLE FONTS -BASKERVVILE-
+.baskervville-regular {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.baskervville-regular-italic {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: italic;
+}

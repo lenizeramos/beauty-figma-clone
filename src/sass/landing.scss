@@ -1764,38 +1764,7 @@ body{
       }
     }
 
-/*     .con{
-      overflow-x: hidden !important;
-      position: absolute;
-      .DIY_Video{
-        position: relative;
-        display: flex;
-        min-width: 200% !important;
-        max-height: 300px ;
-        gap: 1rem;
-        .DIY_img1{
-          width: 100% !important;
-        } 
-        .DIY_img2{
-          width: 100% !important;
-          
-        } 
-        .DIY_img3{
-          width: 100% !important;
-        } 
-        .center{
-          transform: translateX(-80%);
-        }
-        .left{
-          transform: translateX(30%);
-        }
-        .right{
-          transform: translateX(-185%);
-        }
-        
-      }
-    }
- */    .ShiftLeft{
+    .ShiftLeft{
       transition: left 1s ease !important;
     }
     .DIY_Btn{
