@@ -44,7 +44,10 @@ $signature: 54px;
   padding: 0;
   box-sizing: border-box;
 }
-  
+
+body{
+  background-color: $palewhite;
+}
   
 header {
     position: sticky;
@@ -173,7 +176,7 @@ header {
 // START BEAUTY TIPS MAIN SECTION
   
 h1 {
-  color: $brown;
+  color: $boldmain;
   font-family: "Baskerville", serif;
   font-weight: 100;
   font-style: normal;

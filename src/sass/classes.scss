@@ -44,6 +44,9 @@ $signature: 54px;
   box-sizing: border-box;
 }
 
+body{
+  background-color: $palewhite;
+}
 
 header{
         position: sticky;
@@ -156,7 +159,7 @@ header{
 }
 
 h1 {
-  color: $brown;
+  color: $boldmain;
   font-family: "Baskerville", serif;
   font-weight: 100;
   font-style: normal;
@@ -250,7 +253,7 @@ h1 {
 
           .info-header {
             font-size: 28px;
-            color: $brown;
+            color: $boldmain;
             margin-bottom: 2rem;
           }
 

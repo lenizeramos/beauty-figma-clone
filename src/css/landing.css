@@ -25,6 +25,10 @@ body {
   box-sizing: border-box;
 }
 
+body {
+  background-color: #f8f6f4;
+}
+
 header {
   position: sticky;
   position: -webkit-sticky;
@@ -301,7 +305,7 @@ header nav .logo {
   align-self: center;
   width: 150px;
   transform: translateY(12px);
-  background-color: white;
+  background-color: #f8f6f4;
   font-family: "Avenir", serif;
   font-size: 18px;
 }
@@ -1031,12 +1035,27 @@ header nav .logo {
 .formMainContainer .form-services .form-services-container .form-option-container .contact-form .form-time-call .time-opt .input-color {
   accent-color: #b99692;
 }
+@media only screen and (max-width: 768px) {
+  .formMainContainer .form-services .form-services-container .form-option-container .button_div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .formMainContainer .form-services .form-services-container .form-option-container .button_div a {
+    width: 100%;
+  }
+}
 .formMainContainer .form-services .form-services-container .form-option-container .button-next {
   padding: 20px 40px;
   width: 160px;
   background-color: transparent;
   border: 0.5px solid #5e4a49;
   cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+  .formMainContainer .form-services .form-services-container .form-option-container .button-next {
+    width: 90%;
+  }
 }
 .formMainContainer .form-services .form-services-container .form-option-container .button-next:hover {
   background-color: #b99692;

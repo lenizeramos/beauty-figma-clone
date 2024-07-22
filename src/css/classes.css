@@ -12,6 +12,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #f8f6f4;
+}
+
 header {
   position: sticky;
   position: -webkit-sticky;
@@ -117,7 +121,7 @@ header nav .logo {
 }
 
 h1 {
-  color: #a06d67;
+  color: #725a58;
   font-family: "Baskerville", serif;
   font-weight: 100;
   font-style: normal;
@@ -193,7 +197,7 @@ h1 {
 }
 .classes-full .classes-info-container .classes-info .detail .information .info-header {
   font-size: 28px;
-  color: #a06d67;
+  color: #725a58;
   margin-bottom: 2rem;
 }
 .classes-full .classes-info-container .classes-info .detail .information .price-time-target {
