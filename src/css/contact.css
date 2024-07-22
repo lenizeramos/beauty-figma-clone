@@ -162,6 +162,16 @@ header nav .logo {
   margin: 4rem auto;
   width: 40%;
 }
+@media only screen and (max-width: 768px) {
+  .formMainContainer .form-services .contact-us {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .formMainContainer .form-services .contact-us {
+    width: 80%;
+  }
+}
 .formMainContainer .form-services .contact-us h1 {
   margin-bottom: 1rem;
   text-align: center;
